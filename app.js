@@ -249,8 +249,14 @@ function enterHome() {
   badge.textContent = profile ? `${profile.emoji} ${profile.name}` : '';
 
   const parentBtn = document.getElementById('btn-parent-dashboard');
-  if (profile?.isParent) parentBtn.classList.remove('hidden');
-  else parentBtn.classList.add('hidden');
+  const manageBtn = document.getElementById('btn-manage');
+  if (profile?.isParent) {
+    parentBtn.classList.remove('hidden');
+    manageBtn.classList.remove('hidden');
+  } else {
+    parentBtn.classList.add('hidden');
+    manageBtn.classList.add('hidden');
+  }
 
   syncBuiltinSubjects().then(() => renderHome());
   showScreen('screen-home');
