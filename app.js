@@ -706,6 +706,7 @@ function showQuizResults() {
 // ── Manage ────────────────────────────────────────────────────────────────────
 
 function renderManage() {
+  if (!activeProfile()?.isParent) { showScreen('screen-home'); return; }
   const select = document.getElementById('q-subject');
   select.innerHTML = db.subjects.map(s => `<option value="${s.id}">${s.emoji} ${s.name}</option>`).join('');
 
@@ -817,7 +818,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Profile screen
-  document.getElementById('btn-add-profile').addEventListener('click', () => showScreen('screen-add-profile'));
+  document.getElementById('btn-add-profile').addEventListener('click', () => {
+    const parentExists = db.profiles.some(p => p.isParent);
+    const parentRow = document.getElementById('new-profile-is-parent').closest('label');
+    parentRow.style.display = parentExists ? 'none' : '';
+    if (parentExists) {
+      document.getElementById('new-profile-is-parent').checked = false;
+      document.getElementById('new-profile-pin-wrap').classList.add('hidden');
+    }
+    showScreen('screen-add-profile');
+  });
   document.getElementById('btn-back-add-profile').addEventListener('click', () => { renderProfileScreen(); showScreen('screen-profiles'); });
   document.getElementById('new-profile-is-parent').addEventListener('change', e => {
     document.getElementById('new-profile-pin-wrap').classList.toggle('hidden', !e.target.checked);
@@ -828,6 +838,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const isParent = document.getElementById('new-profile-is-parent').checked;
     const pin = document.getElementById('new-profile-pin').value.trim();
     if (!name) { alert('Voer een naam in.'); return; }
+    if (isParent && db.profiles.some(p => p.isParent)) { alert('Er bestaat al een ouderprofiel.'); return; }
     if (isParent && pin.length !== 4) { alert('Voer een pincode van 4 cijfers in.'); return; }
     const profile = { id: uid(), name, emoji, isParent };
     if (isParent && pin) profile.pinHash = hashPin(pin);
