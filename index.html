@@ -8,11 +8,12 @@
 </head>
 <body>
   <div id="app">
-    <!-- Home screen -->
+
+    <!-- Home -->
     <div id="screen-home" class="screen active">
       <header>
         <h1>📚 Schooltoets Oefenapp</h1>
-        <p class="subtitle">Kies een vak en oefen voor je toets</p>
+        <p class="subtitle">Kies een vak om te oefenen</p>
       </header>
       <div id="subject-grid" class="subject-grid"></div>
       <footer>
@@ -20,10 +21,64 @@
       </footer>
     </div>
 
-    <!-- Quiz screen -->
+    <!-- Mode select -->
+    <div id="screen-mode" class="screen">
+      <header class="sub-header">
+        <button id="btn-back-mode" class="btn btn-ghost">← Terug</button>
+        <div id="mode-subject-heading"></div>
+      </header>
+      <div class="mode-grid">
+        <button class="mode-card" id="btn-mode-flashcard">
+          <span class="mode-icon">🃏</span>
+          <span class="mode-name">Flashcards</span>
+          <span class="mode-desc">Woordjes oefenen door omdraaien</span>
+        </button>
+        <button class="mode-card" id="btn-mode-typing">
+          <span class="mode-icon">✏️</span>
+          <span class="mode-name">Typen</span>
+          <span class="mode-desc">Antwoorden invullen</span>
+        </button>
+        <button class="mode-card" id="btn-mode-quiz">
+          <span class="mode-icon">📝</span>
+          <span class="mode-name">Quiz</span>
+          <span class="mode-desc">Gemengde vragen (MC + open)</span>
+        </button>
+      </div>
+      <div id="mode-progress-overview" class="mode-progress-overview"></div>
+    </div>
+
+    <!-- Flashcard -->
+    <div id="screen-flashcard" class="screen">
+      <header class="quiz-header">
+        <button id="btn-back-flashcard" class="btn btn-ghost">← Stop</button>
+        <div class="quiz-meta">
+          <span id="fc-subject-title"></span>
+          <span id="fc-progress"></span>
+        </div>
+        <div id="fc-known-count"></div>
+      </header>
+      <div class="progress-bar-container">
+        <div id="fc-progress-bar" class="progress-bar"></div>
+      </div>
+      <div class="flashcard-area">
+        <div id="flashcard" class="flashcard" role="button" tabindex="0" aria-label="Tik om te draaien">
+          <div class="flashcard-inner">
+            <div class="flashcard-front" id="fc-front"></div>
+            <div class="flashcard-back" id="fc-back"></div>
+          </div>
+        </div>
+        <p id="fc-tap-hint" class="fc-tap-hint">👆 Tik op de kaart om het antwoord te zien</p>
+      </div>
+      <div class="fc-actions">
+        <button id="btn-fc-wrong" class="btn btn-fc-wrong hidden">❌ Nog niet geweten</button>
+        <button id="btn-fc-correct" class="btn btn-fc-correct hidden">✅ Kende ik!</button>
+      </div>
+    </div>
+
+    <!-- Quiz -->
     <div id="screen-quiz" class="screen">
       <header class="quiz-header">
-        <button id="btn-back" class="btn btn-ghost">← Terug</button>
+        <button id="btn-back-quiz" class="btn btn-ghost">← Terug</button>
         <div class="quiz-meta">
           <span id="quiz-subject-title"></span>
           <span id="quiz-progress"></span>
@@ -41,23 +96,23 @@
       </div>
     </div>
 
-    <!-- Results screen -->
+    <!-- Results -->
     <div id="screen-results" class="screen">
       <div class="results-container">
         <div id="results-emoji" class="results-emoji"></div>
-        <h2>Klaar!</h2>
+        <h2 id="results-title">Klaar!</h2>
         <div id="results-score" class="results-score"></div>
         <div id="results-breakdown" class="results-breakdown"></div>
         <div class="results-actions">
           <button id="btn-retry" class="btn btn-primary">🔄 Opnieuw</button>
-          <button id="btn-home" class="btn btn-secondary">🏠 Hoofdmenu</button>
+          <button id="btn-home-results" class="btn btn-secondary">🏠 Hoofdmenu</button>
         </div>
       </div>
     </div>
 
-    <!-- Manage screen -->
+    <!-- Manage -->
     <div id="screen-manage" class="screen">
-      <header>
+      <header class="sub-header">
         <button id="btn-back-manage" class="btn btn-ghost">← Terug</button>
         <h2>Vragen beheren</h2>
       </header>
@@ -76,10 +131,10 @@
             <select id="q-subject" class="input"></select>
             <select id="q-type" class="input">
               <option value="mc">Meerkeuze</option>
-              <option value="open">Open vraag</option>
-              <option value="truefalse">Waar/Niet waar</option>
+              <option value="open">Open vraag / Woordje</option>
+              <option value="truefalse">Waar / Niet waar</option>
             </select>
-            <input id="q-question" type="text" placeholder="Vraag" class="input">
+            <input id="q-question" type="text" placeholder="Vraag (bijv. Wat is 'de hond' in het Duits?)" class="input">
             <div id="mc-options">
               <input id="q-opt-a" type="text" placeholder="Optie A" class="input">
               <input id="q-opt-b" type="text" placeholder="Optie B" class="input">
@@ -93,8 +148,14 @@
               </select>
             </div>
             <div id="open-options" class="hidden">
-              <input id="q-answer" type="text" placeholder="Correct antwoord" class="input">
+              <input id="q-answer" type="text" placeholder="Correct antwoord (bijv. der Hund)" class="input">
               <input id="q-alt-answers" type="text" placeholder="Alternatieve antwoorden (komma gescheiden)" class="input">
+            </div>
+            <div id="tf-options" class="hidden">
+              <select id="q-tf-answer" class="input">
+                <option value="true">Antwoord: Waar</option>
+                <option value="false">Antwoord: Niet waar</option>
+              </select>
             </div>
             <button id="btn-add-question" class="btn btn-primary">Vraag toevoegen</button>
           </div>
@@ -107,13 +168,14 @@
               📤 Importeer JSON
               <input id="file-import" type="file" accept=".json" class="hidden">
             </label>
+            <button id="btn-reset-stats" class="btn btn-secondary">🔄 Reset voortgang</button>
           </div>
         </div>
         <div id="manage-subjects-list" class="manage-subjects-list"></div>
       </div>
     </div>
-  </div>
 
+  </div>
   <script src="app.js"></script>
 </body>
 </html>
