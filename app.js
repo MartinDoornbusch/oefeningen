@@ -1,11 +1,15 @@
-// ── Storage ──────────────────────────────────────────────────────────────────
+// ── Storage ───────────────────────────────────────────────────────────────────
 
-const STORAGE_KEY = 'schooltoets_data';
+const STORAGE_KEY = 'schooltoets_v2';
 
 function loadData() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) return JSON.parse(raw);
+    if (raw) {
+      const data = JSON.parse(raw);
+      if (!data.stats) data.stats = {};
+      return data;
+    }
   } catch (_) {}
   return defaultData();
 }
@@ -38,40 +42,21 @@ function defaultData() {
           { id: 'a5', type: 'mc', question: 'Welke oceaan is de grootste ter wereld?', options: ['Atlantische', 'Indische', 'Arctische', 'Stille'], correct: 3 },
         ]
       },
-      {
-        id: 'geschiedenis', name: 'Geschiedenis', emoji: '📜',
-        questions: [
-          { id: 'g1', type: 'mc', question: 'In welk jaar begon de Eerste Wereldoorlog?', options: ['1912', '1914', '1916', '1918'], correct: 1 },
-          { id: 'g2', type: 'truefalse', question: 'Napoleon Bonaparte was van Italiaanse afkomst.', correct: false },
-          { id: 'g3', type: 'open', question: 'In welk jaar viel de Berlijnse Muur?', answer: '1989', altAnswers: [] },
-          { id: 'g4', type: 'mc', question: 'Wie schilderde de Mona Lisa?', options: ['Michelangelo', 'Rafaël', 'Leonardo da Vinci', 'Botticelli'], correct: 2 },
-          { id: 'g5', type: 'mc', question: 'Welk land lanceerde de eerste satelliet (Spoetnik)?', options: ['VS', 'Duitsland', 'USSR', 'China'], correct: 2 },
-        ]
-      },
-      {
-        id: 'biologie', name: 'Biologie', emoji: '🧬',
-        questions: [
-          { id: 'b1', type: 'mc', question: 'Wat is het grootste orgaan van het menselijk lichaam?', options: ['Lever', 'Longen', 'Huid', 'Hersenen'], correct: 2 },
-          { id: 'b2', type: 'truefalse', question: 'Planten produceren zuurstof via fotosynthese.', correct: true },
-          { id: 'b3', type: 'open', question: 'Hoeveel kamers heeft een menselijk hart?', answer: '4', altAnswers: ['vier'] },
-          { id: 'b4', type: 'mc', question: 'Welk organisme maakt 70% van de aardse zuurstof aan?', options: ['Bomen', 'Algen', 'Grassen', 'Mossen'], correct: 1 },
-          { id: 'b5', type: 'mc', question: 'Hoe heet de bouwsteen van leven?', options: ['Atoom', 'Molecuul', 'Cel', 'Weefsel'], correct: 2 },
-        ]
-      }
-    ]
+    ],
+    stats: {}
   };
 }
 
 // ── State ─────────────────────────────────────────────────────────────────────
 
 let db = loadData();
-let quiz = null; // active quiz session
+let activeSubjectId = null;
+let quiz = null;
+let flashcard = null;
 
 // ── Utility ───────────────────────────────────────────────────────────────────
 
-function uid() {
-  return Math.random().toString(36).slice(2, 9);
-}
+function uid() { return Math.random().toString(36).slice(2, 9); }
 
 function shuffle(arr) {
   const a = [...arr];
@@ -83,7 +68,40 @@ function shuffle(arr) {
 }
 
 function normalize(str) {
-  return str.trim().toLowerCase().replace(/[.,!?;:]/g, '');
+  return str
+    .trim()
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '') // strip diacritics
+    .replace(/['']/g, '')            // strip apostrophes
+    .replace(/[.,!?;:]/g, '');       // strip punctuation
+}
+
+// ── Stats ─────────────────────────────────────────────────────────────────────
+
+function recordStat(subjectId, questionId, correct) {
+  if (!db.stats[subjectId]) db.stats[subjectId] = {};
+  if (!db.stats[subjectId][questionId]) db.stats[subjectId][questionId] = { attempts: 0, correct: 0 };
+  db.stats[subjectId][questionId].attempts++;
+  if (correct) db.stats[subjectId][questionId].correct++;
+  saveData();
+}
+
+function masteryPct(subjectId) {
+  const subject = db.subjects.find(s => s.id === subjectId);
+  if (!subject || subject.questions.length === 0) return 0;
+  const subStats = db.stats[subjectId] || {};
+  const mastered = subject.questions.filter(q => {
+    const s = subStats[q.id];
+    return s && s.correct > 0;
+  }).length;
+  return Math.round((mastered / subject.questions.length) * 100);
+}
+
+function masteryColor(pct) {
+  if (pct >= 80) return '#10b981';
+  if (pct >= 50) return '#f59e0b';
+  return '#ef4444';
 }
 
 // ── Screens ───────────────────────────────────────────────────────────────────
@@ -93,6 +111,25 @@ function showScreen(id) {
   document.getElementById(id).classList.add('active');
 }
 
+// ── Sync built-in subjects from data/subjects.json ────────────────────────────
+
+async function syncBuiltinSubjects() {
+  try {
+    const res = await fetch('data/subjects.json');
+    if (!res.ok) return;
+    const { subjects } = await res.json();
+    const existingIds = new Set(db.subjects.map(s => s.id));
+    let changed = false;
+    subjects.forEach(subject => {
+      if (!existingIds.has(subject.id)) {
+        db.subjects.unshift(subject);
+        changed = true;
+      }
+    });
+    if (changed) { saveData(); renderHome(); }
+  } catch (_) {}
+}
+
 // ── Home ──────────────────────────────────────────────────────────────────────
 
 function renderHome() {
@@ -100,38 +137,176 @@ function renderHome() {
   grid.innerHTML = '';
 
   if (db.subjects.length === 0) {
-    grid.innerHTML = '<p style="color:var(--text-muted);grid-column:1/-1;text-align:center;padding:32px">Geen vakken gevonden. Voeg een vak toe via "Vragen beheren".</p>';
+    grid.innerHTML = '<p style="color:var(--text-muted);grid-column:1/-1;text-align:center;padding:32px 0">Geen vakken. Voeg er een toe via "Vragen beheren".</p>';
     return;
   }
 
   db.subjects.forEach(subject => {
+    const pct = masteryPct(subject.id);
+    const color = masteryColor(pct);
     const card = document.createElement('div');
     card.className = 'subject-card';
     card.innerHTML = `
       <span class="emoji">${subject.emoji}</span>
       <div class="name">${subject.name}</div>
       <div class="count">${subject.questions.length} vragen</div>
-    `;
+      <div class="subject-progress-wrap">
+        <div class="subject-progress-bar-bg">
+          <div class="subject-progress-bar-fill" style="width:${pct}%;background:${color}"></div>
+        </div>
+        <div class="subject-progress-label">${pct > 0 ? pct + '% beheerst' : 'Nog niet geoefend'}</div>
+      </div>`;
     card.addEventListener('click', () => {
-      if (subject.questions.length === 0) {
-        alert('Dit vak heeft nog geen vragen. Voeg eerst vragen toe.');
-        return;
-      }
-      startQuiz(subject.id);
+      if (subject.questions.length === 0) { alert('Dit vak heeft nog geen vragen.'); return; }
+      openModeSelect(subject.id);
     });
     grid.appendChild(card);
   });
 }
 
+// ── Mode select ───────────────────────────────────────────────────────────────
+
+function openModeSelect(subjectId) {
+  activeSubjectId = subjectId;
+  const subject = db.subjects.find(s => s.id === subjectId);
+  document.getElementById('mode-subject-heading').textContent = `${subject.emoji} ${subject.name}`;
+
+  // Progress overview
+  const overviewEl = document.getElementById('mode-progress-overview');
+  const subStats = db.stats[subjectId] || {};
+  const total = subject.questions.length;
+  const attempted = subject.questions.filter(q => subStats[q.id]?.attempts > 0).length;
+  const mastered  = subject.questions.filter(q => subStats[q.id]?.correct > 0).length;
+  const openQs    = subject.questions.filter(q => q.type === 'open').length;
+  const pct = masteryPct(subjectId);
+
+  overviewEl.innerHTML = `
+    <h4>📊 Jouw voortgang</h4>
+    <div class="mprog-row">
+      <span class="mprog-label">Beheerst</span>
+      <div class="mprog-bar-bg"><div class="mprog-bar-fill" style="width:${pct}%;background:${masteryColor(pct)}"></div></div>
+      <span class="mprog-pct" style="color:${masteryColor(pct)}">${pct}%</span>
+    </div>
+    <div style="font-size:.82rem;color:var(--text-muted);margin-top:4px">
+      ${mastered} / ${total} vragen minstens één keer goed • ${attempted} geprobeerd
+      ${openQs > 0 ? ` • ${openQs} typvragen` : ''}
+    </div>`;
+
+  // Disable typing mode if no open questions
+  const typingBtn = document.getElementById('btn-mode-typing');
+  if (openQs === 0) {
+    typingBtn.disabled = true;
+    typingBtn.querySelector('.mode-desc').textContent = 'Geen typvragen in dit vak';
+  } else {
+    typingBtn.disabled = false;
+    typingBtn.querySelector('.mode-desc').textContent = 'Antwoorden invullen';
+  }
+
+  showScreen('screen-mode');
+}
+
+// ── Flashcards ────────────────────────────────────────────────────────────────
+
+function startFlashcards(subjectId) {
+  const subject = db.subjects.find(s => s.id === subjectId);
+  flashcard = {
+    subject,
+    deck: shuffle(subject.questions),
+    index: 0,
+    known: 0,
+    flipped: false,
+  };
+  document.getElementById('fc-subject-title').textContent = `${subject.emoji} ${subject.name}`;
+  showScreen('screen-flashcard');
+  renderFlashcard();
+}
+
+function renderFlashcard() {
+  const { deck, index, known } = flashcard;
+  const q = deck[index];
+  const total = deck.length;
+
+  document.getElementById('fc-progress').textContent = `Kaart ${index + 1} van ${total}`;
+  document.getElementById('fc-known-count').textContent = `✅ ${known}`;
+  document.getElementById('fc-progress-bar').style.width = `${(index / total) * 100}%`;
+
+  // Front: question
+  document.getElementById('fc-front').innerHTML =
+    `<div class="fc-label">Vraag</div><div class="fc-content">${q.question}</div>`;
+
+  // Back: answer
+  const answerText = getAnswerDisplay(q);
+  document.getElementById('fc-back').innerHTML =
+    `<div class="fc-label">Antwoord</div><div class="fc-content">${answerText}</div>`;
+
+  // Reset flip state
+  const card = document.getElementById('flashcard');
+  card.classList.remove('flipped');
+  flashcard.flipped = false;
+
+  document.getElementById('btn-fc-wrong').classList.add('hidden');
+  document.getElementById('btn-fc-correct').classList.add('hidden');
+  document.getElementById('fc-tap-hint').style.opacity = '1';
+}
+
+function getAnswerDisplay(q) {
+  if (q.type === 'open') return q.answer;
+  if (q.type === 'truefalse') return q.correct ? '✅ Waar' : '❌ Niet waar';
+  if (q.type === 'mc') return q.options[q.correct];
+  return '';
+}
+
+function flipFlashcard() {
+  if (flashcard.flipped) return;
+  flashcard.flipped = true;
+  document.getElementById('flashcard').classList.add('flipped');
+  document.getElementById('fc-tap-hint').style.opacity = '0';
+  document.getElementById('btn-fc-wrong').classList.remove('hidden');
+  document.getElementById('btn-fc-correct').classList.remove('hidden');
+}
+
+function markFlashcard(known) {
+  const { subject, deck, index } = flashcard;
+  const q = deck[index];
+  recordStat(subject.id, q.id, known);
+  if (known) flashcard.known++;
+
+  flashcard.index++;
+  if (flashcard.index >= flashcard.deck.length) {
+    showFlashcardResults();
+  } else {
+    renderFlashcard();
+  }
+}
+
+function showFlashcardResults() {
+  const { known, deck, subject } = flashcard;
+  const total = deck.length;
+  const pct = Math.round((known / total) * 100);
+  document.getElementById('results-title').textContent = 'Flashcards klaar!';
+  document.getElementById('results-emoji').textContent = pct >= 80 ? '🏆' : pct >= 50 ? '🎉' : '💪';
+  document.getElementById('results-score').textContent = `${pct}%`;
+  document.getElementById('results-breakdown').textContent = `${known} van de ${total} kaarten gekend`;
+  document.getElementById('btn-retry').onclick = () => startFlashcards(subject.id);
+  document.getElementById('btn-home-results').onclick = () => { renderHome(); showScreen('screen-home'); };
+  document.getElementById('progress-bar').style.width = '100%';
+  showScreen('screen-results');
+}
+
 // ── Quiz ──────────────────────────────────────────────────────────────────────
 
-function startQuiz(subjectId) {
+function startQuiz(subjectId, mode = 'quiz') {
   const subject = db.subjects.find(s => s.id === subjectId);
-  const questions = shuffle(subject.questions);
+  let questions = subject.questions;
+
+  if (mode === 'typing') {
+    questions = questions.filter(q => q.type === 'open');
+  }
 
   quiz = {
     subject,
-    questions,
+    mode,
+    questions: shuffle(questions),
     index: 0,
     score: 0,
     answered: false,
@@ -154,16 +329,15 @@ function renderQuestion() {
   const area = document.getElementById('question-area');
   area.innerHTML = `<div class="question-text">${q.question}</div>` + buildQuestionHTML(q);
 
-  const feedbackArea = document.getElementById('feedback-area');
-  feedbackArea.className = 'feedback-area hidden';
-  feedbackArea.textContent = '';
+  const fb = document.getElementById('feedback-area');
+  fb.className = 'feedback-area hidden';
+  fb.textContent = '';
 
   document.getElementById('btn-check').classList.remove('hidden');
   document.getElementById('btn-next').classList.add('hidden');
 
   quiz.answered = false;
   quiz.selectedValue = null;
-
   attachQuestionListeners(q);
 }
 
@@ -172,23 +346,18 @@ function buildQuestionHTML(q) {
     const labels = ['A', 'B', 'C', 'D'];
     return `<div class="mc-options">${q.options.map((opt, i) =>
       `<div class="mc-option" data-index="${i}">
-        <span class="label">${labels[i]}</span>
-        <span>${opt}</span>
-      </div>`
-    ).join('')}</div>`;
+        <span class="label">${labels[i]}</span><span>${opt}</span>
+      </div>`).join('')}</div>`;
   }
-
   if (q.type === 'open') {
-    return `<input type="text" class="open-input" id="open-answer" placeholder="Jouw antwoord..." autocomplete="off">`;
+    return `<input type="text" class="open-input" id="open-answer" placeholder="Jouw antwoord..." autocomplete="off" spellcheck="false">`;
   }
-
   if (q.type === 'truefalse') {
     return `<div class="tf-options">
       <div class="tf-option" data-value="true">✅ Waar</div>
       <div class="tf-option" data-value="false">❌ Niet waar</div>
     </div>`;
   }
-
   return '';
 }
 
@@ -203,15 +372,11 @@ function attachQuestionListeners(q) {
       });
     });
   }
-
   if (q.type === 'open') {
     const input = document.getElementById('open-answer');
-    input.addEventListener('keydown', e => {
-      if (e.key === 'Enter') document.getElementById('btn-check').click();
-    });
+    input.addEventListener('keydown', e => { if (e.key === 'Enter') document.getElementById('btn-check').click(); });
     input.focus();
   }
-
   if (q.type === 'truefalse') {
     document.querySelectorAll('.tf-option').forEach(el => {
       el.addEventListener('click', () => {
@@ -237,18 +402,18 @@ function checkAnswer() {
       if (i === q.correct) el.classList.add('correct');
       else if (i === quiz.selectedValue) el.classList.add('wrong');
     });
-    feedbackText = correct ? '✅ Correct!' : `❌ Fout. Het juiste antwoord was: ${q.options[q.correct]}`;
+    feedbackText = correct ? '✅ Correct!' : `❌ Fout. Juist antwoord: ${q.options[q.correct]}`;
   }
 
   if (q.type === 'open') {
     const input = document.getElementById('open-answer');
-    const userAnswer = normalize(input.value);
-    if (!userAnswer) { alert('Vul een antwoord in.'); return; }
+    const userVal = normalize(input.value);
+    if (!userVal) { alert('Vul een antwoord in.'); return; }
     const allCorrect = [normalize(q.answer), ...(q.altAnswers || []).map(normalize)];
-    correct = allCorrect.includes(userAnswer);
+    correct = allCorrect.includes(userVal);
     input.classList.add(correct ? 'correct' : 'wrong');
     input.readOnly = true;
-    feedbackText = correct ? '✅ Correct!' : `❌ Fout. Het juiste antwoord was: ${q.answer}`;
+    feedbackText = correct ? '✅ Correct!' : `❌ Fout. Juist antwoord: ${q.answer}`;
   }
 
   if (q.type === 'truefalse') {
@@ -259,15 +424,17 @@ function checkAnswer() {
       if (val === q.correct) el.classList.add('correct');
       else if (val === quiz.selectedValue) el.classList.add('wrong');
     });
-    feedbackText = correct ? '✅ Correct!' : `❌ Fout. Het juiste antwoord was: ${q.correct ? 'Waar' : 'Niet waar'}`;
+    feedbackText = correct ? '✅ Correct!' : `❌ Fout. Juist antwoord: ${q.correct ? 'Waar' : 'Niet waar'}`;
   }
 
   if (correct) quiz.score++;
   quiz.answered = true;
 
-  const feedbackArea = document.getElementById('feedback-area');
-  feedbackArea.className = `feedback-area ${correct ? 'feedback-correct' : 'feedback-wrong'}`;
-  feedbackArea.textContent = feedbackText;
+  recordStat(quiz.subject.id, q.id, correct);
+
+  const fb = document.getElementById('feedback-area');
+  fb.className = `feedback-area ${correct ? 'feedback-correct' : 'feedback-wrong'}`;
+  fb.textContent = feedbackText;
 
   document.getElementById('btn-check').classList.add('hidden');
   document.getElementById('btn-next').classList.remove('hidden');
@@ -276,38 +443,31 @@ function checkAnswer() {
 
 function nextQuestion() {
   quiz.index++;
-  if (quiz.index >= quiz.questions.length) {
-    showResults();
-  } else {
-    renderQuestion();
-  }
+  if (quiz.index >= quiz.questions.length) showQuizResults();
+  else renderQuestion();
 }
 
-function showResults() {
-  const { score, questions } = quiz;
+function showQuizResults() {
+  const { score, questions, subject, mode } = quiz;
   const total = questions.length;
   const pct = Math.round((score / total) * 100);
-
-  let emoji = '😞';
-  if (pct >= 90) emoji = '🏆';
-  else if (pct >= 70) emoji = '🎉';
-  else if (pct >= 50) emoji = '👍';
-
-  document.getElementById('results-emoji').textContent = emoji;
+  document.getElementById('results-title').textContent = mode === 'typing' ? 'Typen klaar!' : 'Quiz klaar!';
+  document.getElementById('results-emoji').textContent = pct >= 90 ? '🏆' : pct >= 70 ? '🎉' : pct >= 50 ? '👍' : '😞';
   document.getElementById('results-score').textContent = `${pct}%`;
   document.getElementById('results-breakdown').textContent = `${score} van de ${total} vragen goed`;
-  showScreen('screen-results');
+  document.getElementById('btn-retry').onclick = () => startQuiz(subject.id, mode);
+  document.getElementById('btn-home-results').onclick = () => { renderHome(); showScreen('screen-home'); };
   document.getElementById('progress-bar').style.width = '100%';
+  showScreen('screen-results');
+  renderHome(); // update progress on cards in background
 }
 
 // ── Manage ────────────────────────────────────────────────────────────────────
 
 function renderManage() {
-  // Populate subject dropdown
   const select = document.getElementById('q-subject');
   select.innerHTML = db.subjects.map(s => `<option value="${s.id}">${s.emoji} ${s.name}</option>`).join('');
 
-  // Render subjects list
   const list = document.getElementById('manage-subjects-list');
   list.innerHTML = '';
 
@@ -322,39 +482,32 @@ function renderManage() {
       <div class="question-list">
         ${subject.questions.map(q => `
           <div class="question-item">
-            <span>${q.question}</span>
-            <div style="display:flex;gap:8px;align-items:center;flex-shrink:0">
-              <span class="q-type-badge">${{mc:'MC', open:'Open', truefalse:'W/NW'}[q.type]}</span>
+            <span style="flex:1;margin-right:8px">${q.question}</span>
+            <div style="display:flex;gap:6px;align-items:center;flex-shrink:0">
+              <span class="q-type-badge">${{mc:'MC',open:'Open',truefalse:'W/NW'}[q.type]}</span>
               <button class="btn-delete" data-subject="${subject.id}" data-qid="${q.id}" title="Verwijder vraag">✕</button>
             </div>
-          </div>
-        `).join('') || '<p style="padding:8px;color:var(--text-muted);font-size:.85rem">Geen vragen</p>'}
-      </div>
-    `;
+          </div>`).join('') || '<p style="padding:8px;color:var(--text-muted);font-size:.85rem">Geen vragen</p>'}
+      </div>`;
     list.appendChild(card);
   });
 
-  // Delete subject listeners
   list.querySelectorAll('.btn-delete[data-id]').forEach(btn => {
     btn.addEventListener('click', () => {
-      if (confirm(`Wil je het vak "${btn.dataset.id}" verwijderen?`)) {
+      if (confirm(`Vak verwijderen?`)) {
         db.subjects = db.subjects.filter(s => s.id !== btn.dataset.id);
-        saveData();
-        renderManage();
-        renderHome();
+        delete db.stats[btn.dataset.id];
+        saveData(); renderManage(); renderHome();
       }
     });
   });
 
-  // Delete question listeners
   list.querySelectorAll('.btn-delete[data-qid]').forEach(btn => {
     btn.addEventListener('click', () => {
       const subject = db.subjects.find(s => s.id === btn.dataset.subject);
       if (subject) {
         subject.questions = subject.questions.filter(q => q.id !== btn.dataset.qid);
-        saveData();
-        renderManage();
-        renderHome();
+        saveData(); renderManage(); renderHome();
       }
     });
   });
@@ -364,14 +517,12 @@ function addSubject() {
   const name = document.getElementById('new-subject-name').value.trim();
   const emoji = document.getElementById('new-subject-emoji').value.trim() || '📖';
   if (!name) { alert('Voer een vaknaam in.'); return; }
-
   const id = name.toLowerCase().replace(/\s+/g, '_') + '_' + uid();
   db.subjects.push({ id, name, emoji, questions: [] });
   saveData();
   document.getElementById('new-subject-name').value = '';
   document.getElementById('new-subject-emoji').value = '';
-  renderManage();
-  renderHome();
+  renderManage(); renderHome();
 }
 
 function addQuestion() {
@@ -384,38 +535,27 @@ function addQuestion() {
   const q = { id: uid(), type, question };
 
   if (type === 'mc') {
-    const opts = ['q-opt-a', 'q-opt-b', 'q-opt-c', 'q-opt-d'].map(id =>
-      document.getElementById(id).value.trim()
-    );
+    const opts = ['q-opt-a','q-opt-b','q-opt-c','q-opt-d'].map(id => document.getElementById(id).value.trim());
     if (opts.some(o => !o)) { alert('Vul alle vier opties in.'); return; }
     q.options = opts;
     q.correct = parseInt(document.getElementById('q-correct').value, 10);
   }
-
   if (type === 'open') {
     const answer = document.getElementById('q-answer').value.trim();
     if (!answer) { alert('Voer het correcte antwoord in.'); return; }
     q.answer = answer;
-    q.altAnswers = document.getElementById('q-alt-answers').value
-      .split(',').map(s => s.trim()).filter(Boolean);
+    q.altAnswers = document.getElementById('q-alt-answers').value.split(',').map(s => s.trim()).filter(Boolean);
   }
-
   if (type === 'truefalse') {
-    q.correct = true; // default; user picks answer=true
-    // For TF we repurpose the answer field
-    const tfAnswer = document.getElementById('q-answer').value.trim().toLowerCase();
-    q.correct = !['nee', 'false', 'niet waar', 'n', 'f', '0'].includes(tfAnswer);
+    q.correct = document.getElementById('q-tf-answer').value === 'true';
   }
 
   subject.questions.push(q);
   saveData();
-
-  // Clear fields
-  ['q-question', 'q-opt-a', 'q-opt-b', 'q-opt-c', 'q-opt-d', 'q-answer', 'q-alt-answers']
-    .forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
-
-  renderManage();
-  renderHome();
+  ['q-question','q-opt-a','q-opt-b','q-opt-c','q-opt-d','q-answer','q-alt-answers'].forEach(id => {
+    const el = document.getElementById(id); if (el) el.value = '';
+  });
+  renderManage(); renderHome();
   alert('Vraag toegevoegd!');
 }
 
@@ -423,9 +563,7 @@ function exportData() {
   const blob = new Blob([JSON.stringify(db, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
-  a.href = url;
-  a.download = 'schooltoets_vragen.json';
-  a.click();
+  a.href = url; a.download = 'schooltoets_vragen.json'; a.click();
   URL.revokeObjectURL(url);
 }
 
@@ -435,16 +573,12 @@ function importData(file) {
     try {
       const imported = JSON.parse(e.target.result);
       if (!imported.subjects || !Array.isArray(imported.subjects)) throw new Error();
-      if (confirm('Wil je de huidige vragen vervangen met het geïmporteerde bestand?')) {
-        db = imported;
-        saveData();
-        renderManage();
-        renderHome();
+      if (confirm('Huidige vragen vervangen met geïmporteerde vragen?')) {
+        db = { ...imported, stats: imported.stats || db.stats || {} };
+        saveData(); renderManage(); renderHome();
         alert('Vragen geïmporteerd!');
       }
-    } catch (_) {
-      alert('Ongeldig JSON-bestand.');
-    }
+    } catch (_) { alert('Ongeldig JSON-bestand.'); }
   };
   reader.readAsText(file);
 }
@@ -452,43 +586,49 @@ function importData(file) {
 // ── Init ──────────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Home
+  syncBuiltinSubjects();
   renderHome();
-  document.getElementById('btn-manage').addEventListener('click', () => {
-    renderManage();
-    showScreen('screen-manage');
+
+  // Home
+  document.getElementById('btn-manage').addEventListener('click', () => { renderManage(); showScreen('screen-manage'); });
+
+  // Mode select
+  document.getElementById('btn-back-mode').addEventListener('click', () => showScreen('screen-home'));
+  document.getElementById('btn-mode-flashcard').addEventListener('click', () => startFlashcards(activeSubjectId));
+  document.getElementById('btn-mode-typing').addEventListener('click', () => startQuiz(activeSubjectId, 'typing'));
+  document.getElementById('btn-mode-quiz').addEventListener('click', () => startQuiz(activeSubjectId, 'quiz'));
+
+  // Flashcard
+  document.getElementById('btn-back-flashcard').addEventListener('click', () => {
+    if (confirm('Flashcard-sessie stoppen?')) { renderHome(); showScreen('screen-mode'); openModeSelect(flashcard?.subject?.id || activeSubjectId); }
   });
+  document.getElementById('flashcard').addEventListener('click', flipFlashcard);
+  document.getElementById('flashcard').addEventListener('keydown', e => { if (e.key === ' ' || e.key === 'Enter') flipFlashcard(); });
+  document.getElementById('btn-fc-wrong').addEventListener('click', () => markFlashcard(false));
+  document.getElementById('btn-fc-correct').addEventListener('click', () => markFlashcard(true));
 
   // Quiz
-  document.getElementById('btn-back').addEventListener('click', () => {
-    if (confirm('Weet je zeker dat je de toets wilt stoppen?')) showScreen('screen-home');
+  document.getElementById('btn-back-quiz').addEventListener('click', () => {
+    if (confirm('Quiz stoppen?')) { renderHome(); showScreen('screen-mode'); openModeSelect(quiz?.subject?.id || activeSubjectId); }
   });
   document.getElementById('btn-check').addEventListener('click', checkAnswer);
   document.getElementById('btn-next').addEventListener('click', nextQuestion);
-
-  // Results
-  document.getElementById('btn-retry').addEventListener('click', () => startQuiz(quiz.subject.id));
-  document.getElementById('btn-home').addEventListener('click', () => showScreen('screen-home'));
 
   // Manage
   document.getElementById('btn-back-manage').addEventListener('click', () => showScreen('screen-home'));
   document.getElementById('btn-add-subject').addEventListener('click', addSubject);
   document.getElementById('btn-add-question').addEventListener('click', addQuestion);
   document.getElementById('btn-export').addEventListener('click', exportData);
-  document.getElementById('file-import').addEventListener('change', e => {
-    if (e.target.files[0]) importData(e.target.files[0]);
-    e.target.value = '';
+  document.getElementById('file-import').addEventListener('change', e => { if (e.target.files[0]) importData(e.target.files[0]); e.target.value = ''; });
+  document.getElementById('btn-reset-stats').addEventListener('click', () => {
+    if (confirm('Alle voortgang wissen?')) { db.stats = {}; saveData(); renderHome(); alert('Voortgang gewist.'); }
   });
 
-  // Toggle question type form
+  // Question type toggle in manage
   document.getElementById('q-type').addEventListener('change', e => {
     const type = e.target.value;
     document.getElementById('mc-options').classList.toggle('hidden', type !== 'mc');
-    document.getElementById('open-options').classList.toggle('hidden', type === 'mc');
-    if (type === 'truefalse') {
-      document.getElementById('q-answer').placeholder = 'Antwoord: waar / niet waar';
-    } else {
-      document.getElementById('q-answer').placeholder = 'Correct antwoord';
-    }
+    document.getElementById('open-options').classList.toggle('hidden', type !== 'open');
+    document.getElementById('tf-options').classList.toggle('hidden', type !== 'truefalse');
   });
 });
