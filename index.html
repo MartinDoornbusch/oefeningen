@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schooltoets Oefenapp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Home screen -->
+    <div id="screen-home" class="screen active">
+      <header>
+        <h1>📚 Schooltoets Oefenapp</h1>
+        <p class="subtitle">Kies een vak en oefen voor je toets</p>
+      </header>
+      <div id="subject-grid" class="subject-grid"></div>
+      <footer>
+        <button id="btn-manage" class="btn btn-secondary">⚙️ Vragen beheren</button>
+      </footer>
+    </div>
+
+    <!-- Quiz screen -->
+    <div id="screen-quiz" class="screen">
+      <header class="quiz-header">
+        <button id="btn-back" class="btn btn-ghost">← Terug</button>
+        <div class="quiz-meta">
+          <span id="quiz-subject-title"></span>
+          <span id="quiz-progress"></span>
+        </div>
+        <div id="score-display"></div>
+      </header>
+      <div class="progress-bar-container">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+      <main id="question-area" class="question-area"></main>
+      <div id="feedback-area" class="feedback-area hidden"></div>
+      <div class="quiz-actions">
+        <button id="btn-check" class="btn btn-primary">Controleer</button>
+        <button id="btn-next" class="btn btn-primary hidden">Volgende →</button>
+      </div>
+    </div>
+
+    <!-- Results screen -->
+    <div id="screen-results" class="screen">
+      <div class="results-container">
+        <div id="results-emoji" class="results-emoji"></div>
+        <h2>Klaar!</h2>
+        <div id="results-score" class="results-score"></div>
+        <div id="results-breakdown" class="results-breakdown"></div>
+        <div class="results-actions">
+          <button id="btn-retry" class="btn btn-primary">🔄 Opnieuw</button>
+          <button id="btn-home" class="btn btn-secondary">🏠 Hoofdmenu</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Manage screen -->
+    <div id="screen-manage" class="screen">
+      <header>
+        <button id="btn-back-manage" class="btn btn-ghost">← Terug</button>
+        <h2>Vragen beheren</h2>
+      </header>
+      <div class="manage-container">
+        <div class="manage-section">
+          <h3>Vak toevoegen</h3>
+          <div class="form-row">
+            <input id="new-subject-name" type="text" placeholder="Vaknaam" class="input">
+            <input id="new-subject-emoji" type="text" placeholder="Emoji" class="input input-emoji">
+            <button id="btn-add-subject" class="btn btn-primary">Toevoegen</button>
+          </div>
+        </div>
+        <div class="manage-section">
+          <h3>Vraag toevoegen</h3>
+          <div class="form-col">
+            <select id="q-subject" class="input"></select>
+            <select id="q-type" class="input">
+              <option value="mc">Meerkeuze</option>
+              <option value="open">Open vraag</option>
+              <option value="truefalse">Waar/Niet waar</option>
+            </select>
+            <input id="q-question" type="text" placeholder="Vraag" class="input">
+            <div id="mc-options">
+              <input id="q-opt-a" type="text" placeholder="Optie A" class="input">
+              <input id="q-opt-b" type="text" placeholder="Optie B" class="input">
+              <input id="q-opt-c" type="text" placeholder="Optie C" class="input">
+              <input id="q-opt-d" type="text" placeholder="Optie D" class="input">
+              <select id="q-correct" class="input">
+                <option value="0">Correct antwoord: A</option>
+                <option value="1">Correct antwoord: B</option>
+                <option value="2">Correct antwoord: C</option>
+                <option value="3">Correct antwoord: D</option>
+              </select>
+            </div>
+            <div id="open-options" class="hidden">
+              <input id="q-answer" type="text" placeholder="Correct antwoord" class="input">
+              <input id="q-alt-answers" type="text" placeholder="Alternatieve antwoorden (komma gescheiden)" class="input">
+            </div>
+            <button id="btn-add-question" class="btn btn-primary">Vraag toevoegen</button>
+          </div>
+        </div>
+        <div class="manage-section">
+          <h3>Importeer / Exporteer</h3>
+          <div class="form-row">
+            <button id="btn-export" class="btn btn-secondary">📥 Exporteer JSON</button>
+            <label class="btn btn-secondary">
+              📤 Importeer JSON
+              <input id="file-import" type="file" accept=".json" class="hidden">
+            </label>
+          </div>
+        </div>
+        <div id="manage-subjects-list" class="manage-subjects-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
