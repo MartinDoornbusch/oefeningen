@@ -9,16 +9,90 @@
 <body>
   <div id="app">
 
-    <!-- Home -->
-    <div id="screen-home" class="screen active">
+    <!-- PIN overlay -->
+    <div id="pin-overlay" class="pin-overlay hidden">
+      <div class="pin-modal">
+        <div id="pin-profile-emoji" class="pin-emoji"></div>
+        <h3 id="pin-title">Pincode invoeren</h3>
+        <div class="pin-dots" id="pin-dots">
+          <span class="pin-dot"></span><span class="pin-dot"></span>
+          <span class="pin-dot"></span><span class="pin-dot"></span>
+        </div>
+        <p id="pin-error" class="pin-error hidden">Verkeerde pincode, probeer opnieuw</p>
+        <div class="pin-keypad">
+          <button class="pin-key" data-val="1">1</button>
+          <button class="pin-key" data-val="2">2</button>
+          <button class="pin-key" data-val="3">3</button>
+          <button class="pin-key" data-val="4">4</button>
+          <button class="pin-key" data-val="5">5</button>
+          <button class="pin-key" data-val="6">6</button>
+          <button class="pin-key" data-val="7">7</button>
+          <button class="pin-key" data-val="8">8</button>
+          <button class="pin-key" data-val="9">9</button>
+          <button class="pin-key pin-key-cancel" id="btn-pin-cancel">✕</button>
+          <button class="pin-key" data-val="0">0</button>
+          <button class="pin-key pin-key-del" id="btn-pin-del">⌫</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Profile select -->
+    <div id="screen-profiles" class="screen active">
       <header>
         <h1>📚 Schooltoets Oefenapp</h1>
-        <p class="subtitle">Kies een vak om te oefenen</p>
+        <p class="subtitle">Wie oefent er vandaag?</p>
+      </header>
+      <div id="profile-grid" class="profile-grid"></div>
+      <div style="text-align:center;margin-top:16px">
+        <button id="btn-add-profile" class="btn btn-secondary">+ Profiel toevoegen</button>
+      </div>
+    </div>
+
+    <!-- Add profile -->
+    <div id="screen-add-profile" class="screen">
+      <header class="sub-header">
+        <button id="btn-back-add-profile" class="btn btn-ghost">← Terug</button>
+        <h2>Nieuw profiel</h2>
+      </header>
+      <div class="manage-container">
+        <div class="manage-section">
+          <div class="form-col">
+            <input id="new-profile-name" type="text" placeholder="Naam (bijv. Niek)" class="input">
+            <input id="new-profile-emoji" type="text" placeholder="Emoji avatar (bijv. 👦)" class="input">
+            <label class="checkbox-row">
+              <input type="checkbox" id="new-profile-is-parent">
+              <span>Ouderprofiel (met pincodebeveiliging)</span>
+            </label>
+            <div id="new-profile-pin-wrap" class="hidden">
+              <input id="new-profile-pin" type="password" inputmode="numeric" maxlength="4"
+                     placeholder="Pincode (4 cijfers)" class="input">
+            </div>
+            <button id="btn-create-profile" class="btn btn-primary">Aanmaken</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Home -->
+    <div id="screen-home" class="screen">
+      <header class="home-header">
+        <button id="btn-switch-profile" class="btn btn-ghost btn-sm">↩ Wisselen</button>
+        <div id="home-profile-badge" class="home-profile-badge"></div>
+        <button id="btn-parent-dashboard" class="btn btn-ghost btn-sm hidden">📊 Resultaten</button>
       </header>
       <div id="subject-grid" class="subject-grid"></div>
       <footer>
         <button id="btn-manage" class="btn btn-secondary">⚙️ Vragen beheren</button>
       </footer>
+    </div>
+
+    <!-- Parent dashboard -->
+    <div id="screen-parent" class="screen">
+      <header class="sub-header">
+        <button id="btn-back-parent" class="btn btn-ghost">← Terug</button>
+        <h2>📊 Resultaten overzicht</h2>
+      </header>
+      <div id="parent-content" class="parent-content"></div>
     </div>
 
     <!-- Mode select -->
@@ -61,7 +135,7 @@
         <div id="fc-progress-bar" class="progress-bar"></div>
       </div>
       <div class="flashcard-area">
-        <div id="flashcard" class="flashcard" role="button" tabindex="0" aria-label="Tik om te draaien">
+        <div id="flashcard" class="flashcard" role="button" tabindex="0">
           <div class="flashcard-inner">
             <div class="flashcard-front" id="fc-front"></div>
             <div class="flashcard-back" id="fc-back"></div>
@@ -134,21 +208,19 @@
               <option value="open">Open vraag / Woordje</option>
               <option value="truefalse">Waar / Niet waar</option>
             </select>
-            <input id="q-question" type="text" placeholder="Vraag (bijv. Wat is 'de hond' in het Duits?)" class="input">
+            <input id="q-question" type="text" placeholder="Vraag" class="input">
             <div id="mc-options">
               <input id="q-opt-a" type="text" placeholder="Optie A" class="input">
               <input id="q-opt-b" type="text" placeholder="Optie B" class="input">
               <input id="q-opt-c" type="text" placeholder="Optie C" class="input">
               <input id="q-opt-d" type="text" placeholder="Optie D" class="input">
               <select id="q-correct" class="input">
-                <option value="0">Correct antwoord: A</option>
-                <option value="1">Correct antwoord: B</option>
-                <option value="2">Correct antwoord: C</option>
-                <option value="3">Correct antwoord: D</option>
+                <option value="0">Correct: A</option><option value="1">Correct: B</option>
+                <option value="2">Correct: C</option><option value="3">Correct: D</option>
               </select>
             </div>
             <div id="open-options" class="hidden">
-              <input id="q-answer" type="text" placeholder="Correct antwoord (bijv. der Hund)" class="input">
+              <input id="q-answer" type="text" placeholder="Correct antwoord" class="input">
               <input id="q-alt-answers" type="text" placeholder="Alternatieve antwoorden (komma gescheiden)" class="input">
             </div>
             <div id="tf-options" class="hidden">
@@ -163,9 +235,8 @@
         <div class="manage-section">
           <h3>Importeer / Exporteer</h3>
           <div class="form-row">
-            <button id="btn-export" class="btn btn-secondary">📥 Exporteer JSON</button>
-            <label class="btn btn-secondary">
-              📤 Importeer JSON
+            <button id="btn-export" class="btn btn-secondary">📥 Exporteer</button>
+            <label class="btn btn-secondary">📤 Importeer
               <input id="file-import" type="file" accept=".json" class="hidden">
             </label>
             <button id="btn-reset-stats" class="btn btn-secondary">🔄 Reset voortgang</button>
