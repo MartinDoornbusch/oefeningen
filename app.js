@@ -147,12 +147,20 @@ async function syncBuiltinSubjects() {
     const res = await fetch('data/subjects.json');
     if (!res.ok) return;
     const { subjects } = await res.json();
-    const existingIds = new Set(db.subjects.map(s => s.id));
     let changed = false;
-    subjects.forEach(subject => {
-      if (!existingIds.has(subject.id)) {
-        db.subjects.unshift(subject);
+    subjects.forEach(builtinSubject => {
+      const existing = db.subjects.find(s => s.id === builtinSubject.id);
+      if (!existing) {
+        db.subjects.unshift(builtinSubject);
         changed = true;
+      } else {
+        // Merge: add any new questions not yet in localStorage
+        const existingQIds = new Set(existing.questions.map(q => q.id));
+        const newQs = builtinSubject.questions.filter(q => !existingQIds.has(q.id));
+        if (newQs.length > 0) {
+          existing.questions.push(...newQs);
+          changed = true;
+        }
       }
     });
     if (changed) { saveData(); renderHome(); }
