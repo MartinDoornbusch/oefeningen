@@ -1,6 +1,7 @@
 // ── Storage ───────────────────────────────────────────────────────────────────
 
 const STORAGE_KEY = 'schooltoets_v2';
+const OLD_STORAGE_KEY = 'schooltoets_data';
 
 function loadData() {
   try {
@@ -8,6 +9,14 @@ function loadData() {
     if (raw) {
       const data = JSON.parse(raw);
       if (!data.stats) data.stats = {};
+      return data;
+    }
+    // Migrate from first version (no stats key)
+    const oldRaw = localStorage.getItem(OLD_STORAGE_KEY);
+    if (oldRaw) {
+      const oldData = JSON.parse(oldRaw);
+      const data = { subjects: oldData.subjects || [], stats: {} };
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
       return data;
     }
   } catch (_) {}
@@ -40,6 +49,26 @@ function defaultData() {
           { id: 'a3', type: 'mc', question: 'Op welk continent ligt de Sahara?', options: ['Azië', 'Afrika', 'Zuid-Amerika', 'Australië'], correct: 1 },
           { id: 'a4', type: 'open', question: 'Hoeveel continenten zijn er op aarde?', answer: '7', altAnswers: ['zeven'] },
           { id: 'a5', type: 'mc', question: 'Welke oceaan is de grootste ter wereld?', options: ['Atlantische', 'Indische', 'Arctische', 'Stille'], correct: 3 },
+        ]
+      },
+      {
+        id: 'geschiedenis', name: 'Geschiedenis', emoji: '📜',
+        questions: [
+          { id: 'g1', type: 'mc', question: 'In welk jaar begon de Eerste Wereldoorlog?', options: ['1912', '1914', '1916', '1918'], correct: 1 },
+          { id: 'g2', type: 'truefalse', question: 'Napoleon Bonaparte was van Italiaanse afkomst.', correct: false },
+          { id: 'g3', type: 'open', question: 'In welk jaar viel de Berlijnse Muur?', answer: '1989', altAnswers: [] },
+          { id: 'g4', type: 'mc', question: 'Wie schilderde de Mona Lisa?', options: ['Michelangelo', 'Rafaël', 'Leonardo da Vinci', 'Botticelli'], correct: 2 },
+          { id: 'g5', type: 'mc', question: 'Welk land lanceerde de eerste satelliet (Spoetnik)?', options: ['VS', 'Duitsland', 'USSR', 'China'], correct: 2 },
+        ]
+      },
+      {
+        id: 'biologie', name: 'Biologie', emoji: '🧬',
+        questions: [
+          { id: 'b1', type: 'mc', question: 'Wat is het grootste orgaan van het menselijk lichaam?', options: ['Lever', 'Longen', 'Huid', 'Hersenen'], correct: 2 },
+          { id: 'b2', type: 'truefalse', question: 'Planten produceren zuurstof via fotosynthese.', correct: true },
+          { id: 'b3', type: 'open', question: 'Hoeveel kamers heeft een menselijk hart?', answer: '4', altAnswers: ['vier'] },
+          { id: 'b4', type: 'mc', question: 'Welk organisme maakt 70% van de aardse zuurstof aan?', options: ['Bomen', 'Algen', 'Grassen', 'Mossen'], correct: 1 },
+          { id: 'b5', type: 'mc', question: 'Hoe heet de bouwsteen van leven?', options: ['Atoom', 'Molecuul', 'Cel', 'Weefsel'], correct: 2 },
         ]
       },
     ],
