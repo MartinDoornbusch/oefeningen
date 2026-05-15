@@ -311,10 +311,58 @@ function renderHome() {
       </div>`;
     card.addEventListener('click', () => {
       if (subject.questions.length === 0) { alert('Dit vak heeft nog geen vragen.'); return; }
-      openModeSelect(subject.id);
+      if (activeProfile()?.isParent) {
+        openSubjectView(subject.id);
+      } else {
+        openModeSelect(subject.id);
+      }
     });
     grid.appendChild(card);
   });
+}
+
+// ── Subject view (parent read-only) ──────────────────────────────────────────
+
+function openSubjectView(subjectId) {
+  const subject = db.subjects.find(s => s.id === subjectId);
+  document.getElementById('subject-view-heading').textContent = `${subject.emoji} ${subject.name}`;
+  const content = document.getElementById('subject-view-content');
+
+  const groups = [
+    { label: '📝 Open / Woordjes', types: ['open'] },
+    { label: '🔵 Meerkeuze',       types: ['mc'] },
+    { label: '✅ Waar / Niet waar', types: ['truefalse'] },
+  ];
+
+  content.innerHTML = groups.map(g => {
+    const qs = subject.questions.filter(q => g.types.includes(q.type));
+    if (qs.length === 0) return '';
+    const items = qs.map((q, i) => {
+      let answerHtml;
+      if (q.type === 'open') {
+        answerHtml = `<span class="sv-answer">${q.answer}</span>`;
+      } else if (q.type === 'mc') {
+        answerHtml = q.options.map((opt, j) =>
+          `<span class="${j === q.correct ? 'sv-answer' : 'sv-option'}">${['A','B','C','D'][j]}. ${opt}</span>`
+        ).join('');
+      } else {
+        answerHtml = `<span class="sv-answer">${q.correct ? 'Waar' : 'Niet waar'}</span>`;
+      }
+      return `<div class="sv-item">
+        <span class="sv-num">${i + 1}</span>
+        <div class="sv-body">
+          <div class="sv-q">${q.question}</div>
+          <div class="sv-a">${answerHtml}</div>
+        </div>
+      </div>`;
+    }).join('');
+    return `<div class="sv-group">
+      <h4 class="sv-group-title">${g.label} <span class="sv-count">${qs.length}</span></h4>
+      ${items}
+    </div>`;
+  }).join('');
+
+  showScreen('screen-subject-view');
 }
 
 // ── Parent dashboard ──────────────────────────────────────────────────────────
@@ -354,8 +402,28 @@ function renderParentDashboard() {
         .sort((a, b) => a.ratio - b.ratio)
         .slice(0, 5);
 
+      const typeGroups = [
+        { label: 'Woordjes',       types: ['open'] },
+        { label: 'Meerkeuze',      types: ['mc'] },
+        { label: 'Waar/niet waar', types: ['truefalse'] },
+      ];
+      const typeBreakdown = typeGroups.map(g => {
+        const qs = subject.questions.filter(q => g.types.includes(q.type));
+        if (qs.length === 0) return '';
+        const att = qs.filter(q => subStats[q.id]?.attempts > 0).length;
+        const cor = qs.reduce((s, q) => s + (subStats[q.id]?.correct || 0), 0);
+        const tot = qs.reduce((s, q) => s + (subStats[q.id]?.attempts || 0), 0);
+        const tpct = tot > 0 ? Math.round(cor / tot * 100) : null;
+        return `<div class="type-row">
+          <span class="type-label">${g.label}</span>
+          <span class="type-stat">${att}/${qs.length}</span>
+          <div class="type-bar-bg"><div class="type-bar-fill" style="width:${tpct||0}%;background:${masteryColor(tpct||0)}"></div></div>
+          <span class="type-pct" style="color:${tpct!==null?masteryColor(tpct):'var(--text-muted)'}">${tpct !== null ? tpct + '%' : '—'}</span>
+        </div>`;
+      }).filter(Boolean).join('');
+
       const hardHtml = hardQs.length > 0
-        ? `<div style="font-weight:600;margin-bottom:6px;font-size:.82rem">Moeilijkste vragen:</div>
+        ? `<div class="hard-title">Moeilijkste vragen:</div>
            <div class="hard-questions">${hardQs.map(({ q, stat }) =>
              `<div class="hard-q-item">
                <span class="hard-q-text">${q.question.length > 60 ? q.question.slice(0, 60) + '…' : q.question}</span>
@@ -373,7 +441,7 @@ function renderParentDashboard() {
           <span class="ps-pct" style="color:${pct>0?color:'var(--text-muted)'}">${pct > 0 ? pct + '%' : '—'}</span>
         </div>
         <div class="parent-subject-detail">
-          <div class="detail-stat">${attempted} vragen geprobeerd • ${correct} van ${attempts} goed (${attempts > 0 ? Math.round(correct/attempts*100) : 0}%)</div>
+          <div class="type-breakdown">${typeBreakdown}</div>
           ${hardHtml}
         </div>`;
     }).join('');
@@ -797,6 +865,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Parent dashboard
   document.getElementById('btn-back-parent').addEventListener('click', () => showScreen('screen-home'));
+
+  // Subject view (parent)
+  document.getElementById('btn-back-subject-view').addEventListener('click', () => showScreen('screen-home'));
 
   // Mode select
   document.getElementById('btn-back-mode').addEventListener('click', () => showScreen('screen-home'));
