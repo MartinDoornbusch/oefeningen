@@ -33,6 +33,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .btn-secondary:hover { background: #d1d5db; }
 .btn-ghost { background: transparent; color: var(--text-muted); padding: 8px 12px; }
 .btn-ghost:hover { color: var(--text); }
+.btn-warning { background: var(--warning); color: #fff; }
+.btn-warning:hover { background: #d97706; transform: translateY(-1px); }
 .btn-sm { font-size: 0.82rem; padding: 6px 10px; }
 .btn:disabled { opacity: .5; cursor: not-allowed; transform: none !important; }
 .btn-fc-wrong  { background: #fee2e2; color: #991b1b; border: 2px solid #fca5a5; flex: 1; justify-content: center; font-size: 1rem; padding: 14px; }

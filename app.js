@@ -122,17 +122,18 @@ function shuffle(arr) {
   return a;
 }
 
-function normalize(str) {
-  return str.trim().toLowerCase()
-    .normalize('NFD').replace(/[̀-ͯ]/g, '')
-    .replace(/['']/g, '').replace(/[.,!?;:]/g, '').replace(/\s+/g, ' ').trim();
+function normalizeBase(str) {
+  return str.trim().replace(/['']/g, '').replace(/[.,!?;:]/g, '').replace(/\s+/g, ' ').trim();
 }
-
-function normalizeStrict(str) {
-  return str.trim().toLowerCase()
-    .replace(/['']/g, '').replace(/[.,!?;:]/g, '').replace(/\s+/g, ' ').trim();
+function normalizeStrict(str) {  // lowercase, keep accents
+  return normalizeBase(str).toLowerCase();
 }
-
+function normalize(str) {  // lowercase, strip accents
+  return normalizeStrict(str).normalize('NFD').replace(/[̀-ͯ]/g, '');
+}
+function stripAccentsOnly(str) {  // keep case, strip accents
+  return normalizeBase(str).normalize('NFD').replace(/[̀-ͯ]/g, '');
+}
 function highlightAccents(str) {
   return str.replace(/[àáâãäåçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝŸ]/g,
     ch => `<mark class="accent-mark">${ch}</mark>`);
@@ -579,7 +580,7 @@ function startQuiz(subjectId, mode = 'quiz') {
     ? subject.questions.filter(q => q.type === 'open')
     : subject.questions;
 
-  quiz = { subject, mode, questions: shuffle(questions), index: 0, score: 0, answered: false, selectedValue: null };
+  quiz = { subject, mode, questions: shuffle(questions), index: 0, score: 0, answered: false, selectedValue: null, retrying: false };
   document.getElementById('quiz-subject-title').textContent = `${subject.emoji} ${subject.name}`;
   showScreen('screen-quiz');
   renderQuestion();
@@ -596,10 +597,11 @@ function renderQuestion() {
   area.innerHTML = `<div class="question-text">${q.question}</div>` + buildQuestionHTML(q);
 
   const fb = document.getElementById('feedback-area');
-  fb.className = 'feedback-area hidden'; fb.textContent = '';
+  fb.className = 'feedback-area hidden'; fb.innerHTML = '';
   document.getElementById('btn-check').classList.remove('hidden');
   document.getElementById('btn-next').classList.add('hidden');
-  quiz.answered = false; quiz.selectedValue = null;
+  document.getElementById('btn-retry-answer').classList.add('hidden');
+  quiz.answered = false; quiz.selectedValue = null; quiz.retrying = false;
   attachQuestionListeners(q);
 }
 
@@ -667,19 +669,28 @@ function checkAnswer() {
   if (q.type === 'open') {
     const input = document.getElementById('open-answer');
     const userRaw = input.value;
-    if (!normalizeStrict(userRaw)) { alert('Vul een antwoord in.'); return; }
+    if (!normalizeBase(userRaw)) { alert('Vul een antwoord in.'); return; }
     const allAnswers = [q.answer, ...(q.altAnswers || [])];
-    const strictMatch = allAnswers.some(a => normalizeStrict(userRaw) === normalizeStrict(a));
-    const accentOnly  = !strictMatch && allAnswers.some(a => normalize(userRaw) === normalize(a));
-    correct = strictMatch;
-    if (strictMatch) {
+    const exactMatch  = allAnswers.some(a => normalizeBase(userRaw) === normalizeBase(a));
+    const caseMatch   = !exactMatch && allAnswers.some(a => normalizeStrict(userRaw) === normalizeStrict(a));
+    const accentMatch = !exactMatch && !caseMatch && allAnswers.some(a => normalize(userRaw) === normalize(a));
+    correct = exactMatch;
+    if (exactMatch) {
       input.classList.add('correct');
       feedbackHtml = '✅ Correct!';
       feedbackClass = 'feedback-correct';
-    } else if (accentOnly) {
+    } else if (caseMatch) {
       input.classList.add('accent-warn');
-      feedbackHtml = `⚠️ Bijna goed! Let op de accenten.<br>Juist: <strong>${highlightAccents(q.answer)}</strong>`;
+      feedbackHtml = `⚠️ Bijna goed! Let op de hoofdletters.<br>Juist: <strong>${q.answer}</strong>`;
       feedbackClass = 'feedback-accent';
+      if (!quiz.retrying) document.getElementById('btn-retry-answer').classList.remove('hidden');
+    } else if (accentMatch) {
+      input.classList.add('accent-warn');
+      const caseAlsoWrong = !allAnswers.some(a => stripAccentsOnly(userRaw) === stripAccentsOnly(a));
+      const issue = caseAlsoWrong ? 'de accenten en de hoofdletters' : 'de accenten';
+      feedbackHtml = `⚠️ Bijna goed! Let op ${issue}.<br>Juist: <strong>${highlightAccents(q.answer)}</strong>`;
+      feedbackClass = 'feedback-accent';
+      if (!quiz.retrying) document.getElementById('btn-retry-answer').classList.remove('hidden');
     } else {
       input.classList.add('wrong');
       feedbackHtml = `❌ Fout. Juist: <strong>${q.answer}</strong>`;
@@ -928,6 +939,19 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   document.getElementById('btn-check').addEventListener('click', checkAnswer);
   document.getElementById('btn-next').addEventListener('click', nextQuestion);
+  document.getElementById('btn-retry-answer').addEventListener('click', () => {
+    quiz.answered = false;
+    quiz.retrying = true;
+    const input = document.getElementById('open-answer');
+    input.value = '';
+    input.className = 'open-input';
+    input.readOnly = false;
+    input.focus();
+    document.getElementById('feedback-area').classList.add('hidden');
+    document.getElementById('btn-retry-answer').classList.add('hidden');
+    document.getElementById('btn-next').classList.add('hidden');
+    document.getElementById('btn-check').classList.remove('hidden');
+  });
 
   // Manage
   document.getElementById('btn-back-manage').addEventListener('click', () => showScreen('screen-home'));
