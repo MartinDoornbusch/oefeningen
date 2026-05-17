@@ -9,6 +9,7 @@ function loadData() {
     if (raw) {
       const data = JSON.parse(raw);
       if (!data.stats) data.stats = {};
+      if (!data.profileLevels) data.profileLevels = {};
       return data;
     }
     // Migrate from v2 (had top-level stats without profiles)
@@ -80,7 +81,7 @@ function defaultSubjects() {
 }
 
 function defaultData() {
-  return { profiles: [], activeProfileId: null, subjects: defaultSubjects(), stats: {} };
+  return { profiles: [], activeProfileId: null, subjects: defaultSubjects(), stats: {}, profileLevels: {} };
 }
 
 // ── State ─────────────────────────────────────────────────────────────────────
@@ -269,6 +270,8 @@ function enterHome() {
     manageBtn.classList.add('hidden');
   }
 
+  const pid = db.activeProfileId;
+  document.getElementById('level-select').value = db.profileLevels[pid] || 'all';
   syncBuiltinSubjects().then(() => renderHome());
   showScreen('screen-home');
 }
@@ -290,6 +293,7 @@ async function syncBuiltinSubjects() {
         const existingQIds = new Set(existing.questions.map(q => q.id));
         const newQs = builtinSubject.questions.filter(q => !existingQIds.has(q.id));
         if (newQs.length > 0) { existing.questions.push(...newQs); changed = true; }
+        if (existing.level !== builtinSubject.level) { existing.level = builtinSubject.level; changed = true; }
       }
     });
     if (changed) { saveData(); renderHome(); }
@@ -301,11 +305,13 @@ async function syncBuiltinSubjects() {
 function renderHome() {
   const grid = document.getElementById('subject-grid');
   grid.innerHTML = '';
-  if (db.subjects.length === 0) {
-    grid.innerHTML = '<p style="color:var(--text-muted);grid-column:1/-1;text-align:center;padding:32px 0">Geen vakken. Voeg er een toe.</p>';
+  const activeLevel = document.getElementById('level-select')?.value || 'all';
+  const visible = db.subjects.filter(s => !s.level || activeLevel === 'all' || s.level === activeLevel);
+  if (visible.length === 0) {
+    grid.innerHTML = '<p style="color:var(--text-muted);grid-column:1/-1;text-align:center;padding:32px 0">Geen vakken voor deze klas.</p>';
     return;
   }
-  db.subjects.forEach(subject => {
+  visible.forEach(subject => {
     const pct = masteryPct(subject.id);
     const color = masteryColor(pct);
     const card = document.createElement('div');
@@ -944,6 +950,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   document.getElementById('btn-pin-del').addEventListener('click', () => {
     if (pinBuffer.length > 0) { pinBuffer = pinBuffer.slice(0, -1); updatePinDots(); }
+  });
+
+  // Level filter
+  document.getElementById('level-select').addEventListener('change', e => {
+    const pid = db.activeProfileId;
+    db.profileLevels[pid] = e.target.value;
+    saveData();
+    renderHome();
   });
 
   // Home

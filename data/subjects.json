@@ -5,374 +5,3050 @@
       "name": "Frans – Unité 3",
       "emoji": "🇫🇷",
       "questions": [
-        {"id":"fr3_001","type":"open","question":"Wat is 'de school' in het Frans?","answer":"l'école","altAnswers":["ecole","school"]},
-        {"id":"fr3_002","type":"open","question":"Wat is 'de klas' in het Frans?","answer":"la classe","altAnswers":["classe"]},
-        {"id":"fr3_003","type":"open","question":"Wat is 'de leerling' in het Frans?","answer":"l'élève","altAnswers":["eleve"]},
-        {"id":"fr3_004","type":"open","question":"Wat is 'de pen' in het Frans?","answer":"le stylo","altAnswers":["stylo"]},
-        {"id":"fr3_005","type":"open","question":"Wat is 'het boek' in het Frans?","answer":"le livre","altAnswers":["livre"]},
-        {"id":"fr3_006","type":"open","question":"Wat is 'de computer' in het Frans?","answer":"l'ordinateur","altAnswers":["ordinateur"]},
-        {"id":"fr3_007","type":"open","question":"Wat is 'de tablet' in het Frans?","answer":"la tablette","altAnswers":["tablette"]},
-        {"id":"fr3_008","type":"open","question":"Wat is 'het huiswerk' in het Frans?","answer":"les devoirs","altAnswers":["devoirs"]},
-        {"id":"fr3_009","type":"open","question":"Wat is 'leren' in het Frans?","answer":"apprendre","altAnswers":[]},
-        {"id":"fr3_010","type":"open","question":"Wat is 'het vak' in het Frans?","answer":"la matière","altAnswers":["matiere","la matiere","matière"]},
-        {"id":"fr3_011","type":"open","question":"Wat is 'de oefening' in het Frans?","answer":"l'exercice","altAnswers":["exercice"]},
-        {"id":"fr3_012","type":"open","question":"Wat is 'Engels' in het Frans?","answer":"l'anglais","altAnswers":["anglais"]},
-        {"id":"fr3_013","type":"open","question":"Wat is 'wiskunde' in het Frans?","answer":"les maths","altAnswers":["maths","mathématiques","mathematiques","les mathématiques"]},
-        {"id":"fr3_014","type":"open","question":"Wat is 'geschiedenis' in het Frans?","answer":"l'histoire","altAnswers":["histoire"]},
-        {"id":"fr3_015","type":"open","question":"Wat is 'aardrijkskunde' in het Frans?","answer":"la géographie","altAnswers":["geographie","la geographie","la géo","la geo","géographie"]},
-        {"id":"fr3_016","type":"open","question":"Wat is 'maandag' in het Frans?","answer":"lundi","altAnswers":[]},
-        {"id":"fr3_017","type":"open","question":"Wat is 'dinsdag' in het Frans?","answer":"mardi","altAnswers":[]},
-        {"id":"fr3_018","type":"open","question":"Wat is 'woensdag' in het Frans?","answer":"mercredi","altAnswers":[]},
-        {"id":"fr3_019","type":"open","question":"Wat is 'donderdag' in het Frans?","answer":"jeudi","altAnswers":[]},
-        {"id":"fr3_020","type":"open","question":"Wat is 'vrijdag' in het Frans?","answer":"vendredi","altAnswers":[]},
-        {"id":"fr3_021","type":"open","question":"Wat is 'zaterdag' in het Frans?","answer":"samedi","altAnswers":[]},
-        {"id":"fr3_022","type":"open","question":"Wat is 'zondag' in het Frans?","answer":"dimanche","altAnswers":[]},
-        {"id":"fr3_023","type":"open","question":"Wat is 'de week' in het Frans?","answer":"la semaine","altAnswers":["semaine"]},
-        {"id":"fr3_023b","type":"open","question":"Wat is 'de dagen van de week' in het Frans?","answer":"les jours de la semaine","altAnswers":["jours de la semaine"]},
-        {"id":"fr3_024","type":"open","question":"Wat is 'vandaag' in het Frans?","answer":"aujourd'hui","altAnswers":["aujourd hui","aujourdhui"]},
-        {"id":"fr3_025","type":"open","question":"Wat is ''s ochtends' in het Frans?","answer":"le matin","altAnswers":["matin"]},
-        {"id":"fr3_026","type":"open","question":"Wat is ''s middags' in het Frans?","answer":"l'après-midi","altAnswers":["apres-midi","apres midi","l apres-midi"]},
-        {"id":"fr3_027","type":"open","question":"Wat is ''s avonds' in het Frans?","answer":"le soir","altAnswers":["soir"]},
-        {"id":"fr3_028","type":"open","question":"Wat is 'het uur / de tijd' in het Frans?","answer":"l'heure","altAnswers":["heure"]},
-        {"id":"fr3_029","type":"open","question":"Wat is '20' in het Frans?","answer":"vingt","altAnswers":[]},
-        {"id":"fr3_030","type":"open","question":"Wat is '30' in het Frans?","answer":"trente","altAnswers":[]},
-        {"id":"fr3_031","type":"open","question":"Wat is '40' in het Frans?","answer":"quarante","altAnswers":[]},
-        {"id":"fr3_032","type":"open","question":"Wat is '50' in het Frans?","answer":"cinquante","altAnswers":[]},
-        {"id":"fr3_033","type":"open","question":"Wat is 'makkelijk' in het Frans?","answer":"facile","altAnswers":[]},
-        {"id":"fr3_034","type":"open","question":"Wat is 'moeilijk' in het Frans?","answer":"difficile","altAnswers":[]},
-        {"id":"fr3_035","type":"open","question":"Wat is 'na (de les)' in het Frans?","answer":"après","altAnswers":["apres"]},
-        {"id":"fr3_036","type":"open","question":"Wat is 'de les' in het Frans?","answer":"le cours","altAnswers":["cours"]},
-        {"id":"fr3_037","type":"open","question":"Wat is 'ik ga naar huis' in het Frans?","answer":"je rentre","altAnswers":["rentre","je rentre"]},
-        {"id":"fr3_038","type":"open","question":"Wat is 'het einde' in het Frans?","answer":"la fin","altAnswers":["fin"]},
-        {"id":"fr3_039","type":"open","question":"Wat is 'morgen' in het Frans?","answer":"demain","altAnswers":[]},
-        {"id":"fr3_040","type":"open","question":"Wat is 'gelukkig / gelukkig maar' in het Frans?","answer":"heureusement","altAnswers":[]},
-        {"id":"fr3_041","type":"open","question":"Wat is 'het rooster' in het Frans?","answer":"l'emploi du temps","altAnswers":["emploi du temps"]},
-        {"id":"fr3_042","type":"open","question":"Wat is 'leuk / tof' in het Frans?","answer":"chouette","altAnswers":[]},
-        {"id":"fr3_043","type":"open","question":"Wat is 'de bioscoop' in het Frans?","answer":"le cinéma","altAnswers":["cinema","le cinema","cinéma"]},
-        {"id":"fr3_044","type":"open","question":"Wat is 'vanavond' in het Frans?","answer":"ce soir","altAnswers":[]},
-        {"id":"fr3_045","type":"open","question":"Wat is 'vanmiddag' in het Frans?","answer":"cet après-midi","altAnswers":["cet apres-midi","cet apres midi"]},
-        {"id":"fr3_046","type":"open","question":"Wat is 'onmogelijk' in het Frans?","answer":"impossible","altAnswers":[]},
-        {"id":"fr3_047","type":"open","question":"Wat is 'mogelijk' in het Frans?","answer":"possible","altAnswers":[]},
-        {"id":"fr3_048","type":"open","question":"Wat is 'nu' in het Frans?","answer":"maintenant","altAnswers":[]},
-        {"id":"fr3_049","type":"open","question":"Wat is 'beginnen' in het Frans?","answer":"commencer","altAnswers":[]},
-        {"id":"fr3_050","type":"open","question":"Wat is 'blij' in het Frans?","answer":"content(e)","altAnswers":["content","contente"]},
-        {"id":"fr3_051","type":"open","question":"Wat is 'bijna' in het Frans?","answer":"presque","altAnswers":[]},
-        {"id":"fr3_052","type":"open","question":"Wat is 'alles' in het Frans?","answer":"tout","altAnswers":[]},
-        {"id":"fr3_053","type":"open","question":"Wat is 'het jaar' in het Frans?","answer":"l'année","altAnswers":["annee","l annee","l'annee"]},
-        {"id":"fr3_054","type":"open","question":"Wat is 'blijven zitten (doubleren)' in het Frans?","answer":"redoubler","altAnswers":[]},
-        {"id":"fr3_055","type":"open","question":"Wat is 'serieus' in het Frans?","answer":"sérieux","altAnswers":["serieux"]},
-        {"id":"fr3_056","type":"open","question":"Wat is 'ik begrijp het' in het Frans?","answer":"je comprends","altAnswers":["comprends"]},
-        {"id":"fr3_057","type":"open","question":"Wat is 'ik heb een hekel aan' in het Frans?","answer":"je déteste","altAnswers":["deteste","je deteste"]},
-        {"id":"fr3_058","type":"open","question":"Wat is 'ik vind ... leuk' in het Frans?","answer":"j'aime bien","altAnswers":["aime bien","jaime bien"]},
-        {"id":"fr3_059","type":"open","question":"Wat is 'waarom' in het Frans?","answer":"pourquoi","altAnswers":[]},
-        {"id":"fr3_060","type":"open","question":"Wat is 'nee, sorry' in het Frans?","answer":"non, désolé(e)","altAnswers":["non desole","non, desole","non désolé","non désolée"]},
-        {"id":"fr3_061","type":"open","question":"Wat is 'niet echt' in het Frans?","answer":"pas vraiment","altAnswers":[]},
-        {"id":"fr3_062","type":"open","question":"Hoe zeg je 'Ik ben slecht in biologie' in het Frans?","answer":"Je suis nul(le) en biologie.","altAnswers":["je suis nulle en biologie","je suis nul en biologie"]},
-        {"id":"fr3_063","type":"open","question":"Hoe zeg je 'Ik ben goed in tennis' in het Frans?","answer":"Je suis fort(e) en tennis.","altAnswers":["je suis forte en tennis","je suis fort en tennis"]},
-        {"id":"fr3_064","type":"open","question":"Hoe zeg je 'Ik ben dol op muziek' in het Frans?","answer":"J'adore la musique.","altAnswers":["jadore la musique","j adore la musique"]},
-        {"id":"fr3_065","type":"open","question":"Hoe zeg je 'Waar ben je?' in het Frans?","answer":"Où es-tu ?","altAnswers":["ou es-tu","ou es-tu ?","où es-tu"]},
-        {"id":"fr3_066","type":"open","question":"Hoe zeg je 'Hoe laat is het?' in het Frans?","answer":"Quelle heure est-il ?","altAnswers":["quelle heure est-il","quelle heure est il"]},
-        {"id":"fr3_067","type":"open","question":"Hoe zeg je 'Ja, goed idee' in het Frans?","answer":"Oui, bonne idée.","altAnswers":["oui bonne idee","oui, bonne idee"]},
-        {"id":"fr3_068","type":"open","question":"Hoe zeg je 'Ik ben in de bioscoop' in het Frans?","answer":"Je suis au cinéma.","altAnswers":["je suis au cinema"]},
-        {"id":"fr3_069","type":"open","question":"Wat is 'middag / 12 uur' in het Frans?","answer":"midi","altAnswers":[]},
-        {"id":"fr3_070","type":"open","question":"Wat is 'dansen' in het Frans?","answer":"danser","altAnswers":[]},
-        {"id":"fr3_071","type":"open","question":"Wat is 'spelen (sport/spel)' in het Frans?","answer":"jouer","altAnswers":[]},
-        {"id":"fr3_mc01","type":"mc","question":"Hoe conjugeer je 'danser' met 'tu'?","options":["tu danse","tu danses","tu dansons","tu dansez"],"correct":1},
-        {"id":"fr3_mc02","type":"mc","question":"Hoe conjugeer je 'danser' met 'nous'?","options":["nous danse","nous dansez","nous dansons","nous dansent"],"correct":2},
-        {"id":"fr3_mc03","type":"mc","question":"Hoe conjugeer je 'danser' met 'vous'?","options":["vous dansons","vous dansent","vous danse","vous dansez"],"correct":3},
-        {"id":"fr3_mc04","type":"mc","question":"Hoe conjugeer je 'danser' met 'ils/elles'?","options":["ils dansez","ils dansons","ils danse","ils dansent"],"correct":3},
-        {"id":"fr3_mc05","type":"mc","question":"Welke zin is de correcte ontkenning van 'Je danse'?","options":["Je ne pas danse.","Je danse ne pas.","Je ne danse pas.","Je pas ne danse."],"correct":2},
-        {"id":"fr3_mc06","type":"mc","question":"Welke zin is correct? (hij is niet Frans)","options":["Il est ne pas français.","Il ne pas est français.","Il est français ne.","Il n'est pas français."],"correct":3},
-        {"id":"fr3_mc07","type":"mc","question":"Wat betekent 'ne … jamais'?","options":["niet meer","niets","nooit","niet echt"],"correct":2},
-        {"id":"fr3_mc08","type":"mc","question":"Wat betekent 'ne … plus'?","options":["nooit","niets","niet meer","niet echt"],"correct":2},
-        {"id":"fr3_mc09","type":"mc","question":"Wat betekent 'ne … rien'?","options":["nooit","niet meer","niet echt","niets"],"correct":3},
-        {"id":"fr3_mc10","type":"mc","question":"Hoe zeg je 'Wat is je lievelingsvak?' in het Frans?","options":["Qu'est-ce que tu aimes ?","Quelle est ta matière préférée ?","Tu aimes quel sujet ?","Quelle matière tu aimes ?"],"correct":1},
-        {"id":"fr3_mc11","type":"mc","question":"Hoe zeg je 'Ik train twee keer per week' in het Frans?","options":["Je joue deux fois par semaine.","Je m'entraîne deux fois par semaine.","Je fais du sport deux fois par semaine.","Je travaille deux fois par semaine."],"correct":1},
-        {"id":"fr3_mc12","type":"mc","question":"Hoe zeg je 'Spelen we vanavond basketbal?' in het Frans?","options":["Nous jouons au basket ce soir ?","On fait du basket ce soir ?","On joue au basket ce soir ?","Tu veux jouer au basket ce soir ?"],"correct":2},
-        {"id":"fr3_tf01","type":"truefalse","question":"De Franse ontkenning 'ne…pas' bestaat altijd uit twee woorden.","correct":true},
-        {"id":"fr3_tf02","type":"truefalse","question":"'Quarante' is het Frans voor het getal 30.","correct":false},
-        {"id":"fr3_tf03","type":"truefalse","question":"In 'Il n'est pas français' verandert 'ne' in 'n'' omdat 'est' begint met een klinker.","correct":true},
-        {"id":"fr3_tf04","type":"truefalse","question":"'Je suis fort(e) en biologie' betekent 'Ik ben slecht in biologie'.","correct":false},
-        {"id":"fr3_tf05","type":"truefalse","question":"'Chouette' betekent hetzelfde als 'leuk' of 'tof' in het Frans.","correct":true},
-
-        {"id":"fr3_r001","type":"open","question":"Wat betekent 'l'école' in het Nederlands?","answer":"de school","altAnswers":["school"]},
-        {"id":"fr3_r002","type":"open","question":"Wat betekent 'la classe' in het Nederlands?","answer":"de klas","altAnswers":["klas"]},
-        {"id":"fr3_r003","type":"open","question":"Wat betekent 'l'élève' in het Nederlands?","answer":"de leerling","altAnswers":["leerling"]},
-        {"id":"fr3_r004","type":"open","question":"Wat betekent 'le stylo' in het Nederlands?","answer":"de pen","altAnswers":["pen"]},
-        {"id":"fr3_r005","type":"open","question":"Wat betekent 'le livre' in het Nederlands?","answer":"het boek","altAnswers":["boek"]},
-        {"id":"fr3_r006","type":"open","question":"Wat betekent 'l'ordinateur' in het Nederlands?","answer":"de computer","altAnswers":["computer"]},
-        {"id":"fr3_r007","type":"open","question":"Wat betekent 'la tablette' in het Nederlands?","answer":"de tablet","altAnswers":["tablet"]},
-        {"id":"fr3_r008","type":"open","question":"Wat betekent 'les devoirs' in het Nederlands?","answer":"het huiswerk","altAnswers":["huiswerk"]},
-        {"id":"fr3_r009","type":"open","question":"Wat betekent 'apprendre' in het Nederlands?","answer":"leren","altAnswers":[]},
-        {"id":"fr3_r010","type":"open","question":"Wat betekent 'la matière' in het Nederlands?","answer":"het vak","altAnswers":["vak"]},
-        {"id":"fr3_r011","type":"open","question":"Wat betekent 'l'exercice' in het Nederlands?","answer":"de oefening","altAnswers":["oefening"]},
-        {"id":"fr3_r012","type":"open","question":"Wat betekent 'l'anglais' in het Nederlands?","answer":"Engels","altAnswers":[]},
-        {"id":"fr3_r013","type":"open","question":"Wat betekent 'les maths' in het Nederlands?","answer":"wiskunde","altAnswers":["de wiskunde"]},
-        {"id":"fr3_r014","type":"open","question":"Wat betekent 'l'histoire' in het Nederlands?","answer":"geschiedenis","altAnswers":["de geschiedenis"]},
-        {"id":"fr3_r015","type":"open","question":"Wat betekent 'la géographie' in het Nederlands?","answer":"aardrijkskunde","altAnswers":["de aardrijkskunde"]},
-        {"id":"fr3_r016","type":"open","question":"Wat betekent 'lundi' in het Nederlands?","answer":"maandag","altAnswers":[]},
-        {"id":"fr3_r017","type":"open","question":"Wat betekent 'mardi' in het Nederlands?","answer":"dinsdag","altAnswers":[]},
-        {"id":"fr3_r018","type":"open","question":"Wat betekent 'mercredi' in het Nederlands?","answer":"woensdag","altAnswers":[]},
-        {"id":"fr3_r019","type":"open","question":"Wat betekent 'jeudi' in het Nederlands?","answer":"donderdag","altAnswers":[]},
-        {"id":"fr3_r020","type":"open","question":"Wat betekent 'vendredi' in het Nederlands?","answer":"vrijdag","altAnswers":[]},
-        {"id":"fr3_r021","type":"open","question":"Wat betekent 'samedi' in het Nederlands?","answer":"zaterdag","altAnswers":[]},
-        {"id":"fr3_r022","type":"open","question":"Wat betekent 'dimanche' in het Nederlands?","answer":"zondag","altAnswers":[]},
-        {"id":"fr3_r023","type":"open","question":"Wat betekent 'la semaine' in het Nederlands?","answer":"de week","altAnswers":["week"]},
-        {"id":"fr3_r023b","type":"open","question":"Wat betekent 'les jours de la semaine' in het Nederlands?","answer":"de dagen van de week","altAnswers":["dagen van de week"]},
-        {"id":"fr3_r024","type":"open","question":"Wat betekent 'aujourd'hui' in het Nederlands?","answer":"vandaag","altAnswers":[]},
-        {"id":"fr3_r025","type":"open","question":"Wat betekent 'le matin' in het Nederlands?","answer":"'s ochtends","altAnswers":["ochtend","de ochtend","s ochtends"]},
-        {"id":"fr3_r026","type":"open","question":"Wat betekent 'l'après-midi' in het Nederlands?","answer":"'s middags","altAnswers":["middag","de middag","s middags"]},
-        {"id":"fr3_r027","type":"open","question":"Wat betekent 'le soir' in het Nederlands?","answer":"'s avonds","altAnswers":["avond","de avond","s avonds"]},
-        {"id":"fr3_r028","type":"open","question":"Wat betekent 'l'heure' in het Nederlands?","answer":"het uur","altAnswers":["uur"]},
-        {"id":"fr3_r029","type":"open","question":"Wat betekent 'demain' in het Nederlands?","answer":"morgen","altAnswers":[]},
-        {"id":"fr3_r030","type":"open","question":"Wat betekent 'maintenant' in het Nederlands?","answer":"nu","altAnswers":[]},
-        {"id":"fr3_r031","type":"open","question":"Wat betekent 'vingt' in het Nederlands?","answer":"20","altAnswers":["twintig"]},
-        {"id":"fr3_r032","type":"open","question":"Wat betekent 'trente' in het Nederlands?","answer":"30","altAnswers":["dertig"]},
-        {"id":"fr3_r033","type":"open","question":"Wat betekent 'quarante' in het Nederlands?","answer":"40","altAnswers":["veertig"]},
-        {"id":"fr3_r034","type":"open","question":"Wat betekent 'cinquante' in het Nederlands?","answer":"50","altAnswers":["vijftig"]},
-        {"id":"fr3_r035","type":"open","question":"Wat betekent 'facile' in het Nederlands?","answer":"makkelijk","altAnswers":["gemakkelijk","eenvoudig"]},
-        {"id":"fr3_r036","type":"open","question":"Wat betekent 'difficile' in het Nederlands?","answer":"moeilijk","altAnswers":[]},
-        {"id":"fr3_r037","type":"open","question":"Wat betekent 'impossible' in het Nederlands?","answer":"onmogelijk","altAnswers":[]},
-        {"id":"fr3_r038","type":"open","question":"Wat betekent 'possible' in het Nederlands?","answer":"mogelijk","altAnswers":[]},
-        {"id":"fr3_r039","type":"open","question":"Wat betekent 'heureusement' in het Nederlands?","answer":"gelukkig","altAnswers":["gelukkig maar"]},
-        {"id":"fr3_r040","type":"open","question":"Wat betekent 'le cinéma' in het Nederlands?","answer":"de bioscoop","altAnswers":["bioscoop"]},
-        {"id":"fr3_r041","type":"open","question":"Wat betekent 'ce soir' in het Nederlands?","answer":"vanavond","altAnswers":[]},
-        {"id":"fr3_r042","type":"open","question":"Wat betekent 'chouette' in het Nederlands?","answer":"leuk","altAnswers":["tof","fijn"]},
-        {"id":"fr3_r043","type":"open","question":"Wat betekent 'content(e)' in het Nederlands?","answer":"blij","altAnswers":["tevreden"]},
-        {"id":"fr3_r044","type":"open","question":"Wat betekent 'presque' in het Nederlands?","answer":"bijna","altAnswers":[]},
-        {"id":"fr3_r045","type":"open","question":"Wat betekent 'pourquoi' in het Nederlands?","answer":"waarom","altAnswers":[]},
-        {"id":"fr3_r046","type":"open","question":"Wat betekent 'tout' in het Nederlands?","answer":"alles","altAnswers":[]},
-        {"id":"fr3_r047","type":"open","question":"Wat betekent 'redoubler' in het Nederlands?","answer":"blijven zitten","altAnswers":["doubleren"]},
-        {"id":"fr3_r048","type":"open","question":"Wat betekent 'sérieux' in het Nederlands?","answer":"serieus","altAnswers":[]},
-        {"id":"fr3_r049","type":"open","question":"Wat betekent 'je comprends' in het Nederlands?","answer":"ik begrijp het","altAnswers":["ik begrijp"]},
-        {"id":"fr3_r050","type":"open","question":"Wat betekent 'je déteste' in het Nederlands?","answer":"ik heb een hekel aan","altAnswers":["ik verafschuw","ik haat"]},
-        {"id":"fr3_r051","type":"open","question":"Wat betekent 'j'aime bien' in het Nederlands?","answer":"ik vind het leuk","altAnswers":["ik hou van","ik vind leuk"]},
-        {"id":"fr3_r052","type":"open","question":"Wat betekent 'commencer' in het Nederlands?","answer":"beginnen","altAnswers":[]},
-        {"id":"fr3_r053","type":"open","question":"Wat betekent 'l'emploi du temps' in het Nederlands?","answer":"het rooster","altAnswers":["rooster"]},
-        {"id":"fr3_r054","type":"open","question":"Wat betekent 'midi' in het Nederlands?","answer":"middag","altAnswers":["12 uur","12 uur s middags"]},
-        {"id":"fr3_r055","type":"open","question":"Wat betekent 'danser' in het Nederlands?","answer":"dansen","altAnswers":[]},
-        {"id":"fr3_r056","type":"open","question":"Wat betekent 'jouer' in het Nederlands?","answer":"spelen","altAnswers":[]},
-
-        {"id":"fr3_g01","type":"mc","question":"Maak de zin negatief: 'Je parle anglais.'","options":["Je ne parle pas anglais.","Je pas parle anglais.","Je ne anglais parle pas.","Je parle ne pas anglais."],"correct":0},
-        {"id":"fr3_g02","type":"mc","question":"Maak de zin negatief: 'Elle habite à Paris.'","options":["Elle ne habite pas à Paris.","Elle habite pas à Paris.","Elle n'habite pas à Paris.","Elle ne pas habite à Paris."],"correct":2},
-        {"id":"fr3_g03","type":"mc","question":"Maak de zin negatief: 'On a des devoirs.'","options":["On n'a pas des devoirs.","On a ne pas devoirs.","On ne pas a des devoirs.","On n'a pas de devoirs."],"correct":3},
-        {"id":"fr3_g04","type":"mc","question":"Gebruik 'ne…jamais': 'Il fait ses devoirs.'","options":["Il ne jamais fait ses devoirs.","Il ne fait jamais ses devoirs.","Il fait ne jamais ses devoirs.","Il jamais ne fait ses devoirs."],"correct":1},
-        {"id":"fr3_g05","type":"mc","question":"Gebruik 'ne…plus': 'Il habite en France.'","options":["Il ne habite plus en France.","Il habite plus ne en France.","Il ne plus habite en France.","Il n'habite plus en France."],"correct":3},
-        {"id":"fr3_g06","type":"mc","question":"Gebruik 'ne…rien': 'Elle sait.'","options":["Elle ne rien sait.","Elle n'en sait.","Elle ne sait rien.","Elle sait ne rien."],"correct":2},
-        {"id":"fr3_g07","type":"mc","question":"Welke zin is correct? (ik spreek geen Engels)","options":["Je ne parle anglais pas.","Je ne pas parle anglais.","Je parle ne anglais.","Je ne parle pas anglais."],"correct":3},
-        {"id":"fr3_g08","type":"truefalse","question":"'Il ne fait jamais ses devoirs' betekent 'Hij maakt nooit zijn huiswerk'.","correct":true},
-        {"id":"fr3_g09","type":"truefalse","question":"'Elle ne sait rien' betekent 'Zij weet niets meer'.","correct":false},
-        {"id":"fr3_g10","type":"truefalse","question":"'Il n'habite plus en France' betekent 'Hij woont niet meer in Frankrijk'.","correct":true}
-      ]
+        {
+          "id": "fr3_001",
+          "type": "open",
+          "question": "Wat is 'de school' in het Frans?",
+          "answer": "l'école",
+          "altAnswers": [
+            "ecole",
+            "school"
+          ]
+        },
+        {
+          "id": "fr3_002",
+          "type": "open",
+          "question": "Wat is 'de klas' in het Frans?",
+          "answer": "la classe",
+          "altAnswers": [
+            "classe"
+          ]
+        },
+        {
+          "id": "fr3_003",
+          "type": "open",
+          "question": "Wat is 'de leerling' in het Frans?",
+          "answer": "l'élève",
+          "altAnswers": [
+            "eleve"
+          ]
+        },
+        {
+          "id": "fr3_004",
+          "type": "open",
+          "question": "Wat is 'de pen' in het Frans?",
+          "answer": "le stylo",
+          "altAnswers": [
+            "stylo"
+          ]
+        },
+        {
+          "id": "fr3_005",
+          "type": "open",
+          "question": "Wat is 'het boek' in het Frans?",
+          "answer": "le livre",
+          "altAnswers": [
+            "livre"
+          ]
+        },
+        {
+          "id": "fr3_006",
+          "type": "open",
+          "question": "Wat is 'de computer' in het Frans?",
+          "answer": "l'ordinateur",
+          "altAnswers": [
+            "ordinateur"
+          ]
+        },
+        {
+          "id": "fr3_007",
+          "type": "open",
+          "question": "Wat is 'de tablet' in het Frans?",
+          "answer": "la tablette",
+          "altAnswers": [
+            "tablette"
+          ]
+        },
+        {
+          "id": "fr3_008",
+          "type": "open",
+          "question": "Wat is 'het huiswerk' in het Frans?",
+          "answer": "les devoirs",
+          "altAnswers": [
+            "devoirs"
+          ]
+        },
+        {
+          "id": "fr3_009",
+          "type": "open",
+          "question": "Wat is 'leren' in het Frans?",
+          "answer": "apprendre",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_010",
+          "type": "open",
+          "question": "Wat is 'het vak' in het Frans?",
+          "answer": "la matière",
+          "altAnswers": [
+            "matiere",
+            "la matiere",
+            "matière"
+          ]
+        },
+        {
+          "id": "fr3_011",
+          "type": "open",
+          "question": "Wat is 'de oefening' in het Frans?",
+          "answer": "l'exercice",
+          "altAnswers": [
+            "exercice"
+          ]
+        },
+        {
+          "id": "fr3_012",
+          "type": "open",
+          "question": "Wat is 'Engels' in het Frans?",
+          "answer": "l'anglais",
+          "altAnswers": [
+            "anglais"
+          ]
+        },
+        {
+          "id": "fr3_013",
+          "type": "open",
+          "question": "Wat is 'wiskunde' in het Frans?",
+          "answer": "les maths",
+          "altAnswers": [
+            "maths",
+            "mathématiques",
+            "mathematiques",
+            "les mathématiques"
+          ]
+        },
+        {
+          "id": "fr3_014",
+          "type": "open",
+          "question": "Wat is 'geschiedenis' in het Frans?",
+          "answer": "l'histoire",
+          "altAnswers": [
+            "histoire"
+          ]
+        },
+        {
+          "id": "fr3_015",
+          "type": "open",
+          "question": "Wat is 'aardrijkskunde' in het Frans?",
+          "answer": "la géographie",
+          "altAnswers": [
+            "geographie",
+            "la geographie",
+            "la géo",
+            "la geo",
+            "géographie"
+          ]
+        },
+        {
+          "id": "fr3_016",
+          "type": "open",
+          "question": "Wat is 'maandag' in het Frans?",
+          "answer": "lundi",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_017",
+          "type": "open",
+          "question": "Wat is 'dinsdag' in het Frans?",
+          "answer": "mardi",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_018",
+          "type": "open",
+          "question": "Wat is 'woensdag' in het Frans?",
+          "answer": "mercredi",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_019",
+          "type": "open",
+          "question": "Wat is 'donderdag' in het Frans?",
+          "answer": "jeudi",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_020",
+          "type": "open",
+          "question": "Wat is 'vrijdag' in het Frans?",
+          "answer": "vendredi",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_021",
+          "type": "open",
+          "question": "Wat is 'zaterdag' in het Frans?",
+          "answer": "samedi",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_022",
+          "type": "open",
+          "question": "Wat is 'zondag' in het Frans?",
+          "answer": "dimanche",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_023",
+          "type": "open",
+          "question": "Wat is 'de week' in het Frans?",
+          "answer": "la semaine",
+          "altAnswers": [
+            "semaine"
+          ]
+        },
+        {
+          "id": "fr3_023b",
+          "type": "open",
+          "question": "Wat is 'de dagen van de week' in het Frans?",
+          "answer": "les jours de la semaine",
+          "altAnswers": [
+            "jours de la semaine"
+          ]
+        },
+        {
+          "id": "fr3_024",
+          "type": "open",
+          "question": "Wat is 'vandaag' in het Frans?",
+          "answer": "aujourd'hui",
+          "altAnswers": [
+            "aujourd hui",
+            "aujourdhui"
+          ]
+        },
+        {
+          "id": "fr3_025",
+          "type": "open",
+          "question": "Wat is ''s ochtends' in het Frans?",
+          "answer": "le matin",
+          "altAnswers": [
+            "matin"
+          ]
+        },
+        {
+          "id": "fr3_026",
+          "type": "open",
+          "question": "Wat is ''s middags' in het Frans?",
+          "answer": "l'après-midi",
+          "altAnswers": [
+            "apres-midi",
+            "apres midi",
+            "l apres-midi"
+          ]
+        },
+        {
+          "id": "fr3_027",
+          "type": "open",
+          "question": "Wat is ''s avonds' in het Frans?",
+          "answer": "le soir",
+          "altAnswers": [
+            "soir"
+          ]
+        },
+        {
+          "id": "fr3_028",
+          "type": "open",
+          "question": "Wat is 'het uur / de tijd' in het Frans?",
+          "answer": "l'heure",
+          "altAnswers": [
+            "heure"
+          ]
+        },
+        {
+          "id": "fr3_029",
+          "type": "open",
+          "question": "Wat is '20' in het Frans?",
+          "answer": "vingt",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_030",
+          "type": "open",
+          "question": "Wat is '30' in het Frans?",
+          "answer": "trente",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_031",
+          "type": "open",
+          "question": "Wat is '40' in het Frans?",
+          "answer": "quarante",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_032",
+          "type": "open",
+          "question": "Wat is '50' in het Frans?",
+          "answer": "cinquante",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_033",
+          "type": "open",
+          "question": "Wat is 'makkelijk' in het Frans?",
+          "answer": "facile",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_034",
+          "type": "open",
+          "question": "Wat is 'moeilijk' in het Frans?",
+          "answer": "difficile",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_035",
+          "type": "open",
+          "question": "Wat is 'na (de les)' in het Frans?",
+          "answer": "après",
+          "altAnswers": [
+            "apres"
+          ]
+        },
+        {
+          "id": "fr3_036",
+          "type": "open",
+          "question": "Wat is 'de les' in het Frans?",
+          "answer": "le cours",
+          "altAnswers": [
+            "cours"
+          ]
+        },
+        {
+          "id": "fr3_037",
+          "type": "open",
+          "question": "Wat is 'ik ga naar huis' in het Frans?",
+          "answer": "je rentre",
+          "altAnswers": [
+            "rentre",
+            "je rentre"
+          ]
+        },
+        {
+          "id": "fr3_038",
+          "type": "open",
+          "question": "Wat is 'het einde' in het Frans?",
+          "answer": "la fin",
+          "altAnswers": [
+            "fin"
+          ]
+        },
+        {
+          "id": "fr3_039",
+          "type": "open",
+          "question": "Wat is 'morgen' in het Frans?",
+          "answer": "demain",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_040",
+          "type": "open",
+          "question": "Wat is 'gelukkig / gelukkig maar' in het Frans?",
+          "answer": "heureusement",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_041",
+          "type": "open",
+          "question": "Wat is 'het rooster' in het Frans?",
+          "answer": "l'emploi du temps",
+          "altAnswers": [
+            "emploi du temps"
+          ]
+        },
+        {
+          "id": "fr3_042",
+          "type": "open",
+          "question": "Wat is 'leuk / tof' in het Frans?",
+          "answer": "chouette",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_043",
+          "type": "open",
+          "question": "Wat is 'de bioscoop' in het Frans?",
+          "answer": "le cinéma",
+          "altAnswers": [
+            "cinema",
+            "le cinema",
+            "cinéma"
+          ]
+        },
+        {
+          "id": "fr3_044",
+          "type": "open",
+          "question": "Wat is 'vanavond' in het Frans?",
+          "answer": "ce soir",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_045",
+          "type": "open",
+          "question": "Wat is 'vanmiddag' in het Frans?",
+          "answer": "cet après-midi",
+          "altAnswers": [
+            "cet apres-midi",
+            "cet apres midi"
+          ]
+        },
+        {
+          "id": "fr3_046",
+          "type": "open",
+          "question": "Wat is 'onmogelijk' in het Frans?",
+          "answer": "impossible",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_047",
+          "type": "open",
+          "question": "Wat is 'mogelijk' in het Frans?",
+          "answer": "possible",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_048",
+          "type": "open",
+          "question": "Wat is 'nu' in het Frans?",
+          "answer": "maintenant",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_049",
+          "type": "open",
+          "question": "Wat is 'beginnen' in het Frans?",
+          "answer": "commencer",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_050",
+          "type": "open",
+          "question": "Wat is 'blij' in het Frans?",
+          "answer": "content(e)",
+          "altAnswers": [
+            "content",
+            "contente"
+          ]
+        },
+        {
+          "id": "fr3_051",
+          "type": "open",
+          "question": "Wat is 'bijna' in het Frans?",
+          "answer": "presque",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_052",
+          "type": "open",
+          "question": "Wat is 'alles' in het Frans?",
+          "answer": "tout",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_053",
+          "type": "open",
+          "question": "Wat is 'het jaar' in het Frans?",
+          "answer": "l'année",
+          "altAnswers": [
+            "annee",
+            "l annee",
+            "l'annee"
+          ]
+        },
+        {
+          "id": "fr3_054",
+          "type": "open",
+          "question": "Wat is 'blijven zitten (doubleren)' in het Frans?",
+          "answer": "redoubler",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_055",
+          "type": "open",
+          "question": "Wat is 'serieus' in het Frans?",
+          "answer": "sérieux",
+          "altAnswers": [
+            "serieux"
+          ]
+        },
+        {
+          "id": "fr3_056",
+          "type": "open",
+          "question": "Wat is 'ik begrijp het' in het Frans?",
+          "answer": "je comprends",
+          "altAnswers": [
+            "comprends"
+          ]
+        },
+        {
+          "id": "fr3_057",
+          "type": "open",
+          "question": "Wat is 'ik heb een hekel aan' in het Frans?",
+          "answer": "je déteste",
+          "altAnswers": [
+            "deteste",
+            "je deteste"
+          ]
+        },
+        {
+          "id": "fr3_058",
+          "type": "open",
+          "question": "Wat is 'ik vind ... leuk' in het Frans?",
+          "answer": "j'aime bien",
+          "altAnswers": [
+            "aime bien",
+            "jaime bien"
+          ]
+        },
+        {
+          "id": "fr3_059",
+          "type": "open",
+          "question": "Wat is 'waarom' in het Frans?",
+          "answer": "pourquoi",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_060",
+          "type": "open",
+          "question": "Wat is 'nee, sorry' in het Frans?",
+          "answer": "non, désolé(e)",
+          "altAnswers": [
+            "non desole",
+            "non, desole",
+            "non désolé",
+            "non désolée"
+          ]
+        },
+        {
+          "id": "fr3_061",
+          "type": "open",
+          "question": "Wat is 'niet echt' in het Frans?",
+          "answer": "pas vraiment",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_062",
+          "type": "open",
+          "question": "Hoe zeg je 'Ik ben slecht in biologie' in het Frans?",
+          "answer": "Je suis nul(le) en biologie.",
+          "altAnswers": [
+            "je suis nulle en biologie",
+            "je suis nul en biologie"
+          ]
+        },
+        {
+          "id": "fr3_063",
+          "type": "open",
+          "question": "Hoe zeg je 'Ik ben goed in tennis' in het Frans?",
+          "answer": "Je suis fort(e) en tennis.",
+          "altAnswers": [
+            "je suis forte en tennis",
+            "je suis fort en tennis"
+          ]
+        },
+        {
+          "id": "fr3_064",
+          "type": "open",
+          "question": "Hoe zeg je 'Ik ben dol op muziek' in het Frans?",
+          "answer": "J'adore la musique.",
+          "altAnswers": [
+            "jadore la musique",
+            "j adore la musique"
+          ]
+        },
+        {
+          "id": "fr3_065",
+          "type": "open",
+          "question": "Hoe zeg je 'Waar ben je?' in het Frans?",
+          "answer": "Où es-tu ?",
+          "altAnswers": [
+            "ou es-tu",
+            "ou es-tu ?",
+            "où es-tu"
+          ]
+        },
+        {
+          "id": "fr3_066",
+          "type": "open",
+          "question": "Hoe zeg je 'Hoe laat is het?' in het Frans?",
+          "answer": "Quelle heure est-il ?",
+          "altAnswers": [
+            "quelle heure est-il",
+            "quelle heure est il"
+          ]
+        },
+        {
+          "id": "fr3_067",
+          "type": "open",
+          "question": "Hoe zeg je 'Ja, goed idee' in het Frans?",
+          "answer": "Oui, bonne idée.",
+          "altAnswers": [
+            "oui bonne idee",
+            "oui, bonne idee"
+          ]
+        },
+        {
+          "id": "fr3_068",
+          "type": "open",
+          "question": "Hoe zeg je 'Ik ben in de bioscoop' in het Frans?",
+          "answer": "Je suis au cinéma.",
+          "altAnswers": [
+            "je suis au cinema"
+          ]
+        },
+        {
+          "id": "fr3_069",
+          "type": "open",
+          "question": "Wat is 'middag / 12 uur' in het Frans?",
+          "answer": "midi",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_070",
+          "type": "open",
+          "question": "Wat is 'dansen' in het Frans?",
+          "answer": "danser",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_071",
+          "type": "open",
+          "question": "Wat is 'spelen (sport/spel)' in het Frans?",
+          "answer": "jouer",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_mc01",
+          "type": "mc",
+          "question": "Hoe conjugeer je 'danser' met 'tu'?",
+          "options": [
+            "tu danse",
+            "tu danses",
+            "tu dansons",
+            "tu dansez"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "fr3_mc02",
+          "type": "mc",
+          "question": "Hoe conjugeer je 'danser' met 'nous'?",
+          "options": [
+            "nous danse",
+            "nous dansez",
+            "nous dansons",
+            "nous dansent"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "fr3_mc03",
+          "type": "mc",
+          "question": "Hoe conjugeer je 'danser' met 'vous'?",
+          "options": [
+            "vous dansons",
+            "vous dansent",
+            "vous danse",
+            "vous dansez"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "fr3_mc04",
+          "type": "mc",
+          "question": "Hoe conjugeer je 'danser' met 'ils/elles'?",
+          "options": [
+            "ils dansez",
+            "ils dansons",
+            "ils danse",
+            "ils dansent"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "fr3_mc05",
+          "type": "mc",
+          "question": "Welke zin is de correcte ontkenning van 'Je danse'?",
+          "options": [
+            "Je ne pas danse.",
+            "Je danse ne pas.",
+            "Je ne danse pas.",
+            "Je pas ne danse."
+          ],
+          "correct": 2
+        },
+        {
+          "id": "fr3_mc06",
+          "type": "mc",
+          "question": "Welke zin is correct? (hij is niet Frans)",
+          "options": [
+            "Il est ne pas français.",
+            "Il ne pas est français.",
+            "Il est français ne.",
+            "Il n'est pas français."
+          ],
+          "correct": 3
+        },
+        {
+          "id": "fr3_mc07",
+          "type": "mc",
+          "question": "Wat betekent 'ne … jamais'?",
+          "options": [
+            "niet meer",
+            "niets",
+            "nooit",
+            "niet echt"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "fr3_mc08",
+          "type": "mc",
+          "question": "Wat betekent 'ne … plus'?",
+          "options": [
+            "nooit",
+            "niets",
+            "niet meer",
+            "niet echt"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "fr3_mc09",
+          "type": "mc",
+          "question": "Wat betekent 'ne … rien'?",
+          "options": [
+            "nooit",
+            "niet meer",
+            "niet echt",
+            "niets"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "fr3_mc10",
+          "type": "mc",
+          "question": "Hoe zeg je 'Wat is je lievelingsvak?' in het Frans?",
+          "options": [
+            "Qu'est-ce que tu aimes ?",
+            "Quelle est ta matière préférée ?",
+            "Tu aimes quel sujet ?",
+            "Quelle matière tu aimes ?"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "fr3_mc11",
+          "type": "mc",
+          "question": "Hoe zeg je 'Ik train twee keer per week' in het Frans?",
+          "options": [
+            "Je joue deux fois par semaine.",
+            "Je m'entraîne deux fois par semaine.",
+            "Je fais du sport deux fois par semaine.",
+            "Je travaille deux fois par semaine."
+          ],
+          "correct": 1
+        },
+        {
+          "id": "fr3_mc12",
+          "type": "mc",
+          "question": "Hoe zeg je 'Spelen we vanavond basketbal?' in het Frans?",
+          "options": [
+            "Nous jouons au basket ce soir ?",
+            "On fait du basket ce soir ?",
+            "On joue au basket ce soir ?",
+            "Tu veux jouer au basket ce soir ?"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "fr3_tf01",
+          "type": "truefalse",
+          "question": "De Franse ontkenning 'ne…pas' bestaat altijd uit twee woorden.",
+          "correct": true
+        },
+        {
+          "id": "fr3_tf02",
+          "type": "truefalse",
+          "question": "'Quarante' is het Frans voor het getal 30.",
+          "correct": false
+        },
+        {
+          "id": "fr3_tf03",
+          "type": "truefalse",
+          "question": "In 'Il n'est pas français' verandert 'ne' in 'n'' omdat 'est' begint met een klinker.",
+          "correct": true
+        },
+        {
+          "id": "fr3_tf04",
+          "type": "truefalse",
+          "question": "'Je suis fort(e) en biologie' betekent 'Ik ben slecht in biologie'.",
+          "correct": false
+        },
+        {
+          "id": "fr3_tf05",
+          "type": "truefalse",
+          "question": "'Chouette' betekent hetzelfde als 'leuk' of 'tof' in het Frans.",
+          "correct": true
+        },
+        {
+          "id": "fr3_r001",
+          "type": "open",
+          "question": "Wat betekent 'l'école' in het Nederlands?",
+          "answer": "de school",
+          "altAnswers": [
+            "school"
+          ]
+        },
+        {
+          "id": "fr3_r002",
+          "type": "open",
+          "question": "Wat betekent 'la classe' in het Nederlands?",
+          "answer": "de klas",
+          "altAnswers": [
+            "klas"
+          ]
+        },
+        {
+          "id": "fr3_r003",
+          "type": "open",
+          "question": "Wat betekent 'l'élève' in het Nederlands?",
+          "answer": "de leerling",
+          "altAnswers": [
+            "leerling"
+          ]
+        },
+        {
+          "id": "fr3_r004",
+          "type": "open",
+          "question": "Wat betekent 'le stylo' in het Nederlands?",
+          "answer": "de pen",
+          "altAnswers": [
+            "pen"
+          ]
+        },
+        {
+          "id": "fr3_r005",
+          "type": "open",
+          "question": "Wat betekent 'le livre' in het Nederlands?",
+          "answer": "het boek",
+          "altAnswers": [
+            "boek"
+          ]
+        },
+        {
+          "id": "fr3_r006",
+          "type": "open",
+          "question": "Wat betekent 'l'ordinateur' in het Nederlands?",
+          "answer": "de computer",
+          "altAnswers": [
+            "computer"
+          ]
+        },
+        {
+          "id": "fr3_r007",
+          "type": "open",
+          "question": "Wat betekent 'la tablette' in het Nederlands?",
+          "answer": "de tablet",
+          "altAnswers": [
+            "tablet"
+          ]
+        },
+        {
+          "id": "fr3_r008",
+          "type": "open",
+          "question": "Wat betekent 'les devoirs' in het Nederlands?",
+          "answer": "het huiswerk",
+          "altAnswers": [
+            "huiswerk"
+          ]
+        },
+        {
+          "id": "fr3_r009",
+          "type": "open",
+          "question": "Wat betekent 'apprendre' in het Nederlands?",
+          "answer": "leren",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r010",
+          "type": "open",
+          "question": "Wat betekent 'la matière' in het Nederlands?",
+          "answer": "het vak",
+          "altAnswers": [
+            "vak"
+          ]
+        },
+        {
+          "id": "fr3_r011",
+          "type": "open",
+          "question": "Wat betekent 'l'exercice' in het Nederlands?",
+          "answer": "de oefening",
+          "altAnswers": [
+            "oefening"
+          ]
+        },
+        {
+          "id": "fr3_r012",
+          "type": "open",
+          "question": "Wat betekent 'l'anglais' in het Nederlands?",
+          "answer": "Engels",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r013",
+          "type": "open",
+          "question": "Wat betekent 'les maths' in het Nederlands?",
+          "answer": "wiskunde",
+          "altAnswers": [
+            "de wiskunde"
+          ]
+        },
+        {
+          "id": "fr3_r014",
+          "type": "open",
+          "question": "Wat betekent 'l'histoire' in het Nederlands?",
+          "answer": "geschiedenis",
+          "altAnswers": [
+            "de geschiedenis"
+          ]
+        },
+        {
+          "id": "fr3_r015",
+          "type": "open",
+          "question": "Wat betekent 'la géographie' in het Nederlands?",
+          "answer": "aardrijkskunde",
+          "altAnswers": [
+            "de aardrijkskunde"
+          ]
+        },
+        {
+          "id": "fr3_r016",
+          "type": "open",
+          "question": "Wat betekent 'lundi' in het Nederlands?",
+          "answer": "maandag",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r017",
+          "type": "open",
+          "question": "Wat betekent 'mardi' in het Nederlands?",
+          "answer": "dinsdag",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r018",
+          "type": "open",
+          "question": "Wat betekent 'mercredi' in het Nederlands?",
+          "answer": "woensdag",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r019",
+          "type": "open",
+          "question": "Wat betekent 'jeudi' in het Nederlands?",
+          "answer": "donderdag",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r020",
+          "type": "open",
+          "question": "Wat betekent 'vendredi' in het Nederlands?",
+          "answer": "vrijdag",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r021",
+          "type": "open",
+          "question": "Wat betekent 'samedi' in het Nederlands?",
+          "answer": "zaterdag",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r022",
+          "type": "open",
+          "question": "Wat betekent 'dimanche' in het Nederlands?",
+          "answer": "zondag",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r023",
+          "type": "open",
+          "question": "Wat betekent 'la semaine' in het Nederlands?",
+          "answer": "de week",
+          "altAnswers": [
+            "week"
+          ]
+        },
+        {
+          "id": "fr3_r023b",
+          "type": "open",
+          "question": "Wat betekent 'les jours de la semaine' in het Nederlands?",
+          "answer": "de dagen van de week",
+          "altAnswers": [
+            "dagen van de week"
+          ]
+        },
+        {
+          "id": "fr3_r024",
+          "type": "open",
+          "question": "Wat betekent 'aujourd'hui' in het Nederlands?",
+          "answer": "vandaag",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r025",
+          "type": "open",
+          "question": "Wat betekent 'le matin' in het Nederlands?",
+          "answer": "'s ochtends",
+          "altAnswers": [
+            "ochtend",
+            "de ochtend",
+            "s ochtends"
+          ]
+        },
+        {
+          "id": "fr3_r026",
+          "type": "open",
+          "question": "Wat betekent 'l'après-midi' in het Nederlands?",
+          "answer": "'s middags",
+          "altAnswers": [
+            "middag",
+            "de middag",
+            "s middags"
+          ]
+        },
+        {
+          "id": "fr3_r027",
+          "type": "open",
+          "question": "Wat betekent 'le soir' in het Nederlands?",
+          "answer": "'s avonds",
+          "altAnswers": [
+            "avond",
+            "de avond",
+            "s avonds"
+          ]
+        },
+        {
+          "id": "fr3_r028",
+          "type": "open",
+          "question": "Wat betekent 'l'heure' in het Nederlands?",
+          "answer": "het uur",
+          "altAnswers": [
+            "uur"
+          ]
+        },
+        {
+          "id": "fr3_r029",
+          "type": "open",
+          "question": "Wat betekent 'demain' in het Nederlands?",
+          "answer": "morgen",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r030",
+          "type": "open",
+          "question": "Wat betekent 'maintenant' in het Nederlands?",
+          "answer": "nu",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r031",
+          "type": "open",
+          "question": "Wat betekent 'vingt' in het Nederlands?",
+          "answer": "20",
+          "altAnswers": [
+            "twintig"
+          ]
+        },
+        {
+          "id": "fr3_r032",
+          "type": "open",
+          "question": "Wat betekent 'trente' in het Nederlands?",
+          "answer": "30",
+          "altAnswers": [
+            "dertig"
+          ]
+        },
+        {
+          "id": "fr3_r033",
+          "type": "open",
+          "question": "Wat betekent 'quarante' in het Nederlands?",
+          "answer": "40",
+          "altAnswers": [
+            "veertig"
+          ]
+        },
+        {
+          "id": "fr3_r034",
+          "type": "open",
+          "question": "Wat betekent 'cinquante' in het Nederlands?",
+          "answer": "50",
+          "altAnswers": [
+            "vijftig"
+          ]
+        },
+        {
+          "id": "fr3_r035",
+          "type": "open",
+          "question": "Wat betekent 'facile' in het Nederlands?",
+          "answer": "makkelijk",
+          "altAnswers": [
+            "gemakkelijk",
+            "eenvoudig"
+          ]
+        },
+        {
+          "id": "fr3_r036",
+          "type": "open",
+          "question": "Wat betekent 'difficile' in het Nederlands?",
+          "answer": "moeilijk",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r037",
+          "type": "open",
+          "question": "Wat betekent 'impossible' in het Nederlands?",
+          "answer": "onmogelijk",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r038",
+          "type": "open",
+          "question": "Wat betekent 'possible' in het Nederlands?",
+          "answer": "mogelijk",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r039",
+          "type": "open",
+          "question": "Wat betekent 'heureusement' in het Nederlands?",
+          "answer": "gelukkig",
+          "altAnswers": [
+            "gelukkig maar"
+          ]
+        },
+        {
+          "id": "fr3_r040",
+          "type": "open",
+          "question": "Wat betekent 'le cinéma' in het Nederlands?",
+          "answer": "de bioscoop",
+          "altAnswers": [
+            "bioscoop"
+          ]
+        },
+        {
+          "id": "fr3_r041",
+          "type": "open",
+          "question": "Wat betekent 'ce soir' in het Nederlands?",
+          "answer": "vanavond",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r042",
+          "type": "open",
+          "question": "Wat betekent 'chouette' in het Nederlands?",
+          "answer": "leuk",
+          "altAnswers": [
+            "tof",
+            "fijn"
+          ]
+        },
+        {
+          "id": "fr3_r043",
+          "type": "open",
+          "question": "Wat betekent 'content(e)' in het Nederlands?",
+          "answer": "blij",
+          "altAnswers": [
+            "tevreden"
+          ]
+        },
+        {
+          "id": "fr3_r044",
+          "type": "open",
+          "question": "Wat betekent 'presque' in het Nederlands?",
+          "answer": "bijna",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r045",
+          "type": "open",
+          "question": "Wat betekent 'pourquoi' in het Nederlands?",
+          "answer": "waarom",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r046",
+          "type": "open",
+          "question": "Wat betekent 'tout' in het Nederlands?",
+          "answer": "alles",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r047",
+          "type": "open",
+          "question": "Wat betekent 'redoubler' in het Nederlands?",
+          "answer": "blijven zitten",
+          "altAnswers": [
+            "doubleren"
+          ]
+        },
+        {
+          "id": "fr3_r048",
+          "type": "open",
+          "question": "Wat betekent 'sérieux' in het Nederlands?",
+          "answer": "serieus",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r049",
+          "type": "open",
+          "question": "Wat betekent 'je comprends' in het Nederlands?",
+          "answer": "ik begrijp het",
+          "altAnswers": [
+            "ik begrijp"
+          ]
+        },
+        {
+          "id": "fr3_r050",
+          "type": "open",
+          "question": "Wat betekent 'je déteste' in het Nederlands?",
+          "answer": "ik heb een hekel aan",
+          "altAnswers": [
+            "ik verafschuw",
+            "ik haat"
+          ]
+        },
+        {
+          "id": "fr3_r051",
+          "type": "open",
+          "question": "Wat betekent 'j'aime bien' in het Nederlands?",
+          "answer": "ik vind het leuk",
+          "altAnswers": [
+            "ik hou van",
+            "ik vind leuk"
+          ]
+        },
+        {
+          "id": "fr3_r052",
+          "type": "open",
+          "question": "Wat betekent 'commencer' in het Nederlands?",
+          "answer": "beginnen",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r053",
+          "type": "open",
+          "question": "Wat betekent 'l'emploi du temps' in het Nederlands?",
+          "answer": "het rooster",
+          "altAnswers": [
+            "rooster"
+          ]
+        },
+        {
+          "id": "fr3_r054",
+          "type": "open",
+          "question": "Wat betekent 'midi' in het Nederlands?",
+          "answer": "middag",
+          "altAnswers": [
+            "12 uur",
+            "12 uur s middags"
+          ]
+        },
+        {
+          "id": "fr3_r055",
+          "type": "open",
+          "question": "Wat betekent 'danser' in het Nederlands?",
+          "answer": "dansen",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_r056",
+          "type": "open",
+          "question": "Wat betekent 'jouer' in het Nederlands?",
+          "answer": "spelen",
+          "altAnswers": []
+        },
+        {
+          "id": "fr3_g01",
+          "type": "mc",
+          "question": "Maak de zin negatief: 'Je parle anglais.'",
+          "options": [
+            "Je ne parle pas anglais.",
+            "Je pas parle anglais.",
+            "Je ne anglais parle pas.",
+            "Je parle ne pas anglais."
+          ],
+          "correct": 0
+        },
+        {
+          "id": "fr3_g02",
+          "type": "mc",
+          "question": "Maak de zin negatief: 'Elle habite à Paris.'",
+          "options": [
+            "Elle ne habite pas à Paris.",
+            "Elle habite pas à Paris.",
+            "Elle n'habite pas à Paris.",
+            "Elle ne pas habite à Paris."
+          ],
+          "correct": 2
+        },
+        {
+          "id": "fr3_g03",
+          "type": "mc",
+          "question": "Maak de zin negatief: 'On a des devoirs.'",
+          "options": [
+            "On n'a pas des devoirs.",
+            "On a ne pas devoirs.",
+            "On ne pas a des devoirs.",
+            "On n'a pas de devoirs."
+          ],
+          "correct": 3
+        },
+        {
+          "id": "fr3_g04",
+          "type": "mc",
+          "question": "Gebruik 'ne…jamais': 'Il fait ses devoirs.'",
+          "options": [
+            "Il ne jamais fait ses devoirs.",
+            "Il ne fait jamais ses devoirs.",
+            "Il fait ne jamais ses devoirs.",
+            "Il jamais ne fait ses devoirs."
+          ],
+          "correct": 1
+        },
+        {
+          "id": "fr3_g05",
+          "type": "mc",
+          "question": "Gebruik 'ne…plus': 'Il habite en France.'",
+          "options": [
+            "Il ne habite plus en France.",
+            "Il habite plus ne en France.",
+            "Il ne plus habite en France.",
+            "Il n'habite plus en France."
+          ],
+          "correct": 3
+        },
+        {
+          "id": "fr3_g06",
+          "type": "mc",
+          "question": "Gebruik 'ne…rien': 'Elle sait.'",
+          "options": [
+            "Elle ne rien sait.",
+            "Elle n'en sait.",
+            "Elle ne sait rien.",
+            "Elle sait ne rien."
+          ],
+          "correct": 2
+        },
+        {
+          "id": "fr3_g07",
+          "type": "mc",
+          "question": "Welke zin is correct? (ik spreek geen Engels)",
+          "options": [
+            "Je ne parle anglais pas.",
+            "Je ne pas parle anglais.",
+            "Je parle ne anglais.",
+            "Je ne parle pas anglais."
+          ],
+          "correct": 3
+        },
+        {
+          "id": "fr3_g08",
+          "type": "truefalse",
+          "question": "'Il ne fait jamais ses devoirs' betekent 'Hij maakt nooit zijn huiswerk'.",
+          "correct": true
+        },
+        {
+          "id": "fr3_g09",
+          "type": "truefalse",
+          "question": "'Elle ne sait rien' betekent 'Zij weet niets meer'.",
+          "correct": false
+        },
+        {
+          "id": "fr3_g10",
+          "type": "truefalse",
+          "question": "'Il n'habite plus en France' betekent 'Hij woont niet meer in Frankrijk'.",
+          "correct": true
+        }
+      ],
+      "level": "brugklas"
     },
     {
       "id": "duits_kap3",
       "name": "Duits – Kapitel 3",
       "emoji": "🇩🇪",
       "questions": [
-        {"id":"dk3_001","type":"open","question":"Wat betekent 'die Note' in het Nederlands?","answer":"het cijfer","altAnswers":["cijfer"]},
-        {"id":"dk3_002","type":"open","question":"Wat betekent 'der Unterricht' in het Nederlands?","answer":"de les","altAnswers":["les","het onderwijs","onderwijs"]},
-        {"id":"dk3_003","type":"open","question":"Wat betekent 'einfach' in het Nederlands?","answer":"makkelijk","altAnswers":["gemakkelijk","eenvoudig"]},
-        {"id":"dk3_004","type":"open","question":"Wat betekent 'die Aufgabe' in het Nederlands?","answer":"de opdracht","altAnswers":["opdracht"]},
-        {"id":"dk3_005","type":"open","question":"Wat betekent 'lernen' in het Nederlands?","answer":"leren","altAnswers":[]},
-        {"id":"dk3_006","type":"open","question":"Wat betekent 'Spanisch' in het Nederlands?","answer":"Spaans","altAnswers":["spaans"]},
-        {"id":"dk3_007","type":"open","question":"Wat betekent 'der Klassenlehrer' in het Nederlands?","answer":"de mentor","altAnswers":["mentor"]},
-        {"id":"dk3_008","type":"open","question":"Wat betekent 'das Referat' in het Nederlands?","answer":"de spreekbeurt","altAnswers":["spreekbeurt"]},
-        {"id":"dk3_009","type":"open","question":"Wat betekent 'glauben' in het Nederlands?","answer":"geloven","altAnswers":[]},
-        {"id":"dk3_010","type":"open","question":"Wat betekent 'früh' in het Nederlands?","answer":"vroeg","altAnswers":[]},
-        {"id":"dk3_011","type":"open","question":"Wat betekent 'spät' in het Nederlands?","answer":"laat","altAnswers":[]},
-        {"id":"dk3_012","type":"open","question":"Wat betekent 'zum Glück' in het Nederlands?","answer":"gelukkig","altAnswers":[]},
-        {"id":"dk3_013","type":"open","question":"Wat betekent 'krank' in het Nederlands?","answer":"ziek","altAnswers":[]},
-        {"id":"dk3_014","type":"open","question":"Wat betekent 'warten' in het Nederlands?","answer":"wachten","altAnswers":[]},
-        {"id":"dk3_015","type":"open","question":"Wat betekent 'sich treffen' in het Nederlands?","answer":"afspreken","altAnswers":["afspreken met"]},
-        {"id":"dk3_016","type":"open","question":"Wat betekent 'Lust haben' in het Nederlands?","answer":"zin hebben","altAnswers":["zin"]},
-        {"id":"dk3_017","type":"open","question":"Wat betekent 'müde' in het Nederlands?","answer":"moe","altAnswers":[]},
-        {"id":"dk3_018","type":"open","question":"Wat betekent 'kaum' in het Nederlands?","answer":"nauwelijks","altAnswers":[]},
-        {"id":"dk3_019","type":"open","question":"Wat betekent 'jeden Tag' in het Nederlands?","answer":"elke dag","altAnswers":[]},
-        {"id":"dk3_020","type":"open","question":"Wat betekent 'pünktlich' in het Nederlands?","answer":"stipt","altAnswers":["op tijd","punctueel"]},
-        {"id":"dk3_021","type":"open","question":"Wat betekent 'anstrengend' in het Nederlands?","answer":"vermoeiend","altAnswers":["inspannend"]},
-        {"id":"dk3_022","type":"open","question":"Wat betekent 'nur' in het Nederlands?","answer":"alleen","altAnswers":["slechts","maar"]},
-        {"id":"dk3_023","type":"open","question":"Wat betekent 'denn' in het Nederlands?","answer":"want","altAnswers":[]},
-        {"id":"dk3_024","type":"open","question":"Wat betekent 'anfangen' in het Nederlands?","answer":"beginnen","altAnswers":[]},
-        {"id":"dk3_025","type":"open","question":"Wat betekent 'jetzt' in het Nederlands?","answer":"nu","altAnswers":[]},
-        {"id":"dk3_026","type":"open","question":"Wat betekent 'schwer' in het Nederlands?","answer":"moeilijk","altAnswers":["zwaar"]},
-
-
-{"id":"dk3_sp01","type":"open","question":"Sprachmittel: Hoe zeg je 'Op welke school zit je?' in het Duits?","answer":"Auf welche Schule gehst du?","altAnswers":["auf welche schule gehst du"]},
-        {"id":"dk3_sp02","type":"open","question":"Sprachmittel: Hoe zeg je 'Wanneer heb je ...?' in het Duits?","answer":"Wann hast du ...?","altAnswers":["wann hast du"]},
-        {"id":"dk3_sp03","type":"open","question":"Sprachmittel: Hoe zeg je 'Hoe ziet ... eruit?' in het Duits?","answer":"Wie sieht ... aus?","altAnswers":["wie sieht aus","wie sieht ... aus"]},
-        {"id":"dk3_sp04","type":"open","question":"Sprachmittel: Hoe zeg je 'Hoe vind je ...?' in het Duits?","answer":"Wie findest du ...?","altAnswers":["wie findest du"]},
-        {"id":"dk3_sp05","type":"open","question":"Sprachmittel: Hoe zeg je '... is mijn lievelingsvak.' in het Duits?","answer":"... ist mein Lieblingsfach.","altAnswers":["ist mein Lieblingsfach","ist mein lieblingsfach"]},
-        {"id":"dk3_sp06","type":"open","question":"Sprachmittel: Hoe zeg je '... maak ik huiswerk.' in het Duits?","answer":"... mache ich Hausaufgaben.","altAnswers":["mache ich Hausaufgaben","mache ich hausaufgaben"]},
-        {"id":"dk3_sp07","type":"open","question":"Sprachmittel: Hoe zeg je 'In welke klas zit ...?' in het Duits?","answer":"In welche Klasse geht ...?","altAnswers":["in welche klasse geht"]},
-        {"id":"dk3_sp08","type":"mc","question":"Sprachmittel: Hoe zeg je '... hebben we een toets.' in het Duits?","options":["... haben wir einen Test.","... machen wir einen Test.","... schreiben wir einen Test.","... spielen wir einen Test."],"correct":2},
-        {"id":"dk3_sp09","type":"mc","question":"Sprachmittel: Welk voorzetsel gebruik je voor 'Op maandag heb ik ...' in het Duits?","options":["Auf","An","Am","Im"],"correct":2},
-        {"id":"dk3_sp10","type":"mc","question":"Sprachmittel: Welk voorzetsel gebruik je voor 'Om 8 uur hebben we ...' in het Duits?","options":["Am","An","Auf","Um"],"correct":3},
-        {"id":"dk3_sp11","type":"mc","question":"Sprachmittel: Hoe zeg je '... vind ik ... en ...' in het Duits?","options":["... denke ich ... und ...","... finde ich ... und ...","... mag ich ... und ...","... glaube ich ... und ..."],"correct":1},
-        {"id":"dk3_sp12","type":"open","question":"Sprachmittel: Hoe zeg je 'Ik zit op ... (school).' in het Duits?","answer":"Ich gehe auf ...","altAnswers":["ich gehe auf"]},
-        {"id":"dk3_sp13","type":"mc","question":"Sprachmittel: Hoe zeg je 'Hij/zij zit in de ... klas.' in het Duits?","options":["Er/Sie ist in der ... Klasse.","Er/Sie sitzt in der ... Klasse.","Er/Sie geht in die ... Klasse.","Er/Sie kommt in die ... Klasse."],"correct":2},
-        {"id":"dk3_sp14","type":"open","question":"Sprachmittel: Hoe zeg je 'In de derde les heb ik ...' in het Duits?","answer":"In der dritten Stunde habe ich ...","altAnswers":["in der dritten stunde habe ich"]},
-
-        {"id":"dk3_art01","type":"mc","question":"Welk lidwoord hoort bij 'Note' (cijfer) in het Duits?","options":["der","die","das","geen"],"correct":1},
-        {"id":"dk3_art02","type":"mc","question":"Welk lidwoord hoort bij 'Unterricht' (les) in het Duits?","options":["der","die","das","geen"],"correct":0},
-        {"id":"dk3_art03","type":"mc","question":"Welk lidwoord hoort bij 'Aufgabe' (opdracht) in het Duits?","options":["der","die","das","geen"],"correct":1},
-        {"id":"dk3_art04","type":"mc","question":"Welk lidwoord hoort bij 'Referat' (spreekbeurt) in het Duits?","options":["der","die","das","geen"],"correct":2},
-        {"id":"dk3_art05","type":"mc","question":"Welk lidwoord hoort bij 'Klassenlehrer' (mentor) in het Duits?","options":["der","die","das","geen"],"correct":0},
-
-        {"id":"dk3_tf01","type":"truefalse","question":"'krank' betekent 'moe' in het Duits.","correct":false},
-        {"id":"dk3_tf02","type":"truefalse","question":"'einfach' betekent 'makkelijk' in het Duits.","correct":true},
-        {"id":"dk3_tf03","type":"truefalse","question":"In het Duits zeg je 'Am Dienstag' voor 'Op dinsdag'.","correct":true},
-        {"id":"dk3_tf04","type":"truefalse","question":"'das Referat' is Duits voor 'de spreekbeurt'.","correct":true},
-        {"id":"dk3_tf05","type":"truefalse","question":"'spät' en 'früh' betekenen hetzelfde in het Duits.","correct":false}
-      ]
+        {
+          "id": "dk3_001",
+          "type": "open",
+          "question": "Wat betekent 'die Note' in het Nederlands?",
+          "answer": "het cijfer",
+          "altAnswers": [
+            "cijfer"
+          ]
+        },
+        {
+          "id": "dk3_002",
+          "type": "open",
+          "question": "Wat betekent 'der Unterricht' in het Nederlands?",
+          "answer": "de les",
+          "altAnswers": [
+            "les",
+            "het onderwijs",
+            "onderwijs"
+          ]
+        },
+        {
+          "id": "dk3_003",
+          "type": "open",
+          "question": "Wat betekent 'einfach' in het Nederlands?",
+          "answer": "makkelijk",
+          "altAnswers": [
+            "gemakkelijk",
+            "eenvoudig"
+          ]
+        },
+        {
+          "id": "dk3_004",
+          "type": "open",
+          "question": "Wat betekent 'die Aufgabe' in het Nederlands?",
+          "answer": "de opdracht",
+          "altAnswers": [
+            "opdracht"
+          ]
+        },
+        {
+          "id": "dk3_005",
+          "type": "open",
+          "question": "Wat betekent 'lernen' in het Nederlands?",
+          "answer": "leren",
+          "altAnswers": []
+        },
+        {
+          "id": "dk3_006",
+          "type": "open",
+          "question": "Wat betekent 'Spanisch' in het Nederlands?",
+          "answer": "Spaans",
+          "altAnswers": [
+            "spaans"
+          ]
+        },
+        {
+          "id": "dk3_007",
+          "type": "open",
+          "question": "Wat betekent 'der Klassenlehrer' in het Nederlands?",
+          "answer": "de mentor",
+          "altAnswers": [
+            "mentor"
+          ]
+        },
+        {
+          "id": "dk3_008",
+          "type": "open",
+          "question": "Wat betekent 'das Referat' in het Nederlands?",
+          "answer": "de spreekbeurt",
+          "altAnswers": [
+            "spreekbeurt"
+          ]
+        },
+        {
+          "id": "dk3_009",
+          "type": "open",
+          "question": "Wat betekent 'glauben' in het Nederlands?",
+          "answer": "geloven",
+          "altAnswers": []
+        },
+        {
+          "id": "dk3_010",
+          "type": "open",
+          "question": "Wat betekent 'früh' in het Nederlands?",
+          "answer": "vroeg",
+          "altAnswers": []
+        },
+        {
+          "id": "dk3_011",
+          "type": "open",
+          "question": "Wat betekent 'spät' in het Nederlands?",
+          "answer": "laat",
+          "altAnswers": []
+        },
+        {
+          "id": "dk3_012",
+          "type": "open",
+          "question": "Wat betekent 'zum Glück' in het Nederlands?",
+          "answer": "gelukkig",
+          "altAnswers": []
+        },
+        {
+          "id": "dk3_013",
+          "type": "open",
+          "question": "Wat betekent 'krank' in het Nederlands?",
+          "answer": "ziek",
+          "altAnswers": []
+        },
+        {
+          "id": "dk3_014",
+          "type": "open",
+          "question": "Wat betekent 'warten' in het Nederlands?",
+          "answer": "wachten",
+          "altAnswers": []
+        },
+        {
+          "id": "dk3_015",
+          "type": "open",
+          "question": "Wat betekent 'sich treffen' in het Nederlands?",
+          "answer": "afspreken",
+          "altAnswers": [
+            "afspreken met"
+          ]
+        },
+        {
+          "id": "dk3_016",
+          "type": "open",
+          "question": "Wat betekent 'Lust haben' in het Nederlands?",
+          "answer": "zin hebben",
+          "altAnswers": [
+            "zin"
+          ]
+        },
+        {
+          "id": "dk3_017",
+          "type": "open",
+          "question": "Wat betekent 'müde' in het Nederlands?",
+          "answer": "moe",
+          "altAnswers": []
+        },
+        {
+          "id": "dk3_018",
+          "type": "open",
+          "question": "Wat betekent 'kaum' in het Nederlands?",
+          "answer": "nauwelijks",
+          "altAnswers": []
+        },
+        {
+          "id": "dk3_019",
+          "type": "open",
+          "question": "Wat betekent 'jeden Tag' in het Nederlands?",
+          "answer": "elke dag",
+          "altAnswers": []
+        },
+        {
+          "id": "dk3_020",
+          "type": "open",
+          "question": "Wat betekent 'pünktlich' in het Nederlands?",
+          "answer": "stipt",
+          "altAnswers": [
+            "op tijd",
+            "punctueel"
+          ]
+        },
+        {
+          "id": "dk3_021",
+          "type": "open",
+          "question": "Wat betekent 'anstrengend' in het Nederlands?",
+          "answer": "vermoeiend",
+          "altAnswers": [
+            "inspannend"
+          ]
+        },
+        {
+          "id": "dk3_022",
+          "type": "open",
+          "question": "Wat betekent 'nur' in het Nederlands?",
+          "answer": "alleen",
+          "altAnswers": [
+            "slechts",
+            "maar"
+          ]
+        },
+        {
+          "id": "dk3_023",
+          "type": "open",
+          "question": "Wat betekent 'denn' in het Nederlands?",
+          "answer": "want",
+          "altAnswers": []
+        },
+        {
+          "id": "dk3_024",
+          "type": "open",
+          "question": "Wat betekent 'anfangen' in het Nederlands?",
+          "answer": "beginnen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk3_025",
+          "type": "open",
+          "question": "Wat betekent 'jetzt' in het Nederlands?",
+          "answer": "nu",
+          "altAnswers": []
+        },
+        {
+          "id": "dk3_026",
+          "type": "open",
+          "question": "Wat betekent 'schwer' in het Nederlands?",
+          "answer": "moeilijk",
+          "altAnswers": [
+            "zwaar"
+          ]
+        },
+        {
+          "id": "dk3_sp01",
+          "type": "open",
+          "question": "Sprachmittel: Hoe zeg je 'Op welke school zit je?' in het Duits?",
+          "answer": "Auf welche Schule gehst du?",
+          "altAnswers": [
+            "auf welche schule gehst du"
+          ]
+        },
+        {
+          "id": "dk3_sp02",
+          "type": "open",
+          "question": "Sprachmittel: Hoe zeg je 'Wanneer heb je ...?' in het Duits?",
+          "answer": "Wann hast du ...?",
+          "altAnswers": [
+            "wann hast du"
+          ]
+        },
+        {
+          "id": "dk3_sp03",
+          "type": "open",
+          "question": "Sprachmittel: Hoe zeg je 'Hoe ziet ... eruit?' in het Duits?",
+          "answer": "Wie sieht ... aus?",
+          "altAnswers": [
+            "wie sieht aus",
+            "wie sieht ... aus"
+          ]
+        },
+        {
+          "id": "dk3_sp04",
+          "type": "open",
+          "question": "Sprachmittel: Hoe zeg je 'Hoe vind je ...?' in het Duits?",
+          "answer": "Wie findest du ...?",
+          "altAnswers": [
+            "wie findest du"
+          ]
+        },
+        {
+          "id": "dk3_sp05",
+          "type": "open",
+          "question": "Sprachmittel: Hoe zeg je '... is mijn lievelingsvak.' in het Duits?",
+          "answer": "... ist mein Lieblingsfach.",
+          "altAnswers": [
+            "ist mein Lieblingsfach",
+            "ist mein lieblingsfach"
+          ]
+        },
+        {
+          "id": "dk3_sp06",
+          "type": "open",
+          "question": "Sprachmittel: Hoe zeg je '... maak ik huiswerk.' in het Duits?",
+          "answer": "... mache ich Hausaufgaben.",
+          "altAnswers": [
+            "mache ich Hausaufgaben",
+            "mache ich hausaufgaben"
+          ]
+        },
+        {
+          "id": "dk3_sp07",
+          "type": "open",
+          "question": "Sprachmittel: Hoe zeg je 'In welke klas zit ...?' in het Duits?",
+          "answer": "In welche Klasse geht ...?",
+          "altAnswers": [
+            "in welche klasse geht"
+          ]
+        },
+        {
+          "id": "dk3_sp08",
+          "type": "mc",
+          "question": "Sprachmittel: Hoe zeg je '... hebben we een toets.' in het Duits?",
+          "options": [
+            "... haben wir einen Test.",
+            "... machen wir einen Test.",
+            "... schreiben wir einen Test.",
+            "... spielen wir einen Test."
+          ],
+          "correct": 2
+        },
+        {
+          "id": "dk3_sp09",
+          "type": "mc",
+          "question": "Sprachmittel: Welk voorzetsel gebruik je voor 'Op maandag heb ik ...' in het Duits?",
+          "options": [
+            "Auf",
+            "An",
+            "Am",
+            "Im"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "dk3_sp10",
+          "type": "mc",
+          "question": "Sprachmittel: Welk voorzetsel gebruik je voor 'Om 8 uur hebben we ...' in het Duits?",
+          "options": [
+            "Am",
+            "An",
+            "Auf",
+            "Um"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "dk3_sp11",
+          "type": "mc",
+          "question": "Sprachmittel: Hoe zeg je '... vind ik ... en ...' in het Duits?",
+          "options": [
+            "... denke ich ... und ...",
+            "... finde ich ... und ...",
+            "... mag ich ... und ...",
+            "... glaube ich ... und ..."
+          ],
+          "correct": 1
+        },
+        {
+          "id": "dk3_sp12",
+          "type": "open",
+          "question": "Sprachmittel: Hoe zeg je 'Ik zit op ... (school).' in het Duits?",
+          "answer": "Ich gehe auf ...",
+          "altAnswers": [
+            "ich gehe auf"
+          ]
+        },
+        {
+          "id": "dk3_sp13",
+          "type": "mc",
+          "question": "Sprachmittel: Hoe zeg je 'Hij/zij zit in de ... klas.' in het Duits?",
+          "options": [
+            "Er/Sie ist in der ... Klasse.",
+            "Er/Sie sitzt in der ... Klasse.",
+            "Er/Sie geht in die ... Klasse.",
+            "Er/Sie kommt in die ... Klasse."
+          ],
+          "correct": 2
+        },
+        {
+          "id": "dk3_sp14",
+          "type": "open",
+          "question": "Sprachmittel: Hoe zeg je 'In de derde les heb ik ...' in het Duits?",
+          "answer": "In der dritten Stunde habe ich ...",
+          "altAnswers": [
+            "in der dritten stunde habe ich"
+          ]
+        },
+        {
+          "id": "dk3_art01",
+          "type": "mc",
+          "question": "Welk lidwoord hoort bij 'Note' (cijfer) in het Duits?",
+          "options": [
+            "der",
+            "die",
+            "das",
+            "geen"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "dk3_art02",
+          "type": "mc",
+          "question": "Welk lidwoord hoort bij 'Unterricht' (les) in het Duits?",
+          "options": [
+            "der",
+            "die",
+            "das",
+            "geen"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dk3_art03",
+          "type": "mc",
+          "question": "Welk lidwoord hoort bij 'Aufgabe' (opdracht) in het Duits?",
+          "options": [
+            "der",
+            "die",
+            "das",
+            "geen"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "dk3_art04",
+          "type": "mc",
+          "question": "Welk lidwoord hoort bij 'Referat' (spreekbeurt) in het Duits?",
+          "options": [
+            "der",
+            "die",
+            "das",
+            "geen"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "dk3_art05",
+          "type": "mc",
+          "question": "Welk lidwoord hoort bij 'Klassenlehrer' (mentor) in het Duits?",
+          "options": [
+            "der",
+            "die",
+            "das",
+            "geen"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dk3_tf01",
+          "type": "truefalse",
+          "question": "'krank' betekent 'moe' in het Duits.",
+          "correct": false
+        },
+        {
+          "id": "dk3_tf02",
+          "type": "truefalse",
+          "question": "'einfach' betekent 'makkelijk' in het Duits.",
+          "correct": true
+        },
+        {
+          "id": "dk3_tf03",
+          "type": "truefalse",
+          "question": "In het Duits zeg je 'Am Dienstag' voor 'Op dinsdag'.",
+          "correct": true
+        },
+        {
+          "id": "dk3_tf04",
+          "type": "truefalse",
+          "question": "'das Referat' is Duits voor 'de spreekbeurt'.",
+          "correct": true
+        },
+        {
+          "id": "dk3_tf05",
+          "type": "truefalse",
+          "question": "'spät' en 'früh' betekenen hetzelfde in het Duits.",
+          "correct": false
+        }
+      ],
+      "level": "brugklas"
     },
     {
       "id": "frans_zinnen_u3",
       "name": "Frans – Zinnen Unité 3",
       "emoji": "💬",
       "questions": [
-        {"id":"fz_a7_01","type":"open","question":"Apprendre 7: Hoe zeg je 'Ik ben slecht in biologie.' in het Frans?","answer":"Je suis nul(le) en biologie.","altAnswers":["je suis nul en biologie","je suis nulle en biologie"]},
-        {"id":"fz_a7_02","type":"open","question":"Apprendre 7: Hoe zeg je 'Wat is je lievelingsvak?' in het Frans?","answer":"Quelle est ta matière préférée ?","altAnswers":["quelle est ta matiere preferee","quelle est ta matière préférée"]},
-        {"id":"fz_a7_03","type":"open","question":"Apprendre 7: Hoe zeg je 'Waar houd jij van?' in het Frans?","answer":"Qu'est-ce que tu aimes ?","altAnswers":["qu est-ce que tu aimes","qu est ce que tu aimes","quest ce que tu aimes"]},
-        {"id":"fz_a7_04","type":"open","question":"Apprendre 7: Hoe zeg je 'Ik ben dol op muziek.' in het Frans?","answer":"J'adore la musique.","altAnswers":["jadore la musique","j adore la musique"]},
-        {"id":"fz_a7_05","type":"open","question":"Apprendre 7: Hoe zeg je 'Ik ben goed in tennis.' in het Frans?","answer":"Je suis fort(e) en tennis.","altAnswers":["je suis fort en tennis","je suis forte en tennis"]},
-        {"id":"fz_a7_06","type":"open","question":"Apprendre 7: Hoe zeg je 'Ik train twee keer per week.' in het Frans?","answer":"Je m'entraine deux fois par semaine.","altAnswers":["je m entraine deux fois par semaine","je m'entraîne deux fois par semaine","je mentraine deux fois par semaine"]},
-        {"id":"fz_a9_01","type":"open","question":"Apprendre 9: Hoe zeg je 'Waar ben je?' in het Frans?","answer":"Où es-tu ?","altAnswers":["ou es-tu","où es-tu"]},
-        {"id":"fz_a9_02","type":"open","question":"Apprendre 9: Hoe zeg je 'Ik ben in de bioscoop.' in het Frans?","answer":"Je suis au cinéma.","altAnswers":["je suis au cinema"]},
-        {"id":"fz_a9_03","type":"open","question":"Apprendre 9: Hoe zeg je 'Hoe laat is het?' in het Frans?","answer":"Quelle heure est-il ?","altAnswers":["quelle heure est-il","quelle heure est il"]},
-        {"id":"fz_a9_04","type":"open","question":"Apprendre 9: Hoe zeg je 'Het is tien over twee.' in het Frans?","answer":"Il est deux heures dix.","altAnswers":["il est 14h10","il est 14 h 10","il est deux heures dix"]},
-        {"id":"fz_a9_05","type":"open","question":"Apprendre 9: Hoe zeg je 'Spelen we vanavond basketbal?' in het Frans?","answer":"On joue au basket ce soir ?","altAnswers":["on joue au basket ce soir"]},
-        {"id":"fz_a9_06","type":"open","question":"Apprendre 9: Hoe zeg je 'Ja, goed idee.' in het Frans?","answer":"Oui, bonne idée.","altAnswers":["oui bonne idee","oui, bonne idee"]}
-      ]
+        {
+          "id": "fz_a7_01",
+          "type": "open",
+          "question": "Apprendre 7: Hoe zeg je 'Ik ben slecht in biologie.' in het Frans?",
+          "answer": "Je suis nul(le) en biologie.",
+          "altAnswers": [
+            "je suis nul en biologie",
+            "je suis nulle en biologie"
+          ]
+        },
+        {
+          "id": "fz_a7_02",
+          "type": "open",
+          "question": "Apprendre 7: Hoe zeg je 'Wat is je lievelingsvak?' in het Frans?",
+          "answer": "Quelle est ta matière préférée ?",
+          "altAnswers": [
+            "quelle est ta matiere preferee",
+            "quelle est ta matière préférée"
+          ]
+        },
+        {
+          "id": "fz_a7_03",
+          "type": "open",
+          "question": "Apprendre 7: Hoe zeg je 'Waar houd jij van?' in het Frans?",
+          "answer": "Qu'est-ce que tu aimes ?",
+          "altAnswers": [
+            "qu est-ce que tu aimes",
+            "qu est ce que tu aimes",
+            "quest ce que tu aimes"
+          ]
+        },
+        {
+          "id": "fz_a7_04",
+          "type": "open",
+          "question": "Apprendre 7: Hoe zeg je 'Ik ben dol op muziek.' in het Frans?",
+          "answer": "J'adore la musique.",
+          "altAnswers": [
+            "jadore la musique",
+            "j adore la musique"
+          ]
+        },
+        {
+          "id": "fz_a7_05",
+          "type": "open",
+          "question": "Apprendre 7: Hoe zeg je 'Ik ben goed in tennis.' in het Frans?",
+          "answer": "Je suis fort(e) en tennis.",
+          "altAnswers": [
+            "je suis fort en tennis",
+            "je suis forte en tennis"
+          ]
+        },
+        {
+          "id": "fz_a7_06",
+          "type": "open",
+          "question": "Apprendre 7: Hoe zeg je 'Ik train twee keer per week.' in het Frans?",
+          "answer": "Je m'entraine deux fois par semaine.",
+          "altAnswers": [
+            "je m entraine deux fois par semaine",
+            "je m'entraîne deux fois par semaine",
+            "je mentraine deux fois par semaine"
+          ]
+        },
+        {
+          "id": "fz_a9_01",
+          "type": "open",
+          "question": "Apprendre 9: Hoe zeg je 'Waar ben je?' in het Frans?",
+          "answer": "Où es-tu ?",
+          "altAnswers": [
+            "ou es-tu",
+            "où es-tu"
+          ]
+        },
+        {
+          "id": "fz_a9_02",
+          "type": "open",
+          "question": "Apprendre 9: Hoe zeg je 'Ik ben in de bioscoop.' in het Frans?",
+          "answer": "Je suis au cinéma.",
+          "altAnswers": [
+            "je suis au cinema"
+          ]
+        },
+        {
+          "id": "fz_a9_03",
+          "type": "open",
+          "question": "Apprendre 9: Hoe zeg je 'Hoe laat is het?' in het Frans?",
+          "answer": "Quelle heure est-il ?",
+          "altAnswers": [
+            "quelle heure est-il",
+            "quelle heure est il"
+          ]
+        },
+        {
+          "id": "fz_a9_04",
+          "type": "open",
+          "question": "Apprendre 9: Hoe zeg je 'Het is tien over twee.' in het Frans?",
+          "answer": "Il est deux heures dix.",
+          "altAnswers": [
+            "il est 14h10",
+            "il est 14 h 10",
+            "il est deux heures dix"
+          ]
+        },
+        {
+          "id": "fz_a9_05",
+          "type": "open",
+          "question": "Apprendre 9: Hoe zeg je 'Spelen we vanavond basketbal?' in het Frans?",
+          "answer": "On joue au basket ce soir ?",
+          "altAnswers": [
+            "on joue au basket ce soir"
+          ]
+        },
+        {
+          "id": "fz_a9_06",
+          "type": "open",
+          "question": "Apprendre 9: Hoe zeg je 'Ja, goed idee.' in het Frans?",
+          "answer": "Oui, bonne idée.",
+          "altAnswers": [
+            "oui bonne idee",
+            "oui, bonne idee"
+          ]
+        }
+      ],
+      "level": "brugklas"
     },
     {
       "id": "frans_u4",
       "name": "Frans – Unité 4 Santé",
       "emoji": "🏥",
       "questions": [
-        {"id":"u4_a1_nf_01","type":"open","question":"Wat is 'krabben' in het Frans?","answer":"gratter","altAnswers":[]},
-        {"id":"u4_a1_nf_02","type":"open","question":"Wat is 'het hoofd' in het Frans?","answer":"la tête","altAnswers":["tete","la tete"]},
-        {"id":"u4_a1_nf_03","type":"open","question":"Wat is 'het oog / de ogen' in het Frans?","answer":"l'œil, les yeux","altAnswers":["l'oeil, les yeux","loeil les yeux","les yeux"]},
-        {"id":"u4_a1_nf_04","type":"open","question":"Wat is 'de verkoudheid' in het Frans?","answer":"le rhume","altAnswers":["rhume"]},
-        {"id":"u4_a1_nf_05","type":"open","question":"Wat is 'het oor' in het Frans?","answer":"l'oreille","altAnswers":["oreille"]},
-        {"id":"u4_a1_nf_06","type":"open","question":"Wat is 'de neus' in het Frans?","answer":"le nez","altAnswers":["nez"]},
-        {"id":"u4_a1_nf_07","type":"open","question":"Wat is 'de mond' in het Frans?","answer":"la bouche","altAnswers":["bouche"]},
-        {"id":"u4_a1_nf_08","type":"open","question":"Wat is 'de tanden' in het Frans?","answer":"les dents","altAnswers":["dents"]},
-        {"id":"u4_a1_nf_09","type":"open","question":"Wat is 'de rug' in het Frans?","answer":"le dos","altAnswers":["dos"]},
-        {"id":"u4_a1_nf_10","type":"open","question":"Wat is 'de buik' in het Frans?","answer":"le ventre","altAnswers":["ventre"]},
-        {"id":"u4_a1_nf_11","type":"open","question":"Wat is 'de arm' in het Frans?","answer":"le bras","altAnswers":["bras"]},
-        {"id":"u4_a1_nf_12","type":"open","question":"Wat is 'het been' in het Frans?","answer":"la jambe","altAnswers":["jambe"]},
-        {"id":"u4_a1_nf_13","type":"open","question":"Wat is 'de pukkel' in het Frans?","answer":"le bouton","altAnswers":["bouton"]},
-        {"id":"u4_a1_nf_14","type":"open","question":"Wat is 'de voet' in het Frans?","answer":"le pied","altAnswers":["pied"]},
-        {"id":"u4_a1_nf_15","type":"open","question":"Wat is 'het ziekenhuis' in het Frans?","answer":"l'hôpital","altAnswers":["l'hopital","hopital","hôpital"]},
-        {"id":"u4_a1_nf_16","type":"open","question":"Wat is 'de breuk' in het Frans?","answer":"la fracture","altAnswers":["fracture"]},
-        {"id":"u4_a1_nf_17","type":"open","question":"Wat is 'de enkel' in het Frans?","answer":"la cheville","altAnswers":["cheville"]},
-        {"id":"u4_a1_nf_18","type":"open","question":"Wat is 'de vinger' in het Frans?","answer":"le doigt","altAnswers":["doigt"]},
-        {"id":"u4_a1_nf_19","type":"open","question":"Wat is 'de teen' in het Frans?","answer":"le doigt de pied","altAnswers":["doigt de pied"]},
-        {"id":"u4_a1_nf_20","type":"open","question":"Wat is 'de gezondheid' in het Frans?","answer":"la santé","altAnswers":["sante","la sante"]},
-        {"id":"u4_a1_nf_21","type":"open","question":"Wat is 'de hand' in het Frans?","answer":"la main","altAnswers":["main"]},
-        {"id":"u4_a1_nf_22","type":"open","question":"Wat is 'de knie' in het Frans?","answer":"le genou","altAnswers":["genou"]},
-        {"id":"u4_a1_nf_23","type":"open","question":"Wat is 'de elleboog' in het Frans?","answer":"le coude","altAnswers":["coude"]},
-        {"id":"u4_a1_nf_24","type":"open","question":"Wat is 'het lichaam' in het Frans?","answer":"le corps","altAnswers":["corps"]},
-        {"id":"u4_a1_nf_25","type":"open","question":"Wat is 'pijn hebben aan' in het Frans?","answer":"avoir mal à","altAnswers":["avoir mal a"]},
-
-        {"id":"u4_a1_fn_01","type":"open","question":"Wat betekent 'gratter' in het Nederlands?","answer":"krabben","altAnswers":[]},
-        {"id":"u4_a1_fn_02","type":"open","question":"Wat betekent 'la tête' in het Nederlands?","answer":"het hoofd","altAnswers":["hoofd"]},
-        {"id":"u4_a1_fn_03","type":"open","question":"Wat betekent 'l'œil, les yeux' in het Nederlands?","answer":"het oog, de ogen","altAnswers":["het oog","de ogen","oog"]},
-        {"id":"u4_a1_fn_04","type":"open","question":"Wat betekent 'le rhume' in het Nederlands?","answer":"de verkoudheid","altAnswers":["verkoudheid"]},
-        {"id":"u4_a1_fn_05","type":"open","question":"Wat betekent 'l'oreille' in het Nederlands?","answer":"het oor","altAnswers":["oor"]},
-        {"id":"u4_a1_fn_06","type":"open","question":"Wat betekent 'le nez' in het Nederlands?","answer":"de neus","altAnswers":["neus"]},
-        {"id":"u4_a1_fn_07","type":"open","question":"Wat betekent 'la bouche' in het Nederlands?","answer":"de mond","altAnswers":["mond"]},
-        {"id":"u4_a1_fn_08","type":"open","question":"Wat betekent 'les dents' in het Nederlands?","answer":"de tanden","altAnswers":["tanden"]},
-        {"id":"u4_a1_fn_09","type":"open","question":"Wat betekent 'le dos' in het Nederlands?","answer":"de rug","altAnswers":["rug"]},
-        {"id":"u4_a1_fn_10","type":"open","question":"Wat betekent 'le ventre' in het Nederlands?","answer":"de buik","altAnswers":["buik"]},
-        {"id":"u4_a1_fn_11","type":"open","question":"Wat betekent 'le bras' in het Nederlands?","answer":"de arm","altAnswers":["arm"]},
-        {"id":"u4_a1_fn_12","type":"open","question":"Wat betekent 'la jambe' in het Nederlands?","answer":"het been","altAnswers":["been"]},
-        {"id":"u4_a1_fn_13","type":"open","question":"Wat betekent 'le bouton' in het Nederlands?","answer":"de pukkel","altAnswers":["pukkel"]},
-        {"id":"u4_a1_fn_14","type":"open","question":"Wat betekent 'le pied' in het Nederlands?","answer":"de voet","altAnswers":["voet"]},
-        {"id":"u4_a1_fn_15","type":"open","question":"Wat betekent 'l'hôpital' in het Nederlands?","answer":"het ziekenhuis","altAnswers":["ziekenhuis"]},
-        {"id":"u4_a1_fn_16","type":"open","question":"Wat betekent 'la fracture' in het Nederlands?","answer":"de breuk","altAnswers":["breuk"]},
-        {"id":"u4_a1_fn_17","type":"open","question":"Wat betekent 'la cheville' in het Nederlands?","answer":"de enkel","altAnswers":["enkel"]},
-        {"id":"u4_a1_fn_18","type":"open","question":"Wat betekent 'le doigt' in het Nederlands?","answer":"de vinger","altAnswers":["vinger"]},
-        {"id":"u4_a1_fn_19","type":"open","question":"Wat betekent 'le doigt de pied' in het Nederlands?","answer":"de teen","altAnswers":["teen"]},
-        {"id":"u4_a1_fn_20","type":"open","question":"Wat betekent 'la santé' in het Nederlands?","answer":"de gezondheid","altAnswers":["gezondheid"]},
-        {"id":"u4_a1_fn_21","type":"open","question":"Wat betekent 'la main' in het Nederlands?","answer":"de hand","altAnswers":["hand"]},
-        {"id":"u4_a1_fn_22","type":"open","question":"Wat betekent 'le genou' in het Nederlands?","answer":"de knie","altAnswers":["knie"]},
-        {"id":"u4_a1_fn_23","type":"open","question":"Wat betekent 'le coude' in het Nederlands?","answer":"de elleboog","altAnswers":["elleboog"]},
-        {"id":"u4_a1_fn_24","type":"open","question":"Wat betekent 'le corps' in het Nederlands?","answer":"het lichaam","altAnswers":["lichaam"]},
-        {"id":"u4_a1_fn_25","type":"open","question":"Wat betekent 'avoir mal à' in het Nederlands?","answer":"pijn hebben aan","altAnswers":["pijn hebben"]},
-
-        {"id":"u4_a2_fn_01","type":"open","question":"Wat betekent 'se moquer de' in het Nederlands?","answer":"uitlachen","altAnswers":["spotten met"]},
-        {"id":"u4_a2_fn_02","type":"open","question":"Wat betekent 'le conseil' in het Nederlands?","answer":"de raad","altAnswers":["raad","advies"]},
-        {"id":"u4_a2_fn_03","type":"open","question":"Wat betekent 'la solution' in het Nederlands?","answer":"de oplossing","altAnswers":["oplossing"]},
-        {"id":"u4_a2_fn_04","type":"open","question":"Wat betekent 'se sentir' in het Nederlands?","answer":"zich voelen","altAnswers":["voelen"]},
-        {"id":"u4_a2_fn_05","type":"open","question":"Wat betekent 'transpirer' in het Nederlands?","answer":"zweten","altAnswers":[]},
-        {"id":"u4_a2_fn_06","type":"open","question":"Wat betekent 'le dentiste' in het Nederlands?","answer":"de tandarts","altAnswers":["tandarts"]},
-        {"id":"u4_a2_fn_07","type":"open","question":"Wat betekent 'refuser' in het Nederlands?","answer":"weigeren","altAnswers":[]},
-        {"id":"u4_a2_fn_08","type":"open","question":"Wat betekent 'se lever' in het Nederlands?","answer":"opstaan","altAnswers":[]},
-        {"id":"u4_a2_fn_09","type":"open","question":"Wat betekent 'se coucher' in het Nederlands?","answer":"gaan slapen","altAnswers":["slapen gaan"]},
-        {"id":"u4_a2_fn_10","type":"open","question":"Wat betekent 'grossir' in het Nederlands?","answer":"dik worden","altAnswers":["dikker worden"]},
-        {"id":"u4_a2_fn_11","type":"open","question":"Wat betekent 'malheureux, malheureuse' in het Nederlands?","answer":"ongelukkig","altAnswers":[]},
-        {"id":"u4_a2_fn_12","type":"open","question":"Wat betekent 'être allergique à' in het Nederlands?","answer":"allergisch zijn voor","altAnswers":["allergisch zijn"]},
-        {"id":"u4_a2_fn_13","type":"open","question":"Wat betekent 'se faire du souci' in het Nederlands?","answer":"zich zorgen maken","altAnswers":["zorgen maken"]},
-        {"id":"u4_a2_fn_14","type":"open","question":"Wat betekent 'répondre à' in het Nederlands?","answer":"antwoord geven op","altAnswers":["antwoorden op","antwoord geven"]},
-        {"id":"u4_a2_fn_15","type":"open","question":"Wat betekent 'avoir peur de' in het Nederlands?","answer":"bang zijn voor","altAnswers":["bang zijn"]},
-        {"id":"u4_a2_fn_16","type":"open","question":"Wat betekent 'la peur de l'échec' in het Nederlands?","answer":"de faalangst","altAnswers":["faalangst"]},
-        {"id":"u4_a2_fn_17","type":"open","question":"Wat betekent 'ridicule' in het Nederlands?","answer":"belachelijk","altAnswers":[]},
-
-        {"id":"u4_a4_fn_01","type":"open","question":"Wat betekent 'marcher' in het Nederlands?","answer":"lopen","altAnswers":["wandelen"]},
-        {"id":"u4_a4_fn_02","type":"open","question":"Wat betekent 'pâle' in het Nederlands?","answer":"bleek","altAnswers":[]},
-        {"id":"u4_a4_fn_03","type":"open","question":"Wat betekent 'le médecin' in het Nederlands?","answer":"de dokter","altAnswers":["dokter","de arts","arts"]},
-        {"id":"u4_a4_fn_04","type":"open","question":"Wat betekent 'tout de suite' in het Nederlands?","answer":"meteen","altAnswers":["direct"]},
-        {"id":"u4_a4_fn_05","type":"open","question":"Wat betekent 'partout' in het Nederlands?","answer":"overal","altAnswers":[]},
-        {"id":"u4_a4_fn_06","type":"open","question":"Wat betekent 'le pansement' in het Nederlands?","answer":"de pleister","altAnswers":["pleister","het verband","verband"]},
-        {"id":"u4_a4_fn_07","type":"open","question":"Wat betekent 'guérir' in het Nederlands?","answer":"genezen","altAnswers":["beter worden"]},
-        {"id":"u4_a4_fn_08","type":"open","question":"Wat betekent 'soulager' in het Nederlands?","answer":"verlichten","altAnswers":["verzachten"]},
-        {"id":"u4_a4_fn_09","type":"open","question":"Wat betekent 'saigner' in het Nederlands?","answer":"bloeden","altAnswers":[]},
-        {"id":"u4_a4_fn_10","type":"open","question":"Wat betekent 'prescrire' in het Nederlands?","answer":"voorschrijven","altAnswers":[]},
-        {"id":"u4_a4_fn_11","type":"open","question":"Wat betekent 'vomir' in het Nederlands?","answer":"overgeven","altAnswers":["braken"]},
-        {"id":"u4_a4_fn_12","type":"open","question":"Wat betekent 'la pommade' in het Nederlands?","answer":"de zalf","altAnswers":["zalf"]},
-        {"id":"u4_a4_fn_13","type":"open","question":"Wat betekent 'l'ordonnance' in het Nederlands?","answer":"het recept","altAnswers":["recept"]},
-        {"id":"u4_a4_fn_14","type":"open","question":"Wat betekent 'la piqûre d'insecte' in het Nederlands?","answer":"de insectenbeet","altAnswers":["insectenbeet"]},
-        {"id":"u4_a4_fn_15","type":"open","question":"Wat betekent 'le médicament' in het Nederlands?","answer":"het medicijn","altAnswers":["medicijn","geneesmiddel"]},
-        {"id":"u4_a4_fn_16","type":"open","question":"Wat betekent 'le mal de gorge' in het Nederlands?","answer":"de keelpijn","altAnswers":["keelpijn"]},
-        {"id":"u4_a4_fn_17","type":"open","question":"Wat betekent 'le coup de soleil' in het Nederlands?","answer":"de zonnesteek","altAnswers":["zonnesteek"]},
-
-        {"id":"u4_a3_mc01","type":"mc","question":"Hoe vervoeg je 'vendre' voor 'je'?","options":["je vends","je vend","je vendons","je vendez"],"correct":0},
-        {"id":"u4_a3_mc02","type":"mc","question":"Hoe vervoeg je 'vendre' voor 'il'?","options":["il vends","il vend","il vendons","il vendent"],"correct":1},
-        {"id":"u4_a3_mc03","type":"mc","question":"Hoe vervoeg je 'vendre' voor 'nous'?","options":["nous vends","nous vendez","nous vendons","nous vendent"],"correct":2},
-        {"id":"u4_a3_mc04","type":"mc","question":"Hoe vervoeg je 'vendre' voor 'vous'?","options":["vous vends","vous vendez","vous vendons","vous vendent"],"correct":1},
-        {"id":"u4_a3_mc05","type":"mc","question":"Hoe vervoeg je 'vendre' voor 'ils'?","options":["ils vends","ils vendons","ils vendez","ils vendent"],"correct":3},
-        {"id":"u4_a3_mc06","type":"mc","question":"Wat is het passé composé van 'vendre' voor 'il'?","options":["il a vendé","il a vendu","il est vendu","il a vendre"],"correct":1},
-        {"id":"u4_a3_mc07","type":"mc","question":"Wat is het voltooid deelwoord van 'descendre'?","options":["descendé","descendant","descende","descendu"],"correct":3},
-        {"id":"u4_a3_tf01","type":"truefalse","question":"Het voltooid deelwoord van regelmatige -re werkwoorden eindigt op -u.","correct":true},
-        {"id":"u4_a3_tf02","type":"truefalse","question":"'Il vend' (zonder -s) is de juiste vervoeging van 'vendre' voor 'il'.","correct":true},
-        {"id":"u4_a3_tf03","type":"truefalse","question":"'Je vend' is de juiste vervoeging van 'vendre' voor 'je'.","correct":false},
-        {"id":"u4_a3_tf04","type":"truefalse","question":"'Elles vendent' is de juiste vervoeging van 'vendre' voor 'elles'.","correct":true},
-        {"id":"u4_a3_op01","type":"open","question":"Wat betekent 'entendre' in het Nederlands?","answer":"horen","altAnswers":[]},
-        {"id":"u4_a3_op02","type":"open","question":"Wat betekent 'attendre' in het Nederlands?","answer":"wachten op","altAnswers":["wachten"]},
-        {"id":"u4_a3_op03","type":"open","question":"Wat betekent 'perdre' in het Nederlands?","answer":"verliezen","altAnswers":[]},
-        {"id":"u4_a3_op04","type":"open","question":"Wat betekent 'descendre' in het Nederlands?","answer":"uitstappen","altAnswers":["naar beneden gaan"]},
-        {"id":"u4_a3_op05","type":"open","question":"Wat betekent 'rendre' in het Nederlands?","answer":"teruggeven","altAnswers":["terug geven"]},
-
-        {"id":"u4_a10_mc01","type":"mc","question":"Welke vorm gebruik je bij 'à + le'?","options":["au","à la","à l'","aux"],"correct":0},
-        {"id":"u4_a10_mc02","type":"mc","question":"Welke vorm gebruik je bij 'à + les'?","options":["au","à la","à l'","aux"],"correct":3},
-        {"id":"u4_a10_mc03","type":"mc","question":"Welke vorm gebruik je bij 'à + la'?","options":["au","à la","à l'","aux"],"correct":1},
-        {"id":"u4_a10_mc04","type":"mc","question":"Welke vorm gebruik je bij 'à + l' (voor klinker)?","options":["au","à la","à l'","aux"],"correct":2},
-        {"id":"u4_a10_mc05","type":"mc","question":"'J'ai mal ___ nez.' (le nez) Welk woord past hier?","options":["au","à la","à l'","aux"],"correct":0},
-        {"id":"u4_a10_mc06","type":"mc","question":"'J'ai mal ___ tête.' (la tête) Welk woord past hier?","options":["au","à la","à l'","aux"],"correct":1},
-        {"id":"u4_a10_mc07","type":"mc","question":"'J'ai mal ___ oreille.' (l'oreille) Welk woord past hier?","options":["au","à la","à l'","aux"],"correct":2},
-        {"id":"u4_a10_mc08","type":"mc","question":"'J'ai mal ___ dents.' (les dents) Welk woord past hier?","options":["au","à la","à l'","aux"],"correct":3},
-        {"id":"u4_a10_mc09","type":"mc","question":"'J'ai mal ___ dos.' (le dos) Welk woord past hier?","options":["au","à la","à l'","aux"],"correct":0},
-        {"id":"u4_a10_mc10","type":"mc","question":"'J'ai mal ___ genou.' (le genou) Welk woord past hier?","options":["au","à la","à l'","aux"],"correct":0},
-        {"id":"u4_a10_tf01","type":"truefalse","question":"'J'ai mal au dos.' betekent 'Ik heb rugpijn.'","correct":true},
-        {"id":"u4_a10_tf02","type":"truefalse","question":"'à + le' wordt 'au' in het Frans.","correct":true},
-        {"id":"u4_a10_tf03","type":"truefalse","question":"'J'ai mal à les dents.' is correct Frans.","correct":false},
-        {"id":"u4_a10_op01","type":"open","question":"Hoe zeg je 'Ik heb hoofdpijn.' in het Frans?","answer":"J'ai mal à la tête.","altAnswers":["j'ai mal a la tete","j ai mal a la tete"]},
-        {"id":"u4_a10_op02","type":"open","question":"Hoe zeg je 'Ik heb oorpijn.' in het Frans?","answer":"J'ai mal à l'oreille.","altAnswers":["j'ai mal a l'oreille","j ai mal a loreille"]},
-        {"id":"u4_a10_op03","type":"open","question":"Hoe zeg je 'Ik heb pijn aan mijn tanden.' in het Frans?","answer":"J'ai mal aux dents.","altAnswers":["j'ai mal aux dents","j ai mal aux dents"]},
-        {"id":"u4_a10_op04","type":"open","question":"Hoe zeg je 'Ik heb pijn aan mijn neus.' in het Frans?","answer":"J'ai mal au nez.","altAnswers":["j'ai mal au nez","j ai mal au nez"]}
-      ]
+        {
+          "id": "u4_a1_nf_01",
+          "type": "open",
+          "question": "Wat is 'krabben' in het Frans?",
+          "answer": "gratter",
+          "altAnswers": []
+        },
+        {
+          "id": "u4_a1_nf_02",
+          "type": "open",
+          "question": "Wat is 'het hoofd' in het Frans?",
+          "answer": "la tête",
+          "altAnswers": [
+            "tete",
+            "la tete"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_03",
+          "type": "open",
+          "question": "Wat is 'het oog / de ogen' in het Frans?",
+          "answer": "l'œil, les yeux",
+          "altAnswers": [
+            "l'oeil, les yeux",
+            "loeil les yeux",
+            "les yeux"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_04",
+          "type": "open",
+          "question": "Wat is 'de verkoudheid' in het Frans?",
+          "answer": "le rhume",
+          "altAnswers": [
+            "rhume"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_05",
+          "type": "open",
+          "question": "Wat is 'het oor' in het Frans?",
+          "answer": "l'oreille",
+          "altAnswers": [
+            "oreille"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_06",
+          "type": "open",
+          "question": "Wat is 'de neus' in het Frans?",
+          "answer": "le nez",
+          "altAnswers": [
+            "nez"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_07",
+          "type": "open",
+          "question": "Wat is 'de mond' in het Frans?",
+          "answer": "la bouche",
+          "altAnswers": [
+            "bouche"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_08",
+          "type": "open",
+          "question": "Wat is 'de tanden' in het Frans?",
+          "answer": "les dents",
+          "altAnswers": [
+            "dents"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_09",
+          "type": "open",
+          "question": "Wat is 'de rug' in het Frans?",
+          "answer": "le dos",
+          "altAnswers": [
+            "dos"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_10",
+          "type": "open",
+          "question": "Wat is 'de buik' in het Frans?",
+          "answer": "le ventre",
+          "altAnswers": [
+            "ventre"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_11",
+          "type": "open",
+          "question": "Wat is 'de arm' in het Frans?",
+          "answer": "le bras",
+          "altAnswers": [
+            "bras"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_12",
+          "type": "open",
+          "question": "Wat is 'het been' in het Frans?",
+          "answer": "la jambe",
+          "altAnswers": [
+            "jambe"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_13",
+          "type": "open",
+          "question": "Wat is 'de pukkel' in het Frans?",
+          "answer": "le bouton",
+          "altAnswers": [
+            "bouton"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_14",
+          "type": "open",
+          "question": "Wat is 'de voet' in het Frans?",
+          "answer": "le pied",
+          "altAnswers": [
+            "pied"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_15",
+          "type": "open",
+          "question": "Wat is 'het ziekenhuis' in het Frans?",
+          "answer": "l'hôpital",
+          "altAnswers": [
+            "l'hopital",
+            "hopital",
+            "hôpital"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_16",
+          "type": "open",
+          "question": "Wat is 'de breuk' in het Frans?",
+          "answer": "la fracture",
+          "altAnswers": [
+            "fracture"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_17",
+          "type": "open",
+          "question": "Wat is 'de enkel' in het Frans?",
+          "answer": "la cheville",
+          "altAnswers": [
+            "cheville"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_18",
+          "type": "open",
+          "question": "Wat is 'de vinger' in het Frans?",
+          "answer": "le doigt",
+          "altAnswers": [
+            "doigt"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_19",
+          "type": "open",
+          "question": "Wat is 'de teen' in het Frans?",
+          "answer": "le doigt de pied",
+          "altAnswers": [
+            "doigt de pied"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_20",
+          "type": "open",
+          "question": "Wat is 'de gezondheid' in het Frans?",
+          "answer": "la santé",
+          "altAnswers": [
+            "sante",
+            "la sante"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_21",
+          "type": "open",
+          "question": "Wat is 'de hand' in het Frans?",
+          "answer": "la main",
+          "altAnswers": [
+            "main"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_22",
+          "type": "open",
+          "question": "Wat is 'de knie' in het Frans?",
+          "answer": "le genou",
+          "altAnswers": [
+            "genou"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_23",
+          "type": "open",
+          "question": "Wat is 'de elleboog' in het Frans?",
+          "answer": "le coude",
+          "altAnswers": [
+            "coude"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_24",
+          "type": "open",
+          "question": "Wat is 'het lichaam' in het Frans?",
+          "answer": "le corps",
+          "altAnswers": [
+            "corps"
+          ]
+        },
+        {
+          "id": "u4_a1_nf_25",
+          "type": "open",
+          "question": "Wat is 'pijn hebben aan' in het Frans?",
+          "answer": "avoir mal à",
+          "altAnswers": [
+            "avoir mal a"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_01",
+          "type": "open",
+          "question": "Wat betekent 'gratter' in het Nederlands?",
+          "answer": "krabben",
+          "altAnswers": []
+        },
+        {
+          "id": "u4_a1_fn_02",
+          "type": "open",
+          "question": "Wat betekent 'la tête' in het Nederlands?",
+          "answer": "het hoofd",
+          "altAnswers": [
+            "hoofd"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_03",
+          "type": "open",
+          "question": "Wat betekent 'l'œil, les yeux' in het Nederlands?",
+          "answer": "het oog, de ogen",
+          "altAnswers": [
+            "het oog",
+            "de ogen",
+            "oog"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_04",
+          "type": "open",
+          "question": "Wat betekent 'le rhume' in het Nederlands?",
+          "answer": "de verkoudheid",
+          "altAnswers": [
+            "verkoudheid"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_05",
+          "type": "open",
+          "question": "Wat betekent 'l'oreille' in het Nederlands?",
+          "answer": "het oor",
+          "altAnswers": [
+            "oor"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_06",
+          "type": "open",
+          "question": "Wat betekent 'le nez' in het Nederlands?",
+          "answer": "de neus",
+          "altAnswers": [
+            "neus"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_07",
+          "type": "open",
+          "question": "Wat betekent 'la bouche' in het Nederlands?",
+          "answer": "de mond",
+          "altAnswers": [
+            "mond"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_08",
+          "type": "open",
+          "question": "Wat betekent 'les dents' in het Nederlands?",
+          "answer": "de tanden",
+          "altAnswers": [
+            "tanden"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_09",
+          "type": "open",
+          "question": "Wat betekent 'le dos' in het Nederlands?",
+          "answer": "de rug",
+          "altAnswers": [
+            "rug"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_10",
+          "type": "open",
+          "question": "Wat betekent 'le ventre' in het Nederlands?",
+          "answer": "de buik",
+          "altAnswers": [
+            "buik"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_11",
+          "type": "open",
+          "question": "Wat betekent 'le bras' in het Nederlands?",
+          "answer": "de arm",
+          "altAnswers": [
+            "arm"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_12",
+          "type": "open",
+          "question": "Wat betekent 'la jambe' in het Nederlands?",
+          "answer": "het been",
+          "altAnswers": [
+            "been"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_13",
+          "type": "open",
+          "question": "Wat betekent 'le bouton' in het Nederlands?",
+          "answer": "de pukkel",
+          "altAnswers": [
+            "pukkel"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_14",
+          "type": "open",
+          "question": "Wat betekent 'le pied' in het Nederlands?",
+          "answer": "de voet",
+          "altAnswers": [
+            "voet"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_15",
+          "type": "open",
+          "question": "Wat betekent 'l'hôpital' in het Nederlands?",
+          "answer": "het ziekenhuis",
+          "altAnswers": [
+            "ziekenhuis"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_16",
+          "type": "open",
+          "question": "Wat betekent 'la fracture' in het Nederlands?",
+          "answer": "de breuk",
+          "altAnswers": [
+            "breuk"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_17",
+          "type": "open",
+          "question": "Wat betekent 'la cheville' in het Nederlands?",
+          "answer": "de enkel",
+          "altAnswers": [
+            "enkel"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_18",
+          "type": "open",
+          "question": "Wat betekent 'le doigt' in het Nederlands?",
+          "answer": "de vinger",
+          "altAnswers": [
+            "vinger"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_19",
+          "type": "open",
+          "question": "Wat betekent 'le doigt de pied' in het Nederlands?",
+          "answer": "de teen",
+          "altAnswers": [
+            "teen"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_20",
+          "type": "open",
+          "question": "Wat betekent 'la santé' in het Nederlands?",
+          "answer": "de gezondheid",
+          "altAnswers": [
+            "gezondheid"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_21",
+          "type": "open",
+          "question": "Wat betekent 'la main' in het Nederlands?",
+          "answer": "de hand",
+          "altAnswers": [
+            "hand"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_22",
+          "type": "open",
+          "question": "Wat betekent 'le genou' in het Nederlands?",
+          "answer": "de knie",
+          "altAnswers": [
+            "knie"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_23",
+          "type": "open",
+          "question": "Wat betekent 'le coude' in het Nederlands?",
+          "answer": "de elleboog",
+          "altAnswers": [
+            "elleboog"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_24",
+          "type": "open",
+          "question": "Wat betekent 'le corps' in het Nederlands?",
+          "answer": "het lichaam",
+          "altAnswers": [
+            "lichaam"
+          ]
+        },
+        {
+          "id": "u4_a1_fn_25",
+          "type": "open",
+          "question": "Wat betekent 'avoir mal à' in het Nederlands?",
+          "answer": "pijn hebben aan",
+          "altAnswers": [
+            "pijn hebben"
+          ]
+        },
+        {
+          "id": "u4_a2_fn_01",
+          "type": "open",
+          "question": "Wat betekent 'se moquer de' in het Nederlands?",
+          "answer": "uitlachen",
+          "altAnswers": [
+            "spotten met"
+          ]
+        },
+        {
+          "id": "u4_a2_fn_02",
+          "type": "open",
+          "question": "Wat betekent 'le conseil' in het Nederlands?",
+          "answer": "de raad",
+          "altAnswers": [
+            "raad",
+            "advies"
+          ]
+        },
+        {
+          "id": "u4_a2_fn_03",
+          "type": "open",
+          "question": "Wat betekent 'la solution' in het Nederlands?",
+          "answer": "de oplossing",
+          "altAnswers": [
+            "oplossing"
+          ]
+        },
+        {
+          "id": "u4_a2_fn_04",
+          "type": "open",
+          "question": "Wat betekent 'se sentir' in het Nederlands?",
+          "answer": "zich voelen",
+          "altAnswers": [
+            "voelen"
+          ]
+        },
+        {
+          "id": "u4_a2_fn_05",
+          "type": "open",
+          "question": "Wat betekent 'transpirer' in het Nederlands?",
+          "answer": "zweten",
+          "altAnswers": []
+        },
+        {
+          "id": "u4_a2_fn_06",
+          "type": "open",
+          "question": "Wat betekent 'le dentiste' in het Nederlands?",
+          "answer": "de tandarts",
+          "altAnswers": [
+            "tandarts"
+          ]
+        },
+        {
+          "id": "u4_a2_fn_07",
+          "type": "open",
+          "question": "Wat betekent 'refuser' in het Nederlands?",
+          "answer": "weigeren",
+          "altAnswers": []
+        },
+        {
+          "id": "u4_a2_fn_08",
+          "type": "open",
+          "question": "Wat betekent 'se lever' in het Nederlands?",
+          "answer": "opstaan",
+          "altAnswers": []
+        },
+        {
+          "id": "u4_a2_fn_09",
+          "type": "open",
+          "question": "Wat betekent 'se coucher' in het Nederlands?",
+          "answer": "gaan slapen",
+          "altAnswers": [
+            "slapen gaan"
+          ]
+        },
+        {
+          "id": "u4_a2_fn_10",
+          "type": "open",
+          "question": "Wat betekent 'grossir' in het Nederlands?",
+          "answer": "dik worden",
+          "altAnswers": [
+            "dikker worden"
+          ]
+        },
+        {
+          "id": "u4_a2_fn_11",
+          "type": "open",
+          "question": "Wat betekent 'malheureux, malheureuse' in het Nederlands?",
+          "answer": "ongelukkig",
+          "altAnswers": []
+        },
+        {
+          "id": "u4_a2_fn_12",
+          "type": "open",
+          "question": "Wat betekent 'être allergique à' in het Nederlands?",
+          "answer": "allergisch zijn voor",
+          "altAnswers": [
+            "allergisch zijn"
+          ]
+        },
+        {
+          "id": "u4_a2_fn_13",
+          "type": "open",
+          "question": "Wat betekent 'se faire du souci' in het Nederlands?",
+          "answer": "zich zorgen maken",
+          "altAnswers": [
+            "zorgen maken"
+          ]
+        },
+        {
+          "id": "u4_a2_fn_14",
+          "type": "open",
+          "question": "Wat betekent 'répondre à' in het Nederlands?",
+          "answer": "antwoord geven op",
+          "altAnswers": [
+            "antwoorden op",
+            "antwoord geven"
+          ]
+        },
+        {
+          "id": "u4_a2_fn_15",
+          "type": "open",
+          "question": "Wat betekent 'avoir peur de' in het Nederlands?",
+          "answer": "bang zijn voor",
+          "altAnswers": [
+            "bang zijn"
+          ]
+        },
+        {
+          "id": "u4_a2_fn_16",
+          "type": "open",
+          "question": "Wat betekent 'la peur de l'échec' in het Nederlands?",
+          "answer": "de faalangst",
+          "altAnswers": [
+            "faalangst"
+          ]
+        },
+        {
+          "id": "u4_a2_fn_17",
+          "type": "open",
+          "question": "Wat betekent 'ridicule' in het Nederlands?",
+          "answer": "belachelijk",
+          "altAnswers": []
+        },
+        {
+          "id": "u4_a4_fn_01",
+          "type": "open",
+          "question": "Wat betekent 'marcher' in het Nederlands?",
+          "answer": "lopen",
+          "altAnswers": [
+            "wandelen"
+          ]
+        },
+        {
+          "id": "u4_a4_fn_02",
+          "type": "open",
+          "question": "Wat betekent 'pâle' in het Nederlands?",
+          "answer": "bleek",
+          "altAnswers": []
+        },
+        {
+          "id": "u4_a4_fn_03",
+          "type": "open",
+          "question": "Wat betekent 'le médecin' in het Nederlands?",
+          "answer": "de dokter",
+          "altAnswers": [
+            "dokter",
+            "de arts",
+            "arts"
+          ]
+        },
+        {
+          "id": "u4_a4_fn_04",
+          "type": "open",
+          "question": "Wat betekent 'tout de suite' in het Nederlands?",
+          "answer": "meteen",
+          "altAnswers": [
+            "direct"
+          ]
+        },
+        {
+          "id": "u4_a4_fn_05",
+          "type": "open",
+          "question": "Wat betekent 'partout' in het Nederlands?",
+          "answer": "overal",
+          "altAnswers": []
+        },
+        {
+          "id": "u4_a4_fn_06",
+          "type": "open",
+          "question": "Wat betekent 'le pansement' in het Nederlands?",
+          "answer": "de pleister",
+          "altAnswers": [
+            "pleister",
+            "het verband",
+            "verband"
+          ]
+        },
+        {
+          "id": "u4_a4_fn_07",
+          "type": "open",
+          "question": "Wat betekent 'guérir' in het Nederlands?",
+          "answer": "genezen",
+          "altAnswers": [
+            "beter worden"
+          ]
+        },
+        {
+          "id": "u4_a4_fn_08",
+          "type": "open",
+          "question": "Wat betekent 'soulager' in het Nederlands?",
+          "answer": "verlichten",
+          "altAnswers": [
+            "verzachten"
+          ]
+        },
+        {
+          "id": "u4_a4_fn_09",
+          "type": "open",
+          "question": "Wat betekent 'saigner' in het Nederlands?",
+          "answer": "bloeden",
+          "altAnswers": []
+        },
+        {
+          "id": "u4_a4_fn_10",
+          "type": "open",
+          "question": "Wat betekent 'prescrire' in het Nederlands?",
+          "answer": "voorschrijven",
+          "altAnswers": []
+        },
+        {
+          "id": "u4_a4_fn_11",
+          "type": "open",
+          "question": "Wat betekent 'vomir' in het Nederlands?",
+          "answer": "overgeven",
+          "altAnswers": [
+            "braken"
+          ]
+        },
+        {
+          "id": "u4_a4_fn_12",
+          "type": "open",
+          "question": "Wat betekent 'la pommade' in het Nederlands?",
+          "answer": "de zalf",
+          "altAnswers": [
+            "zalf"
+          ]
+        },
+        {
+          "id": "u4_a4_fn_13",
+          "type": "open",
+          "question": "Wat betekent 'l'ordonnance' in het Nederlands?",
+          "answer": "het recept",
+          "altAnswers": [
+            "recept"
+          ]
+        },
+        {
+          "id": "u4_a4_fn_14",
+          "type": "open",
+          "question": "Wat betekent 'la piqûre d'insecte' in het Nederlands?",
+          "answer": "de insectenbeet",
+          "altAnswers": [
+            "insectenbeet"
+          ]
+        },
+        {
+          "id": "u4_a4_fn_15",
+          "type": "open",
+          "question": "Wat betekent 'le médicament' in het Nederlands?",
+          "answer": "het medicijn",
+          "altAnswers": [
+            "medicijn",
+            "geneesmiddel"
+          ]
+        },
+        {
+          "id": "u4_a4_fn_16",
+          "type": "open",
+          "question": "Wat betekent 'le mal de gorge' in het Nederlands?",
+          "answer": "de keelpijn",
+          "altAnswers": [
+            "keelpijn"
+          ]
+        },
+        {
+          "id": "u4_a4_fn_17",
+          "type": "open",
+          "question": "Wat betekent 'le coup de soleil' in het Nederlands?",
+          "answer": "de zonnesteek",
+          "altAnswers": [
+            "zonnesteek"
+          ]
+        },
+        {
+          "id": "u4_a3_mc01",
+          "type": "mc",
+          "question": "Hoe vervoeg je 'vendre' voor 'je'?",
+          "options": [
+            "je vends",
+            "je vend",
+            "je vendons",
+            "je vendez"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u4_a3_mc02",
+          "type": "mc",
+          "question": "Hoe vervoeg je 'vendre' voor 'il'?",
+          "options": [
+            "il vends",
+            "il vend",
+            "il vendons",
+            "il vendent"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u4_a3_mc03",
+          "type": "mc",
+          "question": "Hoe vervoeg je 'vendre' voor 'nous'?",
+          "options": [
+            "nous vends",
+            "nous vendez",
+            "nous vendons",
+            "nous vendent"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u4_a3_mc04",
+          "type": "mc",
+          "question": "Hoe vervoeg je 'vendre' voor 'vous'?",
+          "options": [
+            "vous vends",
+            "vous vendez",
+            "vous vendons",
+            "vous vendent"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u4_a3_mc05",
+          "type": "mc",
+          "question": "Hoe vervoeg je 'vendre' voor 'ils'?",
+          "options": [
+            "ils vends",
+            "ils vendons",
+            "ils vendez",
+            "ils vendent"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u4_a3_mc06",
+          "type": "mc",
+          "question": "Wat is het passé composé van 'vendre' voor 'il'?",
+          "options": [
+            "il a vendé",
+            "il a vendu",
+            "il est vendu",
+            "il a vendre"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u4_a3_mc07",
+          "type": "mc",
+          "question": "Wat is het voltooid deelwoord van 'descendre'?",
+          "options": [
+            "descendé",
+            "descendant",
+            "descende",
+            "descendu"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u4_a3_tf01",
+          "type": "truefalse",
+          "question": "Het voltooid deelwoord van regelmatige -re werkwoorden eindigt op -u.",
+          "correct": true
+        },
+        {
+          "id": "u4_a3_tf02",
+          "type": "truefalse",
+          "question": "'Il vend' (zonder -s) is de juiste vervoeging van 'vendre' voor 'il'.",
+          "correct": true
+        },
+        {
+          "id": "u4_a3_tf03",
+          "type": "truefalse",
+          "question": "'Je vend' is de juiste vervoeging van 'vendre' voor 'je'.",
+          "correct": false
+        },
+        {
+          "id": "u4_a3_tf04",
+          "type": "truefalse",
+          "question": "'Elles vendent' is de juiste vervoeging van 'vendre' voor 'elles'.",
+          "correct": true
+        },
+        {
+          "id": "u4_a3_op01",
+          "type": "open",
+          "question": "Wat betekent 'entendre' in het Nederlands?",
+          "answer": "horen",
+          "altAnswers": []
+        },
+        {
+          "id": "u4_a3_op02",
+          "type": "open",
+          "question": "Wat betekent 'attendre' in het Nederlands?",
+          "answer": "wachten op",
+          "altAnswers": [
+            "wachten"
+          ]
+        },
+        {
+          "id": "u4_a3_op03",
+          "type": "open",
+          "question": "Wat betekent 'perdre' in het Nederlands?",
+          "answer": "verliezen",
+          "altAnswers": []
+        },
+        {
+          "id": "u4_a3_op04",
+          "type": "open",
+          "question": "Wat betekent 'descendre' in het Nederlands?",
+          "answer": "uitstappen",
+          "altAnswers": [
+            "naar beneden gaan"
+          ]
+        },
+        {
+          "id": "u4_a3_op05",
+          "type": "open",
+          "question": "Wat betekent 'rendre' in het Nederlands?",
+          "answer": "teruggeven",
+          "altAnswers": [
+            "terug geven"
+          ]
+        },
+        {
+          "id": "u4_a10_mc01",
+          "type": "mc",
+          "question": "Welke vorm gebruik je bij 'à + le'?",
+          "options": [
+            "au",
+            "à la",
+            "à l'",
+            "aux"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u4_a10_mc02",
+          "type": "mc",
+          "question": "Welke vorm gebruik je bij 'à + les'?",
+          "options": [
+            "au",
+            "à la",
+            "à l'",
+            "aux"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u4_a10_mc03",
+          "type": "mc",
+          "question": "Welke vorm gebruik je bij 'à + la'?",
+          "options": [
+            "au",
+            "à la",
+            "à l'",
+            "aux"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u4_a10_mc04",
+          "type": "mc",
+          "question": "Welke vorm gebruik je bij 'à + l' (voor klinker)?",
+          "options": [
+            "au",
+            "à la",
+            "à l'",
+            "aux"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u4_a10_mc05",
+          "type": "mc",
+          "question": "'J'ai mal ___ nez.' (le nez) Welk woord past hier?",
+          "options": [
+            "au",
+            "à la",
+            "à l'",
+            "aux"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u4_a10_mc06",
+          "type": "mc",
+          "question": "'J'ai mal ___ tête.' (la tête) Welk woord past hier?",
+          "options": [
+            "au",
+            "à la",
+            "à l'",
+            "aux"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u4_a10_mc07",
+          "type": "mc",
+          "question": "'J'ai mal ___ oreille.' (l'oreille) Welk woord past hier?",
+          "options": [
+            "au",
+            "à la",
+            "à l'",
+            "aux"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u4_a10_mc08",
+          "type": "mc",
+          "question": "'J'ai mal ___ dents.' (les dents) Welk woord past hier?",
+          "options": [
+            "au",
+            "à la",
+            "à l'",
+            "aux"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u4_a10_mc09",
+          "type": "mc",
+          "question": "'J'ai mal ___ dos.' (le dos) Welk woord past hier?",
+          "options": [
+            "au",
+            "à la",
+            "à l'",
+            "aux"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u4_a10_mc10",
+          "type": "mc",
+          "question": "'J'ai mal ___ genou.' (le genou) Welk woord past hier?",
+          "options": [
+            "au",
+            "à la",
+            "à l'",
+            "aux"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u4_a10_tf01",
+          "type": "truefalse",
+          "question": "'J'ai mal au dos.' betekent 'Ik heb rugpijn.'",
+          "correct": true
+        },
+        {
+          "id": "u4_a10_tf02",
+          "type": "truefalse",
+          "question": "'à + le' wordt 'au' in het Frans.",
+          "correct": true
+        },
+        {
+          "id": "u4_a10_tf03",
+          "type": "truefalse",
+          "question": "'J'ai mal à les dents.' is correct Frans.",
+          "correct": false
+        },
+        {
+          "id": "u4_a10_op01",
+          "type": "open",
+          "question": "Hoe zeg je 'Ik heb hoofdpijn.' in het Frans?",
+          "answer": "J'ai mal à la tête.",
+          "altAnswers": [
+            "j'ai mal a la tete",
+            "j ai mal a la tete"
+          ]
+        },
+        {
+          "id": "u4_a10_op02",
+          "type": "open",
+          "question": "Hoe zeg je 'Ik heb oorpijn.' in het Frans?",
+          "answer": "J'ai mal à l'oreille.",
+          "altAnswers": [
+            "j'ai mal a l'oreille",
+            "j ai mal a loreille"
+          ]
+        },
+        {
+          "id": "u4_a10_op03",
+          "type": "open",
+          "question": "Hoe zeg je 'Ik heb pijn aan mijn tanden.' in het Frans?",
+          "answer": "J'ai mal aux dents.",
+          "altAnswers": [
+            "j'ai mal aux dents",
+            "j ai mal aux dents"
+          ]
+        },
+        {
+          "id": "u4_a10_op04",
+          "type": "open",
+          "question": "Hoe zeg je 'Ik heb pijn aan mijn neus.' in het Frans?",
+          "answer": "J'ai mal au nez.",
+          "altAnswers": [
+            "j'ai mal au nez",
+            "j ai mal au nez"
+          ]
+        }
+      ],
+      "level": "havo2"
     }
   ]
 }

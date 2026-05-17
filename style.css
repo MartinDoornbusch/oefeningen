@@ -123,6 +123,13 @@ header h1 { font-size: 2rem; font-weight: 800; color: var(--primary); }
 .subject-progress-label { font-size: 0.72rem; color: var(--text-muted); margin-top: 3px; }
 footer { text-align: center; padding: 16px 0; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
 
+/* ── Level filter ── */
+.level-filter {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 12px;
+}
+.level-filter label { font-size: .85rem; font-weight: 600; color: var(--text-muted); white-space: nowrap; }
+.level-select { max-width: 210px; }
+
 /* ── Parent dashboard ── */
 .parent-content { display: flex; flex-direction: column; gap: 20px; padding: 8px 0; }
 .parent-child-card {
