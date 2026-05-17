@@ -122,17 +122,18 @@ function shuffle(arr) {
   return a;
 }
 
-function normalize(str) {
-  return str.trim().toLowerCase()
-    .normalize('NFD').replace(/[̀-ͯ]/g, '')
-    .replace(/['']/g, '').replace(/[.,!?;:]/g, '').replace(/\s+/g, ' ').trim();
+function normalizeBase(str) {
+  return str.trim().replace(/['']/g, '').replace(/[.,!?;:]/g, '').replace(/\s+/g, ' ').trim();
 }
-
-function normalizeStrict(str) {
-  return str.trim().toLowerCase()
-    .replace(/['']/g, '').replace(/[.,!?;:]/g, '').replace(/\s+/g, ' ').trim();
+function normalizeStrict(str) {  // lowercase, keep accents
+  return normalizeBase(str).toLowerCase();
 }
-
+function normalize(str) {  // lowercase, strip accents
+  return normalizeStrict(str).normalize('NFD').replace(/[̀-ͯ]/g, '');
+}
+function stripAccentsOnly(str) {  // keep case, strip accents
+  return normalizeBase(str).normalize('NFD').replace(/[̀-ͯ]/g, '');
+}
 function highlightAccents(str) {
   return str.replace(/[àáâãäåçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝŸ]/g,
     ch => `<mark class="accent-mark">${ch}</mark>`);
@@ -667,18 +668,25 @@ function checkAnswer() {
   if (q.type === 'open') {
     const input = document.getElementById('open-answer');
     const userRaw = input.value;
-    if (!normalizeStrict(userRaw)) { alert('Vul een antwoord in.'); return; }
+    if (!normalizeBase(userRaw)) { alert('Vul een antwoord in.'); return; }
     const allAnswers = [q.answer, ...(q.altAnswers || [])];
-    const strictMatch = allAnswers.some(a => normalizeStrict(userRaw) === normalizeStrict(a));
-    const accentOnly  = !strictMatch && allAnswers.some(a => normalize(userRaw) === normalize(a));
-    correct = strictMatch;
-    if (strictMatch) {
+    const exactMatch  = allAnswers.some(a => normalizeBase(userRaw) === normalizeBase(a));
+    const caseMatch   = !exactMatch && allAnswers.some(a => normalizeStrict(userRaw) === normalizeStrict(a));
+    const accentMatch = !exactMatch && !caseMatch && allAnswers.some(a => normalize(userRaw) === normalize(a));
+    correct = exactMatch;
+    if (exactMatch) {
       input.classList.add('correct');
       feedbackHtml = '✅ Correct!';
       feedbackClass = 'feedback-correct';
-    } else if (accentOnly) {
+    } else if (caseMatch) {
       input.classList.add('accent-warn');
-      feedbackHtml = `⚠️ Bijna goed! Let op de accenten.<br>Juist: <strong>${highlightAccents(q.answer)}</strong>`;
+      feedbackHtml = `⚠️ Bijna goed! Let op de hoofdletters.<br>Juist: <strong>${q.answer}</strong>`;
+      feedbackClass = 'feedback-accent';
+    } else if (accentMatch) {
+      input.classList.add('accent-warn');
+      const caseAlsoWrong = !allAnswers.some(a => stripAccentsOnly(userRaw) === stripAccentsOnly(a));
+      const issue = caseAlsoWrong ? 'de accenten en de hoofdletters' : 'de accenten';
+      feedbackHtml = `⚠️ Bijna goed! Let op ${issue}.<br>Juist: <strong>${highlightAccents(q.answer)}</strong>`;
       feedbackClass = 'feedback-accent';
     } else {
       input.classList.add('wrong');
