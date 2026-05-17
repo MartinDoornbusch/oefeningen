@@ -225,6 +225,25 @@
         {"id":"dk3_tf04","type":"truefalse","question":"'das Referat' is Duits voor 'de spreekbeurt'.","correct":true},
         {"id":"dk3_tf05","type":"truefalse","question":"'spät' en 'früh' betekenen hetzelfde in het Duits.","correct":false}
       ]
+    },
+    {
+      "id": "frans_zinnen_u3",
+      "name": "Frans – Zinnen Unité 3",
+      "emoji": "💬",
+      "questions": [
+        {"id":"fz_a7_01","type":"open","question":"Apprendre 7: Hoe zeg je 'Ik ben slecht in biologie.' in het Frans?","answer":"Je suis nul(le) en biologie.","altAnswers":["je suis nul en biologie","je suis nulle en biologie"]},
+        {"id":"fz_a7_02","type":"open","question":"Apprendre 7: Hoe zeg je 'Wat is je lievelingsvak?' in het Frans?","answer":"Quelle est ta matière préférée ?","altAnswers":["quelle est ta matiere preferee","quelle est ta matière préférée"]},
+        {"id":"fz_a7_03","type":"open","question":"Apprendre 7: Hoe zeg je 'Waar houd jij van?' in het Frans?","answer":"Qu'est-ce que tu aimes ?","altAnswers":["qu est-ce que tu aimes","qu est ce que tu aimes","quest ce que tu aimes"]},
+        {"id":"fz_a7_04","type":"open","question":"Apprendre 7: Hoe zeg je 'Ik ben dol op muziek.' in het Frans?","answer":"J'adore la musique.","altAnswers":["jadore la musique","j adore la musique"]},
+        {"id":"fz_a7_05","type":"open","question":"Apprendre 7: Hoe zeg je 'Ik ben goed in tennis.' in het Frans?","answer":"Je suis fort(e) en tennis.","altAnswers":["je suis fort en tennis","je suis forte en tennis"]},
+        {"id":"fz_a7_06","type":"open","question":"Apprendre 7: Hoe zeg je 'Ik train twee keer per week.' in het Frans?","answer":"Je m'entraine deux fois par semaine.","altAnswers":["je m entraine deux fois par semaine","je m'entraîne deux fois par semaine","je mentraine deux fois par semaine"]},
+        {"id":"fz_a9_01","type":"open","question":"Apprendre 9: Hoe zeg je 'Waar ben je?' in het Frans?","answer":"Où es-tu ?","altAnswers":["ou es-tu","où es-tu"]},
+        {"id":"fz_a9_02","type":"open","question":"Apprendre 9: Hoe zeg je 'Ik ben in de bioscoop.' in het Frans?","answer":"Je suis au cinéma.","altAnswers":["je suis au cinema"]},
+        {"id":"fz_a9_03","type":"open","question":"Apprendre 9: Hoe zeg je 'Hoe laat is het?' in het Frans?","answer":"Quelle heure est-il ?","altAnswers":["quelle heure est-il","quelle heure est il"]},
+        {"id":"fz_a9_04","type":"open","question":"Apprendre 9: Hoe zeg je 'Het is tien over twee.' in het Frans?","answer":"Il est deux heures dix.","altAnswers":["il est 14h10","il est 14 h 10","il est deux heures dix"]},
+        {"id":"fz_a9_05","type":"open","question":"Apprendre 9: Hoe zeg je 'Spelen we vanavond basketbal?' in het Frans?","answer":"On joue au basket ce soir ?","altAnswers":["on joue au basket ce soir"]},
+        {"id":"fz_a9_06","type":"open","question":"Apprendre 9: Hoe zeg je 'Ja, goed idee.' in het Frans?","answer":"Oui, bonne idée.","altAnswers":["oui bonne idee","oui, bonne idee"]}
+      ]
     }
   ]
 }
