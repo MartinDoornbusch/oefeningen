@@ -670,19 +670,22 @@ function checkAnswer() {
     const input = document.getElementById('open-answer');
     const userRaw = input.value;
     if (!normalizeBase(userRaw)) { alert('Vul een antwoord in.'); return; }
-    const allAnswers = [q.answer, ...(q.altAnswers || [])];
     // Primary answer: strict checks (case + accent matter)
     const primaryExact  = normalizeBase(userRaw) === normalizeBase(q.answer);
     const primaryCase   = !primaryExact && normalizeStrict(userRaw) === normalizeStrict(q.answer);
     const primaryAccent = !primaryExact && !primaryCase && normalize(userRaw) === normalize(q.answer);
-    // altAnswers: always fully accepted via lax match (no case/accent requirement)
-    const altAccepted   = !primaryExact && (q.altAnswers || []).some(a => normalize(userRaw) === normalize(a));
-    correct = primaryExact || altAccepted;
+    // altAnswers: fully accepted via lax match
+    const altAccepted = !primaryExact && (q.altAnswers || []).some(a => normalize(userRaw) === normalize(a));
+    // First-letter case: must match expected capitalisation regardless of altAnswer match
+    const capRe = /^[A-ZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝ]/;
+    const firstLetterWrong = capRe.test(q.answer.trim()) !== capRe.test(userRaw.trim());
+    const showCaseWarning = primaryCase || ((primaryExact || altAccepted) && firstLetterWrong);
+    correct = (primaryExact || altAccepted) && !firstLetterWrong;
     if (correct) {
       input.classList.add('correct');
       feedbackHtml = '✅ Correct!';
       feedbackClass = 'feedback-correct';
-    } else if (primaryCase) {
+    } else if (showCaseWarning) {
       input.classList.add('accent-warn');
       feedbackHtml = `⚠️ Bijna goed! Let op de hoofdletters.<br>Juist: <strong>${q.answer}</strong>`;
       feedbackClass = 'feedback-accent';
