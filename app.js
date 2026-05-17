@@ -580,7 +580,7 @@ function startQuiz(subjectId, mode = 'quiz') {
     ? subject.questions.filter(q => q.type === 'open')
     : subject.questions;
 
-  quiz = { subject, mode, questions: shuffle(questions), index: 0, score: 0, answered: false, selectedValue: null, retrying: false };
+  quiz = { subject, mode, questions: shuffle(questions), index: 0, score: 0, answered: false, selectedValue: null, copyTarget: null };
   document.getElementById('quiz-subject-title').textContent = `${subject.emoji} ${subject.name}`;
   showScreen('screen-quiz');
   renderQuestion();
@@ -600,8 +600,10 @@ function renderQuestion() {
   fb.className = 'feedback-area hidden'; fb.innerHTML = '';
   document.getElementById('btn-check').classList.remove('hidden');
   document.getElementById('btn-next').classList.add('hidden');
-  document.getElementById('btn-retry-answer').classList.add('hidden');
-  quiz.answered = false; quiz.selectedValue = null; quiz.retrying = false;
+  document.getElementById('copy-exercise').classList.add('hidden');
+  const ci = document.getElementById('copy-input');
+  ci.value = ''; ci.className = 'open-input'; ci.readOnly = false;
+  quiz.answered = false; quiz.selectedValue = null; quiz.copyTarget = null;
   attachQuestionListeners(q);
 }
 
@@ -655,31 +657,21 @@ function checkAnswer() {
   let correct = false;
   let feedbackHtml = '';
   let feedbackClass = 'feedback-wrong';
-  let showRetry = false;
+  let copyTarget = null;
 
   if (q.type === 'mc') {
     if (quiz.selectedValue === null) { alert('Kies een antwoord.'); return; }
     correct = quiz.selectedValue === q.correct;
+    document.querySelectorAll('.mc-option').forEach((el, i) => {
+      if (i === q.correct) el.classList.add('correct');
+      else if (i === quiz.selectedValue) el.classList.add('wrong');
+    });
     if (correct) {
-      document.querySelectorAll('.mc-option').forEach((el, i) => {
-        if (i === q.correct) el.classList.add('correct');
-      });
       feedbackHtml = '✅ Correct!';
       feedbackClass = 'feedback-correct';
-    } else if (!quiz.retrying) {
-      document.querySelectorAll('.mc-option').forEach((el, i) => {
-        if (i === quiz.selectedValue) el.classList.add('wrong');
-      });
-      feedbackHtml = '❌ Fout! Probeer het nog een keer.';
-      feedbackClass = 'feedback-wrong';
-      showRetry = true;
     } else {
-      document.querySelectorAll('.mc-option').forEach((el, i) => {
-        if (i === q.correct) el.classList.add('correct');
-        else if (i === quiz.selectedValue) el.classList.add('wrong');
-      });
       feedbackHtml = `❌ Fout. Juist: <strong>${q.options[q.correct]}</strong>`;
-      feedbackClass = 'feedback-wrong';
+      copyTarget = q.options[q.correct];
     }
   }
   if (q.type === 'open') {
@@ -702,51 +694,35 @@ function checkAnswer() {
       input.classList.add('accent-warn');
       feedbackHtml = `⚠️ Bijna goed! Let op de hoofdletters.<br>Juist: <strong>${q.answer}</strong>`;
       feedbackClass = 'feedback-accent';
-      if (!quiz.retrying) showRetry = true;
+      copyTarget = q.answer;
     } else if (primaryAccent) {
       input.classList.add('accent-warn');
       const caseAlsoWrong = stripAccentsOnly(userRaw) !== stripAccentsOnly(q.answer);
       const issue = caseAlsoWrong ? 'de accenten en de hoofdletters' : 'de accenten';
       feedbackHtml = `⚠️ Bijna goed! Let op ${issue}.<br>Juist: <strong>${highlightAccents(q.answer)}</strong>`;
       feedbackClass = 'feedback-accent';
-      if (!quiz.retrying) showRetry = true;
+      copyTarget = q.answer;
     } else {
       input.classList.add('wrong');
-      if (!quiz.retrying) {
-        feedbackHtml = '❌ Fout! Probeer het nog een keer.';
-        showRetry = true;
-      } else {
-        feedbackHtml = `❌ Fout. Juist: <strong>${q.answer}</strong>`;
-      }
+      feedbackHtml = `❌ Fout. Juist: <strong>${q.answer}</strong>`;
+      copyTarget = q.answer;
     }
     input.readOnly = true;
   }
   if (q.type === 'truefalse') {
     if (quiz.selectedValue === null) { alert('Kies waar of niet waar.'); return; }
     correct = quiz.selectedValue === q.correct;
+    document.querySelectorAll('.tf-option').forEach(el => {
+      const val = el.dataset.value === 'true';
+      if (val === q.correct) el.classList.add('correct');
+      else if (val === quiz.selectedValue) el.classList.add('wrong');
+    });
     if (correct) {
-      document.querySelectorAll('.tf-option').forEach(el => {
-        const val = el.dataset.value === 'true';
-        if (val === q.correct) el.classList.add('correct');
-      });
       feedbackHtml = '✅ Correct!';
       feedbackClass = 'feedback-correct';
-    } else if (!quiz.retrying) {
-      document.querySelectorAll('.tf-option').forEach(el => {
-        const val = el.dataset.value === 'true';
-        if (val === quiz.selectedValue) el.classList.add('wrong');
-      });
-      feedbackHtml = '❌ Fout! Probeer het nog een keer.';
-      feedbackClass = 'feedback-wrong';
-      showRetry = true;
     } else {
-      document.querySelectorAll('.tf-option').forEach(el => {
-        const val = el.dataset.value === 'true';
-        if (val === q.correct) el.classList.add('correct');
-        else if (val === quiz.selectedValue) el.classList.add('wrong');
-      });
       feedbackHtml = `❌ Fout. Juist: <strong>${q.correct ? 'Waar' : 'Niet waar'}</strong>`;
-      feedbackClass = 'feedback-wrong';
+      copyTarget = q.correct ? 'Waar' : 'Niet waar';
     }
   }
 
@@ -758,12 +734,35 @@ function checkAnswer() {
   fb.className = `feedback-area ${feedbackClass}`;
   fb.innerHTML = feedbackHtml;
   document.getElementById('btn-check').classList.add('hidden');
-  if (showRetry) {
-    document.getElementById('btn-retry-answer').classList.remove('hidden');
+  document.getElementById('score-display').textContent = `${quiz.score}/${quiz.index + 1}`;
+
+  if (copyTarget) {
+    startCopyExercise(copyTarget);
   } else {
     document.getElementById('btn-next').classList.remove('hidden');
   }
-  document.getElementById('score-display').textContent = `${quiz.score}/${quiz.index + 1}`;
+}
+
+function startCopyExercise(target) {
+  quiz.copyTarget = target;
+  document.getElementById('copy-target-display').textContent = target;
+  const ci = document.getElementById('copy-input');
+  ci.value = ''; ci.className = 'open-input'; ci.readOnly = false;
+  document.getElementById('copy-exercise').classList.remove('hidden');
+  ci.focus();
+}
+
+function checkCopyInput() {
+  const ci = document.getElementById('copy-input');
+  if (!normalizeBase(ci.value)) return;
+  if (normalize(ci.value) === normalize(quiz.copyTarget)) {
+    ci.classList.add('correct');
+    ci.readOnly = true;
+    document.getElementById('btn-next').classList.remove('hidden');
+  } else {
+    ci.classList.add('wrong');
+    setTimeout(() => ci.classList.remove('wrong'), 500);
+  }
 }
 
 function nextQuestion() {
@@ -983,27 +982,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   document.getElementById('btn-check').addEventListener('click', checkAnswer);
   document.getElementById('btn-next').addEventListener('click', nextQuestion);
-  document.getElementById('btn-retry-answer').addEventListener('click', () => {
-    quiz.answered = false;
-    quiz.retrying = true;
-    const q = quiz.questions[quiz.index];
-    if (q.type === 'open') {
-      const input = document.getElementById('open-answer');
-      input.value = '';
-      input.className = 'open-input';
-      input.readOnly = false;
-      input.focus();
-    } else if (q.type === 'mc') {
-      document.querySelectorAll('.mc-option').forEach(el => el.classList.remove('wrong', 'correct', 'selected'));
-      quiz.selectedValue = null;
-    } else if (q.type === 'truefalse') {
-      document.querySelectorAll('.tf-option').forEach(el => el.classList.remove('wrong', 'correct', 'selected'));
-      quiz.selectedValue = null;
-    }
-    document.getElementById('feedback-area').classList.add('hidden');
-    document.getElementById('btn-retry-answer').classList.add('hidden');
-    document.getElementById('btn-next').classList.add('hidden');
-    document.getElementById('btn-check').classList.remove('hidden');
+  document.getElementById('copy-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter') checkCopyInput();
   });
 
   // Manage
