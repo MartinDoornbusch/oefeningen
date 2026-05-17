@@ -286,6 +286,9 @@ footer { text-align: center; padding: 16px 0; display: flex; justify-content: ce
 .feedback-area { padding: 14px 16px; border-radius: 8px; margin-bottom: 12px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
 .feedback-correct { background: #d1fae5; color: #065f46; }
 .feedback-wrong   { background: #fee2e2; color: #991b1b; }
+.feedback-accent  { background: #fffbeb; color: #92400e; border-left: 4px solid var(--warning); }
+.accent-mark { background: #fde68a; color: #b45309; font-weight: 700; border-radius: 3px; padding: 0 1px; }
+input.accent-warn { border-color: var(--warning) !important; background: #fffbeb; }
 .quiz-actions { display: flex; gap: 12px; justify-content: flex-end; }
 
 /* ── Flashcard ── */

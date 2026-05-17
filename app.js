@@ -125,7 +125,17 @@ function shuffle(arr) {
 function normalize(str) {
   return str.trim().toLowerCase()
     .normalize('NFD').replace(/[̀-ͯ]/g, '')
-    .replace(/['']/g, '').replace(/[.,!?;:]/g, '');
+    .replace(/['']/g, '').replace(/[.,!?;:]/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function normalizeStrict(str) {
+  return str.trim().toLowerCase()
+    .replace(/['']/g, '').replace(/[.,!?;:]/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function highlightAccents(str) {
+  return str.replace(/[àáâãäåçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝŸ]/g,
+    ch => `<mark class="accent-mark">${ch}</mark>`);
 }
 
 // ── Stats ─────────────────────────────────────────────────────────────────────
@@ -640,7 +650,9 @@ function attachQuestionListeners(q) {
 function checkAnswer() {
   if (quiz.answered) return;
   const q = quiz.questions[quiz.index];
-  let correct = false; let feedbackText = '';
+  let correct = false;
+  let feedbackHtml = '';
+  let feedbackClass = 'feedback-wrong';
 
   if (q.type === 'mc') {
     if (quiz.selectedValue === null) { alert('Kies een antwoord.'); return; }
@@ -649,17 +661,31 @@ function checkAnswer() {
       if (i === q.correct) el.classList.add('correct');
       else if (i === quiz.selectedValue) el.classList.add('wrong');
     });
-    feedbackText = correct ? '✅ Correct!' : `❌ Fout. Juist: ${q.options[q.correct]}`;
+    feedbackHtml = correct ? '✅ Correct!' : `❌ Fout. Juist: <strong>${q.options[q.correct]}</strong>`;
+    feedbackClass = correct ? 'feedback-correct' : 'feedback-wrong';
   }
   if (q.type === 'open') {
     const input = document.getElementById('open-answer');
-    const userVal = normalize(input.value);
-    if (!userVal) { alert('Vul een antwoord in.'); return; }
-    const allCorrect = [normalize(q.answer), ...(q.altAnswers || []).map(normalize)];
-    correct = allCorrect.includes(userVal);
-    input.classList.add(correct ? 'correct' : 'wrong');
+    const userRaw = input.value;
+    if (!normalizeStrict(userRaw)) { alert('Vul een antwoord in.'); return; }
+    const allAnswers = [q.answer, ...(q.altAnswers || [])];
+    const strictMatch = allAnswers.some(a => normalizeStrict(userRaw) === normalizeStrict(a));
+    const accentOnly  = !strictMatch && allAnswers.some(a => normalize(userRaw) === normalize(a));
+    correct = strictMatch;
+    if (strictMatch) {
+      input.classList.add('correct');
+      feedbackHtml = '✅ Correct!';
+      feedbackClass = 'feedback-correct';
+    } else if (accentOnly) {
+      input.classList.add('accent-warn');
+      feedbackHtml = `⚠️ Bijna goed! Let op de accenten.<br>Juist: <strong>${highlightAccents(q.answer)}</strong>`;
+      feedbackClass = 'feedback-accent';
+    } else {
+      input.classList.add('wrong');
+      feedbackHtml = `❌ Fout. Juist: <strong>${q.answer}</strong>`;
+      feedbackClass = 'feedback-wrong';
+    }
     input.readOnly = true;
-    feedbackText = correct ? '✅ Correct!' : `❌ Fout. Juist: ${q.answer}`;
   }
   if (q.type === 'truefalse') {
     if (quiz.selectedValue === null) { alert('Kies waar of niet waar.'); return; }
@@ -669,7 +695,8 @@ function checkAnswer() {
       if (val === q.correct) el.classList.add('correct');
       else if (val === quiz.selectedValue) el.classList.add('wrong');
     });
-    feedbackText = correct ? '✅ Correct!' : `❌ Fout. Juist: ${q.correct ? 'Waar' : 'Niet waar'}`;
+    feedbackHtml = correct ? '✅ Correct!' : `❌ Fout. Juist: <strong>${q.correct ? 'Waar' : 'Niet waar'}</strong>`;
+    feedbackClass = correct ? 'feedback-correct' : 'feedback-wrong';
   }
 
   if (correct) quiz.score++;
@@ -677,8 +704,8 @@ function checkAnswer() {
   recordStat(quiz.subject.id, q.id, correct);
 
   const fb = document.getElementById('feedback-area');
-  fb.className = `feedback-area ${correct ? 'feedback-correct' : 'feedback-wrong'}`;
-  fb.textContent = feedbackText;
+  fb.className = `feedback-area ${feedbackClass}`;
+  fb.innerHTML = feedbackHtml;
   document.getElementById('btn-check').classList.add('hidden');
   document.getElementById('btn-next').classList.remove('hidden');
   document.getElementById('score-display').textContent = `${quiz.score}/${quiz.index + 1}`;
