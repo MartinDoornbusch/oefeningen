@@ -125,7 +125,17 @@ function shuffle(arr) {
 function normalize(str) {
   return str.trim().toLowerCase()
     .normalize('NFD').replace(/[̀-ͯ]/g, '')
-    .replace(/['']/g, '').replace(/[.,!?;:]/g, '');
+    .replace(/['']/g, '').replace(/[.,!?;:]/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function normalizeStrict(str) {
+  return str.trim().toLowerCase()
+    .replace(/['']/g, '').replace(/[.,!?;:]/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function highlightAccents(str) {
+  return str.replace(/[àáâãäåçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝŸ]/g,
+    ch => `<mark class="accent-mark">${ch}</mark>`);
 }
 
 // ── Stats ─────────────────────────────────────────────────────────────────────
@@ -311,10 +321,58 @@ function renderHome() {
       </div>`;
     card.addEventListener('click', () => {
       if (subject.questions.length === 0) { alert('Dit vak heeft nog geen vragen.'); return; }
-      openModeSelect(subject.id);
+      if (activeProfile()?.isParent) {
+        openSubjectView(subject.id);
+      } else {
+        openModeSelect(subject.id);
+      }
     });
     grid.appendChild(card);
   });
+}
+
+// ── Subject view (parent read-only) ──────────────────────────────────────────
+
+function openSubjectView(subjectId) {
+  const subject = db.subjects.find(s => s.id === subjectId);
+  document.getElementById('subject-view-heading').textContent = `${subject.emoji} ${subject.name}`;
+  const content = document.getElementById('subject-view-content');
+
+  const groups = [
+    { label: '📝 Open / Woordjes', types: ['open'] },
+    { label: '🔵 Meerkeuze',       types: ['mc'] },
+    { label: '✅ Waar / Niet waar', types: ['truefalse'] },
+  ];
+
+  content.innerHTML = groups.map(g => {
+    const qs = subject.questions.filter(q => g.types.includes(q.type));
+    if (qs.length === 0) return '';
+    const items = qs.map((q, i) => {
+      let answerHtml;
+      if (q.type === 'open') {
+        answerHtml = `<span class="sv-answer">${q.answer}</span>`;
+      } else if (q.type === 'mc') {
+        answerHtml = q.options.map((opt, j) =>
+          `<span class="${j === q.correct ? 'sv-answer' : 'sv-option'}">${['A','B','C','D'][j]}. ${opt}</span>`
+        ).join('');
+      } else {
+        answerHtml = `<span class="sv-answer">${q.correct ? 'Waar' : 'Niet waar'}</span>`;
+      }
+      return `<div class="sv-item">
+        <span class="sv-num">${i + 1}</span>
+        <div class="sv-body">
+          <div class="sv-q">${q.question}</div>
+          <div class="sv-a">${answerHtml}</div>
+        </div>
+      </div>`;
+    }).join('');
+    return `<div class="sv-group">
+      <h4 class="sv-group-title">${g.label} <span class="sv-count">${qs.length}</span></h4>
+      ${items}
+    </div>`;
+  }).join('');
+
+  showScreen('screen-subject-view');
 }
 
 // ── Parent dashboard ──────────────────────────────────────────────────────────
@@ -354,8 +412,28 @@ function renderParentDashboard() {
         .sort((a, b) => a.ratio - b.ratio)
         .slice(0, 5);
 
+      const typeGroups = [
+        { label: 'Woordjes',       types: ['open'] },
+        { label: 'Meerkeuze',      types: ['mc'] },
+        { label: 'Waar/niet waar', types: ['truefalse'] },
+      ];
+      const typeBreakdown = typeGroups.map(g => {
+        const qs = subject.questions.filter(q => g.types.includes(q.type));
+        if (qs.length === 0) return '';
+        const att = qs.filter(q => subStats[q.id]?.attempts > 0).length;
+        const cor = qs.reduce((s, q) => s + (subStats[q.id]?.correct || 0), 0);
+        const tot = qs.reduce((s, q) => s + (subStats[q.id]?.attempts || 0), 0);
+        const tpct = tot > 0 ? Math.round(cor / tot * 100) : null;
+        return `<div class="type-row">
+          <span class="type-label">${g.label}</span>
+          <span class="type-stat">${att}/${qs.length}</span>
+          <div class="type-bar-bg"><div class="type-bar-fill" style="width:${tpct||0}%;background:${masteryColor(tpct||0)}"></div></div>
+          <span class="type-pct" style="color:${tpct!==null?masteryColor(tpct):'var(--text-muted)'}">${tpct !== null ? tpct + '%' : '—'}</span>
+        </div>`;
+      }).filter(Boolean).join('');
+
       const hardHtml = hardQs.length > 0
-        ? `<div style="font-weight:600;margin-bottom:6px;font-size:.82rem">Moeilijkste vragen:</div>
+        ? `<div class="hard-title">Moeilijkste vragen:</div>
            <div class="hard-questions">${hardQs.map(({ q, stat }) =>
              `<div class="hard-q-item">
                <span class="hard-q-text">${q.question.length > 60 ? q.question.slice(0, 60) + '…' : q.question}</span>
@@ -373,7 +451,7 @@ function renderParentDashboard() {
           <span class="ps-pct" style="color:${pct>0?color:'var(--text-muted)'}">${pct > 0 ? pct + '%' : '—'}</span>
         </div>
         <div class="parent-subject-detail">
-          <div class="detail-stat">${attempted} vragen geprobeerd • ${correct} van ${attempts} goed (${attempts > 0 ? Math.round(correct/attempts*100) : 0}%)</div>
+          <div class="type-breakdown">${typeBreakdown}</div>
           ${hardHtml}
         </div>`;
     }).join('');
@@ -572,7 +650,9 @@ function attachQuestionListeners(q) {
 function checkAnswer() {
   if (quiz.answered) return;
   const q = quiz.questions[quiz.index];
-  let correct = false; let feedbackText = '';
+  let correct = false;
+  let feedbackHtml = '';
+  let feedbackClass = 'feedback-wrong';
 
   if (q.type === 'mc') {
     if (quiz.selectedValue === null) { alert('Kies een antwoord.'); return; }
@@ -581,17 +661,31 @@ function checkAnswer() {
       if (i === q.correct) el.classList.add('correct');
       else if (i === quiz.selectedValue) el.classList.add('wrong');
     });
-    feedbackText = correct ? '✅ Correct!' : `❌ Fout. Juist: ${q.options[q.correct]}`;
+    feedbackHtml = correct ? '✅ Correct!' : `❌ Fout. Juist: <strong>${q.options[q.correct]}</strong>`;
+    feedbackClass = correct ? 'feedback-correct' : 'feedback-wrong';
   }
   if (q.type === 'open') {
     const input = document.getElementById('open-answer');
-    const userVal = normalize(input.value);
-    if (!userVal) { alert('Vul een antwoord in.'); return; }
-    const allCorrect = [normalize(q.answer), ...(q.altAnswers || []).map(normalize)];
-    correct = allCorrect.includes(userVal);
-    input.classList.add(correct ? 'correct' : 'wrong');
+    const userRaw = input.value;
+    if (!normalizeStrict(userRaw)) { alert('Vul een antwoord in.'); return; }
+    const allAnswers = [q.answer, ...(q.altAnswers || [])];
+    const strictMatch = allAnswers.some(a => normalizeStrict(userRaw) === normalizeStrict(a));
+    const accentOnly  = !strictMatch && allAnswers.some(a => normalize(userRaw) === normalize(a));
+    correct = strictMatch;
+    if (strictMatch) {
+      input.classList.add('correct');
+      feedbackHtml = '✅ Correct!';
+      feedbackClass = 'feedback-correct';
+    } else if (accentOnly) {
+      input.classList.add('accent-warn');
+      feedbackHtml = `⚠️ Bijna goed! Let op de accenten.<br>Juist: <strong>${highlightAccents(q.answer)}</strong>`;
+      feedbackClass = 'feedback-accent';
+    } else {
+      input.classList.add('wrong');
+      feedbackHtml = `❌ Fout. Juist: <strong>${q.answer}</strong>`;
+      feedbackClass = 'feedback-wrong';
+    }
     input.readOnly = true;
-    feedbackText = correct ? '✅ Correct!' : `❌ Fout. Juist: ${q.answer}`;
   }
   if (q.type === 'truefalse') {
     if (quiz.selectedValue === null) { alert('Kies waar of niet waar.'); return; }
@@ -601,7 +695,8 @@ function checkAnswer() {
       if (val === q.correct) el.classList.add('correct');
       else if (val === quiz.selectedValue) el.classList.add('wrong');
     });
-    feedbackText = correct ? '✅ Correct!' : `❌ Fout. Juist: ${q.correct ? 'Waar' : 'Niet waar'}`;
+    feedbackHtml = correct ? '✅ Correct!' : `❌ Fout. Juist: <strong>${q.correct ? 'Waar' : 'Niet waar'}</strong>`;
+    feedbackClass = correct ? 'feedback-correct' : 'feedback-wrong';
   }
 
   if (correct) quiz.score++;
@@ -609,8 +704,8 @@ function checkAnswer() {
   recordStat(quiz.subject.id, q.id, correct);
 
   const fb = document.getElementById('feedback-area');
-  fb.className = `feedback-area ${correct ? 'feedback-correct' : 'feedback-wrong'}`;
-  fb.textContent = feedbackText;
+  fb.className = `feedback-area ${feedbackClass}`;
+  fb.innerHTML = feedbackHtml;
   document.getElementById('btn-check').classList.add('hidden');
   document.getElementById('btn-next').classList.remove('hidden');
   document.getElementById('score-display').textContent = `${quiz.score}/${quiz.index + 1}`;
@@ -638,6 +733,7 @@ function showQuizResults() {
 // ── Manage ────────────────────────────────────────────────────────────────────
 
 function renderManage() {
+  if (!activeProfile()?.isParent) { showScreen('screen-home'); return; }
   const select = document.getElementById('q-subject');
   select.innerHTML = db.subjects.map(s => `<option value="${s.id}">${s.emoji} ${s.name}</option>`).join('');
 
@@ -749,7 +845,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Profile screen
-  document.getElementById('btn-add-profile').addEventListener('click', () => showScreen('screen-add-profile'));
+  document.getElementById('btn-add-profile').addEventListener('click', () => {
+    const parentExists = db.profiles.some(p => p.isParent);
+    const parentRow = document.getElementById('new-profile-is-parent').closest('label');
+    parentRow.style.display = parentExists ? 'none' : '';
+    if (parentExists) {
+      document.getElementById('new-profile-is-parent').checked = false;
+      document.getElementById('new-profile-pin-wrap').classList.add('hidden');
+    }
+    showScreen('screen-add-profile');
+  });
   document.getElementById('btn-back-add-profile').addEventListener('click', () => { renderProfileScreen(); showScreen('screen-profiles'); });
   document.getElementById('new-profile-is-parent').addEventListener('change', e => {
     document.getElementById('new-profile-pin-wrap').classList.toggle('hidden', !e.target.checked);
@@ -760,6 +865,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const isParent = document.getElementById('new-profile-is-parent').checked;
     const pin = document.getElementById('new-profile-pin').value.trim();
     if (!name) { alert('Voer een naam in.'); return; }
+    if (isParent && db.profiles.some(p => p.isParent)) { alert('Er bestaat al een ouderprofiel.'); return; }
     if (isParent && pin.length !== 4) { alert('Voer een pincode van 4 cijfers in.'); return; }
     const profile = { id: uid(), name, emoji, isParent };
     if (isParent && pin) profile.pinHash = hashPin(pin);
@@ -797,6 +903,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Parent dashboard
   document.getElementById('btn-back-parent').addEventListener('click', () => showScreen('screen-home'));
+
+  // Subject view (parent)
+  document.getElementById('btn-back-subject-view').addEventListener('click', () => showScreen('screen-home'));
 
   // Mode select
   document.getElementById('btn-back-mode').addEventListener('click', () => showScreen('screen-home'));
