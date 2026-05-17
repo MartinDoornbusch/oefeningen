@@ -655,28 +655,41 @@ function checkAnswer() {
   let correct = false;
   let feedbackHtml = '';
   let feedbackClass = 'feedback-wrong';
+  let showRetry = false;
 
   if (q.type === 'mc') {
     if (quiz.selectedValue === null) { alert('Kies een antwoord.'); return; }
     correct = quiz.selectedValue === q.correct;
-    document.querySelectorAll('.mc-option').forEach((el, i) => {
-      if (i === q.correct) el.classList.add('correct');
-      else if (i === quiz.selectedValue) el.classList.add('wrong');
-    });
-    feedbackHtml = correct ? '✅ Correct!' : `❌ Fout. Juist: <strong>${q.options[q.correct]}</strong>`;
-    feedbackClass = correct ? 'feedback-correct' : 'feedback-wrong';
+    if (correct) {
+      document.querySelectorAll('.mc-option').forEach((el, i) => {
+        if (i === q.correct) el.classList.add('correct');
+      });
+      feedbackHtml = '✅ Correct!';
+      feedbackClass = 'feedback-correct';
+    } else if (!quiz.retrying) {
+      document.querySelectorAll('.mc-option').forEach((el, i) => {
+        if (i === quiz.selectedValue) el.classList.add('wrong');
+      });
+      feedbackHtml = '❌ Fout! Probeer het nog een keer.';
+      feedbackClass = 'feedback-wrong';
+      showRetry = true;
+    } else {
+      document.querySelectorAll('.mc-option').forEach((el, i) => {
+        if (i === q.correct) el.classList.add('correct');
+        else if (i === quiz.selectedValue) el.classList.add('wrong');
+      });
+      feedbackHtml = `❌ Fout. Juist: <strong>${q.options[q.correct]}</strong>`;
+      feedbackClass = 'feedback-wrong';
+    }
   }
   if (q.type === 'open') {
     const input = document.getElementById('open-answer');
     const userRaw = input.value;
     if (!normalizeBase(userRaw)) { alert('Vul een antwoord in.'); return; }
-    // Primary answer: strict checks (case + accent matter)
     const primaryExact  = normalizeBase(userRaw) === normalizeBase(q.answer);
     const primaryCase   = !primaryExact && normalizeStrict(userRaw) === normalizeStrict(q.answer);
     const primaryAccent = !primaryExact && !primaryCase && normalize(userRaw) === normalize(q.answer);
-    // altAnswers: fully accepted via lax match
     const altAccepted = !primaryExact && (q.altAnswers || []).some(a => normalize(userRaw) === normalize(a));
-    // First-letter case: must match expected capitalisation regardless of altAnswer match
     const capRe = /^[A-ZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝ]/;
     const firstLetterWrong = capRe.test(q.answer.trim()) !== capRe.test(userRaw.trim());
     const showCaseWarning = primaryCase || ((primaryExact || altAccepted) && firstLetterWrong);
@@ -689,31 +702,52 @@ function checkAnswer() {
       input.classList.add('accent-warn');
       feedbackHtml = `⚠️ Bijna goed! Let op de hoofdletters.<br>Juist: <strong>${q.answer}</strong>`;
       feedbackClass = 'feedback-accent';
-      if (!quiz.retrying) document.getElementById('btn-retry-answer').classList.remove('hidden');
+      if (!quiz.retrying) showRetry = true;
     } else if (primaryAccent) {
       input.classList.add('accent-warn');
       const caseAlsoWrong = stripAccentsOnly(userRaw) !== stripAccentsOnly(q.answer);
       const issue = caseAlsoWrong ? 'de accenten en de hoofdletters' : 'de accenten';
       feedbackHtml = `⚠️ Bijna goed! Let op ${issue}.<br>Juist: <strong>${highlightAccents(q.answer)}</strong>`;
       feedbackClass = 'feedback-accent';
-      if (!quiz.retrying) document.getElementById('btn-retry-answer').classList.remove('hidden');
+      if (!quiz.retrying) showRetry = true;
     } else {
       input.classList.add('wrong');
-      feedbackHtml = `❌ Fout. Juist: <strong>${q.answer}</strong>`;
-      feedbackClass = 'feedback-wrong';
+      if (!quiz.retrying) {
+        feedbackHtml = '❌ Fout! Probeer het nog een keer.';
+        showRetry = true;
+      } else {
+        feedbackHtml = `❌ Fout. Juist: <strong>${q.answer}</strong>`;
+      }
     }
     input.readOnly = true;
   }
   if (q.type === 'truefalse') {
     if (quiz.selectedValue === null) { alert('Kies waar of niet waar.'); return; }
     correct = quiz.selectedValue === q.correct;
-    document.querySelectorAll('.tf-option').forEach(el => {
-      const val = el.dataset.value === 'true';
-      if (val === q.correct) el.classList.add('correct');
-      else if (val === quiz.selectedValue) el.classList.add('wrong');
-    });
-    feedbackHtml = correct ? '✅ Correct!' : `❌ Fout. Juist: <strong>${q.correct ? 'Waar' : 'Niet waar'}</strong>`;
-    feedbackClass = correct ? 'feedback-correct' : 'feedback-wrong';
+    if (correct) {
+      document.querySelectorAll('.tf-option').forEach(el => {
+        const val = el.dataset.value === 'true';
+        if (val === q.correct) el.classList.add('correct');
+      });
+      feedbackHtml = '✅ Correct!';
+      feedbackClass = 'feedback-correct';
+    } else if (!quiz.retrying) {
+      document.querySelectorAll('.tf-option').forEach(el => {
+        const val = el.dataset.value === 'true';
+        if (val === quiz.selectedValue) el.classList.add('wrong');
+      });
+      feedbackHtml = '❌ Fout! Probeer het nog een keer.';
+      feedbackClass = 'feedback-wrong';
+      showRetry = true;
+    } else {
+      document.querySelectorAll('.tf-option').forEach(el => {
+        const val = el.dataset.value === 'true';
+        if (val === q.correct) el.classList.add('correct');
+        else if (val === quiz.selectedValue) el.classList.add('wrong');
+      });
+      feedbackHtml = `❌ Fout. Juist: <strong>${q.correct ? 'Waar' : 'Niet waar'}</strong>`;
+      feedbackClass = 'feedback-wrong';
+    }
   }
 
   if (correct) quiz.score++;
@@ -724,7 +758,11 @@ function checkAnswer() {
   fb.className = `feedback-area ${feedbackClass}`;
   fb.innerHTML = feedbackHtml;
   document.getElementById('btn-check').classList.add('hidden');
-  document.getElementById('btn-next').classList.remove('hidden');
+  if (showRetry) {
+    document.getElementById('btn-retry-answer').classList.remove('hidden');
+  } else {
+    document.getElementById('btn-next').classList.remove('hidden');
+  }
   document.getElementById('score-display').textContent = `${quiz.score}/${quiz.index + 1}`;
 }
 
@@ -948,11 +986,20 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btn-retry-answer').addEventListener('click', () => {
     quiz.answered = false;
     quiz.retrying = true;
-    const input = document.getElementById('open-answer');
-    input.value = '';
-    input.className = 'open-input';
-    input.readOnly = false;
-    input.focus();
+    const q = quiz.questions[quiz.index];
+    if (q.type === 'open') {
+      const input = document.getElementById('open-answer');
+      input.value = '';
+      input.className = 'open-input';
+      input.readOnly = false;
+      input.focus();
+    } else if (q.type === 'mc') {
+      document.querySelectorAll('.mc-option').forEach(el => el.classList.remove('wrong', 'correct', 'selected'));
+      quiz.selectedValue = null;
+    } else if (q.type === 'truefalse') {
+      document.querySelectorAll('.tf-option').forEach(el => el.classList.remove('wrong', 'correct', 'selected'));
+      quiz.selectedValue = null;
+    }
     document.getElementById('feedback-area').classList.add('hidden');
     document.getElementById('btn-retry-answer').classList.add('hidden');
     document.getElementById('btn-next').classList.add('hidden');
