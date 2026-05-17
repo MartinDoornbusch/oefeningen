@@ -671,22 +671,25 @@ function checkAnswer() {
     const userRaw = input.value;
     if (!normalizeBase(userRaw)) { alert('Vul een antwoord in.'); return; }
     const allAnswers = [q.answer, ...(q.altAnswers || [])];
-    const exactMatch  = allAnswers.some(a => normalizeBase(userRaw) === normalizeBase(a));
-    const caseMatch   = !exactMatch && allAnswers.some(a => normalizeStrict(userRaw) === normalizeStrict(a));
-    const accentMatch = !exactMatch && !caseMatch && allAnswers.some(a => normalize(userRaw) === normalize(a));
-    correct = exactMatch;
-    if (exactMatch) {
+    // Primary answer: strict checks (case + accent matter)
+    const primaryExact  = normalizeBase(userRaw) === normalizeBase(q.answer);
+    const primaryCase   = !primaryExact && normalizeStrict(userRaw) === normalizeStrict(q.answer);
+    const primaryAccent = !primaryExact && !primaryCase && normalize(userRaw) === normalize(q.answer);
+    // altAnswers: always fully accepted via lax match (no case/accent requirement)
+    const altAccepted   = !primaryExact && (q.altAnswers || []).some(a => normalize(userRaw) === normalize(a));
+    correct = primaryExact || altAccepted;
+    if (correct) {
       input.classList.add('correct');
       feedbackHtml = '✅ Correct!';
       feedbackClass = 'feedback-correct';
-    } else if (caseMatch) {
+    } else if (primaryCase) {
       input.classList.add('accent-warn');
       feedbackHtml = `⚠️ Bijna goed! Let op de hoofdletters.<br>Juist: <strong>${q.answer}</strong>`;
       feedbackClass = 'feedback-accent';
       if (!quiz.retrying) document.getElementById('btn-retry-answer').classList.remove('hidden');
-    } else if (accentMatch) {
+    } else if (primaryAccent) {
       input.classList.add('accent-warn');
-      const caseAlsoWrong = !allAnswers.some(a => stripAccentsOnly(userRaw) === stripAccentsOnly(a));
+      const caseAlsoWrong = stripAccentsOnly(userRaw) !== stripAccentsOnly(q.answer);
       const issue = caseAlsoWrong ? 'de accenten en de hoofdletters' : 'de accenten';
       feedbackHtml = `⚠️ Bijna goed! Let op ${issue}.<br>Juist: <strong>${highlightAccents(q.answer)}</strong>`;
       feedbackClass = 'feedback-accent';
