@@ -3049,6 +3049,342 @@
         }
       ],
       "level": "havo2"
+    },
+    {
+      "id": "duits_zinnen_kap3",
+      "name": "Duits – Zinnen Kapitel 3",
+      "emoji": "💬",
+      "level": "brugklas",
+      "questions": [
+        {
+          "id": "dkap3_zin_01",
+          "type": "open",
+          "question": "Op welke school zit je?",
+          "answer": "Auf welche Schule gehst du?",
+          "altAnswers": []
+        },
+        {
+          "id": "dkap3_zin_02",
+          "type": "open",
+          "question": "Zij zit in de derde klas.",
+          "answer": "Sie geht in die dritte Klasse.",
+          "altAnswers": [
+            "Sie geht in die dritte Klasse"
+          ]
+        },
+        {
+          "id": "dkap3_zin_03",
+          "type": "open",
+          "question": "Wanneer heb je wiskunde?",
+          "answer": "Wann hast du Mathe?",
+          "altAnswers": [
+            "Wann hast du Mathematik"
+          ]
+        },
+        {
+          "id": "dkap3_zin_04",
+          "type": "open",
+          "question": "Op maandag heb ik Duits.",
+          "answer": "Am Montag habe ich Deutsch.",
+          "altAnswers": [
+            "Am Montag habe ich Deutsch"
+          ]
+        },
+        {
+          "id": "dkap3_zin_05",
+          "type": "open",
+          "question": "Op dinsdag heb ik biologie.",
+          "answer": "Am Dienstag habe ich Biologie.",
+          "altAnswers": []
+        },
+        {
+          "id": "dkap3_zin_06",
+          "type": "open",
+          "question": "Op vrijdag schrijven we een toets.",
+          "answer": "Am Freitag schreiben wir einen Test.",
+          "altAnswers": []
+        },
+        {
+          "id": "dkap3_zin_07",
+          "type": "open",
+          "question": "Op woensdag hebben we een toets.",
+          "answer": "Am Mittwoch schreiben wir einen Test.",
+          "altAnswers": [
+            "Am Mittwoch haben wir einen Test"
+          ]
+        },
+        {
+          "id": "dkap3_zin_08",
+          "type": "open",
+          "question": "Om half twee heb ik gym.",
+          "answer": "Um halb zwei habe ich Sport.",
+          "altAnswers": []
+        },
+        {
+          "id": "dkap3_zin_09",
+          "type": "open",
+          "question": "Om kwart over één hebben we pauze.",
+          "answer": "Um Viertel nach eins haben wir Pause.",
+          "altAnswers": []
+        },
+        {
+          "id": "dkap3_zin_10",
+          "type": "open",
+          "question": "Om kwart voor twee hebben we wiskunde.",
+          "answer": "Um Viertel vor zwei haben wir Mathe.",
+          "altAnswers": [
+            "Um Viertel vor zwei haben wir Mathematik"
+          ]
+        },
+        {
+          "id": "dkap3_zin_11",
+          "type": "open",
+          "question": "In de tweede les heb ik Engels.",
+          "answer": "In der zweiten Stunde habe ich Englisch.",
+          "altAnswers": []
+        },
+        {
+          "id": "dkap3_zin_12",
+          "type": "open",
+          "question": "In de derde les heb ik Frans.",
+          "answer": "In der dritten Stunde habe ich Französisch.",
+          "altAnswers": [
+            "In der dritten Stunde habe ich Franzosisch"
+          ]
+        },
+        {
+          "id": "dkap3_zin_13",
+          "type": "open",
+          "question": "In de vierde les hebben we gym.",
+          "answer": "In der vierten Stunde haben wir Sport.",
+          "altAnswers": []
+        },
+        {
+          "id": "dkap3_zin_14",
+          "type": "open",
+          "question": "Op donderdag schrijven we een toets.",
+          "answer": "Am Donnerstag schreiben wir einen Test.",
+          "altAnswers": []
+        },
+        {
+          "id": "dkap3_zin_15",
+          "type": "open",
+          "question": "'s Middags maak ik huiswerk.",
+          "answer": "Nachmittags mache ich Hausaufgaben.",
+          "altAnswers": []
+        },
+        {
+          "id": "dkap3_zin_16",
+          "type": "open",
+          "question": "'s Morgens heb ik aardrijkskunde.",
+          "answer": "Morgens habe ich Erdkunde.",
+          "altAnswers": []
+        },
+        {
+          "id": "dkap3_zin_17",
+          "type": "open",
+          "question": "Volgende week schrijven we een toets.",
+          "answer": "Nächste Woche schreiben wir einen Test.",
+          "altAnswers": [
+            "Nachste Woche schreiben wir einen Test"
+          ]
+        },
+        {
+          "id": "dkap3_zin_18",
+          "type": "open",
+          "question": "Hoe vind je Duits?",
+          "answer": "Wie findest du Deutsch?",
+          "altAnswers": []
+        },
+        {
+          "id": "dkap3_zin_19",
+          "type": "open",
+          "question": "Ik vind wiskunde moeilijk.",
+          "answer": "Ich finde Mathe schwierig.",
+          "altAnswers": [
+            "Ich finde Mathematik schwierig"
+          ]
+        },
+        {
+          "id": "dkap3_zin_20",
+          "type": "open",
+          "question": "Ik vind Frans interessant en leuk.",
+          "answer": "Ich finde Französisch interessant und toll.",
+          "altAnswers": [
+            "Ich finde Franzosisch interessant und toll"
+          ]
+        },
+        {
+          "id": "dkap3_zin_21",
+          "type": "open",
+          "question": "Duits is mijn lievelingsvak.",
+          "answer": "Deutsch ist mein Lieblingsfach.",
+          "altAnswers": []
+        },
+        {
+          "id": "dkap3_zin_22",
+          "type": "open",
+          "question": "Ik vind aardrijkskunde saai en moeilijk.",
+          "answer": "Ich finde Erdkunde langweilig und schwierig.",
+          "altAnswers": []
+        },
+        {
+          "id": "dkap3_zin_mc01",
+          "type": "mc",
+          "question": "Welk woord hoort op de stip? 'Am Montag ___ ich Deutsch.'",
+          "options": [
+            "habe",
+            "haben",
+            "hat",
+            "hast"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dkap3_zin_mc02",
+          "type": "mc",
+          "question": "Welk woord hoort op de stip? 'Am Dienstag ___ wir Sport.'",
+          "options": [
+            "haben",
+            "habe",
+            "hat",
+            "hast"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dkap3_zin_mc03",
+          "type": "mc",
+          "question": "Welk voorzetsel gebruik je voor de dag? '___ Montag habe ich Deutsch.'",
+          "options": [
+            "Am",
+            "Im",
+            "An",
+            "Auf"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dkap3_zin_mc04",
+          "type": "mc",
+          "question": "Welk voorzetsel gebruik je voor de tijd? '___ halb zwei haben wir Sport.'",
+          "options": [
+            "Um",
+            "Am",
+            "Im",
+            "An"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dkap3_zin_mc05",
+          "type": "mc",
+          "question": "Hoe zeg je 'half twee' in het Duits?",
+          "options": [
+            "halb zwei",
+            "halb drei",
+            "Viertel nach eins",
+            "Viertel vor zwei"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dkap3_zin_mc06",
+          "type": "mc",
+          "question": "Hoe zeg je 'kwart over één' in het Duits?",
+          "options": [
+            "Viertel nach eins",
+            "Viertel vor eins",
+            "halb zwei",
+            "halb eins"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dkap3_zin_mc07",
+          "type": "mc",
+          "question": "Hoe zeg je 'kwart voor twee' in het Duits?",
+          "options": [
+            "Viertel vor zwei",
+            "Viertel nach zwei",
+            "halb twee",
+            "halb eins"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dkap3_zin_mc08",
+          "type": "mc",
+          "question": "Hoe vertaal je 'Hoe vind je Duits?' naar het Duits?",
+          "options": [
+            "Wie findest du Deutsch?",
+            "Was findest du Deutsch?",
+            "Wann hast du Deutsch?",
+            "Wie hast du Deutsch?"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dkap3_zin_mc09",
+          "type": "mc",
+          "question": "Welk woord hoort op de stip? 'In der dritten Stunde ___ ich Mathe.'",
+          "options": [
+            "habe",
+            "haben",
+            "hat",
+            "hast"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dkap3_zin_mc10",
+          "type": "mc",
+          "question": "Hoe zeg je ''s middags maak ik huiswerk' in het Duits?",
+          "options": [
+            "Nachmittags mache ich Hausaufgaben.",
+            "Morgens mache ich Hausaufgaben.",
+            "Abends mache ich Hausaufgaben.",
+            "Nachmittags schreibe ich Hausaufgaben."
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dkap3_zin_tf01",
+          "type": "truefalse",
+          "question": "'s Avonds' in het Duits is 'abends'.",
+          "correct": true
+        },
+        {
+          "id": "dkap3_zin_tf02",
+          "type": "truefalse",
+          "question": "'Volgende week' in het Duits is 'vorige Woche'.",
+          "correct": false
+        },
+        {
+          "id": "dkap3_zin_tf03",
+          "type": "truefalse",
+          "question": "In het Duits gebruik je 'Am' voor de dag, bijv. 'Am Montag'.",
+          "correct": true
+        },
+        {
+          "id": "dkap3_zin_tf04",
+          "type": "truefalse",
+          "question": "'Wann hast du Mathe?' betekent 'Wanneer heb je wiskunde?'.",
+          "correct": true
+        },
+        {
+          "id": "dkap3_zin_tf05",
+          "type": "truefalse",
+          "question": "'Um halb zwei' betekent 'kwart voor twee'.",
+          "correct": false
+        },
+        {
+          "id": "dkap3_zin_tf06",
+          "type": "truefalse",
+          "question": "'Nachmittags mache ich Hausaufgaben' betekent ''s middags maak ik huiswerk'.",
+          "correct": true
+        }
+      ]
     }
   ]
 }
