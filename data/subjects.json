@@ -3385,6 +3385,636 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "duits_kap10",
+      "name": "Duits – Kapitel 10",
+      "emoji": "✈️",
+      "level": "havo2",
+      "questions": [
+        {
+          "id": "dk10_v01",
+          "type": "open",
+          "question": "Wat is 'de camping' in het Duits? (met lidwoord én meervoud)",
+          "answer": "der Campingplatz - die Campingplätze",
+          "altAnswers": [
+            "der Campingplatz – die Campingplätze",
+            "Campingplatz - Campingplätze",
+            "der Campingplatz - die Campingplatze"
+          ]
+        },
+        {
+          "id": "dk10_v02",
+          "type": "open",
+          "question": "Wat is 'het strand' in het Duits? (met lidwoord)",
+          "answer": "der Strand",
+          "altAnswers": [
+            "Strand"
+          ]
+        },
+        {
+          "id": "dk10_v03",
+          "type": "open",
+          "question": "Wat is 'de trein' in het Duits? (met lidwoord)",
+          "answer": "die Bahn",
+          "altAnswers": [
+            "Bahn"
+          ]
+        },
+        {
+          "id": "dk10_v04",
+          "type": "open",
+          "question": "Wat is 'de auto' in het Duits? (met lidwoord én meervoud)",
+          "answer": "das Auto - die Autos",
+          "altAnswers": [
+            "das Auto – die Autos",
+            "Auto - Autos",
+            "das Auto"
+          ]
+        },
+        {
+          "id": "dk10_v05",
+          "type": "open",
+          "question": "Wat is 'het hotel' in het Duits? (met lidwoord én meervoud)",
+          "answer": "das Hotel - die Hotels",
+          "altAnswers": [
+            "das Hotel – die Hotels",
+            "Hotel - Hotels",
+            "das Hotel"
+          ]
+        },
+        {
+          "id": "dk10_v06",
+          "type": "open",
+          "question": "Wat is 'het kamp' in het Duits? (met lidwoord)",
+          "answer": "das Camp",
+          "altAnswers": [
+            "Camp"
+          ]
+        },
+        {
+          "id": "dk10_v07",
+          "type": "open",
+          "question": "Wat is 'het museum' in het Duits? (met lidwoord én meervoud)",
+          "answer": "das Museum - die Museen",
+          "altAnswers": [
+            "das Museum – die Museen",
+            "Museum - Museen",
+            "das Museum"
+          ]
+        },
+        {
+          "id": "dk10_v08",
+          "type": "open",
+          "question": "Wat is 'de zee' in het Duits? (met lidwoord)",
+          "answer": "das Meer",
+          "altAnswers": [
+            "Meer"
+          ]
+        },
+        {
+          "id": "dk10_v09",
+          "type": "open",
+          "question": "Wat is 'het zwembad' in het Duits? (met lidwoord én meervoud)",
+          "answer": "das Schwimmbad - die Schwimmbäder",
+          "altAnswers": [
+            "das Schwimmbad – die Schwimmbäder",
+            "Schwimmbad - Schwimmbäder",
+            "das Schwimmbad - die Schwimmbäder"
+          ]
+        },
+        {
+          "id": "dk10_v10",
+          "type": "open",
+          "question": "Wat is 'de vakantie' in het Duits? (met lidwoord)",
+          "answer": "die Ferien",
+          "altAnswers": [
+            "Ferien"
+          ]
+        },
+        {
+          "id": "dk10_v11",
+          "type": "open",
+          "question": "Wat is 'de zomervakantie' in het Duits? (met lidwoord)",
+          "answer": "die Sommerferien",
+          "altAnswers": [
+            "Sommerferien"
+          ]
+        },
+        {
+          "id": "dk10_v12",
+          "type": "open",
+          "question": "Wat is 'Denemarken' in het Duits?",
+          "answer": "Dänemark",
+          "altAnswers": [
+            "Danemark"
+          ]
+        },
+        {
+          "id": "dk10_v13",
+          "type": "open",
+          "question": "Wat is 'Frankrijk' in het Duits?",
+          "answer": "Frankreich",
+          "altAnswers": []
+        },
+        {
+          "id": "dk10_v14",
+          "type": "open",
+          "question": "Wat is 'Italië' in het Duits?",
+          "answer": "Italien",
+          "altAnswers": []
+        },
+        {
+          "id": "dk10_v15",
+          "type": "open",
+          "question": "Wat is 'Spanje' in het Duits?",
+          "answer": "Spanien",
+          "altAnswers": []
+        },
+        {
+          "id": "dk10_v16",
+          "type": "open",
+          "question": "Wat is 'afspreken' in het Duits? (infinitief én voltooid deelwoord)",
+          "answer": "sich treffen - getroffen",
+          "altAnswers": [
+            "sich treffen – getroffen",
+            "treffen - getroffen"
+          ]
+        },
+        {
+          "id": "dk10_v17",
+          "type": "open",
+          "question": "Wat is 'gaan / rijden' in het Duits? (infinitief én voltooid deelwoord)",
+          "answer": "fahren - gefahren",
+          "altAnswers": [
+            "fahren – gefahren"
+          ]
+        },
+        {
+          "id": "dk10_v18",
+          "type": "open",
+          "question": "Wat is 'op vakantie gaan' in het Duits?",
+          "answer": "in den Urlaub fahren",
+          "altAnswers": []
+        },
+        {
+          "id": "dk10_v19",
+          "type": "open",
+          "question": "Wat is 'overnachten' in het Duits?",
+          "answer": "übernachten",
+          "altAnswers": [
+            "ubernachten"
+          ]
+        },
+        {
+          "id": "dk10_v20",
+          "type": "open",
+          "question": "Wat is 'daarna' in het Duits?",
+          "answer": "danach",
+          "altAnswers": []
+        },
+        {
+          "id": "dk10_v21",
+          "type": "open",
+          "question": "Wat is 'eerst' in het Duits?",
+          "answer": "zuerst",
+          "altAnswers": []
+        },
+        {
+          "id": "dk10_v22",
+          "type": "open",
+          "question": "Wat is 'Goede reis!' in het Duits?",
+          "answer": "Gute Reise!",
+          "altAnswers": [
+            "Gute Reise"
+          ]
+        },
+        {
+          "id": "dk10_v23",
+          "type": "open",
+          "question": "Wat is 'iedere dag' in het Duits?",
+          "answer": "jeden Tag",
+          "altAnswers": []
+        },
+        {
+          "id": "dk10_v24",
+          "type": "open",
+          "question": "Wat is 'later' in het Duits?",
+          "answer": "später",
+          "altAnswers": [
+            "spater"
+          ]
+        },
+        {
+          "id": "dk10_v25",
+          "type": "open",
+          "question": "Wat is 'naar' in het Duits (als voorzetsel voor landen)?",
+          "answer": "nach",
+          "altAnswers": []
+        },
+        {
+          "id": "dk10_v26",
+          "type": "open",
+          "question": "Wat is 'Veel plezier!' in het Duits?",
+          "answer": "Viel Spaß!",
+          "altAnswers": [
+            "Viel Spass!",
+            "Viel Spaß",
+            "Viel Spass"
+          ]
+        },
+        {
+          "id": "dk10_v27",
+          "type": "open",
+          "question": "Wat is 'kunnen' in het Duits?",
+          "answer": "können",
+          "altAnswers": [
+            "konnen"
+          ]
+        },
+        {
+          "id": "dk10_v28",
+          "type": "open",
+          "question": "Wat is 'moeten (noodzaak – het kan niet anders)' in het Duits?",
+          "answer": "müssen",
+          "altAnswers": [
+            "mussen"
+          ]
+        },
+        {
+          "id": "dk10_v29",
+          "type": "open",
+          "question": "Wat is 'moeten (wil van een ander)' in het Duits?",
+          "answer": "sollen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk10_v30",
+          "type": "open",
+          "question": "Wat is 'leuk vinden / lusten' in het Duits?",
+          "answer": "mögen",
+          "altAnswers": [
+            "mogen"
+          ]
+        },
+        {
+          "id": "dk10_v31",
+          "type": "open",
+          "question": "Wat is 'mogen' in het Duits?",
+          "answer": "dürfen",
+          "altAnswers": [
+            "durfen"
+          ]
+        },
+        {
+          "id": "dk10_v32",
+          "type": "open",
+          "question": "Wat is 'weten' in het Duits?",
+          "answer": "wissen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk10_v33",
+          "type": "open",
+          "question": "Wat is 'willen' in het Duits?",
+          "answer": "wollen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk10_v34",
+          "type": "open",
+          "question": "Wat is 'willen (als wens / voorkeur)' in het Duits?",
+          "answer": "möchten",
+          "altAnswers": [
+            "mochten"
+          ]
+        },
+        {
+          "id": "dk10_a01",
+          "type": "open",
+          "question": "Wat betekent 'der Ausweis' in het Nederlands? (met lidwoord)",
+          "answer": "het legitimatiebewijs",
+          "altAnswers": [
+            "legitimatiebewijs"
+          ]
+        },
+        {
+          "id": "dk10_a02",
+          "type": "open",
+          "question": "Wat betekent 'das Gleis' in het Nederlands? (met lidwoord)",
+          "answer": "het spoor",
+          "altAnswers": [
+            "spoor"
+          ]
+        },
+        {
+          "id": "dk10_a03",
+          "type": "open",
+          "question": "Wat betekent 'der Zug' in het Nederlands? (met lidwoord)",
+          "answer": "de trein",
+          "altAnswers": [
+            "trein"
+          ]
+        },
+        {
+          "id": "dk10_a04",
+          "type": "open",
+          "question": "Wat betekent 'die Verspätung' in het Nederlands? (met lidwoord)",
+          "answer": "de vertraging",
+          "altAnswers": [
+            "vertraging"
+          ]
+        },
+        {
+          "id": "dk10_a05",
+          "type": "open",
+          "question": "Wat betekent 'der Stau' in het Nederlands? (met lidwoord)",
+          "answer": "de file",
+          "altAnswers": [
+            "file",
+            "de verkeersfile"
+          ]
+        },
+        {
+          "id": "dk10_c01",
+          "type": "open",
+          "question": "Wat betekent 'genau' in het Nederlands?",
+          "answer": "precies",
+          "altAnswers": []
+        },
+        {
+          "id": "dk10_c02",
+          "type": "open",
+          "question": "Wat betekent 'dort' in het Nederlands?",
+          "answer": "daar",
+          "altAnswers": []
+        },
+        {
+          "id": "dk10_c03",
+          "type": "open",
+          "question": "Wat betekent 'das Zelt' in het Nederlands? (met lidwoord)",
+          "answer": "de tent",
+          "altAnswers": [
+            "tent"
+          ]
+        },
+        {
+          "id": "dk10_c04",
+          "type": "open",
+          "question": "Wat betekent 'die Insel' in het Nederlands? (met lidwoord)",
+          "answer": "het eiland",
+          "altAnswers": [
+            "eiland"
+          ]
+        },
+        {
+          "id": "dk10_c05",
+          "type": "open",
+          "question": "Wat betekent 'wachsen' in het Nederlands?",
+          "answer": "groeien",
+          "altAnswers": []
+        },
+        {
+          "id": "dk10_zin01",
+          "type": "open",
+          "question": "Wat doe je in de vakantie?",
+          "answer": "Was machst du in den Ferien?",
+          "altAnswers": []
+        },
+        {
+          "id": "dk10_zin02",
+          "type": "open",
+          "question": "Waar gaan jullie heen in de vakantie?",
+          "answer": "Wohin fahrt ihr in den Ferien?",
+          "altAnswers": []
+        },
+        {
+          "id": "dk10_zin03",
+          "type": "open",
+          "question": "Waar overnachten jullie?",
+          "answer": "Wo übernachtet ihr?",
+          "altAnswers": [
+            "Wo ubernachtet ihr?"
+          ]
+        },
+        {
+          "id": "dk10_zin04",
+          "type": "open",
+          "question": "We overnachten in het hotel.",
+          "answer": "Wir übernachten im Hotel.",
+          "altAnswers": [
+            "Wir ubernachten im Hotel."
+          ]
+        },
+        {
+          "id": "dk10_zin05",
+          "type": "open",
+          "question": "We overnachten op de camping.",
+          "answer": "Wir übernachten auf dem Campingplatz.",
+          "altAnswers": [
+            "Wir ubernachten auf dem Campingplatz."
+          ]
+        },
+        {
+          "id": "dk10_zin06",
+          "type": "open",
+          "question": "We gaan naar Spanje op vakantie.",
+          "answer": "Wir fahren nach Spanien in den Urlaub.",
+          "altAnswers": []
+        },
+        {
+          "id": "dk10_zin07",
+          "type": "open",
+          "question": "We gaan voor twee weken naar Italië.",
+          "answer": "Wir fahren für zwei Wochen nach Italien.",
+          "altAnswers": [
+            "Wir fahren fur zwei Wochen nach Italien."
+          ]
+        },
+        {
+          "id": "dk10_zin08",
+          "type": "open",
+          "question": "Ik spreek af met mijn vrienden.",
+          "answer": "Ich treffe mich mit meinen Freunden.",
+          "altAnswers": []
+        },
+        {
+          "id": "dk10_zin09",
+          "type": "open",
+          "question": "Goede reis!",
+          "answer": "Gute Reise!",
+          "altAnswers": [
+            "Gute Reise"
+          ]
+        },
+        {
+          "id": "dk10_zin10",
+          "type": "open",
+          "question": "Veel plezier!",
+          "answer": "Viel Spaß!",
+          "altAnswers": [
+            "Viel Spass!",
+            "Viel Spaß",
+            "Viel Spass"
+          ]
+        },
+        {
+          "id": "dk10_mc01",
+          "type": "mc",
+          "question": "Welk werkwoord past? 'Ik moet naar de wc – het kan echt niet anders (noodzaak).'",
+          "options": [
+            "müssen",
+            "sollen",
+            "wollen",
+            "dürfen"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dk10_mc02",
+          "type": "mc",
+          "question": "Welk werkwoord past? 'Hij moet zich melden bij de directeur – de directeur heeft dit gezegd.'",
+          "options": [
+            "sollen",
+            "müssen",
+            "mögen",
+            "können"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dk10_mc03",
+          "type": "mc",
+          "question": "Wat betekent 'Ich muss zur Toilette.' in het Nederlands?",
+          "options": [
+            "Ik moet naar de wc (noodzaak).",
+            "Ik moet naar de wc (opdracht van een ander).",
+            "Ik wil naar de wc.",
+            "Ik mag naar de wc."
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dk10_mc04",
+          "type": "mc",
+          "question": "Wat betekent 'müssen' in het Nederlands?",
+          "options": [
+            "moeten (noodzaak)",
+            "moeten (wil van een ander)",
+            "mogen",
+            "willen"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dk10_mc05",
+          "type": "mc",
+          "question": "Wat betekent 'sollen' in het Nederlands?",
+          "options": [
+            "moeten (wil van een ander)",
+            "moeten (noodzaak)",
+            "willen als wens",
+            "mogen"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dk10_mc06",
+          "type": "mc",
+          "question": "Het woord 'unbedingt' (per se / absoluut noodzakelijk) gebruik je met welk werkwoord?",
+          "options": [
+            "müssen",
+            "sollen",
+            "dürfen",
+            "können"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dk10_mc07",
+          "type": "mc",
+          "question": "Hoe zeg je 'Waar gaan jullie heen in de vakantie?' in het Duits?",
+          "options": [
+            "Wohin fahrt ihr in den Ferien?",
+            "Wo fahrt ihr in den Ferien?",
+            "Wohin geht ihr in den Ferien?",
+            "Wohin fahren Sie in den Ferien?"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dk10_mc08",
+          "type": "mc",
+          "question": "Hoe zeg je 'We gaan naar Dänemark op vakantie' in het Duits?",
+          "options": [
+            "Wir fahren nach Dänemark in den Urlaub.",
+            "Wir gehen nach Dänemark in den Urlaub.",
+            "Wir fahren in Dänemark in den Urlaub.",
+            "Wir fahren nach Dänemark auf Urlaub."
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dk10_mc09",
+          "type": "mc",
+          "question": "Welk werkwoord gebruik je voor 'willen (als wens/voorkeur)'? 'Ich ___ lieber zuerst an den Strand.'",
+          "options": [
+            "möchte",
+            "will",
+            "muss",
+            "darf"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dk10_mc10",
+          "type": "mc",
+          "question": "Hoe zeg je 'We kunnen nu zwemmen en daarna naar zee' in het Duits?",
+          "options": [
+            "Wir können jetzt schwimmen und danach ans Meer.",
+            "Wir können jetzt schwimmen und dann das Meer.",
+            "Wir können nun schwimmen und dann ans Meer.",
+            "Wir können jetzt schwimmen oder danach ans Meer."
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dk10_tf01",
+          "type": "truefalse",
+          "question": "'Müssen' gebruik je als iets noodzakelijk is, bijv. 'Ich muss zur Toilette.'",
+          "correct": true
+        },
+        {
+          "id": "dk10_tf02",
+          "type": "truefalse",
+          "question": "'Sollen' gebruik je als je zelf iets wil doen.",
+          "correct": false
+        },
+        {
+          "id": "dk10_tf03",
+          "type": "truefalse",
+          "question": "Het woord 'unbedingt' (per se) gebruik je met 'sollen'.",
+          "correct": false
+        },
+        {
+          "id": "dk10_tf04",
+          "type": "truefalse",
+          "question": "'Wohin fahrt ihr in den Ferien?' betekent 'Waar gaan jullie heen in de vakantie?'",
+          "correct": true
+        },
+        {
+          "id": "dk10_tf05",
+          "type": "truefalse",
+          "question": "'Die Ferien' is altijd meervoud in het Duits en heeft geen enkelvoudsvorm.",
+          "correct": true
+        },
+        {
+          "id": "dk10_tf06",
+          "type": "truefalse",
+          "question": "'In den Urlaub fahren' betekent 'op vakantie gaan'.",
+          "correct": true
+        }
+      ]
     }
   ]
 }
