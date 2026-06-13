@@ -4338,6 +4338,89 @@
             "opperhuid, bladgroenkorrels, huidmondjes"
           ],
           "correct": 1
+        },
+        {
+          "id": "bio_036",
+          "type": "mc",
+          "question": "Welke drie grondstoffen (input) zijn nodig voor fotosynthese?",
+          "options": [
+            "glucose, zuurstof en water",
+            "zonlicht, koolstofdioxide en water",
+            "stikstof, fosfaat en kalium",
+            "celkern, celwand en celmembraan"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bio_037",
+          "type": "mc",
+          "question": "Wat zijn de twee producten (output) die een plant maakt bij fotosynthese?",
+          "options": [
+            "koolstofdioxide en water",
+            "glucose en zuurstof",
+            "mineralen en stikstof",
+            "water en zonlicht"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bio_038",
+          "type": "open",
+          "question": "Welke voedingsstof maakt een plant aan via fotosynthese?",
+          "answer": "glucose",
+          "altAnswers": []
+        },
+        {
+          "id": "bio_039",
+          "type": "open",
+          "question": "Welk gas komt vrij als bijproduct van fotosynthese?",
+          "answer": "zuurstof",
+          "altAnswers": [
+            "O2",
+            "zuurstof (O2)"
+          ]
+        },
+        {
+          "id": "bio_040",
+          "type": "truefalse",
+          "question": "Planten produceren zuurstof als bijproduct van fotosynthese.",
+          "correct": true
+        },
+        {
+          "id": "bio_041",
+          "type": "mc",
+          "question": "Wat is de complete omschrijving van fotosynthese?",
+          "options": [
+            "glucose + zuurstof → koolstofdioxide + water",
+            "koolstofdioxide + water + zonlicht → glucose + zuurstof",
+            "water + zonlicht → koolstofdioxide + glucose",
+            "zuurstof + water → glucose + zonlicht"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bio_042",
+          "type": "truefalse",
+          "question": "Vleesetende planten vangen insecten om extra voedingsstoffen te krijgen.",
+          "correct": true
+        },
+        {
+          "id": "bio_043",
+          "type": "mc",
+          "question": "Welk onderdeel van de plant neemt koolstofdioxide (CO₂) op voor fotosynthese?",
+          "options": [
+            "wortelhaartjes",
+            "huidmondjes",
+            "celwand",
+            "jaarringen"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bio_044",
+          "type": "truefalse",
+          "question": "Koolstofdioxide komt via de huidmondjes de plant binnen.",
+          "correct": true
         }
       ]
     }
