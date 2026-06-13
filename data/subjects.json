@@ -4015,6 +4015,331 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "bio_h5_planten",
+      "name": "Biologie – H5 Planten",
+      "emoji": "🌱",
+      "level": "brugklas",
+      "questions": [
+        {
+          "id": "bio_001",
+          "type": "open",
+          "question": "Hoe heet het ondergrondse deel van de plant dat water en mineralen opneemt? (Bron 1)",
+          "answer": "wortel",
+          "altAnswers": []
+        },
+        {
+          "id": "bio_002",
+          "type": "open",
+          "question": "Hoe heten de kleine uitsteeksels aan de wortel die zorgen voor de opname van water en mineralen? (Bron 1)",
+          "answer": "wortelhaartjes",
+          "altAnswers": []
+        },
+        {
+          "id": "bio_003",
+          "type": "open",
+          "question": "Welk onderdeel van de plant ondersteunt hem en vervoert water van de wortel naar de bladeren? (Bron 1)",
+          "answer": "stengel",
+          "altAnswers": []
+        },
+        {
+          "id": "bio_004",
+          "type": "mc",
+          "question": "Welk onderdeel van de plant is verantwoordelijk voor de voortplanting? (Bron 1)",
+          "options": [
+            "wortel",
+            "stengel",
+            "blad",
+            "bloem"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "bio_005",
+          "type": "mc",
+          "question": "Via welk onderdeel neemt de wortel water op uit de grond?",
+          "options": [
+            "huidmondjes",
+            "stengel",
+            "wortelhaartjes",
+            "bladgroenkorrels"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bio_006",
+          "type": "open",
+          "question": "Hoe heet de buitenste beschermende laag van een blad? (Bron 2)",
+          "answer": "opperhuid",
+          "altAnswers": []
+        },
+        {
+          "id": "bio_007",
+          "type": "open",
+          "question": "Hoe heten de kleine openingen in het blad waardoor gaswisseling plaatsvindt? (Bron 2)",
+          "answer": "huidmondjes",
+          "altAnswers": []
+        },
+        {
+          "id": "bio_008",
+          "type": "open",
+          "question": "Hoe heten de groene korrels in de bladcellen die fotosynthese uitvoeren? (Bron 2)",
+          "answer": "bladgroenkorrels",
+          "altAnswers": [
+            "bladgroenkorrel"
+          ]
+        },
+        {
+          "id": "bio_009",
+          "type": "mc",
+          "question": "Wat is de functie van huidmondjes in een blad?",
+          "options": [
+            "Water opnemen",
+            "Voedsel opslaan",
+            "Gaswisseling",
+            "De plant beschermen"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bio_010",
+          "type": "mc",
+          "question": "Waar in het blad bevinden zich de bladgroenkorrels? (Bron 2)",
+          "options": [
+            "In de opperhuid",
+            "In de bladcellen",
+            "In de huidmondjes",
+            "In de wortelhaartjes"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bio_011",
+          "type": "open",
+          "question": "Hoe heet de stevige buitenste laag van een plantcel? (Bron 4)",
+          "answer": "celwand",
+          "altAnswers": []
+        },
+        {
+          "id": "bio_012",
+          "type": "open",
+          "question": "Welk onderdeel van de plantcel bevat de erfelijke informatie? (Bron 4)",
+          "answer": "celkern",
+          "altAnswers": []
+        },
+        {
+          "id": "bio_013",
+          "type": "open",
+          "question": "Hoe heet het dunne vlies om het celplasma van de plantcel? (Bron 4)",
+          "answer": "celmembraan",
+          "altAnswers": []
+        },
+        {
+          "id": "bio_014",
+          "type": "open",
+          "question": "In welk onderdeel van de plantcel vindt fotosynthese plaats? (Bron 4)",
+          "answer": "bladgroenkorrel",
+          "altAnswers": [
+            "bladgroenkorrels"
+          ]
+        },
+        {
+          "id": "bio_015",
+          "type": "mc",
+          "question": "Welk onderdeel is er in een plantcel maar NIET in een diercel?",
+          "options": [
+            "celkern",
+            "celmembraan",
+            "celwand",
+            "celplasma"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bio_016",
+          "type": "truefalse",
+          "question": "De celkern bevat de erfelijke informatie van de cel.",
+          "correct": true
+        },
+        {
+          "id": "bio_017",
+          "type": "truefalse",
+          "question": "Fotosynthese vindt plaats in de celkern.",
+          "correct": false
+        },
+        {
+          "id": "bio_018",
+          "type": "truefalse",
+          "question": "Plantencellen en dierencellen hebben allebei een celwand.",
+          "correct": false
+        },
+        {
+          "id": "bio_019",
+          "type": "open",
+          "question": "Noem het onderdeel van de bladcel waar fotosynthese plaatsvindt. (5.1 – Bladcel en fotosynthese)",
+          "answer": "bladgroenkorrel",
+          "altAnswers": [
+            "bladgroenkorrels"
+          ]
+        },
+        {
+          "id": "bio_020",
+          "type": "mc",
+          "question": "In welk onderdeel van de plant vindt fotosynthese voornamelijk plaats?",
+          "options": [
+            "wortel",
+            "stengel",
+            "blad",
+            "bloem"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bio_021",
+          "type": "truefalse",
+          "question": "Planten hebben licht nodig om fotosynthese uit te voeren.",
+          "correct": true
+        },
+        {
+          "id": "bio_022",
+          "type": "open",
+          "question": "Hoe heten de bladachtige structuren in een zaad die voedselreserves bevatten voor de jonge plant? (5.2 – Bron zaad)",
+          "answer": "zaadlobben",
+          "altAnswers": [
+            "zaadlob"
+          ]
+        },
+        {
+          "id": "bio_023",
+          "type": "open",
+          "question": "Hoe heet de buitenste beschermende laag van een boomstam? (5.2 – Bron boomstam)",
+          "answer": "bastweefsel",
+          "altAnswers": [
+            "bast"
+          ]
+        },
+        {
+          "id": "bio_024",
+          "type": "open",
+          "question": "Hoe heet het harde binnenste weefsel van een boomstam? (5.2 – Bron boomstam)",
+          "answer": "houtweefsel",
+          "altAnswers": [
+            "hout"
+          ]
+        },
+        {
+          "id": "bio_025",
+          "type": "open",
+          "question": "Hoe heten de groeiringen in een boomstam die per jaar worden aangemaakt? (5.2)",
+          "answer": "jaarringen",
+          "altAnswers": [
+            "jaarring"
+          ]
+        },
+        {
+          "id": "bio_026",
+          "type": "mc",
+          "question": "Hoeveel jaarringen heeft een boom van 30 jaar oud?",
+          "options": [
+            "15",
+            "30",
+            "60",
+            "300"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bio_027",
+          "type": "truefalse",
+          "question": "Je kunt de leeftijd van een gevelde boom bepalen door de jaarringen te tellen.",
+          "correct": true
+        },
+        {
+          "id": "bio_028",
+          "type": "truefalse",
+          "question": "Elke jaarring in een boomstam staat voor twee jaar groei.",
+          "correct": false
+        },
+        {
+          "id": "bio_029",
+          "type": "mc",
+          "question": "Wat is de functie van bastweefsel bij een boomstam?",
+          "options": [
+            "Water transporteren",
+            "Fotosynthese uitvoeren",
+            "De boomstam beschermen",
+            "Voedsel opslaan in zaadlobben"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bio_030",
+          "type": "mc",
+          "question": "Wat is de functie van zaadlobben in een zaad?",
+          "options": [
+            "Water opnemen",
+            "Voedselreserves opslaan voor de jonge plant",
+            "Erfelijke informatie bewaren",
+            "Bladgroenkorrels maken"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bio_031",
+          "type": "mc",
+          "question": "Waar in de wortel worden nieuwe cellen aangemaakt zodat de wortel kan groeien? (5.2 – Wortelspits)",
+          "options": [
+            "Wortelhaartjes",
+            "Bastweefsel",
+            "Wortelspits",
+            "Huidmondjes"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bio_032",
+          "type": "mc",
+          "question": "Welke drie onderdelen zijn zichtbaar in de dwarsdoorsnede van een blad (Bron 2)?",
+          "options": [
+            "wortel, stengel, blad",
+            "celkern, celwand, celmembraan",
+            "opperhuid, bladgroenkorrels, huidmondjes",
+            "jaarringen, bastweefsel, houtweefsel"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bio_033",
+          "type": "mc",
+          "question": "Welke onderdelen zijn afgebeeld in het schema van de plantcel (Bron 4)?",
+          "options": [
+            "wortel, stengel, blad, bloem",
+            "opperhuid, bladgroenkorrels, huidmondjes",
+            "zaadlobben, bastweefsel, houtweefsel",
+            "celkern, celwand, celmembraan, bladgroenkorrel"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "bio_034",
+          "type": "truefalse",
+          "question": "Wortelhaartjes vergroten het oppervlak van de wortel, zodat meer water opgenomen kan worden.",
+          "correct": true
+        },
+        {
+          "id": "bio_035",
+          "type": "mc",
+          "question": "Welke onderdelen zijn te zien op de plantentekening in Bron 1?",
+          "options": [
+            "jaarringen, bastweefsel, houtweefsel",
+            "wortel, stengel, blad, bloem, wortelhaartjes",
+            "celkern, celwand, celmembraan, bladgroenkorrel",
+            "opperhuid, bladgroenkorrels, huidmondjes"
+          ],
+          "correct": 1
+        }
+      ]
     }
   ]
 }
