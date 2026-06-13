@@ -4560,6 +4560,158 @@
             "jaarringen, bastweefsel, houtweefsel"
           ],
           "correct": 3
+        },
+        {
+          "id": "bio_060",
+          "type": "open",
+          "question": "Bron 3 toont een foto van bladcellen onder de microscoop. Welke groene structuren zijn duidelijk zichtbaar in de cellen?",
+          "answer": "bladgroenkorrels",
+          "altAnswers": [
+            "bladgroenkorrel"
+          ]
+        },
+        {
+          "id": "bio_061",
+          "type": "mc",
+          "question": "Bron 3 is een microscoopfoto van bladcellen. Wat kun je hierin zien?",
+          "options": [
+            "huidmondjes en opperhuid",
+            "jaarringen en bastweefsel",
+            "bladgroenkorrels in de bladcellen",
+            "celwand en celkern"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bio_062",
+          "type": "truefalse",
+          "question": "In Bron 3 (microscoopfoto van bladcellen) zijn bladgroenkorrels zichtbaar als groene korrels.",
+          "correct": true
+        },
+        {
+          "id": "bio_063",
+          "type": "truefalse",
+          "question": "In Bron 3 (microscoopfoto) zijn wortelhaartjes zichtbaar.",
+          "correct": false
+        },
+        {
+          "id": "bio_064",
+          "type": "open",
+          "question": "Bron zaad (5.2) toont een dwarsdoorsnede van een zaad. Welk onderdeel sla voedsel op voor de jonge plant?",
+          "answer": "zaadlobben",
+          "altAnswers": [
+            "zaadlob"
+          ]
+        },
+        {
+          "id": "bio_065",
+          "type": "mc",
+          "question": "Bron zaad (5.2): welk onderdeel is zichtbaar in de dwarsdoorsnede van het zaad?",
+          "options": [
+            "huidmondjes",
+            "jaarringen",
+            "zaadlobben",
+            "bastweefsel"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bio_066",
+          "type": "mc",
+          "question": "Bron zaad (5.2): waarvoor dienen de zaadlobben in het zaad?",
+          "options": [
+            "Gaswisseling uitvoeren",
+            "Voedsel opslaan voor de jonge plant tot die zelf fotosynthese kan",
+            "Water opnemen uit de grond",
+            "Nieuwe cellen aanmaken voor wortelgroei"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bio_067",
+          "type": "open",
+          "question": "Bron wortelspits (5.2) toont de punt van de wortel. Wat is de functie van de wortelspits?",
+          "answer": "nieuwe cellen aanmaken zodat de wortel kan groeien",
+          "altAnswers": [
+            "wortelgroei",
+            "groeipunt van de wortel"
+          ]
+        },
+        {
+          "id": "bio_068",
+          "type": "mc",
+          "question": "Bron wortelspits (5.2): wat gebeurt er in de wortelspits?",
+          "options": [
+            "Water wordt opgeslagen",
+            "Fotosynthese vindt plaats",
+            "Nieuwe cellen worden aangemaakt voor de groei van de wortel",
+            "Gaswisseling vindt plaats"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bio_069",
+          "type": "truefalse",
+          "question": "De wortelspits is het groeipunt van de wortel, waar nieuwe cellen worden aangemaakt.",
+          "correct": true
+        },
+        {
+          "id": "bio_070",
+          "type": "mc",
+          "question": "Het fotosynthese-schema (5.3) toont wat de plant nodig heeft (invoer) en wat ze maakt (uitvoer). Wat zijn de drie INVOER-stoffen?",
+          "options": [
+            "glucose, zuurstof, water",
+            "zonlicht, koolstofdioxide, water",
+            "stikstof, fosfaat, kalium",
+            "jaarringen, bastweefsel, houtweefsel"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bio_071",
+          "type": "mc",
+          "question": "Het fotosynthese-schema (5.3): wat zijn de twee UITVOER-stoffen die de plant produceert?",
+          "options": [
+            "koolstofdioxide en water",
+            "zonlicht en zuurstof",
+            "glucose en zuurstof",
+            "water en stikstof"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bio_072",
+          "type": "open",
+          "question": "Het fotosynthese-schema toont de invoer. Welke energiebron (geen stof) heeft de plant nodig voor fotosynthese?",
+          "answer": "zonlicht",
+          "altAnswers": [
+            "licht",
+            "zonnelicht"
+          ]
+        },
+        {
+          "id": "bio_073",
+          "type": "mc",
+          "question": "Welke stof is in het fotosynthese-schema een UITVOER en GEEN invoer?",
+          "options": [
+            "koolstofdioxide",
+            "water",
+            "zonlicht",
+            "glucose"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "bio_074",
+          "type": "truefalse",
+          "question": "Koolstofdioxide (CO₂) is een invoerstof in het fotosynthese-schema.",
+          "correct": true
+        },
+        {
+          "id": "bio_075",
+          "type": "truefalse",
+          "question": "Glucose is een invoerstof (grondstof) voor fotosynthese.",
+          "correct": false
         }
       ]
     }
