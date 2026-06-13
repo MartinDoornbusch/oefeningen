@@ -7251,6 +7251,173 @@
             "Schiphol",
             "Amsterdam"
           ]
+        },
+        {
+          "id": "ak4_057",
+          "type": "open",
+          "question": "Het deel van de economie waarbij voedsel en grondstoffen worden geproduceerd (boeren, vissers) heet de ___ sector.",
+          "answer": "landbouw",
+          "altAnswers": [
+            "primaire",
+            "primaire sector"
+          ]
+        },
+        {
+          "id": "ak4_058",
+          "type": "open",
+          "question": "Het deel van de economie waarbij producten worden gemaakt (fabrieken) heet de ___ sector.",
+          "answer": "industrie",
+          "altAnswers": [
+            "secundaire",
+            "secundaire sector"
+          ]
+        },
+        {
+          "id": "ak4_059",
+          "type": "open",
+          "question": "Het deel van de economie waarbij diensten worden verleend (winkels, scholen, ziekenhuizen) heet de ___ sector.",
+          "answer": "diensten",
+          "altAnswers": [
+            "tertiaire",
+            "tertiaire sector"
+          ]
+        },
+        {
+          "id": "ak4_060",
+          "type": "mc",
+          "question": "In welke sector werken de meeste mensen in Afghanistan (lage-inkomstensland)?",
+          "options": [
+            "diensten",
+            "industrie",
+            "landbouw",
+            "alle sectoren even groot"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_061",
+          "type": "mc",
+          "question": "In welke sector werken de meeste mensen in de VS (hoge-inkomstensland)?",
+          "options": [
+            "landbouw",
+            "industrie",
+            "diensten",
+            "alle sectoren even groot"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_062",
+          "type": "mc",
+          "question": "Wie horen NIET tot de beroepsbevolking?",
+          "options": [
+            "volwassenen die fulltime werken",
+            "zelfstandige ondernemers",
+            "kinderen en ouderen",
+            "mensen met een deeltijdbaan"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_063",
+          "type": "mc",
+          "question": "In welke landen komen welvaartsziekten het vaakst voor?",
+          "options": [
+            "lage-inkomstenlanden",
+            "midden-inkomstenlanden",
+            "hoge-inkomstenlanden",
+            "in alle landen even veel"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_064",
+          "type": "mc",
+          "question": "Wat is het verband tussen een stijgende levensverwachting en kindersterfte?",
+          "options": [
+            "als de levensverwachting stijgt, stijgt ook de kindersterfte",
+            "als de levensverwachting stijgt, daalt de kindersterfte",
+            "er is geen verband tussen beiden",
+            "als de kindersterfte stijgt, stijgt ook de levensverwachting"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ak4_065",
+          "type": "mc",
+          "question": "Aan de hand van welke drie factoren wordt het welzijn van een land gemeten?",
+          "options": [
+            "export, import en bnp per hoofd",
+            "inkomen, levensverwachting en onderwijs",
+            "werkloosheid, welvaart en inflatie",
+            "infrastructuur, logistiek en vestigingsplaatsfactoren"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ak4_066",
+          "type": "truefalse",
+          "question": "In hoge-inkomstenlanden is de alfabetiseringsgraad hoog.",
+          "correct": true
+        },
+        {
+          "id": "ak4_067",
+          "type": "truefalse",
+          "question": "Welvaartsziekten zijn het gevolg van een ongezonde levensstijl: te veel eten, roken of te weinig bewegen.",
+          "correct": true
+        },
+        {
+          "id": "ak4_068",
+          "type": "truefalse",
+          "question": "Als de levensverwachting in een land stijgt, stijgt ook de kindersterfte.",
+          "correct": false
+        },
+        {
+          "id": "ak4_069",
+          "type": "truefalse",
+          "question": "In lage-inkomstenlanden werken de meeste mensen in de dienstensector.",
+          "correct": false
+        },
+        {
+          "id": "ak4_070",
+          "type": "truefalse",
+          "question": "Vóór het WK 2022 had Qatar geen voetbalstadions.",
+          "correct": true
+        },
+        {
+          "id": "ak4_071",
+          "type": "truefalse",
+          "question": "De FIFA is de wereldwijde voetbalbond.",
+          "correct": true
+        },
+        {
+          "id": "ak4_072",
+          "type": "truefalse",
+          "question": "De arbeiders die de WK-stadions in Qatar bouwden kwamen uit rijke Europese landen.",
+          "correct": false
+        },
+        {
+          "id": "ak4_073",
+          "type": "open",
+          "question": "Hoeveel arbeiders kwamen er om bij de bouw van de WK-stadions in Qatar?",
+          "answer": "meer dan 6000",
+          "altAnswers": [
+            "6000",
+            "ruim 6000",
+            "over 6000"
+          ]
+        },
+        {
+          "id": "ak4_074",
+          "type": "mc",
+          "question": "Uit welke landen kwamen de arbeiders die de WK-stadions in Qatar bouwden?",
+          "options": [
+            "Duitsland, Nederland en België",
+            "Bangladesh, India, Pakistan en Sri Lanka",
+            "Brazilië, Argentinië en Mexico",
+            "VS, Canada en Australië"
+          ],
+          "correct": 1
         }
       ]
     }
