@@ -531,7 +531,8 @@ function renderFlashcard() {
   document.getElementById('fc-progress').textContent = `Kaart ${index + 1} van ${deck.length}`;
   document.getElementById('fc-known-count').textContent = `✅ ${known}`;
   document.getElementById('fc-progress-bar').style.width = `${(index / deck.length) * 100}%`;
-  document.getElementById('fc-front').innerHTML = `<div class="fc-label">Vraag</div><div class="fc-content">${q.question}</div>`;
+  const fcImgHTML = q.image ? `<img class="question-img" src="${q.image}" alt="Bron">` : '';
+  document.getElementById('fc-front').innerHTML = `<div class="fc-label">Vraag</div>${fcImgHTML}<div class="fc-content">${q.question}</div>`;
   document.getElementById('fc-back').innerHTML  = `<div class="fc-label">Antwoord</div><div class="fc-content">${getAnswerDisplay(q)}</div>`;
   const card = document.getElementById('flashcard');
   card.classList.remove('flipped');
@@ -600,7 +601,8 @@ function renderQuestion() {
   document.getElementById('progress-bar').style.width = `${(index / questions.length) * 100}%`;
 
   const area = document.getElementById('question-area');
-  area.innerHTML = `<div class="question-text">${q.question}</div>` + buildQuestionHTML(q);
+  const qImgHTML = q.image ? `<img class="question-img" src="${q.image}" alt="Bron">` : '';
+  area.innerHTML = qImgHTML + `<div class="question-text">${q.question}</div>` + buildQuestionHTML(q);
 
   const fb = document.getElementById('feedback-area');
   fb.className = 'feedback-area hidden'; fb.innerHTML = '';

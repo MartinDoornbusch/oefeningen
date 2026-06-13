@@ -4027,21 +4027,24 @@
           "type": "open",
           "question": "Hoe heet het ondergrondse deel van de plant dat water en mineralen opneemt? (Bron 1)",
           "answer": "wortel",
-          "altAnswers": []
+          "altAnswers": [],
+          "image": "data/images/bio/5.1_bron2_organen.jpg"
         },
         {
           "id": "bio_002",
           "type": "open",
           "question": "Hoe heten de kleine uitsteeksels aan de wortel die zorgen voor de opname van water en mineralen? (Bron 1)",
           "answer": "wortelhaartjes",
-          "altAnswers": []
+          "altAnswers": [],
+          "image": "data/images/bio/5.1_bron2_organen.jpg"
         },
         {
           "id": "bio_003",
           "type": "open",
           "question": "Welk onderdeel van de plant ondersteunt hem en vervoert water van de wortel naar de bladeren? (Bron 1)",
           "answer": "stengel",
-          "altAnswers": []
+          "altAnswers": [],
+          "image": "data/images/bio/5.1_bron2_organen.jpg"
         },
         {
           "id": "bio_004",
@@ -4053,7 +4056,8 @@
             "blad",
             "bloem"
           ],
-          "correct": 3
+          "correct": 3,
+          "image": "data/images/bio/5.1_bron2_organen.jpg"
         },
         {
           "id": "bio_005",
@@ -4065,21 +4069,24 @@
             "wortelhaartjes",
             "bladgroenkorrels"
           ],
-          "correct": 2
+          "correct": 2,
+          "image": "data/images/bio/5.1_bron2_organen.jpg"
         },
         {
           "id": "bio_006",
           "type": "open",
           "question": "Hoe heet de buitenste beschermende laag van een blad? (Bron 2)",
           "answer": "opperhuid",
-          "altAnswers": []
+          "altAnswers": [],
+          "image": "data/images/bio/5.1_bron4_doorsnede.jpg"
         },
         {
           "id": "bio_007",
           "type": "open",
           "question": "Hoe heten de kleine openingen in het blad waardoor gaswisseling plaatsvindt? (Bron 2)",
           "answer": "huidmondjes",
-          "altAnswers": []
+          "altAnswers": [],
+          "image": "data/images/bio/5.1_bron4_doorsnede.jpg"
         },
         {
           "id": "bio_008",
@@ -4088,7 +4095,8 @@
           "answer": "bladgroenkorrels",
           "altAnswers": [
             "bladgroenkorrel"
-          ]
+          ],
+          "image": "data/images/bio/5.1_bron4_doorsnede.jpg"
         },
         {
           "id": "bio_009",
@@ -4100,7 +4108,8 @@
             "Gaswisseling",
             "De plant beschermen"
           ],
-          "correct": 2
+          "correct": 2,
+          "image": "data/images/bio/5.1_bron4_doorsnede.jpg"
         },
         {
           "id": "bio_010",
@@ -4112,28 +4121,32 @@
             "In de huidmondjes",
             "In de wortelhaartjes"
           ],
-          "correct": 1
+          "correct": 1,
+          "image": "data/images/bio/5.1_bron4_doorsnede.jpg"
         },
         {
           "id": "bio_011",
           "type": "open",
           "question": "Hoe heet de stevige buitenste laag van een plantcel? (Bron 4)",
           "answer": "celwand",
-          "altAnswers": []
+          "altAnswers": [],
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
         },
         {
           "id": "bio_012",
           "type": "open",
           "question": "Welk onderdeel van de plantcel bevat de erfelijke informatie? (Bron 4)",
           "answer": "celkern",
-          "altAnswers": []
+          "altAnswers": [],
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
         },
         {
           "id": "bio_013",
           "type": "open",
           "question": "Hoe heet het dunne vlies om het celplasma van de plantcel? (Bron 4)",
           "answer": "celmembraan",
-          "altAnswers": []
+          "altAnswers": [],
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
         },
         {
           "id": "bio_014",
@@ -4142,7 +4155,8 @@
           "answer": "bladgroenkorrel",
           "altAnswers": [
             "bladgroenkorrels"
-          ]
+          ],
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
         },
         {
           "id": "bio_015",
@@ -4154,25 +4168,29 @@
             "celwand",
             "celplasma"
           ],
-          "correct": 2
+          "correct": 2,
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
         },
         {
           "id": "bio_016",
           "type": "truefalse",
           "question": "De celkern bevat de erfelijke informatie van de cel.",
-          "correct": true
+          "correct": true,
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
         },
         {
           "id": "bio_017",
           "type": "truefalse",
           "question": "Fotosynthese vindt plaats in de celkern.",
-          "correct": false
+          "correct": false,
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
         },
         {
           "id": "bio_018",
           "type": "truefalse",
           "question": "Plantencellen en dierencellen hebben allebei een celwand.",
-          "correct": false
+          "correct": false,
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
         },
         {
           "id": "bio_019",
@@ -4181,7 +4199,8 @@
           "answer": "bladgroenkorrel",
           "altAnswers": [
             "bladgroenkorrels"
-          ]
+          ],
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
         },
         {
           "id": "bio_020",
@@ -4208,7 +4227,8 @@
           "answer": "zaadlobben",
           "altAnswers": [
             "zaadlob"
-          ]
+          ],
+          "image": "data/images/bio/5.2_bron3_zaad.jpg"
         },
         {
           "id": "bio_023",
@@ -4217,7 +4237,8 @@
           "answer": "bastweefsel",
           "altAnswers": [
             "bast"
-          ]
+          ],
+          "image": "data/images/bio/5.2_bron6_jaarringen.jpg"
         },
         {
           "id": "bio_024",
@@ -4226,7 +4247,8 @@
           "answer": "houtweefsel",
           "altAnswers": [
             "hout"
-          ]
+          ],
+          "image": "data/images/bio/5.2_bron6_jaarringen.jpg"
         },
         {
           "id": "bio_025",
@@ -4235,7 +4257,8 @@
           "answer": "jaarringen",
           "altAnswers": [
             "jaarring"
-          ]
+          ],
+          "image": "data/images/bio/5.2_bron6_jaarringen.jpg"
         },
         {
           "id": "bio_026",
@@ -4247,19 +4270,22 @@
             "60",
             "300"
           ],
-          "correct": 1
+          "correct": 1,
+          "image": "data/images/bio/5.2_bron6_jaarringen.jpg"
         },
         {
           "id": "bio_027",
           "type": "truefalse",
           "question": "Je kunt de leeftijd van een gevelde boom bepalen door de jaarringen te tellen.",
-          "correct": true
+          "correct": true,
+          "image": "data/images/bio/5.2_bron6_jaarringen.jpg"
         },
         {
           "id": "bio_028",
           "type": "truefalse",
           "question": "Elke jaarring in een boomstam staat voor twee jaar groei.",
-          "correct": false
+          "correct": false,
+          "image": "data/images/bio/5.2_bron6_jaarringen.jpg"
         },
         {
           "id": "bio_029",
@@ -4271,7 +4297,8 @@
             "De boomstam beschermen",
             "Voedsel opslaan in zaadlobben"
           ],
-          "correct": 2
+          "correct": 2,
+          "image": "data/images/bio/5.2_bron6_jaarringen.jpg"
         },
         {
           "id": "bio_030",
@@ -4283,7 +4310,8 @@
             "Erfelijke informatie bewaren",
             "Bladgroenkorrels maken"
           ],
-          "correct": 1
+          "correct": 1,
+          "image": "data/images/bio/5.2_bron3_zaad.jpg"
         },
         {
           "id": "bio_031",
@@ -4295,7 +4323,8 @@
             "Wortelspits",
             "Huidmondjes"
           ],
-          "correct": 2
+          "correct": 2,
+          "image": "data/images/bio/5.2_wortelspits.jpg"
         },
         {
           "id": "bio_032",
@@ -4307,7 +4336,8 @@
             "opperhuid, bladgroenkorrels, huidmondjes",
             "jaarringen, bastweefsel, houtweefsel"
           ],
-          "correct": 2
+          "correct": 2,
+          "image": "data/images/bio/5.1_bron4_doorsnede.jpg"
         },
         {
           "id": "bio_033",
@@ -4319,7 +4349,8 @@
             "zaadlobben, bastweefsel, houtweefsel",
             "celkern, celwand, celmembraan, bladgroenkorrel"
           ],
-          "correct": 3
+          "correct": 3,
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
         },
         {
           "id": "bio_034",
@@ -4337,7 +4368,8 @@
             "celkern, celwand, celmembraan, bladgroenkorrel",
             "opperhuid, bladgroenkorrels, huidmondjes"
           ],
-          "correct": 1
+          "correct": 1,
+          "image": "data/images/bio/5.1_bron2_organen.jpg"
         },
         {
           "id": "bio_036",
@@ -4349,7 +4381,8 @@
             "stikstof, fosfaat en kalium",
             "celkern, celwand en celmembraan"
           ],
-          "correct": 1
+          "correct": 1,
+          "image": "data/images/bio/5.3_fotosynthese_schema.jpg"
         },
         {
           "id": "bio_037",
@@ -4361,14 +4394,16 @@
             "mineralen en stikstof",
             "water en zonlicht"
           ],
-          "correct": 1
+          "correct": 1,
+          "image": "data/images/bio/5.3_fotosynthese_schema.jpg"
         },
         {
           "id": "bio_038",
           "type": "open",
           "question": "Welke voedingsstof maakt een plant aan via fotosynthese?",
           "answer": "glucose",
-          "altAnswers": []
+          "altAnswers": [],
+          "image": "data/images/bio/5.3_fotosynthese_schema.jpg"
         },
         {
           "id": "bio_039",
@@ -4378,13 +4413,15 @@
           "altAnswers": [
             "O2",
             "zuurstof (O2)"
-          ]
+          ],
+          "image": "data/images/bio/5.3_fotosynthese_schema.jpg"
         },
         {
           "id": "bio_040",
           "type": "truefalse",
           "question": "Planten produceren zuurstof als bijproduct van fotosynthese.",
-          "correct": true
+          "correct": true,
+          "image": "data/images/bio/5.3_fotosynthese_schema.jpg"
         },
         {
           "id": "bio_041",
@@ -4396,7 +4433,8 @@
             "water + zonlicht → koolstofdioxide + glucose",
             "zuurstof + water → glucose + zonlicht"
           ],
-          "correct": 1
+          "correct": 1,
+          "image": "data/images/bio/5.3_fotosynthese_schema.jpg"
         },
         {
           "id": "bio_042",
@@ -4414,246 +4452,273 @@
             "celwand",
             "jaarringen"
           ],
-          "correct": 1
+          "correct": 1,
+          "image": "data/images/bio/5.1_bron4_doorsnede.jpg"
         },
         {
           "id": "bio_044",
           "type": "truefalse",
           "question": "Koolstofdioxide komt via de huidmondjes de plant binnen.",
-          "correct": true
+          "correct": true,
+          "image": "data/images/bio/5.1_bron4_doorsnede.jpg"
         },
         {
           "id": "bio_045",
           "type": "mc",
-          "question": "Bron 1 toont een tekening van een plant met vijf gelabelde onderdelen. Welke vijf zijn dit?",
+          "question": "Bron 2 toont een tekening van een plant met vijf gelabelde onderdelen. Welke vijf zijn dit?",
           "options": [
             "wortel, stengel, blad, bloem, wortelhaartjes",
             "wortel, stengel, blad, bloem, huidmondjes",
             "wortel, blad, bloem, celwand, opperhuid",
             "wortel, stengel, blad, jaarringen, bastweefsel"
           ],
-          "correct": 0
+          "correct": 0,
+          "image": "data/images/bio/5.1_bron2_organen.jpg"
         },
         {
           "id": "bio_046",
           "type": "open",
-          "question": "Bron 1: welk onderdeel van de plant bevindt zich volledig onder de grond?",
+          "question": "Bron 2 (De organen van een plant): welk onderdeel bevindt zich volledig onder de grond?",
           "answer": "wortel",
-          "altAnswers": []
+          "altAnswers": [],
+          "image": "data/images/bio/5.1_bron2_organen.jpg"
         },
         {
           "id": "bio_047",
           "type": "open",
-          "question": "Bron 1: welk klein onderdeel zit aan de buitenkant van de wortel en vergroot het opnamevlak voor water?",
+          "question": "Bron 2 (De organen van een plant): welk klein onderdeel zit aan de buitenkant van de wortel en vergroot het opnamevlak voor water?",
           "answer": "wortelhaartjes",
-          "altAnswers": []
+          "altAnswers": [],
+          "image": "data/images/bio/5.1_bron2_organen.jpg"
         },
         {
           "id": "bio_048",
           "type": "mc",
-          "question": "Bron 2 toont een dwarsdoorsnede van een blad met drie gelabelde onderdelen. Welke drie zijn dit?",
+          "question": "Bron 4 toont een dwarsdoorsnede van een blad met drie gelabelde onderdelen. Welke drie zijn dit?",
           "options": [
             "celkern, celwand, celmembraan",
             "wortel, stengel, blad",
             "opperhuid, bladgroenkorrels, huidmondjes",
             "jaarringen, bastweefsel, houtweefsel"
           ],
-          "correct": 2
+          "correct": 2,
+          "image": "data/images/bio/5.1_bron4_doorsnede.jpg"
         },
         {
           "id": "bio_049",
           "type": "open",
-          "question": "Bron 2 (bladdwarsdoorsnede): welk onderdeel vormt de buitenste beschermende laag van het blad?",
+          "question": "Bron 4 (dwarsdoorsnede blad): welk onderdeel vormt de buitenste beschermende laag van het blad?",
           "answer": "opperhuid",
-          "altAnswers": []
+          "altAnswers": [],
+          "image": "data/images/bio/5.1_bron4_doorsnede.jpg"
         },
         {
           "id": "bio_050",
           "type": "open",
-          "question": "Bron 2 (bladdwarsdoorsnede): welk onderdeel in het blad regelt de gaswisseling tussen de plant en de lucht?",
+          "question": "Bron 4 (dwarsdoorsnede blad): welk onderdeel in het blad regelt de gaswisseling tussen de plant en de lucht?",
           "answer": "huidmondjes",
-          "altAnswers": []
+          "altAnswers": [],
+          "image": "data/images/bio/5.1_bron4_doorsnede.jpg"
         },
         {
           "id": "bio_051",
           "type": "open",
-          "question": "Bron 2 (bladdwarsdoorsnede): welke groene korrels zitten in de bladcellen en voeren fotosynthese uit?",
+          "question": "Bron 4 (dwarsdoorsnede blad): welke groene korrels zitten in de bladcellen en voeren fotosynthese uit?",
           "answer": "bladgroenkorrels",
           "altAnswers": [
             "bladgroenkorrel"
-          ]
+          ],
+          "image": "data/images/bio/5.1_bron4_doorsnede.jpg"
         },
         {
           "id": "bio_052",
           "type": "mc",
-          "question": "Bron 4 toont een schema van een plantcel met vier gelabelde onderdelen. Welke vier zijn dit?",
+          "question": "Bron 5 toont een schema van een plantencel. Welke onderdelen zijn hierin te zien?",
           "options": [
             "wortel, stengel, blad, bloem",
             "celkern, celwand, celmembraan, bladgroenkorrel",
             "opperhuid, bladgroenkorrels, huidmondjes, stengel",
             "zaadlobben, bastweefsel, houtweefsel, jaarringen"
           ],
-          "correct": 1
+          "correct": 1,
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
         },
         {
           "id": "bio_053",
           "type": "open",
-          "question": "Bron 4 (plantcel): welk onderdeel vormt de stevige buitenwand van de cel?",
+          "question": "Bron 5 (plantencel): welk onderdeel vormt de stevige buitenwand van de cel?",
           "answer": "celwand",
-          "altAnswers": []
+          "altAnswers": [],
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
         },
         {
           "id": "bio_054",
           "type": "open",
-          "question": "Bron 4 (plantcel): welk onderdeel bevat de erfelijke informatie en stuurt de cel aan?",
+          "question": "Bron 5 (plantencel): welk onderdeel bevat de erfelijke informatie en stuurt de cel aan?",
           "answer": "celkern",
-          "altAnswers": []
+          "altAnswers": [],
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
         },
         {
           "id": "bio_055",
           "type": "open",
-          "question": "Bron 4 (plantcel): welk onderdeel regelt wat de cel in- en uitkomt, net binnen de celwand?",
+          "question": "Bron 5 (plantencel): welk onderdeel regelt wat de cel in- en uitkomt, net binnen de celwand?",
           "answer": "celmembraan",
-          "altAnswers": []
+          "altAnswers": [],
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
         },
         {
           "id": "bio_056",
           "type": "open",
-          "question": "Bron 4 (plantcel): in welk organel vindt fotosynthese plaats?",
+          "question": "Bron 5 (plantencel): in welk organel vindt fotosynthese plaats?",
           "answer": "bladgroenkorrel",
           "altAnswers": [
             "bladgroenkorrels"
-          ]
+          ],
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
         },
         {
           "id": "bio_057",
           "type": "mc",
-          "question": "De boomstamdwarsdoorsnede in 5.2 toont drie onderdelen. Welk onderdeel zit aan de BUITENKANT van de stam?",
+          "question": "Bron 6 (5.2 – jaarringen): welk onderdeel zit aan de BUITENKANT van de boomstam?",
           "options": [
             "houtweefsel",
             "jaarringen",
             "bastweefsel",
             "zaadlobben"
           ],
-          "correct": 2
+          "correct": 2,
+          "image": "data/images/bio/5.2_bron6_jaarringen.jpg"
         },
         {
           "id": "bio_058",
           "type": "mc",
-          "question": "De boomstamdwarsdoorsnede in 5.2 toont drie onderdelen. Welk onderdeel zit aan de BINNENKANT van de stam?",
+          "question": "Bron 6 (5.2 – jaarringen): welk onderdeel zit aan de BINNENKANT van de boomstam?",
           "options": [
             "bastweefsel",
             "houtweefsel",
             "jaarringen",
             "opperhuid"
           ],
-          "correct": 1
+          "correct": 1,
+          "image": "data/images/bio/5.2_bron6_jaarringen.jpg"
         },
         {
           "id": "bio_059",
           "type": "mc",
-          "question": "Bron boomstam (5.2): welke drie onderdelen zijn er zichtbaar in de dwarsdoorsnede?",
+          "question": "Bron 6 (5.2 – jaarringen): welke drie onderdelen zijn er zichtbaar in de dwarsdoorsnede van de boomstam?",
           "options": [
             "wortel, stengel, blad",
             "opperhuid, bladgroenkorrels, huidmondjes",
             "celkern, celwand, celmembraan",
             "jaarringen, bastweefsel, houtweefsel"
           ],
-          "correct": 3
+          "correct": 3,
+          "image": "data/images/bio/5.2_bron6_jaarringen.jpg"
         },
         {
           "id": "bio_060",
           "type": "open",
-          "question": "Bron 3 toont een foto van bladcellen onder de microscoop. Welke groene structuren zijn duidelijk zichtbaar in de cellen?",
+          "question": "Bron 6 (5.1 – microscoopfoto plantencel): welke groene structuren zijn duidelijk zichtbaar in de cellen?",
           "answer": "bladgroenkorrels",
           "altAnswers": [
             "bladgroenkorrel"
-          ]
+          ],
+          "image": "data/images/bio/5.1_bron6_microscoop.jpg"
         },
         {
           "id": "bio_061",
           "type": "mc",
-          "question": "Bron 3 is een microscoopfoto van bladcellen. Wat kun je hierin zien?",
+          "question": "Bron 6 (5.1) is een microscoopfoto van cellen van een blad. Wat kun je hierin zien?",
           "options": [
             "huidmondjes en opperhuid",
             "jaarringen en bastweefsel",
             "bladgroenkorrels in de bladcellen",
             "celwand en celkern"
           ],
-          "correct": 2
+          "correct": 2,
+          "image": "data/images/bio/5.1_bron6_microscoop.jpg"
         },
         {
           "id": "bio_062",
           "type": "truefalse",
-          "question": "In Bron 3 (microscoopfoto van bladcellen) zijn bladgroenkorrels zichtbaar als groene korrels.",
-          "correct": true
+          "question": "In Bron 6 (5.1 – microscoopfoto plantencel) zijn bladgroenkorrels zichtbaar als groene korrels.",
+          "correct": true,
+          "image": "data/images/bio/5.1_bron6_microscoop.jpg"
         },
         {
           "id": "bio_063",
           "type": "truefalse",
-          "question": "In Bron 3 (microscoopfoto) zijn wortelhaartjes zichtbaar.",
-          "correct": false
+          "question": "In Bron 6 (5.1 – microscoopfoto) zijn wortelhaartjes zichtbaar.",
+          "correct": false,
+          "image": "data/images/bio/5.1_bron6_microscoop.jpg"
         },
         {
           "id": "bio_064",
           "type": "open",
-          "question": "Bron zaad (5.2) toont een dwarsdoorsnede van een zaad. Welk onderdeel sla voedsel op voor de jonge plant?",
+          "question": "Bron 3 (5.2 – zaad) toont een dwarsdoorsnede van een zaad. Welk onderdeel sla voedsel op voor de jonge plant?",
           "answer": "zaadlobben",
           "altAnswers": [
             "zaadlob"
-          ]
+          ],
+          "image": "data/images/bio/5.2_bron3_zaad.jpg"
         },
         {
           "id": "bio_065",
           "type": "mc",
-          "question": "Bron zaad (5.2): welk onderdeel is zichtbaar in de dwarsdoorsnede van het zaad?",
+          "question": "Bron 3 (5.2 – zaad): welk onderdeel is zichtbaar in de dwarsdoorsnede van het zaad?",
           "options": [
             "huidmondjes",
             "jaarringen",
             "zaadlobben",
             "bastweefsel"
           ],
-          "correct": 2
+          "correct": 2,
+          "image": "data/images/bio/5.2_bron3_zaad.jpg"
         },
         {
           "id": "bio_066",
           "type": "mc",
-          "question": "Bron zaad (5.2): waarvoor dienen de zaadlobben in het zaad?",
+          "question": "Bron 3 (5.2 – zaad): waarvoor dienen de zaadlobben in het zaad?",
           "options": [
             "Gaswisseling uitvoeren",
             "Voedsel opslaan voor de jonge plant tot die zelf fotosynthese kan",
             "Water opnemen uit de grond",
             "Nieuwe cellen aanmaken voor wortelgroei"
           ],
-          "correct": 1
+          "correct": 1,
+          "image": "data/images/bio/5.2_bron3_zaad.jpg"
         },
         {
           "id": "bio_067",
           "type": "open",
-          "question": "Bron wortelspits (5.2) toont de punt van de wortel. Wat is de functie van de wortelspits?",
+          "question": "Bron (5.2 – wortelspits) toont de punt van de wortel. Wat is de functie van de wortelspits?",
           "answer": "nieuwe cellen aanmaken zodat de wortel kan groeien",
           "altAnswers": [
             "wortelgroei",
             "groeipunt van de wortel"
-          ]
+          ],
+          "image": "data/images/bio/5.2_wortelspits.jpg"
         },
         {
           "id": "bio_068",
           "type": "mc",
-          "question": "Bron wortelspits (5.2): wat gebeurt er in de wortelspits?",
+          "question": "Bron (5.2 – wortelspits): wat gebeurt er in de wortelspits?",
           "options": [
             "Water wordt opgeslagen",
             "Fotosynthese vindt plaats",
             "Nieuwe cellen worden aangemaakt voor de groei van de wortel",
             "Gaswisseling vindt plaats"
           ],
-          "correct": 2
+          "correct": 2,
+          "image": "data/images/bio/5.2_wortelspits.jpg"
         },
         {
           "id": "bio_069",
           "type": "truefalse",
           "question": "De wortelspits is het groeipunt van de wortel, waar nieuwe cellen worden aangemaakt.",
-          "correct": true
+          "correct": true,
+          "image": "data/images/bio/5.2_wortelspits.jpg"
         },
         {
           "id": "bio_070",
@@ -4665,7 +4730,8 @@
             "stikstof, fosfaat, kalium",
             "jaarringen, bastweefsel, houtweefsel"
           ],
-          "correct": 1
+          "correct": 1,
+          "image": "data/images/bio/5.3_fotosynthese_schema.jpg"
         },
         {
           "id": "bio_071",
@@ -4677,7 +4743,8 @@
             "glucose en zuurstof",
             "water en stikstof"
           ],
-          "correct": 2
+          "correct": 2,
+          "image": "data/images/bio/5.3_fotosynthese_schema.jpg"
         },
         {
           "id": "bio_072",
@@ -4687,7 +4754,8 @@
           "altAnswers": [
             "licht",
             "zonnelicht"
-          ]
+          ],
+          "image": "data/images/bio/5.3_fotosynthese_schema.jpg"
         },
         {
           "id": "bio_073",
@@ -4699,19 +4767,151 @@
             "zonlicht",
             "glucose"
           ],
-          "correct": 3
+          "correct": 3,
+          "image": "data/images/bio/5.3_fotosynthese_schema.jpg"
         },
         {
           "id": "bio_074",
           "type": "truefalse",
           "question": "Koolstofdioxide (CO₂) is een invoerstof in het fotosynthese-schema.",
-          "correct": true
+          "correct": true,
+          "image": "data/images/bio/5.3_fotosynthese_schema.jpg"
         },
         {
           "id": "bio_075",
           "type": "truefalse",
           "question": "Glucose is een invoerstof (grondstof) voor fotosynthese.",
-          "correct": false
+          "correct": false,
+          "image": "data/images/bio/5.3_fotosynthese_schema.jpg"
+        },
+        {
+          "id": "bio_076",
+          "type": "open",
+          "question": "Bron 5 (plantencel): hoe heet het grote blaasje in het midden van de cel dat gevuld is met water en de cel stevig maakt?",
+          "answer": "vacuole",
+          "altAnswers": [],
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
+        },
+        {
+          "id": "bio_077",
+          "type": "mc",
+          "question": "Bron 5 (plantencel): wat is de functie van de vacuole?",
+          "options": [
+            "Fotosynthese uitvoeren",
+            "Erfelijke informatie bewaren",
+            "Met water gevuld blaasje dat de cel stevigheid geeft",
+            "Gaswisseling regelen"
+          ],
+          "correct": 2,
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
+        },
+        {
+          "id": "bio_078",
+          "type": "open",
+          "question": "Bron 5 (plantencel): hoe heet de stroperige vloeistof in de cel, waarin de celkern en bladgroenkorrels liggen?",
+          "answer": "cytoplasma",
+          "altAnswers": [],
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
+        },
+        {
+          "id": "bio_079",
+          "type": "truefalse",
+          "question": "De celkern en de bladgroenkorrels liggen in het cytoplasma.",
+          "correct": true,
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
+        },
+        {
+          "id": "bio_080",
+          "type": "mc",
+          "question": "Bron 5 toont zes onderdelen van een plantencel. Welke zes zijn dit?",
+          "options": [
+            "wortel, stengel, blad, bloem, wortelhaartjes, opperhuid",
+            "celwand, celmembraan, cytoplasma, celkern, vacuole, bladgroenkorrel",
+            "huidmondje, nerf, cellen met bladgroen, opperhuidcellen, celkern, vacuole",
+            "jaarringen, bastweefsel, houtweefsel, celkern, vacuole, cytoplasma"
+          ],
+          "correct": 1,
+          "image": "data/images/bio/5.1_bron5_plantcel.jpg"
+        },
+        {
+          "id": "bio_081",
+          "type": "open",
+          "question": "Bron 3 (5.2 – zaad): naast de zaadlobben is er ook een kiem in het zaad. Uit welke drie delen bestaat de kiem?",
+          "answer": "stengeltje, blaadjes en worteltje",
+          "altAnswers": [
+            "stengeltje blaadjes worteltje",
+            "worteltje stengeltje blaadjes"
+          ],
+          "image": "data/images/bio/5.2_bron3_zaad.jpg"
+        },
+        {
+          "id": "bio_082",
+          "type": "open",
+          "question": "Bron 3 (5.2 – zaad): hoe heet het kleine embryo van een zaadje dat uitgroeit tot een nieuwe plant?",
+          "answer": "kiem",
+          "altAnswers": [],
+          "image": "data/images/bio/5.2_bron3_zaad.jpg"
+        },
+        {
+          "id": "bio_083",
+          "type": "open",
+          "question": "Bron 2 (5.2 – peulvrucht): hoe heet de beschermende buitenlaag van een zaad (boon)?",
+          "answer": "zaadhuid",
+          "altAnswers": [],
+          "image": "data/images/bio/5.2_bron2_peulvrucht.jpg"
+        },
+        {
+          "id": "bio_084",
+          "type": "mc",
+          "question": "Bron 2 (5.2 – peulvrucht): wat is de functie van de zaadhuid?",
+          "options": [
+            "Fotosynthese uitvoeren",
+            "Voedselreserves opslaan",
+            "Het binnenste van het zaad beschermen",
+            "Water opnemen"
+          ],
+          "correct": 2,
+          "image": "data/images/bio/5.2_bron2_peulvrucht.jpg"
+        },
+        {
+          "id": "bio_085",
+          "type": "open",
+          "question": "Bron 5 (5.2 – kastanjetak): hoe heten de ringvormige littekens op een tak die elk jaar ontstaan en waarmee je de leeftijd van een tak kunt bepalen?",
+          "answer": "ringlittekens",
+          "altAnswers": [
+            "ringlitteken"
+          ],
+          "image": "data/images/bio/5.2_bron5_tak.jpg"
+        },
+        {
+          "id": "bio_086",
+          "type": "open",
+          "question": "Bron 5 (5.2 – kastanjetak): hoe heten de littekens op een tak die overblijven nadat een blad is afgevallen?",
+          "answer": "bladlittekens",
+          "altAnswers": [
+            "bladlitteken"
+          ],
+          "image": "data/images/bio/5.2_bron5_tak.jpg"
+        },
+        {
+          "id": "bio_087",
+          "type": "mc",
+          "question": "Bron 5 (5.2 – kastanjetak): hoe kun je de leeftijd van een tak bepalen (vergelijkbaar met jaarringen in de stam)?",
+          "options": [
+            "Door de bladlittekens te tellen",
+            "Door de ringlittekens te tellen",
+            "Door de wortelhaartjes te tellen",
+            "Door de huidmondjes te tellen"
+          ],
+          "correct": 1,
+          "image": "data/images/bio/5.2_bron5_tak.jpg"
+        },
+        {
+          "id": "bio_088",
+          "type": "truefalse",
+          "question": "Je kunt de leeftijd van een tak bepalen door de ringlittekens te tellen.",
+          "correct": true,
+          "image": "data/images/bio/5.2_bron5_tak.jpg"
         }
       ]
     }
