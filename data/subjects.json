@@ -4914,6 +4914,1830 @@
           "image": "data/images/bio/5.2_bron5_tak.jpg"
         }
       ]
+    },
+    {
+      "id": "frans_u4_sante",
+      "name": "Frans – U4 Santé (Apprendre)",
+      "emoji": "🏥",
+      "level": "havo2",
+      "questions": [
+        {
+          "id": "u4s_001",
+          "type": "open",
+          "question": "Wat betekent 'gratter' in het Nederlands?",
+          "answer": "krabben",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_002",
+          "type": "open",
+          "question": "Wat betekent 'la tête' in het Nederlands?",
+          "answer": "het hoofd",
+          "altAnswers": [
+            "hoofd"
+          ]
+        },
+        {
+          "id": "u4s_003",
+          "type": "open",
+          "question": "Wat betekent 'l'œil / les yeux' in het Nederlands?",
+          "answer": "het oog / de ogen",
+          "altAnswers": [
+            "het oog",
+            "oog",
+            "ogen"
+          ]
+        },
+        {
+          "id": "u4s_004",
+          "type": "open",
+          "question": "Wat betekent 'le rhume' in het Nederlands?",
+          "answer": "de verkoudheid",
+          "altAnswers": [
+            "verkoudheid"
+          ]
+        },
+        {
+          "id": "u4s_005",
+          "type": "open",
+          "question": "Wat betekent 'l'oreille' in het Nederlands?",
+          "answer": "het oor",
+          "altAnswers": [
+            "oor"
+          ]
+        },
+        {
+          "id": "u4s_006",
+          "type": "open",
+          "question": "Wat betekent 'le nez' in het Nederlands?",
+          "answer": "de neus",
+          "altAnswers": [
+            "neus"
+          ]
+        },
+        {
+          "id": "u4s_007",
+          "type": "open",
+          "question": "Wat betekent 'la bouche' in het Nederlands?",
+          "answer": "de mond",
+          "altAnswers": [
+            "mond"
+          ]
+        },
+        {
+          "id": "u4s_008",
+          "type": "open",
+          "question": "Wat betekent 'les dents' in het Nederlands?",
+          "answer": "de tanden",
+          "altAnswers": [
+            "tanden"
+          ]
+        },
+        {
+          "id": "u4s_009",
+          "type": "open",
+          "question": "Wat betekent 'le dos' in het Nederlands?",
+          "answer": "de rug",
+          "altAnswers": [
+            "rug"
+          ]
+        },
+        {
+          "id": "u4s_010",
+          "type": "open",
+          "question": "Wat betekent 'le ventre' in het Nederlands?",
+          "answer": "de buik",
+          "altAnswers": [
+            "buik"
+          ]
+        },
+        {
+          "id": "u4s_011",
+          "type": "open",
+          "question": "Wat betekent 'le bras' in het Nederlands?",
+          "answer": "de arm",
+          "altAnswers": [
+            "arm"
+          ]
+        },
+        {
+          "id": "u4s_012",
+          "type": "open",
+          "question": "Wat betekent 'la jambe' in het Nederlands?",
+          "answer": "het been",
+          "altAnswers": [
+            "been"
+          ]
+        },
+        {
+          "id": "u4s_013",
+          "type": "open",
+          "question": "Wat betekent 'le bouton' in het Nederlands?",
+          "answer": "de pukkel",
+          "altAnswers": [
+            "pukkel"
+          ]
+        },
+        {
+          "id": "u4s_014",
+          "type": "open",
+          "question": "Wat betekent 'le pied' in het Nederlands?",
+          "answer": "de voet",
+          "altAnswers": [
+            "voet"
+          ]
+        },
+        {
+          "id": "u4s_015",
+          "type": "open",
+          "question": "Wat betekent 'l'hôpital' in het Nederlands?",
+          "answer": "het ziekenhuis",
+          "altAnswers": [
+            "ziekenhuis"
+          ]
+        },
+        {
+          "id": "u4s_016",
+          "type": "open",
+          "question": "Wat betekent 'la fracture' in het Nederlands?",
+          "answer": "de breuk",
+          "altAnswers": [
+            "breuk"
+          ]
+        },
+        {
+          "id": "u4s_017",
+          "type": "open",
+          "question": "Wat betekent 'la cheville' in het Nederlands?",
+          "answer": "de enkel",
+          "altAnswers": [
+            "enkel"
+          ]
+        },
+        {
+          "id": "u4s_018",
+          "type": "open",
+          "question": "Wat betekent 'le doigt' in het Nederlands?",
+          "answer": "de vinger",
+          "altAnswers": [
+            "vinger"
+          ]
+        },
+        {
+          "id": "u4s_019",
+          "type": "open",
+          "question": "Wat betekent 'le doigt de pied' in het Nederlands?",
+          "answer": "de teen",
+          "altAnswers": [
+            "teen"
+          ]
+        },
+        {
+          "id": "u4s_020",
+          "type": "open",
+          "question": "Wat betekent 'la santé' in het Nederlands?",
+          "answer": "de gezondheid",
+          "altAnswers": [
+            "gezondheid"
+          ]
+        },
+        {
+          "id": "u4s_021",
+          "type": "open",
+          "question": "Wat betekent 'la main' in het Nederlands?",
+          "answer": "de hand",
+          "altAnswers": [
+            "hand"
+          ]
+        },
+        {
+          "id": "u4s_022",
+          "type": "open",
+          "question": "Wat betekent 'le genou' in het Nederlands?",
+          "answer": "de knie",
+          "altAnswers": [
+            "knie"
+          ]
+        },
+        {
+          "id": "u4s_023",
+          "type": "open",
+          "question": "Wat betekent 'le coude' in het Nederlands?",
+          "answer": "de elleboog",
+          "altAnswers": [
+            "elleboog"
+          ]
+        },
+        {
+          "id": "u4s_024",
+          "type": "open",
+          "question": "Wat betekent 'le corps' in het Nederlands?",
+          "answer": "het lichaam",
+          "altAnswers": [
+            "lichaam"
+          ]
+        },
+        {
+          "id": "u4s_025",
+          "type": "open",
+          "question": "Wat betekent 'avoir mal à' in het Nederlands?",
+          "answer": "pijn hebben aan",
+          "altAnswers": [
+            "pijn hebben"
+          ]
+        },
+        {
+          "id": "u4s_026",
+          "type": "open",
+          "question": "Hoe zeg je 'krabben' in het Frans?",
+          "answer": "gratter",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_027",
+          "type": "open",
+          "question": "Hoe zeg je 'het hoofd' in het Frans?",
+          "answer": "la tête",
+          "altAnswers": [
+            "la tete",
+            "tête",
+            "tete"
+          ]
+        },
+        {
+          "id": "u4s_028",
+          "type": "open",
+          "question": "Hoe zeg je 'het oog' in het Frans?",
+          "answer": "l'œil",
+          "altAnswers": [
+            "l'oeil",
+            "oeil"
+          ]
+        },
+        {
+          "id": "u4s_029",
+          "type": "open",
+          "question": "Hoe zeg je 'de verkoudheid' in het Frans?",
+          "answer": "le rhume",
+          "altAnswers": [
+            "rhume"
+          ]
+        },
+        {
+          "id": "u4s_030",
+          "type": "open",
+          "question": "Hoe zeg je 'het oor' in het Frans?",
+          "answer": "l'oreille",
+          "altAnswers": [
+            "oreille"
+          ]
+        },
+        {
+          "id": "u4s_031",
+          "type": "open",
+          "question": "Hoe zeg je 'de neus' in het Frans?",
+          "answer": "le nez",
+          "altAnswers": [
+            "nez"
+          ]
+        },
+        {
+          "id": "u4s_032",
+          "type": "open",
+          "question": "Hoe zeg je 'de mond' in het Frans?",
+          "answer": "la bouche",
+          "altAnswers": [
+            "bouche"
+          ]
+        },
+        {
+          "id": "u4s_033",
+          "type": "open",
+          "question": "Hoe zeg je 'de tanden' in het Frans?",
+          "answer": "les dents",
+          "altAnswers": [
+            "dents"
+          ]
+        },
+        {
+          "id": "u4s_034",
+          "type": "open",
+          "question": "Hoe zeg je 'de rug' in het Frans?",
+          "answer": "le dos",
+          "altAnswers": [
+            "dos"
+          ]
+        },
+        {
+          "id": "u4s_035",
+          "type": "open",
+          "question": "Hoe zeg je 'de buik' in het Frans?",
+          "answer": "le ventre",
+          "altAnswers": [
+            "ventre"
+          ]
+        },
+        {
+          "id": "u4s_036",
+          "type": "open",
+          "question": "Hoe zeg je 'de arm' in het Frans?",
+          "answer": "le bras",
+          "altAnswers": [
+            "bras"
+          ]
+        },
+        {
+          "id": "u4s_037",
+          "type": "open",
+          "question": "Hoe zeg je 'het been' in het Frans?",
+          "answer": "la jambe",
+          "altAnswers": [
+            "jambe"
+          ]
+        },
+        {
+          "id": "u4s_038",
+          "type": "open",
+          "question": "Hoe zeg je 'de pukkel' in het Frans?",
+          "answer": "le bouton",
+          "altAnswers": [
+            "bouton"
+          ]
+        },
+        {
+          "id": "u4s_039",
+          "type": "open",
+          "question": "Hoe zeg je 'de voet' in het Frans?",
+          "answer": "le pied",
+          "altAnswers": [
+            "pied"
+          ]
+        },
+        {
+          "id": "u4s_040",
+          "type": "open",
+          "question": "Hoe zeg je 'het ziekenhuis' in het Frans?",
+          "answer": "l'hôpital",
+          "altAnswers": [
+            "hopital",
+            "l'hopital",
+            "hôpital"
+          ]
+        },
+        {
+          "id": "u4s_041",
+          "type": "open",
+          "question": "Hoe zeg je 'de breuk' in het Frans?",
+          "answer": "la fracture",
+          "altAnswers": [
+            "fracture"
+          ]
+        },
+        {
+          "id": "u4s_042",
+          "type": "open",
+          "question": "Hoe zeg je 'de enkel' in het Frans?",
+          "answer": "la cheville",
+          "altAnswers": [
+            "cheville"
+          ]
+        },
+        {
+          "id": "u4s_043",
+          "type": "open",
+          "question": "Hoe zeg je 'de vinger' in het Frans?",
+          "answer": "le doigt",
+          "altAnswers": [
+            "doigt"
+          ]
+        },
+        {
+          "id": "u4s_044",
+          "type": "open",
+          "question": "Hoe zeg je 'de teen' in het Frans?",
+          "answer": "le doigt de pied",
+          "altAnswers": [
+            "doigt de pied"
+          ]
+        },
+        {
+          "id": "u4s_045",
+          "type": "open",
+          "question": "Hoe zeg je 'de gezondheid' in het Frans?",
+          "answer": "la santé",
+          "altAnswers": [
+            "santé",
+            "sante",
+            "la sante"
+          ]
+        },
+        {
+          "id": "u4s_046",
+          "type": "open",
+          "question": "Hoe zeg je 'de hand' in het Frans?",
+          "answer": "la main",
+          "altAnswers": [
+            "main"
+          ]
+        },
+        {
+          "id": "u4s_047",
+          "type": "open",
+          "question": "Hoe zeg je 'de knie' in het Frans?",
+          "answer": "le genou",
+          "altAnswers": [
+            "genou"
+          ]
+        },
+        {
+          "id": "u4s_048",
+          "type": "open",
+          "question": "Hoe zeg je 'de elleboog' in het Frans?",
+          "answer": "le coude",
+          "altAnswers": [
+            "coude"
+          ]
+        },
+        {
+          "id": "u4s_049",
+          "type": "open",
+          "question": "Hoe zeg je 'het lichaam' in het Frans?",
+          "answer": "le corps",
+          "altAnswers": [
+            "corps"
+          ]
+        },
+        {
+          "id": "u4s_050",
+          "type": "open",
+          "question": "Hoe zeg je 'pijn hebben aan' in het Frans?",
+          "answer": "avoir mal à",
+          "altAnswers": [
+            "avoir mal a"
+          ]
+        },
+        {
+          "id": "u4s_051",
+          "type": "open",
+          "question": "Wat betekent 'se moquer de' in het Nederlands?",
+          "answer": "uitlachen",
+          "altAnswers": [
+            "uitlachen van"
+          ]
+        },
+        {
+          "id": "u4s_052",
+          "type": "open",
+          "question": "Wat betekent 'le conseil' in het Nederlands?",
+          "answer": "de raad",
+          "altAnswers": [
+            "raad"
+          ]
+        },
+        {
+          "id": "u4s_053",
+          "type": "open",
+          "question": "Wat betekent 'la solution' in het Nederlands?",
+          "answer": "de oplossing",
+          "altAnswers": [
+            "oplossing"
+          ]
+        },
+        {
+          "id": "u4s_054",
+          "type": "open",
+          "question": "Wat betekent 'se sentir' in het Nederlands?",
+          "answer": "zich voelen",
+          "altAnswers": [
+            "voelen"
+          ]
+        },
+        {
+          "id": "u4s_055",
+          "type": "open",
+          "question": "Wat betekent 'transpirer' in het Nederlands?",
+          "answer": "zweten",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_056",
+          "type": "open",
+          "question": "Wat betekent 'le dentiste' in het Nederlands?",
+          "answer": "de tandarts",
+          "altAnswers": [
+            "tandarts"
+          ]
+        },
+        {
+          "id": "u4s_057",
+          "type": "open",
+          "question": "Wat betekent 'refuser' in het Nederlands?",
+          "answer": "weigeren",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_058",
+          "type": "open",
+          "question": "Wat betekent 'se lever' in het Nederlands?",
+          "answer": "opstaan",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_059",
+          "type": "open",
+          "question": "Wat betekent 'se coucher' in het Nederlands?",
+          "answer": "gaan slapen",
+          "altAnswers": [
+            "slapen gaan"
+          ]
+        },
+        {
+          "id": "u4s_060",
+          "type": "open",
+          "question": "Wat betekent 'grossir' in het Nederlands?",
+          "answer": "dik worden",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_061",
+          "type": "open",
+          "question": "Wat betekent 'malheureux / malheureuse' in het Nederlands?",
+          "answer": "ongelukkig",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_062",
+          "type": "open",
+          "question": "Wat betekent 'être allergique à' in het Nederlands?",
+          "answer": "allergisch zijn voor",
+          "altAnswers": [
+            "allergisch voor"
+          ]
+        },
+        {
+          "id": "u4s_063",
+          "type": "open",
+          "question": "Wat betekent 'se faire du souci' in het Nederlands?",
+          "answer": "zich zorgen maken",
+          "altAnswers": [
+            "zorgen maken"
+          ]
+        },
+        {
+          "id": "u4s_064",
+          "type": "open",
+          "question": "Wat betekent 'répondre à' in het Nederlands?",
+          "answer": "antwoord geven op",
+          "altAnswers": [
+            "antwoorden op"
+          ]
+        },
+        {
+          "id": "u4s_065",
+          "type": "open",
+          "question": "Wat betekent 'avoir peur de' in het Nederlands?",
+          "answer": "bang zijn voor",
+          "altAnswers": [
+            "bang voor zijn"
+          ]
+        },
+        {
+          "id": "u4s_066",
+          "type": "open",
+          "question": "Wat betekent 'la peur de l'échec' in het Nederlands?",
+          "answer": "de faalangst",
+          "altAnswers": [
+            "faalangst"
+          ]
+        },
+        {
+          "id": "u4s_067",
+          "type": "open",
+          "question": "Wat betekent 'ridicule' in het Nederlands?",
+          "answer": "belachelijk",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_068",
+          "type": "mc",
+          "question": "Hoe eindigt de 'je'-vorm van een regelmatig -re werkwoord?",
+          "options": [
+            "-e",
+            "-s",
+            "geen uitgang",
+            "-t"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u4s_069",
+          "type": "mc",
+          "question": "Hoe eindigt de 'il/elle'-vorm van een regelmatig -re werkwoord?",
+          "options": [
+            "-e",
+            "-s",
+            "geen uitgang (stam)",
+            "-t"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u4s_070",
+          "type": "open",
+          "question": "Vul aan: 'je ___' (vendre)",
+          "answer": "vends",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_071",
+          "type": "open",
+          "question": "Vul aan: 'nous ___' (vendre)",
+          "answer": "vendons",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_072",
+          "type": "open",
+          "question": "Vul aan: 'ils ___' (vendre)",
+          "answer": "vendent",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_073",
+          "type": "truefalse",
+          "question": "Het werkwoord 'vendre' gebruikt 'avoir' als hulpwerkwoord in de passé composé.",
+          "correct": true
+        },
+        {
+          "id": "u4s_074",
+          "type": "truefalse",
+          "question": "Het werkwoord 'descendre' gebruikt 'être' als hulpwerkwoord in de passé composé.",
+          "correct": true
+        },
+        {
+          "id": "u4s_075",
+          "type": "open",
+          "question": "Geef de passé composé van 'perdre' (ils).",
+          "answer": "ils ont perdu",
+          "altAnswers": [
+            "ont perdu"
+          ]
+        },
+        {
+          "id": "u4s_076",
+          "type": "open",
+          "question": "Geef de passé composé van 'descendre' (il).",
+          "answer": "il est descendu",
+          "altAnswers": [
+            "est descendu"
+          ]
+        },
+        {
+          "id": "u4s_077",
+          "type": "mc",
+          "question": "Welke is de juiste passé composé van 'vendre' voor 'nous'?",
+          "options": [
+            "nous avons vendu",
+            "nous sommes vendus",
+            "nous avons vendé",
+            "nous vendons"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u4s_078",
+          "type": "truefalse",
+          "question": "'Entendre' is een regelmatig -re werkwoord.",
+          "correct": true
+        },
+        {
+          "id": "u4s_079",
+          "type": "truefalse",
+          "question": "'Répondre' gebruikt 'être' als hulpwerkwoord in de passé composé.",
+          "correct": false
+        },
+        {
+          "id": "u4s_080",
+          "type": "open",
+          "question": "Wat betekent 'marcher' in het Nederlands?",
+          "answer": "lopen",
+          "altAnswers": [
+            "wandelen"
+          ]
+        },
+        {
+          "id": "u4s_081",
+          "type": "open",
+          "question": "Wat betekent 'pâle' in het Nederlands?",
+          "answer": "bleek",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_082",
+          "type": "open",
+          "question": "Wat betekent 'le médecin' in het Nederlands?",
+          "answer": "de dokter",
+          "altAnswers": [
+            "dokter"
+          ]
+        },
+        {
+          "id": "u4s_083",
+          "type": "open",
+          "question": "Wat betekent 'partout' in het Nederlands?",
+          "answer": "overall",
+          "altAnswers": [
+            "overal"
+          ]
+        },
+        {
+          "id": "u4s_084",
+          "type": "open",
+          "question": "Wat betekent 'le pansement' in het Nederlands?",
+          "answer": "de pleister",
+          "altAnswers": [
+            "pleister"
+          ]
+        },
+        {
+          "id": "u4s_085",
+          "type": "open",
+          "question": "Wat betekent 'guérir' in het Nederlands?",
+          "answer": "genezen",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_086",
+          "type": "open",
+          "question": "Wat betekent 'soulager' in het Nederlands?",
+          "answer": "verlichten",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_087",
+          "type": "open",
+          "question": "Wat betekent 'saigner' in het Nederlands?",
+          "answer": "bloeden",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_088",
+          "type": "open",
+          "question": "Wat betekent 'prescrire' in het Nederlands?",
+          "answer": "voorschrijven",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_089",
+          "type": "open",
+          "question": "Wat betekent 'vomir' in het Nederlands?",
+          "answer": "overgeven",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_090",
+          "type": "open",
+          "question": "Wat betekent 'l'ordonnance' in het Nederlands?",
+          "answer": "het recept",
+          "altAnswers": [
+            "recept"
+          ]
+        },
+        {
+          "id": "u4s_091",
+          "type": "open",
+          "question": "Wat betekent 'la piqûre d'insecte' in het Nederlands?",
+          "answer": "de insectenbeet",
+          "altAnswers": [
+            "insectenbeet"
+          ]
+        },
+        {
+          "id": "u4s_092",
+          "type": "open",
+          "question": "Wat betekent 'le médicament' in het Nederlands?",
+          "answer": "het medicijn",
+          "altAnswers": [
+            "medicijn",
+            "pijnstiller",
+            "de pijnstiller"
+          ]
+        },
+        {
+          "id": "u4s_093",
+          "type": "open",
+          "question": "Wat betekent 'le coup de soleil' in het Nederlands?",
+          "answer": "de zonnesteek",
+          "altAnswers": [
+            "zonnesteek",
+            "zonnebrand"
+          ]
+        },
+        {
+          "id": "u4s_094",
+          "type": "open",
+          "question": "Vul aan: 'je ___' (se laver)",
+          "answer": "me lave",
+          "altAnswers": [
+            "je me lave"
+          ]
+        },
+        {
+          "id": "u4s_095",
+          "type": "open",
+          "question": "Vul aan: 'tu ___' (se laver)",
+          "answer": "te laves",
+          "altAnswers": [
+            "tu te laves"
+          ]
+        },
+        {
+          "id": "u4s_096",
+          "type": "open",
+          "question": "Vul aan: 'nous ___' (se laver)",
+          "answer": "nous lavons",
+          "altAnswers": [
+            "nous nous lavons"
+          ]
+        },
+        {
+          "id": "u4s_097",
+          "type": "open",
+          "question": "Vul aan: 'ils ___' (se laver)",
+          "answer": "se lavent",
+          "altAnswers": [
+            "ils se lavent"
+          ]
+        },
+        {
+          "id": "u4s_098",
+          "type": "truefalse",
+          "question": "Wederkerende werkwoorden gebruiken altijd 'être' als hulpwerkwoord in de passé composé.",
+          "correct": true
+        },
+        {
+          "id": "u4s_099",
+          "type": "mc",
+          "question": "Wat is de passé composé van 'se brûler' voor 'je' (vrouwelijk)?",
+          "options": [
+            "je me suis brûlée",
+            "je me suis brûlé",
+            "j'ai brûlé",
+            "je suis brûlée"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u4s_100",
+          "type": "open",
+          "question": "Vul aan: 'Vous vous êtes ___' (se tromper)",
+          "answer": "trompé(e)s",
+          "altAnswers": [
+            "trompes",
+            "trompés",
+            "trompées"
+          ]
+        },
+        {
+          "id": "u4s_101",
+          "type": "mc",
+          "question": "Wat is de passé composé van 'se moquer de Pauline' (ils)?",
+          "options": [
+            "Ils se sont moqués de Pauline",
+            "Ils ont moqué de Pauline",
+            "Ils se sont moqué de Pauline",
+            "Ils sont moqués de Pauline"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u4s_102",
+          "type": "mc",
+          "question": "Wat is de passé composé van 'se maquiller' (elles)?",
+          "options": [
+            "Elles se sont maquillées",
+            "Elles ont maquillé",
+            "Elles se sont maquillé",
+            "Elles sont maquillées"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u4s_103",
+          "type": "truefalse",
+          "question": "Het wederkerend voornaamwoord bij 'nous' is 'nous'.",
+          "correct": true
+        },
+        {
+          "id": "u4s_104",
+          "type": "mc",
+          "question": "Welk wederkerend voornaamwoord hoort bij 'tu'?",
+          "options": [
+            "me",
+            "te",
+            "se",
+            "vous"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u4s_105",
+          "type": "mc",
+          "question": "Welk wederkerend voornaamwoord hoort bij 'vous'?",
+          "options": [
+            "me",
+            "te",
+            "se",
+            "vous"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u4s_106",
+          "type": "open",
+          "question": "Wat betekent 'la pharmacie' in het Nederlands?",
+          "answer": "de apotheek",
+          "altAnswers": [
+            "apotheek"
+          ]
+        },
+        {
+          "id": "u4s_107",
+          "type": "open",
+          "question": "Wat betekent 'insupportable' in het Nederlands?",
+          "answer": "onverdraaglijk",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_108",
+          "type": "open",
+          "question": "Wat betekent 'nerveux / nerveuse' in het Nederlands?",
+          "answer": "nerveus",
+          "altAnswers": [
+            "nerveuse",
+            "zenuwachtig"
+          ]
+        },
+        {
+          "id": "u4s_109",
+          "type": "open",
+          "question": "Wat betekent 'la fièvre' in het Nederlands?",
+          "answer": "de koorts",
+          "altAnswers": [
+            "koorts"
+          ]
+        },
+        {
+          "id": "u4s_110",
+          "type": "open",
+          "question": "Wat betekent 'le degré' in het Nederlands?",
+          "answer": "de graad",
+          "altAnswers": [
+            "graad"
+          ]
+        },
+        {
+          "id": "u4s_111",
+          "type": "open",
+          "question": "Wat betekent 'la cuillère' in het Nederlands?",
+          "answer": "de lepel",
+          "altAnswers": [
+            "lepel"
+          ]
+        },
+        {
+          "id": "u4s_112",
+          "type": "open",
+          "question": "Wat betekent 'polluer' in het Nederlands?",
+          "answer": "vervuilen",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_113",
+          "type": "open",
+          "question": "Wat betekent 'la douleur' in het Nederlands?",
+          "answer": "de pijn",
+          "altAnswers": [
+            "pijn"
+          ]
+        },
+        {
+          "id": "u4s_114",
+          "type": "open",
+          "question": "Wat betekent 'longtemps' in het Nederlands?",
+          "answer": "lang",
+          "altAnswers": [
+            "lange tijd",
+            "langdurig"
+          ]
+        },
+        {
+          "id": "u4s_115",
+          "type": "open",
+          "question": "Wat betekent 'bon rétablissement' in het Nederlands?",
+          "answer": "beterschap",
+          "altAnswers": [
+            "goede beterschap"
+          ]
+        },
+        {
+          "id": "u4s_116",
+          "type": "open",
+          "question": "Wat betekent 'appuyer sur' in het Nederlands?",
+          "answer": "ergens op drukken",
+          "altAnswers": [
+            "drukken op"
+          ]
+        },
+        {
+          "id": "u4s_117",
+          "type": "open",
+          "question": "Wat betekent 's'inquiéter' in het Nederlands?",
+          "answer": "zich zorgen maken",
+          "altAnswers": [
+            "zorgen maken"
+          ]
+        },
+        {
+          "id": "u4s_118",
+          "type": "open",
+          "question": "Wat betekent 'propre' in het Nederlands?",
+          "answer": "schoon",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_119",
+          "type": "open",
+          "question": "Hoe zeg je 'de apotheek' in het Frans?",
+          "answer": "la pharmacie",
+          "altAnswers": [
+            "pharmacie"
+          ]
+        },
+        {
+          "id": "u4s_120",
+          "type": "open",
+          "question": "Hoe zeg je 'onverdraaglijk' in het Frans?",
+          "answer": "insupportable",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_121",
+          "type": "open",
+          "question": "Hoe zeg je 'nerveus' in het Frans?",
+          "answer": "nerveux",
+          "altAnswers": [
+            "nerveuse",
+            "nerveux/nerveuse"
+          ]
+        },
+        {
+          "id": "u4s_122",
+          "type": "open",
+          "question": "Hoe zeg je 'de koorts' in het Frans?",
+          "answer": "la fièvre",
+          "altAnswers": [
+            "fièvre",
+            "fievre",
+            "la fievre"
+          ]
+        },
+        {
+          "id": "u4s_123",
+          "type": "open",
+          "question": "Hoe zeg je 'de graad' in het Frans?",
+          "answer": "le degré",
+          "altAnswers": [
+            "degré",
+            "degre",
+            "le degre"
+          ]
+        },
+        {
+          "id": "u4s_124",
+          "type": "open",
+          "question": "Hoe zeg je 'de lepel' in het Frans?",
+          "answer": "la cuillère",
+          "altAnswers": [
+            "cuillère",
+            "cuillere",
+            "la cuillere"
+          ]
+        },
+        {
+          "id": "u4s_125",
+          "type": "open",
+          "question": "Hoe zeg je 'vervuilen' in het Frans?",
+          "answer": "polluer",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_126",
+          "type": "open",
+          "question": "Hoe zeg je 'de pijn' in het Frans?",
+          "answer": "la douleur",
+          "altAnswers": [
+            "douleur"
+          ]
+        },
+        {
+          "id": "u4s_127",
+          "type": "open",
+          "question": "Hoe zeg je 'lang (tijdsduur)' in het Frans?",
+          "answer": "longtemps",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_128",
+          "type": "open",
+          "question": "Hoe zeg je 'beterschap' in het Frans?",
+          "answer": "bon rétablissement",
+          "altAnswers": [
+            "bon retablissement",
+            "rétablissement",
+            "retablissement"
+          ]
+        },
+        {
+          "id": "u4s_129",
+          "type": "open",
+          "question": "Hoe zeg je 'ergens op drukken' in het Frans?",
+          "answer": "appuyer sur",
+          "altAnswers": [
+            "appuyer"
+          ]
+        },
+        {
+          "id": "u4s_130",
+          "type": "open",
+          "question": "Hoe zeg je 'zich zorgen maken' in het Frans?",
+          "answer": "s'inquiéter",
+          "altAnswers": [
+            "s inquieter",
+            "inquiéter"
+          ]
+        },
+        {
+          "id": "u4s_131",
+          "type": "open",
+          "question": "Hoe zeg je 'schoon' in het Frans?",
+          "answer": "propre",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_132",
+          "type": "open",
+          "question": "Vertaal naar het Nederlands: 'Que puis-je faire pour vous?'",
+          "answer": "Wat kan ik voor u doen?",
+          "altAnswers": [
+            "wat kan ik voor u doen"
+          ]
+        },
+        {
+          "id": "u4s_133",
+          "type": "open",
+          "question": "Vertaal naar het Nederlands: 'Vous avez un médicament contre le mal de ventre?'",
+          "answer": "Heeft u een medicijn tegen buikpijn?",
+          "altAnswers": [
+            "heeft u een medicijn tegen buikpijn"
+          ]
+        },
+        {
+          "id": "u4s_134",
+          "type": "open",
+          "question": "Vertaal naar het Nederlands: 'Vous avez de la fièvre?'",
+          "answer": "Heeft u koorts?",
+          "altAnswers": [
+            "heeft u koorts"
+          ]
+        },
+        {
+          "id": "u4s_135",
+          "type": "open",
+          "question": "Vertaal naar het Nederlands: 'Depuis quand est-ce que tu es malade?'",
+          "answer": "Sinds wanneer ben je ziek?",
+          "altAnswers": [
+            "sinds wanneer ben je ziek"
+          ]
+        },
+        {
+          "id": "u4s_136",
+          "type": "open",
+          "question": "Vertaal naar het Nederlands: 'Je ne me sens pas bien du tout.'",
+          "answer": "Ik voel me helemaal niet goed.",
+          "altAnswers": [
+            "ik voel me helemaal niet goed"
+          ]
+        },
+        {
+          "id": "u4s_137",
+          "type": "open",
+          "question": "Vertaal naar het Nederlands: 'Ça fait mal où?'",
+          "answer": "Waar doet het pijn?",
+          "altAnswers": [
+            "waar doet het pijn"
+          ]
+        },
+        {
+          "id": "u4s_138",
+          "type": "open",
+          "question": "Vertaal naar het Frans: 'Wat kan ik voor u doen?'",
+          "answer": "Que puis-je faire pour vous?",
+          "altAnswers": [
+            "que puis-je faire pour vous"
+          ]
+        },
+        {
+          "id": "u4s_139",
+          "type": "open",
+          "question": "Vertaal naar het Frans: 'Heeft u een medicijn tegen buikpijn?'",
+          "answer": "Vous avez un médicament contre le mal de ventre?",
+          "altAnswers": [
+            "vous avez un medicament contre le mal de ventre"
+          ]
+        },
+        {
+          "id": "u4s_140",
+          "type": "open",
+          "question": "Vertaal naar het Frans: 'Heeft u koorts?'",
+          "answer": "Vous avez de la fièvre?",
+          "altAnswers": [
+            "vous avez de la fievre"
+          ]
+        },
+        {
+          "id": "u4s_141",
+          "type": "open",
+          "question": "Vertaal naar het Frans: 'Sinds wanneer ben je ziek?'",
+          "answer": "Depuis quand est-ce que tu es malade?",
+          "altAnswers": [
+            "depuis quand est-ce que tu es malade"
+          ]
+        },
+        {
+          "id": "u4s_142",
+          "type": "open",
+          "question": "Vertaal naar het Frans: 'Ik voel me helemaal niet goed.'",
+          "answer": "Je ne me sens pas bien du tout.",
+          "altAnswers": [
+            "je ne me sens pas bien du tout"
+          ]
+        },
+        {
+          "id": "u4s_143",
+          "type": "open",
+          "question": "Vertaal naar het Frans: 'Waar doet het pijn?'",
+          "answer": "Ça fait mal où?",
+          "altAnswers": [
+            "ca fait mal ou",
+            "ça fait mal où"
+          ]
+        },
+        {
+          "id": "u4s_144",
+          "type": "open",
+          "question": "Wat betekent 'l'absence' in het Nederlands?",
+          "answer": "de afwezigheid",
+          "altAnswers": [
+            "afwezigheid"
+          ]
+        },
+        {
+          "id": "u4s_145",
+          "type": "open",
+          "question": "Wat betekent 'tomber malade' in het Nederlands?",
+          "answer": "ziek worden",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_146",
+          "type": "open",
+          "question": "Wat betekent 'attraper la grippe' in het Nederlands?",
+          "answer": "de griep krijgen",
+          "altAnswers": [
+            "griep krijgen"
+          ]
+        },
+        {
+          "id": "u4s_147",
+          "type": "open",
+          "question": "Wat betekent 'tousser' in het Nederlands?",
+          "answer": "hoesten",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_148",
+          "type": "open",
+          "question": "Wat betekent 'éternuer' in het Nederlands?",
+          "answer": "niezen",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_149",
+          "type": "open",
+          "question": "Wat betekent 'le cabinet du médecin' in het Nederlands?",
+          "answer": "de dokterspraktijk",
+          "altAnswers": [
+            "dokterspraktijk"
+          ]
+        },
+        {
+          "id": "u4s_150",
+          "type": "open",
+          "question": "Wat betekent 'l'examen' in het Nederlands?",
+          "answer": "het onderzoek",
+          "altAnswers": [
+            "onderzoek"
+          ]
+        },
+        {
+          "id": "u4s_151",
+          "type": "open",
+          "question": "Wat betekent 'médical' in het Nederlands?",
+          "answer": "medisch",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_152",
+          "type": "open",
+          "question": "Wat betekent 'se cogner' in het Nederlands?",
+          "answer": "zich stoten",
+          "altAnswers": [
+            "stoten"
+          ]
+        },
+        {
+          "id": "u4s_153",
+          "type": "open",
+          "question": "Wat betekent 'le sang' in het Nederlands?",
+          "answer": "het bloed",
+          "altAnswers": [
+            "bloed"
+          ]
+        },
+        {
+          "id": "u4s_154",
+          "type": "open",
+          "question": "Wat betekent 'la blessure' in het Nederlands?",
+          "answer": "de verwonding",
+          "altAnswers": [
+            "verwonding"
+          ]
+        },
+        {
+          "id": "u4s_155",
+          "type": "open",
+          "question": "Wat betekent 'également / aussi' in het Nederlands?",
+          "answer": "ook",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_156",
+          "type": "open",
+          "question": "Wat betekent 'si (voorwaarde)' in het Nederlands?",
+          "answer": "als",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_157",
+          "type": "open",
+          "question": "Wat betekent 'cordialement' in het Nederlands?",
+          "answer": "vriendelijke groet",
+          "altAnswers": [
+            "met vriendelijke groet"
+          ]
+        },
+        {
+          "id": "u4s_158",
+          "type": "open",
+          "question": "Wat betekent 'être en forme' in het Nederlands?",
+          "answer": "in vorm zijn",
+          "altAnswers": [
+            "in vorm"
+          ]
+        },
+        {
+          "id": "u4s_159",
+          "type": "open",
+          "question": "Hoe zeg je 'de afwezigheid' in het Frans?",
+          "answer": "l'absence",
+          "altAnswers": [
+            "absence"
+          ]
+        },
+        {
+          "id": "u4s_160",
+          "type": "open",
+          "question": "Hoe zeg je 'ziek worden' in het Frans?",
+          "answer": "tomber malade",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_161",
+          "type": "open",
+          "question": "Hoe zeg je 'de griep krijgen' in het Frans?",
+          "answer": "attraper la grippe",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_162",
+          "type": "open",
+          "question": "Hoe zeg je 'hoesten' in het Frans?",
+          "answer": "tousser",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_163",
+          "type": "open",
+          "question": "Hoe zeg je 'niezen' in het Frans?",
+          "answer": "éternuer",
+          "altAnswers": [
+            "eternuer"
+          ]
+        },
+        {
+          "id": "u4s_164",
+          "type": "open",
+          "question": "Hoe zeg je 'de dokterspraktijk' in het Frans?",
+          "answer": "le cabinet du médecin",
+          "altAnswers": [
+            "cabinet du medecin",
+            "le cabinet du medecin"
+          ]
+        },
+        {
+          "id": "u4s_165",
+          "type": "open",
+          "question": "Hoe zeg je 'het onderzoek' in het Frans?",
+          "answer": "l'examen",
+          "altAnswers": [
+            "examen"
+          ]
+        },
+        {
+          "id": "u4s_166",
+          "type": "open",
+          "question": "Hoe zeg je 'medisch' in het Frans?",
+          "answer": "médical",
+          "altAnswers": [
+            "medical"
+          ]
+        },
+        {
+          "id": "u4s_167",
+          "type": "open",
+          "question": "Hoe zeg je 'zich stoten' in het Frans?",
+          "answer": "se cogner",
+          "altAnswers": [
+            "cogner"
+          ]
+        },
+        {
+          "id": "u4s_168",
+          "type": "open",
+          "question": "Hoe zeg je 'het bloed' in het Frans?",
+          "answer": "le sang",
+          "altAnswers": [
+            "sang"
+          ]
+        },
+        {
+          "id": "u4s_169",
+          "type": "open",
+          "question": "Hoe zeg je 'de verwonding' in het Frans?",
+          "answer": "la blessure",
+          "altAnswers": [
+            "blessure"
+          ]
+        },
+        {
+          "id": "u4s_170",
+          "type": "open",
+          "question": "Hoe zeg je 'ook' in het Frans?",
+          "answer": "également",
+          "altAnswers": [
+            "aussi",
+            "egalement"
+          ]
+        },
+        {
+          "id": "u4s_171",
+          "type": "open",
+          "question": "Hoe zeg je 'als (voorwaarde)' in het Frans?",
+          "answer": "si",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_172",
+          "type": "open",
+          "question": "Hoe zeg je 'vriendelijke groet' in het Frans?",
+          "answer": "cordialement",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_173",
+          "type": "open",
+          "question": "Hoe zeg je 'in vorm zijn' in het Frans?",
+          "answer": "être en forme",
+          "altAnswers": [
+            "etre en forme"
+          ]
+        },
+        {
+          "id": "u4s_174",
+          "type": "open",
+          "question": "Vertaal naar het Nederlands: 'J'ai attrapé un rhume.'",
+          "answer": "Ik heb een verkoudheid gevat.",
+          "altAnswers": [
+            "ik heb een verkoudheid gevat",
+            "ik heb een verkoudheid opgelopen"
+          ]
+        },
+        {
+          "id": "u4s_175",
+          "type": "open",
+          "question": "Vertaal naar het Nederlands: 'J'ai 40 degrés de fièvre.'",
+          "answer": "Ik heb 40 graden koorts.",
+          "altAnswers": [
+            "ik heb 40 graden koorts"
+          ]
+        },
+        {
+          "id": "u4s_176",
+          "type": "open",
+          "question": "Vertaal naar het Nederlands: 'Je crois que j'ai la grippe.'",
+          "answer": "Ik geloof dat ik griep heb.",
+          "altAnswers": [
+            "ik geloof dat ik griep heb",
+            "ik denk dat ik griep heb"
+          ]
+        },
+        {
+          "id": "u4s_177",
+          "type": "open",
+          "question": "Vertaal naar het Nederlands: 'J'ai fait une chute et je me suis fait très mal.'",
+          "answer": "Ik ben gevallen en heb me veel pijn gedaan.",
+          "altAnswers": [
+            "ik ben gevallen en heb me veel pijn gedaan"
+          ]
+        },
+        {
+          "id": "u4s_178",
+          "type": "open",
+          "question": "Vertaal naar het Nederlands: 'Je vais chez le médecin.'",
+          "answer": "Ik ga naar de dokter.",
+          "altAnswers": [
+            "ik ga naar de dokter"
+          ]
+        },
+        {
+          "id": "u4s_179",
+          "type": "open",
+          "question": "Vertaal naar het Nederlands: 'Je me suis cogné la tête.'",
+          "answer": "Ik heb mijn hoofd gestoten.",
+          "altAnswers": [
+            "ik heb mijn hoofd gestoten"
+          ]
+        },
+        {
+          "id": "u4s_180",
+          "type": "mc",
+          "question": "'à' + 'le' = ?",
+          "options": [
+            "au",
+            "à le",
+            "à la",
+            "aux"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u4s_181",
+          "type": "mc",
+          "question": "'à' + 'la' = ?",
+          "options": [
+            "au",
+            "à la",
+            "aux",
+            "à les"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u4s_182",
+          "type": "mc",
+          "question": "'à' + 'l'' = ?",
+          "options": [
+            "au",
+            "à l'",
+            "aux",
+            "à la"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u4s_183",
+          "type": "mc",
+          "question": "'à' + 'les' = ?",
+          "options": [
+            "au",
+            "à la",
+            "à l'",
+            "aux"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u4s_184",
+          "type": "open",
+          "question": "Vul aan: 'J'ai mal ___ nez.' (le nez)",
+          "answer": "au nez",
+          "altAnswers": [
+            "au"
+          ]
+        },
+        {
+          "id": "u4s_185",
+          "type": "open",
+          "question": "Vul aan: 'J'ai mal ___ tête.' (la tête)",
+          "answer": "à la tête",
+          "altAnswers": [
+            "à la",
+            "a la tête",
+            "a la tete"
+          ]
+        },
+        {
+          "id": "u4s_186",
+          "type": "open",
+          "question": "Vul aan: 'J'ai mal ___ oreille.' (l'oreille)",
+          "answer": "à l'oreille",
+          "altAnswers": [
+            "à l'",
+            "a l'oreille"
+          ]
+        },
+        {
+          "id": "u4s_187",
+          "type": "open",
+          "question": "Vul aan: 'J'ai mal ___ dents.' (les dents)",
+          "answer": "aux dents",
+          "altAnswers": [
+            "aux"
+          ]
+        },
+        {
+          "id": "u4s_188",
+          "type": "mc",
+          "question": "Hoe zeg je 'Ik heb pijn aan mijn knie' (le genou)?",
+          "options": [
+            "J'ai mal au genou",
+            "J'ai mal à la genou",
+            "J'ai mal aux genou",
+            "J'ai mal à l'genou"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u4s_189",
+          "type": "mc",
+          "question": "Hoe zeg je 'Ik heb pijn aan mijn tanden' (les dents)?",
+          "options": [
+            "J'ai mal au dents",
+            "J'ai mal à la dents",
+            "J'ai mal à l'dents",
+            "J'ai mal aux dents"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u4s_190",
+          "type": "mc",
+          "question": "Welk lidwoord gebruik je na 'à' voor 'ventre' (le ventre)?",
+          "options": [
+            "au",
+            "à la",
+            "à l'",
+            "aux"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u4s_191",
+          "type": "mc",
+          "question": "Welk lidwoord gebruik je na 'à' voor 'jambe' (la jambe)?",
+          "options": [
+            "au",
+            "à la",
+            "à l'",
+            "aux"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u4s_192",
+          "type": "open",
+          "question": "Wat betekent 'tout de suite' in het Nederlands?",
+          "answer": "meteen",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_193",
+          "type": "open",
+          "question": "Wat betekent 'la pommade' in het Nederlands?",
+          "answer": "de zalf",
+          "altAnswers": [
+            "zalf"
+          ]
+        },
+        {
+          "id": "u4s_194",
+          "type": "open",
+          "question": "Wat betekent 'le mal de gorge' in het Nederlands?",
+          "answer": "de keelpijn",
+          "altAnswers": [
+            "keelpijn"
+          ]
+        },
+        {
+          "id": "u4s_195",
+          "type": "open",
+          "question": "Wat betekent 'à la fois' in het Nederlands?",
+          "answer": "tegelijkertijd",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_196",
+          "type": "open",
+          "question": "Hoe zeg je 'tegelijkertijd' in het Frans?",
+          "answer": "à la fois",
+          "altAnswers": [
+            "a la fois"
+          ]
+        },
+        {
+          "id": "u4s_197",
+          "type": "open",
+          "question": "Wat betekent 'le comprimé' in het Nederlands?",
+          "answer": "het tabletje",
+          "altAnswers": [
+            "tabletje",
+            "het tablet",
+            "tablet"
+          ]
+        },
+        {
+          "id": "u4s_198",
+          "type": "open",
+          "question": "Hoe zeg je 'het tabletje' in het Frans?",
+          "answer": "le comprimé",
+          "altAnswers": [
+            "comprimé",
+            "comprime",
+            "le comprime"
+          ]
+        },
+        {
+          "id": "u4s_199",
+          "type": "open",
+          "question": "Wat betekent 'le prétexte' in het Nederlands?",
+          "answer": "de smoes",
+          "altAnswers": [
+            "smoes",
+            "het excuus",
+            "excuus"
+          ]
+        },
+        {
+          "id": "u4s_200",
+          "type": "open",
+          "question": "Hoe zeg je 'de smoes' in het Frans?",
+          "answer": "le prétexte",
+          "altAnswers": [
+            "prétexte",
+            "pretexte",
+            "le pretexte"
+          ]
+        },
+        {
+          "id": "u4s_201",
+          "type": "open",
+          "question": "Wat betekent 'la chute' in het Nederlands?",
+          "answer": "de val",
+          "altAnswers": [
+            "val"
+          ]
+        },
+        {
+          "id": "u4s_202",
+          "type": "open",
+          "question": "Hoe zeg je 'de val' in het Frans?",
+          "answer": "la chute",
+          "altAnswers": [
+            "chute"
+          ]
+        }
+      ]
     }
   ]
 }
