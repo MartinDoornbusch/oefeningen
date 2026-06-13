@@ -7418,6 +7418,198 @@
             "VS, Canada en Australië"
           ],
           "correct": 1
+        },
+        {
+          "id": "ak4_075",
+          "type": "open",
+          "question": "Een land waar de lonen van werknemers een stuk lager zijn dan in landen als Nederland heet een ___.",
+          "answer": "lagelonenland",
+          "altAnswers": [
+            "lageloonland"
+          ]
+        },
+        {
+          "id": "ak4_076",
+          "type": "open",
+          "question": "De levensverwachting in Nederland is ___ jaar.",
+          "answer": "82",
+          "altAnswers": [
+            "82 jaar"
+          ]
+        },
+        {
+          "id": "ak4_077",
+          "type": "open",
+          "question": "Het bnp per hoofd in Nederland is circa €___.",
+          "answer": "46.600",
+          "altAnswers": [
+            "46600",
+            "46,600",
+            "€46.600",
+            "46 600"
+          ]
+        },
+        {
+          "id": "ak4_078",
+          "type": "mc",
+          "question": "Welke van de volgende is een vestigingsplaatsfactor van Nederland?",
+          "options": [
+            "Nederlanders werken voor een laag loon",
+            "Nederland is lid van de Europese Unie",
+            "Nederland heeft de grootste haven van de wereld",
+            "Nederland heeft een tropisch klimaat"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ak4_079",
+          "type": "mc",
+          "question": "Noem de vijf vestigingsplaatsfactoren van Nederland. Welke hoort er NIET bij?",
+          "options": [
+            "Gunstige ligging aan de Noordzee en goede infrastructuur",
+            "Betrouwbaar en stabiel land met duidelijke wetten",
+            "Goedkope arbeidskrachten (lage lonen)",
+            "Lage belastingen voor buitenlandse bedrijven"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_080",
+          "type": "mc",
+          "question": "Waarom laten bedrijven als Philips onderdelen produceren in lagelonenland?",
+          "options": [
+            "Omdat de kwaliteit er beter is",
+            "Omdat de lonen er een stuk lager zijn dan in Nederland",
+            "Omdat Nederland geen fabrieken heeft",
+            "Omdat lagelonenland meer grondstoffen heeft"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ak4_081",
+          "type": "mc",
+          "question": "Welke van de volgende zijn Nederlandse multinationals?",
+          "options": [
+            "McDonald's en Nike",
+            "IKEA en Google",
+            "KLM en ING",
+            "H&M en Zara"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_082",
+          "type": "mc",
+          "question": "Welke van de volgende zijn buitenlandse multinationals die in Nederland gevestigd zijn?",
+          "options": [
+            "KLM en ING",
+            "Philips en AkzoNobel",
+            "McDonald's en IKEA",
+            "Boskalis en Rabobank"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_083",
+          "type": "mc",
+          "question": "In welke sector werken in 2021 de meeste mensen in Nederland?",
+          "options": [
+            "landbouw",
+            "industrie",
+            "diensten",
+            "delfstoffen"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_084",
+          "type": "mc",
+          "question": "In welk land is de sociale ongelijkheid het kleinst?",
+          "options": [
+            "Verenigde Staten",
+            "Zuid-Afrika",
+            "Brazilië",
+            "Noorwegen"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ak4_085",
+          "type": "mc",
+          "question": "Wat is een kenmerk van de informele sector?",
+          "options": [
+            "Werknemers betalen veel belasting",
+            "Bedrijven zijn officieel geregistreerd bij de overheid",
+            "Er wordt geen belasting betaald en er zijn geen officiële regels",
+            "De overheid reguleert de sector streng"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_086",
+          "type": "truefalse",
+          "question": "Het bnp per hoofd in Nederland is €46.600.",
+          "correct": true
+        },
+        {
+          "id": "ak4_087",
+          "type": "truefalse",
+          "question": "De levensverwachting in Nederland is 82 jaar.",
+          "correct": true
+        },
+        {
+          "id": "ak4_088",
+          "type": "truefalse",
+          "question": "De alfabetiseringsgraad in Nederland is bijna 100 procent.",
+          "correct": true
+        },
+        {
+          "id": "ak4_089",
+          "type": "truefalse",
+          "question": "In de informele sector betaalt men belasting over het inkomen.",
+          "correct": false
+        },
+        {
+          "id": "ak4_090",
+          "type": "truefalse",
+          "question": "In lagelonenland zijn de lonen een stuk lager dan in landen als Nederland.",
+          "correct": true
+        },
+        {
+          "id": "ak4_091",
+          "type": "truefalse",
+          "question": "Noorwegen heeft een grote sociale ongelijkheid.",
+          "correct": false
+        },
+        {
+          "id": "ak4_092",
+          "type": "truefalse",
+          "question": "Buitenlandse bedrijven als McDonald's, Nike en IKEA zijn ook gevestigd in Nederland.",
+          "correct": true
+        },
+        {
+          "id": "ak4_093",
+          "type": "truefalse",
+          "question": "Een goed opgeleide bevolking die Engels spreekt is een vestigingsplaatsfactor van Nederland.",
+          "correct": true
+        },
+        {
+          "id": "ak4_094",
+          "type": "truefalse",
+          "question": "Google koos voor Nederland als vestigingsplaats vanwege de hogere belastingen dan in de VS.",
+          "correct": false
+        },
+        {
+          "id": "ak4_095",
+          "type": "truefalse",
+          "question": "KLM en ING zijn voorbeelden van Nederlandse multinationals.",
+          "correct": true
+        },
+        {
+          "id": "ak4_096",
+          "type": "truefalse",
+          "question": "De VS heeft een grotere sociale ongelijkheid dan Noorwegen.",
+          "correct": true
         }
       ]
     }
