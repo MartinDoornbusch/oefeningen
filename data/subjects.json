@@ -5654,9 +5654,9 @@
           "id": "u4s_084",
           "type": "open",
           "question": "Wat betekent 'le pansement' in het Nederlands?",
-          "answer": "het plakster",
+          "answer": "de pleister",
           "altAnswers": [
-            "plakster"
+            "pleister"
           ]
         },
         {
@@ -5716,18 +5716,20 @@
           "id": "u4s_092",
           "type": "open",
           "question": "Wat betekent 'le médicament' in het Nederlands?",
-          "answer": "de pijnstiller",
+          "answer": "het medicijn",
           "altAnswers": [
+            "medicijn",
             "pijnstiller",
-            "medicijn"
+            "de pijnstiller"
           ]
         },
         {
           "id": "u4s_093",
           "type": "open",
           "question": "Wat betekent 'le coup de soleil' in het Nederlands?",
-          "answer": "de zonnebrand",
+          "answer": "de zonnesteek",
           "altAnswers": [
+            "zonnesteek",
             "zonnebrand"
           ]
         },
@@ -5870,8 +5872,11 @@
           "id": "u4s_108",
           "type": "open",
           "question": "Wat betekent 'nerveux / nerveuse' in het Nederlands?",
-          "answer": "zenuwachtig",
-          "altAnswers": []
+          "answer": "nerveus",
+          "altAnswers": [
+            "nerveuse",
+            "zenuwachtig"
+          ]
         },
         {
           "id": "u4s_109",
@@ -5947,10 +5952,10 @@
         {
           "id": "u4s_117",
           "type": "open",
-          "question": "Wat betekent 'asseyez-vous' in het Nederlands?",
-          "answer": "gaat u zitten",
+          "question": "Wat betekent 's'inquiéter' in het Nederlands?",
+          "answer": "zich zorgen maken",
           "altAnswers": [
-            "ga zitten"
+            "zorgen maken"
           ]
         },
         {
@@ -5979,7 +5984,7 @@
         {
           "id": "u4s_121",
           "type": "open",
-          "question": "Hoe zeg je 'zenuwachtig' in het Frans?",
+          "question": "Hoe zeg je 'nerveus' in het Frans?",
           "answer": "nerveux",
           "altAnswers": [
             "nerveuse",
@@ -6065,10 +6070,11 @@
         {
           "id": "u4s_130",
           "type": "open",
-          "question": "Hoe zeg je 'gaat u zitten' in het Frans?",
-          "answer": "asseyez-vous",
+          "question": "Hoe zeg je 'zich zorgen maken' in het Frans?",
+          "answer": "s'inquiéter",
           "altAnswers": [
-            "asseyez vous"
+            "s inquieter",
+            "inquiéter"
           ]
         },
         {
@@ -6627,6 +6633,109 @@
             "aux"
           ],
           "correct": 1
+        },
+        {
+          "id": "u4s_192",
+          "type": "open",
+          "question": "Wat betekent 'tout de suite' in het Nederlands?",
+          "answer": "meteen",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_193",
+          "type": "open",
+          "question": "Wat betekent 'la pommade' in het Nederlands?",
+          "answer": "de zalf",
+          "altAnswers": [
+            "zalf"
+          ]
+        },
+        {
+          "id": "u4s_194",
+          "type": "open",
+          "question": "Wat betekent 'le mal de gorge' in het Nederlands?",
+          "answer": "de keelpijn",
+          "altAnswers": [
+            "keelpijn"
+          ]
+        },
+        {
+          "id": "u4s_195",
+          "type": "open",
+          "question": "Wat betekent 'à la fois' in het Nederlands?",
+          "answer": "tegelijkertijd",
+          "altAnswers": []
+        },
+        {
+          "id": "u4s_196",
+          "type": "open",
+          "question": "Hoe zeg je 'tegelijkertijd' in het Frans?",
+          "answer": "à la fois",
+          "altAnswers": [
+            "a la fois"
+          ]
+        },
+        {
+          "id": "u4s_197",
+          "type": "open",
+          "question": "Wat betekent 'le comprimé' in het Nederlands?",
+          "answer": "het tabletje",
+          "altAnswers": [
+            "tabletje",
+            "het tablet",
+            "tablet"
+          ]
+        },
+        {
+          "id": "u4s_198",
+          "type": "open",
+          "question": "Hoe zeg je 'het tabletje' in het Frans?",
+          "answer": "le comprimé",
+          "altAnswers": [
+            "comprimé",
+            "comprime",
+            "le comprime"
+          ]
+        },
+        {
+          "id": "u4s_199",
+          "type": "open",
+          "question": "Wat betekent 'le prétexte' in het Nederlands?",
+          "answer": "de smoes",
+          "altAnswers": [
+            "smoes",
+            "het excuus",
+            "excuus"
+          ]
+        },
+        {
+          "id": "u4s_200",
+          "type": "open",
+          "question": "Hoe zeg je 'de smoes' in het Frans?",
+          "answer": "le prétexte",
+          "altAnswers": [
+            "prétexte",
+            "pretexte",
+            "le pretexte"
+          ]
+        },
+        {
+          "id": "u4s_201",
+          "type": "open",
+          "question": "Wat betekent 'la chute' in het Nederlands?",
+          "answer": "de val",
+          "altAnswers": [
+            "val"
+          ]
+        },
+        {
+          "id": "u4s_202",
+          "type": "open",
+          "question": "Hoe zeg je 'de val' in het Frans?",
+          "answer": "la chute",
+          "altAnswers": [
+            "chute"
+          ]
         }
       ]
     }
