@@ -6738,6 +6738,521 @@
           ]
         }
       ]
+    },
+    {
+      "id": "ak_hfst4",
+      "name": "Aardrijkskunde – Hfst 4 Welvaart & Welzijn",
+      "emoji": "🌍",
+      "level": "brugklas",
+      "questions": [
+        {
+          "id": "ak4_001",
+          "type": "open",
+          "question": "Wanneer een persoon minder dan €1,70 per dag te besteden heeft, leeft hij onder de ___.",
+          "answer": "armoedegrens",
+          "altAnswers": []
+        },
+        {
+          "id": "ak4_002",
+          "type": "open",
+          "question": "Alle mensen in een land die kunnen en mogen werken vormen de ___.",
+          "answer": "beroepsbevolking",
+          "altAnswers": []
+        },
+        {
+          "id": "ak4_003",
+          "type": "open",
+          "question": "Het bedrag dat in een jaar verdiend wordt in een land, gedeeld door alle inwoners, noemen we het ___ per hoofd.",
+          "answer": "bruto nationaal product",
+          "altAnswers": [
+            "bnp per hoofd",
+            "bnp"
+          ]
+        },
+        {
+          "id": "ak4_004",
+          "type": "open",
+          "question": "De rijkdom van een land, gemeten op basis van geld, heet ___.",
+          "answer": "welvaart",
+          "altAnswers": []
+        },
+        {
+          "id": "ak4_005",
+          "type": "open",
+          "question": "Het percentage mensen in een land dat kan lezen en schrijven is de ___.",
+          "answer": "alfabetiseringsgraad",
+          "altAnswers": []
+        },
+        {
+          "id": "ak4_006",
+          "type": "open",
+          "question": "Hoe oud mensen in een land gemiddeld worden noemen we de ___.",
+          "answer": "levensverwachting",
+          "altAnswers": []
+        },
+        {
+          "id": "ak4_007",
+          "type": "open",
+          "question": "Ziekten die mensen krijgen van een ongezonde levensstijl zijn ___.",
+          "answer": "welvaartsziekten",
+          "altAnswers": [
+            "welvaartsziekte"
+          ]
+        },
+        {
+          "id": "ak4_008",
+          "type": "open",
+          "question": "Hoe gelukkig en tevreden mensen zijn met hun leven noemen we ___.",
+          "answer": "welzijn",
+          "altAnswers": []
+        },
+        {
+          "id": "ak4_009",
+          "type": "open",
+          "question": "Het officiële deel van de economie van een land is de ___ sector.",
+          "answer": "formele",
+          "altAnswers": [
+            "formele sector"
+          ]
+        },
+        {
+          "id": "ak4_010",
+          "type": "open",
+          "question": "Het niet-officiële deel van de economie van een land is de ___ sector.",
+          "answer": "informele",
+          "altAnswers": [
+            "informele sector"
+          ]
+        },
+        {
+          "id": "ak4_011",
+          "type": "open",
+          "question": "Wanneer er in een land grote verschillen zijn in welvaart tussen gebieden spreken we van ___ ongelijkheid.",
+          "answer": "ruimtelijke",
+          "altAnswers": [
+            "ruimtelijke ongelijkheid"
+          ]
+        },
+        {
+          "id": "ak4_012",
+          "type": "open",
+          "question": "Wanneer er in een land grote verschillen zijn in welvaart tussen groepen mensen spreken we van ___ ongelijkheid.",
+          "answer": "sociale",
+          "altAnswers": [
+            "sociale ongelijkheid"
+          ]
+        },
+        {
+          "id": "ak4_013",
+          "type": "open",
+          "question": "Illegale wijken met huizen van slechte kwaliteit, zonder voorzieningen heten ___.",
+          "answer": "zelfbouwwijken",
+          "altAnswers": [
+            "zelfbouwwijk"
+          ]
+        },
+        {
+          "id": "ak4_014",
+          "type": "open",
+          "question": "Het plannen, organiseren en uitvoeren van vervoer van de ene naar de andere plaats heet ___.",
+          "answer": "logistiek",
+          "altAnswers": []
+        },
+        {
+          "id": "ak4_015",
+          "type": "open",
+          "question": "Een groot bedrijf dat in meerdere landen een winkel, fabriek of kantoor heeft is een ___.",
+          "answer": "multinational",
+          "altAnswers": []
+        },
+        {
+          "id": "ak4_016",
+          "type": "open",
+          "question": "De redenen waarom een bedrijf kiest voor een bepaald land of een bepaalde plaats zijn de ___.",
+          "answer": "vestigingsplaatsfactoren",
+          "altAnswers": [
+            "vestigingsplaatsfactor"
+          ]
+        },
+        {
+          "id": "ak4_017",
+          "type": "open",
+          "question": "Het gebied waar vandaan een luchthaven of haven goederen en mensen ontvangt heet het ___.",
+          "answer": "achterland",
+          "altAnswers": []
+        },
+        {
+          "id": "ak4_018",
+          "type": "open",
+          "question": "Havens of luchthavens die een grote rol spelen in de wereldwijde handel heten ___.",
+          "answer": "mainports",
+          "altAnswers": [
+            "mainport"
+          ]
+        },
+        {
+          "id": "ak4_019",
+          "type": "open",
+          "question": "Als mensen geen betaalde baan hebben is er sprake van ___.",
+          "answer": "werkloosheid",
+          "altAnswers": []
+        },
+        {
+          "id": "ak4_020",
+          "type": "open",
+          "question": "Landen met een hoge welvaart worden ___ of hoge-inkomstenlanden genoemd.",
+          "answer": "centrumland",
+          "altAnswers": [
+            "centrum"
+          ]
+        },
+        {
+          "id": "ak4_021",
+          "type": "open",
+          "question": "Landen met een lage welvaart worden lage-inkomstenlanden of ___ genoemd.",
+          "answer": "periferie",
+          "altAnswers": []
+        },
+        {
+          "id": "ak4_022",
+          "type": "open",
+          "question": "Landen die geen lage, maar ook geen hoge welvaart hebben zijn de midden-inkomstenlanden of ___.",
+          "answer": "semiperiferie",
+          "altAnswers": []
+        },
+        {
+          "id": "ak4_023",
+          "type": "open",
+          "question": "Alle verbindingen die door de meeste mensen worden gebruikt (wegen, spoorwegen, internet) heten ___.",
+          "answer": "infrastructuur",
+          "altAnswers": []
+        },
+        {
+          "id": "ak4_024",
+          "type": "mc",
+          "question": "Wat is de armoedegrens?",
+          "options": [
+            "Wanneer een persoon minder dan €1,70 per dag te besteden heeft",
+            "De grens tussen hoge- en lage-inkomstenlanden op een kaart",
+            "Wanneer meer dan 50% van de mensen geen werk heeft",
+            "Wanneer een land minder dan €1,70 per inwoner exporteert"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ak4_025",
+          "type": "mc",
+          "question": "Wat is welvaart?",
+          "options": [
+            "Hoe gelukkig mensen zijn met hun leven",
+            "Het percentage mensen dat kan lezen en schrijven",
+            "De rijkdom van een land, gemeten op basis van geld",
+            "Hoe oud mensen gemiddeld worden"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_026",
+          "type": "mc",
+          "question": "Wat zijn hoge-inkomstenlanden?",
+          "options": [
+            "Landen die lid zijn van de Europese Unie",
+            "Landen met een hoge welvaart",
+            "Landen met veel exportinkomsten",
+            "Landen met meer dan 50 miljoen inwoners"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ak4_027",
+          "type": "mc",
+          "question": "Wat is de alfabetiseringsgraad?",
+          "options": [
+            "Het gemiddelde opleidingsniveau in een land",
+            "Het aantal scholen per inwoner",
+            "Het percentage mensen dat kan lezen en schrijven",
+            "Hoe lang mensen gemiddeld naar school gaan"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_028",
+          "type": "mc",
+          "question": "Wat zijn welvaartsziekten?",
+          "options": [
+            "Infectieziekten die veel voorkomen in arme landen",
+            "Ziekten die mensen krijgen van een ongezonde levensstijl",
+            "Ziekten die alleen in rijke landen bestaan",
+            "Aandoeningen door luchtvervuiling"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ak4_029",
+          "type": "mc",
+          "question": "Wat is een multinational?",
+          "options": [
+            "Een bedrijf dat producten importeert uit andere landen",
+            "Een internationale organisatie zoals de VN",
+            "Groot bedrijf dat in meerdere landen een winkel, fabriek of kantoor heeft",
+            "Een bedrijf dat alleen in het buitenland werkt"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_030",
+          "type": "mc",
+          "question": "Wat is ruimtelijke ongelijkheid?",
+          "options": [
+            "Verschillen in welvaart tussen groepen mensen in een land",
+            "Het verschil in oppervlakte tussen landen",
+            "Verschillen in welvaart tussen gebieden in een land",
+            "Ongelijkheid in aantal inwoners per km²"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_031",
+          "type": "mc",
+          "question": "Wat is sociale ongelijkheid?",
+          "options": [
+            "Verschillen in welvaart tussen gebieden in een land",
+            "Verschillen in welvaart tussen groepen mensen in een land",
+            "Het verschil tussen de formele en informele sector",
+            "Ongelijkheid in kansen tussen landen"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ak4_032",
+          "type": "mc",
+          "question": "Wat is logistiek?",
+          "options": [
+            "Havens die een belangrijke rol spelen in de wereldhandel",
+            "Alle wegen en internetverbindingen in een land",
+            "Het plannen, organiseren en uitvoeren van vervoer van de ene naar de andere plaats",
+            "De informele economie van een land"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_033",
+          "type": "mc",
+          "question": "Wat zijn vestigingsplaatsfactoren?",
+          "options": [
+            "De factoren die bepalen hoeveel belasting een bedrijf betaalt",
+            "De redenen waarom een bedrijf kiest voor een bepaald land of een bepaalde plaats",
+            "De aantallen werknemers in een bedrijf",
+            "De grootte van een multinational"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ak4_034",
+          "type": "mc",
+          "question": "Wat is het achterland van een haven of luchthaven?",
+          "options": [
+            "Het gebied achter het havengebouw",
+            "Het gebied dat de haven of luchthaven bevoorraadt met goederen en mensen",
+            "Het gebied waar de haven goederen naartoe stuurt",
+            "Het laaggelegen land rondom een haven"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ak4_035",
+          "type": "mc",
+          "question": "Wat is een mainport?",
+          "options": [
+            "De grootste stad van een land",
+            "Een groot industriegebied met veel fabrieken",
+            "Havens of luchthavens die een grote rol spelen in de wereldwijde handel",
+            "Een vliegveld met meer dan 50 miljoen passagiers per jaar"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_036",
+          "type": "mc",
+          "question": "In welk type land werken de meeste mensen in de landbouw?",
+          "options": [
+            "centrumland",
+            "semiperiferie / midden-inkomstenlanden",
+            "periferie / lage-inkomstenlanden",
+            "het maakt niet uit"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_037",
+          "type": "mc",
+          "question": "In welk type land werken de meeste mensen in de diensten?",
+          "options": [
+            "periferie / lage-inkomstenlanden",
+            "semiperiferie",
+            "centrumland / hoge-inkomstenlanden",
+            "midden-inkomstenlanden"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_038",
+          "type": "mc",
+          "question": "Wat is de juiste volgorde van landen van rijk naar arm?",
+          "options": [
+            "centrumland → semiperiferie → periferie",
+            "periferie → semiperiferie → centrumland",
+            "semiperiferie → centrumland → periferie",
+            "centrumland → periferie → semiperiferie"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ak4_039",
+          "type": "mc",
+          "question": "Welke twee begrippen zijn synoniemen (betekenen hetzelfde)?",
+          "options": [
+            "welvaart en welzijn",
+            "centrumland en periferie",
+            "hoge-inkomstenlanden en centrumland",
+            "alfabetiseringsgraad en levensverwachting"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_040",
+          "type": "mc",
+          "question": "Welke factor is een vestigingsplaatsfactor voor een multinational?",
+          "options": [
+            "de hoeveelheid neerslag per jaar",
+            "goede infrastructuur en logistieke verbindingen",
+            "de oppervlakte van het land",
+            "de kleur van de nationale vlag"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ak4_041",
+          "type": "mc",
+          "question": "Welzijn omvat meer dan alleen geld. Welke factoren horen bij welzijn?",
+          "options": [
+            "export, import en bnp per hoofd",
+            "gezondheid, veiligheid en inkomen",
+            "alfabetiseringsgraad, bnp en levensverwachting",
+            "infrastructuur, logistiek en vestigingsplaatsfactoren"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ak4_042",
+          "type": "mc",
+          "question": "Wat meet het bnp per hoofd?",
+          "options": [
+            "de kwaliteit van welzijn van een land",
+            "de werkloosheid in een land",
+            "de welvaart van een land",
+            "de ongelijkheid tussen groepen mensen"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_043",
+          "type": "mc",
+          "question": "McDonald's en Burger King zijn voorbeelden van:",
+          "options": [
+            "mainports",
+            "vestigingsplaatsfactoren",
+            "multinationals",
+            "lage-inkomstenlanden"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ak4_044",
+          "type": "truefalse",
+          "question": "Nederland is een hoge-inkomstensland (centrumland).",
+          "correct": true
+        },
+        {
+          "id": "ak4_045",
+          "type": "truefalse",
+          "question": "Rotterdam is een mainport.",
+          "correct": true
+        },
+        {
+          "id": "ak4_046",
+          "type": "truefalse",
+          "question": "In lage-inkomstenlanden is de levensverwachting hoger dan in hoge-inkomstenlanden.",
+          "correct": false
+        },
+        {
+          "id": "ak4_047",
+          "type": "truefalse",
+          "question": "De alfabetiseringsgraad is het percentage mensen in een land dat kan lezen en schrijven.",
+          "correct": true
+        },
+        {
+          "id": "ak4_048",
+          "type": "truefalse",
+          "question": "Een multinational is een bedrijf dat actief is in slechts één land.",
+          "correct": false
+        },
+        {
+          "id": "ak4_049",
+          "type": "truefalse",
+          "question": "Ruimtelijke ongelijkheid gaat over de verschillen in welvaart tussen groepen mensen in een land.",
+          "correct": false
+        },
+        {
+          "id": "ak4_050",
+          "type": "truefalse",
+          "question": "De informele sector is het officiële deel van de economie van een land.",
+          "correct": false
+        },
+        {
+          "id": "ak4_051",
+          "type": "truefalse",
+          "question": "Welvaart wordt gemeten op basis van geld.",
+          "correct": true
+        },
+        {
+          "id": "ak4_052",
+          "type": "truefalse",
+          "question": "De beroepsbevolking bestaat uit alle mensen in een land.",
+          "correct": false
+        },
+        {
+          "id": "ak4_053",
+          "type": "truefalse",
+          "question": "Nederland hoort bij de Europese Unie.",
+          "correct": true
+        },
+        {
+          "id": "ak4_054",
+          "type": "open",
+          "question": "Hoeveel jaar gaat de gemiddelde Nederlander naar school?",
+          "answer": "19",
+          "altAnswers": [
+            "19 jaar"
+          ]
+        },
+        {
+          "id": "ak4_055",
+          "type": "truefalse",
+          "question": "McDonald's, Burger King en KFC zijn voorbeelden van multinationals.",
+          "correct": true
+        },
+        {
+          "id": "ak4_056",
+          "type": "open",
+          "question": "Noem een voorbeeld van een mainport in Nederland.",
+          "answer": "Rotterdam",
+          "altAnswers": [
+            "Schiphol",
+            "Amsterdam"
+          ]
+        }
+      ]
     }
   ]
 }
