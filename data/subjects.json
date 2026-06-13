@@ -4421,6 +4421,145 @@
           "type": "truefalse",
           "question": "Koolstofdioxide komt via de huidmondjes de plant binnen.",
           "correct": true
+        },
+        {
+          "id": "bio_045",
+          "type": "mc",
+          "question": "Bron 1 toont een tekening van een plant met vijf gelabelde onderdelen. Welke vijf zijn dit?",
+          "options": [
+            "wortel, stengel, blad, bloem, wortelhaartjes",
+            "wortel, stengel, blad, bloem, huidmondjes",
+            "wortel, blad, bloem, celwand, opperhuid",
+            "wortel, stengel, blad, jaarringen, bastweefsel"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "bio_046",
+          "type": "open",
+          "question": "Bron 1: welk onderdeel van de plant bevindt zich volledig onder de grond?",
+          "answer": "wortel",
+          "altAnswers": []
+        },
+        {
+          "id": "bio_047",
+          "type": "open",
+          "question": "Bron 1: welk klein onderdeel zit aan de buitenkant van de wortel en vergroot het opnamevlak voor water?",
+          "answer": "wortelhaartjes",
+          "altAnswers": []
+        },
+        {
+          "id": "bio_048",
+          "type": "mc",
+          "question": "Bron 2 toont een dwarsdoorsnede van een blad met drie gelabelde onderdelen. Welke drie zijn dit?",
+          "options": [
+            "celkern, celwand, celmembraan",
+            "wortel, stengel, blad",
+            "opperhuid, bladgroenkorrels, huidmondjes",
+            "jaarringen, bastweefsel, houtweefsel"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bio_049",
+          "type": "open",
+          "question": "Bron 2 (bladdwarsdoorsnede): welk onderdeel vormt de buitenste beschermende laag van het blad?",
+          "answer": "opperhuid",
+          "altAnswers": []
+        },
+        {
+          "id": "bio_050",
+          "type": "open",
+          "question": "Bron 2 (bladdwarsdoorsnede): welk onderdeel in het blad regelt de gaswisseling tussen de plant en de lucht?",
+          "answer": "huidmondjes",
+          "altAnswers": []
+        },
+        {
+          "id": "bio_051",
+          "type": "open",
+          "question": "Bron 2 (bladdwarsdoorsnede): welke groene korrels zitten in de bladcellen en voeren fotosynthese uit?",
+          "answer": "bladgroenkorrels",
+          "altAnswers": [
+            "bladgroenkorrel"
+          ]
+        },
+        {
+          "id": "bio_052",
+          "type": "mc",
+          "question": "Bron 4 toont een schema van een plantcel met vier gelabelde onderdelen. Welke vier zijn dit?",
+          "options": [
+            "wortel, stengel, blad, bloem",
+            "celkern, celwand, celmembraan, bladgroenkorrel",
+            "opperhuid, bladgroenkorrels, huidmondjes, stengel",
+            "zaadlobben, bastweefsel, houtweefsel, jaarringen"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bio_053",
+          "type": "open",
+          "question": "Bron 4 (plantcel): welk onderdeel vormt de stevige buitenwand van de cel?",
+          "answer": "celwand",
+          "altAnswers": []
+        },
+        {
+          "id": "bio_054",
+          "type": "open",
+          "question": "Bron 4 (plantcel): welk onderdeel bevat de erfelijke informatie en stuurt de cel aan?",
+          "answer": "celkern",
+          "altAnswers": []
+        },
+        {
+          "id": "bio_055",
+          "type": "open",
+          "question": "Bron 4 (plantcel): welk onderdeel regelt wat de cel in- en uitkomt, net binnen de celwand?",
+          "answer": "celmembraan",
+          "altAnswers": []
+        },
+        {
+          "id": "bio_056",
+          "type": "open",
+          "question": "Bron 4 (plantcel): in welk organel vindt fotosynthese plaats?",
+          "answer": "bladgroenkorrel",
+          "altAnswers": [
+            "bladgroenkorrels"
+          ]
+        },
+        {
+          "id": "bio_057",
+          "type": "mc",
+          "question": "De boomstamdwarsdoorsnede in 5.2 toont drie onderdelen. Welk onderdeel zit aan de BUITENKANT van de stam?",
+          "options": [
+            "houtweefsel",
+            "jaarringen",
+            "bastweefsel",
+            "zaadlobben"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bio_058",
+          "type": "mc",
+          "question": "De boomstamdwarsdoorsnede in 5.2 toont drie onderdelen. Welk onderdeel zit aan de BINNENKANT van de stam?",
+          "options": [
+            "bastweefsel",
+            "houtweefsel",
+            "jaarringen",
+            "opperhuid"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bio_059",
+          "type": "mc",
+          "question": "Bron boomstam (5.2): welke drie onderdelen zijn er zichtbaar in de dwarsdoorsnede?",
+          "options": [
+            "wortel, stengel, blad",
+            "opperhuid, bladgroenkorrels, huidmondjes",
+            "celkern, celwand, celmembraan",
+            "jaarringen, bastweefsel, houtweefsel"
+          ],
+          "correct": 3
         }
       ]
     }
