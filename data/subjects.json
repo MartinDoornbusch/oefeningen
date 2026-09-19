@@ -7612,6 +7612,863 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "duits_kap6",
+      "name": "Duits – Kapitel 6",
+      "emoji": "🇩🇪",
+      "level": "havo2",
+      "questions": [
+        {
+          "id": "dk6_001",
+          "type": "open",
+          "question": "NL→DE: de gitaar",
+          "answer": "die Gitarre",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_002",
+          "type": "open",
+          "question": "NL→DE: de stad",
+          "answer": "die Stadt",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_003",
+          "type": "open",
+          "question": "NL→DE: de viool",
+          "answer": "die Geige",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_004",
+          "type": "open",
+          "question": "NL→DE: het drumstel",
+          "answer": "das Schlagzeug",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_005",
+          "type": "open",
+          "question": "NL→DE: de hobby",
+          "answer": "das Hobby",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_006",
+          "type": "open",
+          "question": "NL→DE: de piano",
+          "answer": "das Klavier",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_007",
+          "type": "open",
+          "question": "NL→DE: de vakantie",
+          "answer": "die Ferien",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_008",
+          "type": "open",
+          "question": "NL→DE: aan sport doen",
+          "answer": "Sport machen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_009",
+          "type": "open",
+          "question": "NL→DE: bevallen (leuk vinden)",
+          "answer": "gefallen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_010",
+          "type": "open",
+          "question": "NL→DE: dansen",
+          "answer": "tanzen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_011",
+          "type": "open",
+          "question": "NL→DE: fietsen",
+          "answer": "Rad fahren",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_012",
+          "type": "open",
+          "question": "NL→DE: leuk zijn (plezier geven)",
+          "answer": "Spaß machen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_013",
+          "type": "open",
+          "question": "NL→DE: lezen",
+          "answer": "lesen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_014",
+          "type": "open",
+          "question": "NL→DE: naar de bioscoop gaan",
+          "answer": "ins Kino gehen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_015",
+          "type": "open",
+          "question": "NL→DE: naar het zwembad gaan",
+          "answer": "ins Schwimmbad gehen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_016",
+          "type": "open",
+          "question": "NL→DE: naar muziek luisteren",
+          "answer": "Musik hören",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_017",
+          "type": "open",
+          "question": "NL→DE: paardrijden",
+          "answer": "reiten",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_018",
+          "type": "open",
+          "question": "NL→DE: skiën",
+          "answer": "Ski fahren",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_019",
+          "type": "open",
+          "question": "NL→DE: tennissen",
+          "answer": "Tennis spielen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_020",
+          "type": "open",
+          "question": "NL→DE: voetballen",
+          "answer": "Fußball spielen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_021",
+          "type": "open",
+          "question": "NL→DE: zingen",
+          "answer": "singen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_022",
+          "type": "open",
+          "question": "NL→DE: zwemmen",
+          "answer": "schwimmen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_023",
+          "type": "open",
+          "question": "NL→DE: met",
+          "answer": "mit",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_024",
+          "type": "open",
+          "question": "NL→DE: of",
+          "answer": "oder",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_025",
+          "type": "open",
+          "question": "NL→DE: soms",
+          "answer": "manchmal",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_026",
+          "type": "open",
+          "question": "NL→DE: dom / stom",
+          "answer": "blöd",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_027",
+          "type": "open",
+          "question": "NL→DE: interessant",
+          "answer": "interessant",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_028",
+          "type": "open",
+          "question": "NL→DE: leuk",
+          "answer": "toll",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_029",
+          "type": "open",
+          "question": "NL→DE: makkelijk",
+          "answer": "leicht",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_030",
+          "type": "open",
+          "question": "NL→DE: moeilijk",
+          "answer": "schwierig",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_031",
+          "type": "open",
+          "question": "NL→DE: mooi",
+          "answer": "schön",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_032",
+          "type": "open",
+          "question": "NL→DE: saai",
+          "answer": "langweilig",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_033",
+          "type": "open",
+          "question": "DE→NL: die Gitarre",
+          "answer": "de gitaar",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_034",
+          "type": "open",
+          "question": "DE→NL: die Stadt",
+          "answer": "de stad",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_035",
+          "type": "open",
+          "question": "DE→NL: die Geige",
+          "answer": "de viool",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_036",
+          "type": "open",
+          "question": "DE→NL: das Schlagzeug",
+          "answer": "het drumstel",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_037",
+          "type": "open",
+          "question": "DE→NL: das Hobby",
+          "answer": "de hobby",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_038",
+          "type": "open",
+          "question": "DE→NL: das Klavier",
+          "answer": "de piano",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_039",
+          "type": "open",
+          "question": "DE→NL: die Ferien",
+          "answer": "de vakantie",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_040",
+          "type": "open",
+          "question": "DE→NL: Sport machen",
+          "answer": "aan sport doen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_041",
+          "type": "open",
+          "question": "DE→NL: gefallen",
+          "answer": "bevallen",
+          "altAnswers": [
+            "leuk vinden"
+          ]
+        },
+        {
+          "id": "dk6_042",
+          "type": "open",
+          "question": "DE→NL: tanzen",
+          "answer": "dansen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_043",
+          "type": "open",
+          "question": "DE→NL: Rad fahren",
+          "answer": "fietsen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_044",
+          "type": "open",
+          "question": "DE→NL: Spaß machen",
+          "answer": "leuk zijn",
+          "altAnswers": [
+            "plezier geven"
+          ]
+        },
+        {
+          "id": "dk6_045",
+          "type": "open",
+          "question": "DE→NL: lesen",
+          "answer": "lezen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_046",
+          "type": "open",
+          "question": "DE→NL: ins Kino gehen",
+          "answer": "naar de bioscoop gaan",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_047",
+          "type": "open",
+          "question": "DE→NL: ins Schwimmbad gehen",
+          "answer": "naar het zwembad gaan",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_048",
+          "type": "open",
+          "question": "DE→NL: Musik hören",
+          "answer": "naar muziek luisteren",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_049",
+          "type": "open",
+          "question": "DE→NL: reiten",
+          "answer": "paardrijden",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_050",
+          "type": "open",
+          "question": "DE→NL: Ski fahren",
+          "answer": "skiën",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_051",
+          "type": "open",
+          "question": "DE→NL: Tennis spielen",
+          "answer": "tennissen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_052",
+          "type": "open",
+          "question": "DE→NL: Fußball spielen",
+          "answer": "voetballen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_053",
+          "type": "open",
+          "question": "DE→NL: singen",
+          "answer": "zingen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_054",
+          "type": "open",
+          "question": "DE→NL: schwimmen",
+          "answer": "zwemmen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_055",
+          "type": "open",
+          "question": "DE→NL: mit",
+          "answer": "met",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_056",
+          "type": "open",
+          "question": "DE→NL: oder",
+          "answer": "of",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_057",
+          "type": "open",
+          "question": "DE→NL: manchmal",
+          "answer": "soms",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_058",
+          "type": "open",
+          "question": "DE→NL: blöd",
+          "answer": "dom",
+          "altAnswers": [
+            "stom"
+          ]
+        },
+        {
+          "id": "dk6_059",
+          "type": "open",
+          "question": "DE→NL: interessant",
+          "answer": "interessant",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_060",
+          "type": "open",
+          "question": "DE→NL: toll",
+          "answer": "leuk",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_061",
+          "type": "open",
+          "question": "DE→NL: leicht",
+          "answer": "makkelijk",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_062",
+          "type": "open",
+          "question": "DE→NL: schwierig",
+          "answer": "moeilijk",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_063",
+          "type": "open",
+          "question": "DE→NL: schön",
+          "answer": "mooi",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_064",
+          "type": "open",
+          "question": "DE→NL: langweilig",
+          "answer": "saai",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_065",
+          "type": "open",
+          "question": "DE→NL: treffen",
+          "answer": "ontmoeten",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_066",
+          "type": "open",
+          "question": "DE→NL: schon",
+          "answer": "al",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_067",
+          "type": "open",
+          "question": "DE→NL: der Monat",
+          "answer": "de maand",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_068",
+          "type": "open",
+          "question": "DE→NL: versuchen",
+          "answer": "proberen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_069",
+          "type": "open",
+          "question": "DE→NL: passieren",
+          "answer": "gebeuren",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_070",
+          "type": "open",
+          "question": "DE→NL: verbringen",
+          "answer": "doorbrengen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_071",
+          "type": "open",
+          "question": "DE→NL: meistens",
+          "answer": "meestal",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_072",
+          "type": "open",
+          "question": "DE→NL: ziemlich",
+          "answer": "tamelijk",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_073",
+          "type": "open",
+          "question": "DE→NL: sich üben",
+          "answer": "oefenen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_074",
+          "type": "open",
+          "question": "DE→NL: sich freuen auf",
+          "answer": "zich verheugen op",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_075",
+          "type": "open",
+          "question": "DE→NL: traurig",
+          "answer": "verdrietig",
+          "altAnswers": [
+            "bedroefd"
+          ]
+        },
+        {
+          "id": "dk6_076",
+          "type": "open",
+          "question": "Grammatik spielen – ich ...",
+          "answer": "spiele",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_077",
+          "type": "open",
+          "question": "Grammatik spielen – du ...",
+          "answer": "spielst",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_078",
+          "type": "open",
+          "question": "Grammatik spielen – er/sie/es ...",
+          "answer": "spielt",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_079",
+          "type": "open",
+          "question": "Grammatik spielen – wir ...",
+          "answer": "spielen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_080",
+          "type": "open",
+          "question": "Grammatik spielen – ihr ...",
+          "answer": "spielt",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_081",
+          "type": "open",
+          "question": "Grammatik spielen – sie/Sie ...",
+          "answer": "spielen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_082",
+          "type": "open",
+          "question": "Grammatik reden – ich ...",
+          "answer": "rede",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_083",
+          "type": "open",
+          "question": "Grammatik reden – du ...",
+          "answer": "redest",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_084",
+          "type": "open",
+          "question": "Grammatik reden – er/sie/es ...",
+          "answer": "redet",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_085",
+          "type": "open",
+          "question": "Grammatik reden – wir ...",
+          "answer": "reden",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_086",
+          "type": "open",
+          "question": "Grammatik reden – ihr ...",
+          "answer": "redet",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_087",
+          "type": "open",
+          "question": "Grammatik reden – sie/Sie ...",
+          "answer": "reden",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_088",
+          "type": "open",
+          "question": "Grammatik antworten – ich ...",
+          "answer": "antworte",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_089",
+          "type": "open",
+          "question": "Grammatik antworten – du ...",
+          "answer": "antwortest",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_090",
+          "type": "open",
+          "question": "Grammatik antworten – er/sie/es ...",
+          "answer": "antwortet",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_091",
+          "type": "open",
+          "question": "Grammatik antworten – wir ...",
+          "answer": "antworten",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_092",
+          "type": "open",
+          "question": "Grammatik antworten – ihr ...",
+          "answer": "antwortet",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_093",
+          "type": "open",
+          "question": "Grammatik antworten – sie/Sie ...",
+          "answer": "antworten",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_094",
+          "type": "mc",
+          "question": "Wanneer voeg je een extra -e- in bij werkwoorden in de tegenwoordige tijd?",
+          "options": [
+            "Als de stam eindigt op -d of -t",
+            "Als de stam eindigt op -s of -z",
+            "Als de stam eindigt op -n of -m",
+            "Bij alle werkwoorden bij du"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dk6_095",
+          "type": "truefalse",
+          "question": "Bij 'reden' wordt het bij 'du' → redest (met extra -e-).",
+          "correct": true
+        },
+        {
+          "id": "dk6_096",
+          "type": "mc",
+          "question": "Wat is het Partizip II van 'reden'?",
+          "options": [
+            "geredet",
+            "gereeden",
+            "geredt",
+            "redet"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dk6_097",
+          "type": "mc",
+          "question": "Wat is het Partizip II van 'antworten'?",
+          "options": [
+            "geantwortet",
+            "geantwortet",
+            "geantwort",
+            "antwortet"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "dk6_098",
+          "type": "open",
+          "question": "Grammatik sein – ich ...",
+          "answer": "bin",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_099",
+          "type": "open",
+          "question": "Grammatik sein – du ...",
+          "answer": "bist",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_100",
+          "type": "open",
+          "question": "Grammatik sein – er/sie/es ...",
+          "answer": "ist",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_101",
+          "type": "open",
+          "question": "Grammatik sein – wir ...",
+          "answer": "sind",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_102",
+          "type": "open",
+          "question": "Grammatik sein – ihr ...",
+          "answer": "seid",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_103",
+          "type": "open",
+          "question": "Grammatik sein – sie/Sie ...",
+          "answer": "sind",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_104",
+          "type": "open",
+          "question": "Grammatik haben – ich ...",
+          "answer": "habe",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_105",
+          "type": "open",
+          "question": "Grammatik haben – du ...",
+          "answer": "hast",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_106",
+          "type": "open",
+          "question": "Grammatik haben – er/sie/es ...",
+          "answer": "hat",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_107",
+          "type": "open",
+          "question": "Grammatik haben – wir ...",
+          "answer": "haben",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_108",
+          "type": "open",
+          "question": "Grammatik haben – ihr ...",
+          "answer": "habt",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_109",
+          "type": "open",
+          "question": "Grammatik haben – sie/Sie ...",
+          "answer": "haben",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_110",
+          "type": "open",
+          "question": "NL→DE (Sprachmittel): Wat doe je graag?",
+          "answer": "Was machst du gern?",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_111",
+          "type": "open",
+          "question": "NL→DE (Sprachmittel): ... vind ik leuk.",
+          "answer": "... finde ich toll.",
+          "altAnswers": [
+            "... macht mir Spaß."
+          ]
+        },
+        {
+          "id": "dk6_112",
+          "type": "open",
+          "question": "NL→DE (Sprachmittel): Wat zijn je hobby's?",
+          "answer": "Was sind deine Hobbys?",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_113",
+          "type": "open",
+          "question": "NL→DE (Sprachmittel): Mijn hobby's zijn ... en ....",
+          "answer": "Meine Hobbys sind ... und ....",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_114",
+          "type": "open",
+          "question": "NL→DE (Sprachmittel): Met wie ga je meestal ...?",
+          "answer": "Mit wem gehst du meistens ...?",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_115",
+          "type": "open",
+          "question": "NL→DE (Sprachmittel): Wanneer speel je ...?",
+          "answer": "Wann spielst du ...?",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_116",
+          "type": "open",
+          "question": "NL→DE (Sprachmittel): Ik speel iedere ... na school ....",
+          "answer": "Ich spiele jeden ... nach der Schule ....",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_117",
+          "type": "open",
+          "question": "NL→DE (Sprachmittel): Ik ga vaak / soms met vrienden ....",
+          "answer": "Ich gehe oft / manchmal mit Freunden ....",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_118",
+          "type": "truefalse",
+          "question": "De beleefdheidsvorm 'u' vertaal je in het Duits met 'Sie' (met hoofdletter).",
+          "correct": true
+        }
+      ]
     }
   ]
 }
