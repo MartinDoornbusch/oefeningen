@@ -8467,6 +8467,41 @@
           "type": "truefalse",
           "question": "De beleefdheidsvorm 'u' vertaal je in het Duits met 'Sie' (met hoofdletter).",
           "correct": true
+        },
+        {
+          "id": "dk6_119",
+          "type": "open",
+          "question": "Meervoud: die Gitarre → ...?",
+          "answer": "die Gitarren",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_120",
+          "type": "open",
+          "question": "Meervoud: die Stadt → ...?",
+          "answer": "die Städte",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_121",
+          "type": "open",
+          "question": "Meervoud: die Geige → ...?",
+          "answer": "die Geigen",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_122",
+          "type": "open",
+          "question": "Meervoud: das Hobby → ...?",
+          "answer": "die Hobbys",
+          "altAnswers": []
+        },
+        {
+          "id": "dk6_123",
+          "type": "open",
+          "question": "Meervoud: das Klavier → ...?",
+          "answer": "die Klaviere",
+          "altAnswers": []
         }
       ]
     }
